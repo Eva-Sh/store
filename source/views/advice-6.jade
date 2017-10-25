@@ -1,0 +1,267 @@
+extends templates/layout
+block vars
+	- var title = '«БИЛАЙН» БИЗНЕС'
+	- var og_title = 'Как проверить контрагента'
+	- var og_description = 'Вы, часом, не банкрот? Как проверить контрагента на добросовестность — читайте пошаговую инструкцию в спецпроекте РБК и «Билайн».'
+	- var og_image = '../images/advices/sovet-6/Sovet_6.jpg'
+	- var twitter_description = '«Билайн» Бизнес: прорывные технологии для больших побед.'
+
+block content
+	section.lifehack-case-jumbotron.jumbotron-height(style="background-image: url('../images/advices/sovet-6/Sovet-6_cover_1920x310.jpg');")
+		a(href="/index.html").link-back Вернуться на главную
+		span Совет
+		h1 Как проверить контрагента
+		.link
+			a(href="/advice-5.html").prev-link Предыдущий совет
+			span |
+			a(href="/advice-7.html").next-link Следующий совет
+	section.content-text
+		.advice-content__block
+			.container
+				p Чтобы помочь вам эффективно развивать бизнес, не&nbsp;попадая на&nbsp;недобросовестных контрагентов, мы&nbsp;составили инструкцию по&nbsp;проверке и&nbsp;выявлению проблемных поставщиков, подрядчиков и&nbsp;покупателей. Итак, начнем&hellip;
+				.advice-content__block__step
+					h3 Шаг&nbsp;1. Запросить у&nbsp;контрагента документы до&nbsp;заключения договора
+				.advice-content__block__documents
+					h3 Документы для регистрации ИП:
+					ul
+						li свидетельства о&nbsp;государственной регистрации и&nbsp;постановке на&nbsp;учет в&nbsp;ФНС;
+						li учредительные документы;
+						li устав.
+					p Также можно попросить выписку из&nbsp;ЕГРЮЛ по&nbsp;контрагенту и&nbsp;справку об&nbsp;отсутствии у&nbsp;него задолженности по&nbsp;налогам. При этом, даже если ваш партнер самостоятельно предоставил вам выпуску из&nbsp;ЕГРЮЛ, рекомендуем проверить ее&nbsp;на&nbsp;сайте ФНС России&nbsp;&mdash; <a href="https://www.nalog.ru/" target="_blank">www.nalog.ru</a>. По&nbsp;словам экспертов, выписки довольно легко подделать, и&nbsp;в&nbsp;практике такие случаи имеют место быть. Дополнительно можно запросить и&nbsp;другие документы, например, документы об&nbsp;опыте работы на&nbsp;рынке, о&nbsp;штатной численности персонала, составе основных средств и&nbsp;др.
+				.advice-content__block__image
+					img(src="../images/advices/sovet-6/Sovet-6_photo_1.jpg")
+				.advice-content__block__step
+					h3 Шаг&nbsp;2. Проверить контрагента на&nbsp;сайте ФНС России
+					.advice-content__block__documents
+					p Мы&nbsp;уже отметили возможность проверить компанию по&nbsp;ЕГРЮЛ на&nbsp;сайте налоговой, однако этим возможности сервисов ФНС не&nbsp;заканчиваются. Так, можно:
+					ul
+						li проверить на&nbsp;предмет внесения изменений в&nbsp;ЕГРЮЛ, например, о&nbsp;реорганизации, об&nbsp;уменьшении уставного капитала, о&nbsp;приобретении обществом с&nbsp;ограниченной ответственностью 20% уставного капитала другого общества и т. д.;
+						li уточнить, не&nbsp;планируется&nbsp;ли ликвидация фирмы или исключение предпринимателя из&nbsp;реестра как недействующего;
+						li проверить юридический адрес контрагента&nbsp;&mdash; не&nbsp;является&nbsp;ли он&nbsp;адресом &laquo;массовой регистрации&raquo; фирм-однодневок;
+						li проверить руководителей фирмы на&nbsp;предмет их&nbsp;фактического участия в&nbsp;управлении компанией.
+					p Также можно сделать запрос в&nbsp;налоговую инспекцию по&nbsp;месту регистрации потенциального партнера.	
+		.advice-content__block
+			.container
+				.advice-content__block__step
+					h3 Шаг&nbsp;3. &laquo;Пробить&raquo;, не&nbsp;участвует&nbsp;ли контрагент в&nbsp;судебных разбирательствах
+					p Это можно сделать на&nbsp;официальном сайте ВАС РФ. Картотекой высших арбитров пользоваться легко&nbsp;&mdash; вы&nbsp;можете ввести для поиска название фирмы-контрагента, ИНН и&nbsp;поискать судебные разбирательства. Вы&nbsp;сможете проверить не&nbsp;только факт участия в&nbsp;том или ином деле, но&nbsp;и&nbsp;его суть, а&nbsp;также актуальную стадию судебного разбирательства.
+				.advice-content__block__step
+					h3 Шаг&nbsp;4. Убедиться, что контрагент не&nbsp;готовится к&nbsp;банкротству
+					p Такие сведения можно найти в&nbsp;Едином федеральном реестре сведений о&nbsp;деятельности юридических лиц&nbsp;&mdash; в&nbsp;разделе &laquo;Банкротства&raquo;.
+				.advice-content__block__step
+					h3 Шаг&nbsp;5. Проверить на&nbsp;предмет исполнительного производства
+					p Это можно сделать простым поиском на&nbsp;сайте судебных приставов&nbsp;&mdash; ФСПП России, причем там можно проверить как фирму, индивидуального предпринимателя, так и&nbsp;руководителей&nbsp;&mdash; частных лиц.		
+				.advice-content__block__step
+					h3 Шаг&nbsp;6. Проверить необходимые лицензии и&nbsp;разрешения
+					p Проверить эту информацию можно на&nbsp;сайтах лицензирующих органов, а&nbsp;также можно запросить лицензию непосредственно у&nbsp;потенциального партнера.
+				.advice-content__block__step
+					h3 Шаг&nbsp;7. Изучить финансы компании
+					p По&nbsp;закону годовая бухгалтерская отчетность компании является открытой для заинтересованных пользователей, в&nbsp;том числе поставщиков, покупателей, инвесторов, кредиторов и&nbsp;др. Контрагент обязан предоставить вам копию для ознакомления по&nbsp;запросу. Также подобную информацию должен предоставлять Росстат.
+				.advice-content__block__image
+					img(src="../images/advices/sovet-6/Sovet-6_photo_2.jpg")
+				.advice-content__block__step
+					h3 Шаг&nbsp;8. Проверить, нет&nbsp;ли контрагента в&nbsp;реестре недобросовестных фирм
+					p Подобные реестры есть на&nbsp;сайте ФАС России, и&nbsp;они постоянно обновляются. Также можно изучить &laquo;черные списки&raquo; поставщиков, покупателей и т. д. в&nbsp;открытых источниках (интернет).	
+				.advice-content__block__step
+					h3 Шаг&nbsp;9. Проверить полномочия подписантов
+					p Если подписантом выступает не&nbsp;генеральный директор, следует проверить доверенность на&nbsp;предмет, не&nbsp;истек&nbsp;ли срок полномочий представителя контрагента и&nbsp;не&nbsp;ограничены&nbsp;ли его полномочия по&nbsp;данной конкретной сделке.
+				.advice-content__block__documents
+					h3 Полезный список ресурсов
+					ul
+						li Надежность&nbsp;&mdash; проверить своего потенциального партнера по&nbsp;данному критерию можно, например, на&nbsp;сайте <a href="http://zakupki.gov.ru" target="_blank" >www.zakupki.gov.ru</a>.
+						li Исполнительные производства смотрите на&nbsp;сайте <a href="http://fssprus.ru/iss/ip/" target="_blank">wwww.fssprus.ru</a>.
+						li Судебные разбирательства изучайте на&nbsp;<a href="http://kad.arbitr.ru/" target="_blank">www.kad.arbitr.ru</a>.
+						li Наличие действующей лицензии смотрите на&nbsp;сайтах лицензирующих органов.
+						li Проверка паспорта партнеров доступна, к&nbsp;примеру, здесь <a href="http://services.fms.gov.ru" target="_blank">www.services.fms.gov.ru</a>.
+						li Внимание прокуратуры и&nbsp;уголовные дела смотрите на&nbsp;сайте <a href="https://proverki.gov.ru/" target="_blank">www.proverki.gov.ru</a>.
+						li Финансовая устойчивость партнера проверяется на&nbsp;основании бухгалтерской отчетности контрагента.
+						li Сайт партнера также обязателен к&nbsp;изучению. Посмотрите, есть&nbsp;ли там фактический адрес, состав руководителей и&nbsp;все&nbsp;ли соответствует действительности. Также посмотрите, какая информация о&nbsp;контрагенте есть в&nbsp;поисковиках.
+		section.sharing-block
+			.share-icon.js-share
+				a(href="https://www.facebook.com/sharer/sharer.php?u=").share-icon__item.share-icon__item--fk.fbook
+				a(href="https://vk.com/share.php?url=").share-icon__item.share-icon__item--vk.vkt
+				a(href="https://twitter.com/intent/tweet?text=").share-icon__item.share-icon__item--tw.twt
+		section.advices-block-slider
+			a(href="/article-1.html").advices-block-slider__item
+				.advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/Article_1.jpg');")
+				.advices-block-slider__item__text
+					p Малые миллионы
+			a(href="/article-2.html").advices-block-slider__item
+				.advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/Article_2.jpg');")
+				.advices-block-slider__item__text
+					p Финансы для бизнеса
+			a(href="/article-3.html").advices-block-slider__item
+				.advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/Article_3.jpg');")
+				.advices-block-slider__item__text
+					p «Океаны» бизнеса
+			a(href="/article-4.html").advices-block-slider__item
+				.advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/4.jpg');")
+				.advices-block-slider__item__text
+					p Инвестиции в эффективность
+			a(href="/article-5.html").advices-block-slider__item
+				.advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/5.jpg');")
+				.advices-block-slider__item__text
+					p Плата за&nbsp;эмоции
+			a(href="/article-6.html").advices-block-slider__item
+				.advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/6.jpg');")
+				.advices-block-slider__item__text
+					p В&nbsp;погоне за&nbsp;надежностью
+			a(href="/article-7.html").advices-block-slider__item
+				.advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/7.jpg');")
+				.advices-block-slider__item__text
+					p Кадры в кризис: увольнять или нет
+			a(href="/article-8.html").advices-block-slider__item
+				.advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/8.jpg');")
+				.advices-block-slider__item__text
+					p Связь для бизнеса
+			a(href="/article-9.html").advices-block-slider__item
+				.advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/9.jpg');")
+				.advices-block-slider__item__text
+					p Машины vs люди
+	.line-grey
+	section.video-slider.video-slider-footer
+		.container
+			h2 Правила предпринимателя
+			.videos-slider.videos-slider--space
+				a()
+					.interview-block__video
+						.interview-block__video__block
+							.interview-block__video__block__muted.video_muted.block-control--slider-6
+								.block-control__pause
+								.block-control__play
+							.full-block-control
+								.full-block-control__slider--play
+								.full-block-control__time
+								.full-block-control__main-line
+									.full-block-control__main-line__progress
+								.full-block-control__sound
+							.interview-block__video__block__interview
+								iframe(id="client-video-6" width="780" height="439" src="https://www.youtube.com/embed/uul0w-NuDCw?list=PLv42Kp4x57LC_mrA0OAEqpo5r1LEMAL66&amp;controls=0&amp;showinfo=0&enablejsapi=1&rel=0" frameborder="0" allowfullscreen)
+							.interview-block__video__block__filter(style="background-image: url(images/interview-speakers/business/Client_6.jpg); background-size: contain;")
+							.interview-block__video__block__info
+								h3 Ольга Шеламова
+								p.regalia совладелец компании &laquo;Олимп&raquo;
+								p.hide-in-mobile Партнеров надо выбирать с&nbsp;точки зрения надежности и&nbsp;взаимовыгодности сотрудничества. От&nbsp;правильных <nobr>бизнес-партнеров</nobr> и&nbsp;подрядчиков во&nbsp;многом зависит развитие компании.
+								.interview-block__video__block__info__playbutton(id="start-client-video-6")
+					.interview-block__video__sharing.clearfix.no-margin-bottom
+				a()
+					.interview-block__video
+						.interview-block__video__block
+							.interview-block__video__block__muted.video_muted.block-control--slider-5
+								.block-control__pause
+								.block-control__play
+							.full-block-control
+								.full-block-control__slider--play
+								.full-block-control__time
+								.full-block-control__main-line
+									.full-block-control__main-line__progress
+								.full-block-control__sound
+							.interview-block__video__block__interview
+								iframe(id="client-video-5" width="780" height="439" src="https://www.youtube.com/embed/Dn_tOvfZiI0?list=PLv42Kp4x57LC_mrA0OAEqpo5r1LEMAL66&amp;controls=0&amp;showinfo=0&enablejsapi=1&rel=0" frameborder="0" allowfullscreen)
+							.interview-block__video__block__filter(style="background-image: url(images/interview-speakers/business/Client_5.jpg); background-size: contain;")
+							.interview-block__video__block__info
+								h3 Илья Смирнов
+								p.regalia <nobr>IT-директор</nobr> компании &laquo;Ай&nbsp;Ти&nbsp;Ви&nbsp;групп&raquo;
+								p.hide-in-mobile Формат удаленного офиса создает комфортные условия для работы сотрудников, служит дополнительной мотивацией, а&nbsp;также позволяет компании эффективнее управлять расходами.
+								.interview-block__video__block__info__playbutton(id="start-client-video-5")
+					.interview-block__video__sharing.clearfix.no-margin-bottom
+				a()
+					.interview-block__video
+						.interview-block__video__block
+							.interview-block__video__block__muted.video_muted.block-control--slider-4
+								.block-control__pause
+								.block-control__play
+							.full-block-control
+								.full-block-control__slider--play
+								.full-block-control__time
+								.full-block-control__main-line
+									.full-block-control__main-line__progress
+								.full-block-control__sound
+							.interview-block__video__block__interview
+								iframe(id="client-video-4" width="780" height="439" src="https://www.youtube.com/embed/jMvRX6AEsQY?list=PLv42Kp4x57LC_mrA0OAEqpo5r1LEMAL66&amp;controls=0&amp;showinfo=0&enablejsapi=1&rel=0" frameborder="0" allowfullscreen)
+							.interview-block__video__block__filter(style="background-image: url(images/interview-speakers/business/Client_4.jpg); background-size: contain;")
+							.interview-block__video__block__info
+								h3 Игорь Ласьков
+								p.regalia Генеральный директор <nobr>ООО &laquo;Стройкомфорт&raquo;</nobr>
+								p.hide-in-mobile Снижать расходы и, в&nbsp;то&nbsp;же время, постоянно расширять число клиентов, позволит современная <nobr>CRM-система</nobr>и&nbsp;другие решения мобильного оператора.
+								.interview-block__video__block__info__playbutton(id="start-client-video-4")
+					.interview-block__video__sharing.clearfix.no-margin-bottom
+				a()
+					.interview-block__video
+						.interview-block__video__block
+							.interview-block__video__block__muted.video_muted.block-control--slider-3
+								.block-control__pause
+								.block-control__play
+							.full-block-control
+								.full-block-control__slider--play
+								.full-block-control__time
+								.full-block-control__main-line
+									.full-block-control__main-line__progress
+								.full-block-control__sound
+							.interview-block__video__block__interview
+								iframe(id="client-video-3" width="780" height="439" src="https://www.youtube.com/embed/D4W_ciHj-Dc?list=PLv42Kp4x57LC_mrA0OAEqpo5r1LEMAL66&amp;controls=0&amp;showinfo=0&enablejsapi=1&rel=0" frameborder="0" allowfullscreen)
+							.interview-block__video__block__filter(style="background-image: url(images/interview-speakers/business/Client_3.jpg); background-size: contain;")
+							.interview-block__video__block__info
+								h3 Андрей Замай
+								p.regalia Генеральный директор компании &laquo;Первая Интеллектуальная Реклама&raquo;
+								p.hide-in-mobile Найти &laquo;голубой океан&raquo; можно даже на&nbsp;современном конкурентном рынке. Но&nbsp;выиграть в&nbsp;бизнесе может тот, кто не&nbsp;боится ошибок и&nbsp;учится на&nbsp;них.
+								.interview-block__video__block__info__playbutton(id="start-client-video-3")
+					.interview-block__video__sharing.clearfix.no-margin-bottom
+				a()
+					.interview-block__video
+						.interview-block__video__block
+							.interview-block__video__block__muted.video_muted.block-control--slider-1
+								.block-control__pause
+								.block-control__play
+							.full-block-control
+								.full-block-control__slider--play
+								.full-block-control__time
+								.full-block-control__main-line
+									.full-block-control__main-line__progress
+								.full-block-control__sound
+							.interview-block__video__block__interview
+								iframe(id="client-video-1" width="780" height="501" src="https://www.youtube.com/embed/HLGZqCOwOws?controls=0&amp;showinfo=0&enablejsapi=1&rel=0" frameborder="0" allowfullscreen)
+							.interview-block__video__block__filter(style="background-image: url(images/interview-speakers/business/Client_1.jpg); background-size: contain;")
+							.interview-block__video__block__info
+								h3 Павел Чаплинский
+								p.regalia Основатель BOX&ROSES
+								p.hide-in-mobile Создавая компанию, предпринимателю нужно иметь видение, каким бизнес будет через полгода, год, несколько лет, какой будет его команда, какие задачи будут поставлены перед сотрудниками и&nbsp;для чего, вообще, строится этот бизнес.
+								.interview-block__video__block__info__playbutton(id="start-client-video-1")
+					.interview-block__video__sharing.clearfix.no-margin-bottom
+				a()
+					.interview-block__video
+						.interview-block__video__block
+							.interview-block__video__block__muted.video_muted.block-control--slider-2
+								.block-control__pause
+								.block-control__play
+							.full-block-control
+								.full-block-control__slider--play
+								.full-block-control__time
+								.full-block-control__main-line
+									.full-block-control__main-line__progress
+								.full-block-control__sound
+							.interview-block__video__block__interview
+								iframe(id="client-video-2" width="780" height="501" src="https://www.youtube.com/embed/3EaAAjCzSxE?controls=0&amp;showinfo=0&enablejsapi=1&rel=0" frameborder="0" allowfullscreen)
+							.interview-block__video__block__filter(style="background-image: url(images/interview-speakers/business/Client_2.jpg); background-size: contain;")
+							.interview-block__video__block__info
+								h3 Дмитрий Шлопак
+								p.regalia Управляющий партнер &laquo;Везендорф групп&raquo;
+								p.hide-in-mobile Социальная <nobr>бизнес-философия</nobr> и&nbsp;гарантия возврата вложенных средств&nbsp;&mdash; правило, которое позволит приблизить ваш стартап к&nbsp;получению инвестиций.
+								.interview-block__video__block__info__playbutton(id="start-client-video-2")
+	.modal-popup
+		.modal-popup__bg
+		.modal-popup__popup
+			.interview-block__video
+					.interview-block__video__block
+						.interview-block__video__block__muted.video_muted.block-control
+							.block-control__pause
+							.block-control__play
+						.interview-block__video__block__interview
+							iframe(id="business-video" width="780" height="639" src="https://www.youtube.com/embed/HLGZqCOwOws?list=PLv42Kp4x57LC_mrA0OAEqpo5r1LEMAL66&amp;controls=0&amp;showinfo=0&enablejsapi=1&rel=0" frameborder="0" allowfullscreen)
+						.interview-block__video__block__filter(style="background-image: url(images/interview-speakers/business/Client_1.jpg)")
+						.interview-block__video__block__info
+							h3 Павел Чаплинский
+							p.regalia Основатель BOX&ROSES
+							p Создавая компанию, предпринимателю нужно иметь видение, каким бизнес будет через полгода, год, несколько лет, какой будет его команда, какие задачи будут поставлены перед сотрудниками и&nbsp;для чего, вообще, строится этот бизнес.
+							.interview-block__video__block__info__playbutton.button-popup(id="start-business-video")
+			.modal-popup__close			

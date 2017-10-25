@@ -1,0 +1,425 @@
+extends templates/layout
+block vars
+	- var title = '«Билайн» Бизнес'
+	- var og_title = '«БИЛАЙН» БИЗНЕС'
+	- var og_description = 'В спецпроекте РБК и «Билайн» рассказываем, как высокие технологии позволяют увеличивать продажи, наращивать прибыль и побеждать конкурентов.'
+	- var og_image = '../images/main-sharing.jpg'
+	- var twitter_description = '«Билайн» Бизнес: прорывные технологии для больших побед.'
+
+block content
+	aside.side-menu-holder
+		.content
+			ul.side-menu
+				li.menu-item.article-menu(data-section='article')
+					span Статьи
+				li.menu-item.cases-menu(data-section='advice')
+					span Советы
+				li.menu-item.speakers-menu(data-section='interview')
+					span Интервью
+				li.menu-item.lifehack-menu(data-section='lifehack-block')
+					span Лайфхаки
+				li.menu-item.tests-menu(data-section='tests-block')
+					span Тесты
+				//- li.menu-item.competition-menu(data-section='competition')
+				//- 	a(href="#")
+				//- 		span Конкурс
+				//- li.menu-item.videos-menu(data-section='videos-block')
+				//- 	span Видео
+			.menu-rail
+				.menu-trolley
+					.trolley-hull.passive
+				//- 	.trolley-wheel.frontа
+				//- 	.trolley-wheel.back
+				//- .menu-layer
+	section.jumbotron
+		.video-bg
+			.video-bg__video
+				video(id="vid", preload='auto', autoplay='autoplay', loop='loop')
+					source(src='../video/bg.mov', type='video/mov')
+					source(src='../video/bg.mp4', type='video/mp4')
+					source(src='../video/bg.webm', type='video/webm')
+					source(src='../video/bg.ogv', type='video/ogg')
+		.container
+			.jumbotron__text
+				h1 &laquo;Билайн&raquo; Бизнес:
+				span прорывные технологии для больших побед
+				p В&nbsp;совместном проекте РБК и &laquo;Билайн&raquo; Бизнес рассказывают, как&nbsp;высокие&nbsp;технологии позволяют увеличивать продажи, наращивать прибыль и&nbsp;побеждать конкурентов. Статьи, лайфхаки, советы экспертов помогут выбрать правильный вектор развития, а&nbsp;сервис &laquo;Мобильное Предприятие&raquo; от &laquo;Билайн&raquo; Бизнес&nbsp;&mdash; эффективно решать операционные и&nbsp;управленческие задачи. Не&nbsp;важно, какой у&nbsp;вас бизнес&nbsp;&mdash; малый или средний,&nbsp;&mdash; большого успеха можно добиться в&nbsp;любом деле.
+				p.extra-mobile-content В&nbsp;совместном проекте РБК и&nbsp;&laquo;Билайн&raquo; Бизнес рассказывают, как высокие технологии позволяют увеличивать продажи, наращивать прибыль и&nbsp;побеждать конкурентов.
+		.menu-line
+	.mouse#article
+		.container
+			img(src="../images/scroll-mouse.svg", alt="")
+	section.article
+		.container
+			h2 Статьи
+			h2.extra-mobile-title Актуальные вопросы для бизнеса
+			.actual-article
+				a(href="/article-1.html").actual-article__item
+					.actual-article__item__img
+						img(src="../images/main-page/Article/Article_1.jpg", alt="Малые миллионы")
+					.actual-article__item__text
+						h2 Малые миллионы
+				a(href="/article-2.html").actual-article__item
+					.actual-article__item__img
+						img(src="../images/main-page/Article/Article_2.jpg", alt="Финансы для бизнеса")
+					.actual-article__item__text
+						h2 Финансы для бизнеса
+			.more-articles
+				a(href="/article-3.html").actual-article__item
+					.actual-article__item__img
+						img(src="../images/main-page/Article/Article_3.jpg", alt="Статья 3")
+					.actual-article__item__text
+						h2  «Океаны» бизнеса
+				a(href="/article-4.html").actual-article__item
+					.actual-article__item__img
+						img(src="../images/main-page/Article/4.jpg", alt="Статья 4")
+					.actual-article__item__text
+						h2 Инвестиции в эффективность
+				a(href="/article-5.html").actual-article__item
+					.actual-article__item__img
+						img(src="../images/main-page/Article/5.jpg", alt="Статья 5")
+					.actual-article__item__text
+						h2 Плата за эмоции
+				a(href="/article-6.html").actual-article__item
+					.actual-article__item__img
+						img(src="../images/main-page/Article/6.jpg", alt="Статья 6")
+					.actual-article__item__text
+						h2 В погоне за надежностью
+				a(href="/article-7.html").actual-article__item
+					.actual-article__item__img
+						img(src="../images/main-page/Article/7.jpg", alt="Статья 7")
+					.actual-article__item__text
+						h2 Кадры в&nbsp;кризис: увольнять или нет
+				a(href="/article-8.html").actual-article__item
+					.actual-article__item__img
+						img(src="../images/main-page/Article/8.jpg", alt="Статья 8")
+					.actual-article__item__text
+						h2 Связь для бизнеса
+				a(href="/article-9.html").actual-article__item
+					.actual-article__item__img
+						img(src="../images/main-page/Article/9.jpg", alt="Статья 9")
+					.actual-article__item__text
+						h2 Машины vs люди
+			a(href="javascript:void(0);").js-all-article#advice
+				div.button_base.roll
+					div Все статьи
+					div Все статьи
+	section.advice
+		.container
+			h2 Советы для бизнеса
+			p Здесь собраны советы, которые помогут развивать бизнес во всех его аспектах — будь то организационный, финансовый или, например, маркетинговый.
+			.cases
+				a(href="/advice-1.html").case-animate.cases__item.cases__item--active
+					img(src="../images/main-page/Sovety/Icon_1.svg", alt="")
+					.cases__item__text
+						span Как открыть свое дело в России
+					.border-block
+						.border-block--animated__left-top
+						.border-block--animated__right-top
+						.border-block--animated__bottom
+				a(href="/advice-2.html").cases__item.case-animate.cases__item--active
+					img(src="../images/main-page/Sovety/Icon_2.svg", alt="")
+					.cases__item__text
+						span Финансы на&nbsp;инновации: нетривиальный путь к&nbsp;деньгам
+					.border-block
+						.border-block--animated__left-top
+						.border-block--animated__right-top
+						.border-block--animated__bottom
+				a(href="/advice-3.html").cases__item.case-animate.cases__item--active
+					img(src="../images/main-page/Sovety/Icon_3.svg", alt="")
+					.cases__item__text
+						span Как удвоить продажи
+					.border-block
+						.border-block--animated__left-top
+						.border-block--animated__right-top
+						.border-block--animated__bottom
+			.more-cases-main
+				a(href="/advice-4.html").cases__item.case-animate.cases__item--active
+					img(src="../images/main-page/Sovety/Icon_4.svg", alt="")
+					.cases__item__text
+						span За рамками компании
+					.border-block
+						.border-block--animated__left-top
+						.border-block--animated__right-top
+						.border-block--animated__bottom
+				a(href="/advice-5.html").cases__item.case-animate.cases__item--active
+					img(src="../images/main-page/Sovety/Icon_5.svg", alt="")
+					.cases__item__text
+						span Облачная АТС. Преимущества и&nbsp;возможности.
+					.border-block
+						.border-block--animated__left-top
+						.border-block--animated__right-top
+						.border-block--animated__bottom
+				a(href="/advice-6.html").cases__item.case-animate.cases__item--active
+					img(src="../images/main-page/Sovety/Icon_6.svg", alt="").long-image
+					.cases__item__text
+						span Как проверить контрагента
+					.border-block
+						.border-block--animated__left-top
+						.border-block--animated__right-top
+						.border-block--animated__bottom
+				a(href="/advice-7.html").cases__item.case-animate.cases__item--active
+					img(src="../images/main-page/Sovety/Icon_7.svg", alt="")
+					.cases__item__text
+						span Ваши кадры: дорого или дешево
+					.border-block
+						.border-block--animated__left-top
+						.border-block--animated__right-top
+						.border-block--animated__bottom
+				a(href="/advice-8.html").cases__item.case-animate.cases__item--active
+					img(src="../images/main-page/Sovety/Icon_8.svg", alt="")
+					.cases__item__text
+						span Интернет для бизнеса
+					.border-block
+						.border-block--animated__left-top
+						.border-block--animated__right-top
+						.border-block--animated__bottom
+				a(href="/advice-9.html").cases__item.case-animate.cases__item--active
+					img(src="../images/main-page/Sovety/Icon_9.svg", alt="")
+					.cases__item__text
+						span Строим &laquo;умный офис&raquo;
+					.border-block
+						.border-block--animated__left-top
+						.border-block--animated__right-top
+						.border-block--animated__bottom
+			a(href="javascript:void(0);").all-cases#interview
+				div.button_base.roll
+					div Все советы
+					div Все советы
+	section.interview
+		.container
+			h2 Интервью
+			p Сложен&nbsp;ли путь от&nbsp;старта к&nbsp;успеху? Как справляться с&nbsp;ошибками и&nbsp;поражениями? Как совершить прорыв и&nbsp;завоевать любовь клиентов? Предприниматели и&nbsp;<nobr>топ-менеджеры</nobr> делятся успешным опытом.
+			.speakers
+				.speakers__item
+					.speakers__item__img
+						a(href="/interview-2.html")
+							img(src="images/interview-speakers/business/2.Cerazov.png", alt="")
+					.speakers__item__text
+						a(href="/interview-2.html")
+							h3 Константин Церазов
+						p Член правления, руководитель инвестиционного блока банка &laquo;ФК&nbsp;Открытие&raquo;, член совета директоров &laquo;Открытия Капитал&raquo;
+						a(href="/interview-2.html").watch-interview Смотреть
+				.speakers__item
+					.speakers__item__img
+						a(href="/interview-1.html")
+							img(src="images/interview-speakers/business/1.Popov.png", alt="")
+					.speakers__item__text
+						a(href="/interview-1.html")
+							h3 Александр Попов
+						p Директор EasyFinance.ru
+						a(href="/interview-1.html").watch-interview Смотреть
+				.speakers__item
+					.speakers__item__img
+						a(href="/interview-3.html")
+							img(src="images/interview-speakers/business/3.Feldman.png", alt="")
+					.speakers__item__text
+						a(href="/interview-3.html")
+							h3 Максим Фельдман
+						p Руководитель направления по&nbsp;работе с&nbsp;клиентами Московской школы управления СКОЛКОВО
+						a(href="/interview-3.html").watch-interview Смотреть
+			a(href="/interview-1.html").all-interview#lifehack
+				div.button_base.roll
+					div Все интервью
+					div Все интервью
+	section.lifehack-block
+		.container
+			.lifehack
+				.lifehack__icon
+					img(src="../images/main-page/Lifehack/Icon_lifehacks.svg", alt="")
+				a(href="/lifehack-1.html").lifehack__item(data-id="1")
+					h3 Попытка не пытка
+					p Какие продукты и&nbsp;услуги пользуются спросом у&nbsp;россиян,&nbsp;и&nbsp;как сделать ваш бизнес успешным.
+				a(href="/lifehack-2.html").lifehack__item.lifehack-hidden(data-id="2")
+					h3 Выбираем банк на всю жизнь
+					p Как подобрать надежный банк и оптимальный набор финансовых продуктов, услуг для вашего бизнеса.
+				a(href="/lifehack-3.html").lifehack__item.lifehack-hidden(data-id="3")
+					h3 Как найти свою целевую аудиторию
+					p Как эффективно работать с&nbsp;воронкой продаж, чтобы нарастить прибыль компании?
+				a(href="/lifehack-4.html").lifehack__item.lifehack-hidden(data-id="4")
+					h3 Как сэкономить просто
+					p Расскажем о&nbsp;том, как можно легко снизить расходы на&nbsp;офис, связь, интернет, персонал и&nbsp;другие статьи расходов.
+				a(href="/lifehack-5.html").lifehack__item.lifehack-hidden(data-id="5")
+					h3 Умные телефонные сервисы
+					p Какие современные решения сотовых операторов позволяют выстроить эффективную работу с&nbsp;клиентами и&nbsp;увеличить продажи.
+				a(href="/lifehack-6.html").lifehack__item.lifehack-hidden(data-id="6")
+					h3 Риски от партнера
+					p Разберем на&nbsp;примерах, какие риски несут в&nbsp;себе недобросовестные поставщики, подрядчики и&nbsp;покупатели, как выявить их&nbsp;&laquo;на&nbsp;берегу&raquo;.
+				a(href="/lifehack-7.html").lifehack__item.lifehack-hidden(data-id="7")
+					h3 Как оценить персонал
+					p Как оценить эффективность работы персонала и&nbsp;сформировать оптимальный штат, а&nbsp;также как построить организацию офиса в&nbsp;регионах с&nbsp;учетом низкого проникновения интернета.
+				a(href="/lifehack-8.html").lifehack__item.lifehack-hidden(data-id="8")
+					h3 Оптимальные расходы на&nbsp;связь
+					p Как управлять расходами на&nbsp;связь и&nbsp;интернет, мобильные разговоры и&nbsp;трафик, можно заметно снизить операционные затраты. Поговорим о&nbsp;том, как это сделать.
+				a(href="/lifehack-9.html").lifehack__item.lifehack-hidden(data-id="9")
+					h3 Анализируем звонки
+					p Как не&nbsp;терять деньги на&nbsp;рекламе, выбирая только эффективные варианты размещения.
+				.lifehack__bottom#tests
+					a(href="javascript:void(0);" data-tab="1").js-get-lifehack Показать новый лайфхак
+	section.tests-block
+		.container
+			h2 Тесты
+			p Проверьте ваше везение, предпринимательское чутьё и&nbsp;деловую хватку.
+			.test-card
+				.flip-container.test-card__item
+					.flipper
+						.front(style="background-color: #eeeae5;").black
+							.test-card__item__time
+								span 2 мин
+							span.number-test Тест 1
+							.test-card__item__title
+								p Какой вы&nbsp;стартапер?
+							a(href="/test-1.html#test_1").go-test Пройти тест
+
+						.back(style="background-image: url(../images/main-page/Test/1.jpg);").white.layer
+							.test-card__item__time-center
+								span 2 мин
+							.test-card__item__preview
+								p Проверьте, получится&nbsp;ли у&nbsp;вас организовать собственный бизнес.
+							a(href="/test-1.html#test_1").go-test.bg-yellow Пройти тест
+				.flip-container.test-card__item
+					.flipper
+						.front(style="background-image: url(../images/main-page/Test/2.jpg);").white.layer
+							.test-card__item__time
+								span 2 мин
+							span.number-test Тест 2
+							.test-card__item__title
+								p 
+									| Способны ли 
+									span.shift-block-p
+									| вы привлекать
+									span.shift-block-p
+									|  инвестиции?
+							a(href="/test-1.html#test_2").go-test Пройти тест
+						.back(style="background-color: #eeeae5;").black
+							.test-card__item__time-center
+								span 2 мин
+							.test-card__item__preview.test-card__item__preview--black
+								p Узнайте, сможете&nbsp;ли вы&nbsp;привлечь финансирование для своего проекта.
+							a(href="/test-1.html#test_2").go-test.bg-yellow Пройти тест
+				.flip-container.test-card__item
+					.flipper
+						.front(style="background-color: #eeeae5;").black
+							.test-card__item__time
+								span 2 мин
+							span.number-test Тест 3
+							.test-card__item__title
+								p Разбираетесь ли вы в маркетинге?
+							a(href="/test-1.html#test_3").go-test Пройти тест
+						.back(style="background-image: url(../images/main-page/Test/3.jpg);").white.layer
+							.test-card__item__time-center
+								span 2 мин
+							.test-card__item__preview
+								p Протестируйте себя на&nbsp;знания в&nbsp;сфере маркетинга и&nbsp;успешных продаж.
+							a(href="/test-1.html#test_3").go-test.bg-yellow Пройти тест			
+			.more-tests
+				.flip-container.test-card__item
+					.flipper
+						.front(style="background-image: url(../images/main-page/Test/4.jpg);").white.layer
+							.test-card__item__time
+								span 2 мин
+							span.number-test Тест 4
+							.test-card__item__title
+								p 
+									| Способны ли
+									span.shift-block-p
+									| вы оптимизировать
+									span.shift-block-p
+									|  бизнес-расходы?
+							a(href="/test-1.html#test_4").go-test Пройти тест
+						.back(style="background-color: #eeeae5;").black
+							.test-card__item__time-center
+								span 2 мин
+							.test-card__item__preview
+								p Тратить с&nbsp;выгодой для бизнеса&nbsp;&mdash; проверьте, получится&nbsp;ли это у&nbsp;вас.
+							a(href="/test-1.html#test_4").go-test.bg-yellow Пройти тест
+				.flip-container.test-card__item
+					.flipper
+						.front(style="background-color: #eeeae5;").black
+							.test-card__item__time
+								span 2 мин
+							span.number-test Тест 5
+							.test-card__item__title
+								p Знаете&nbsp;ли вы&nbsp;своих сотрудников?
+							a(href="/test-1.html#test_5").go-test Пройти тест
+						.back(style="background-image: url(../images/main-page/Test/5.jpg);").white.layer
+							.test-card__item__time-center
+								span 2 мин
+							.test-card__item__preview
+								p Давайте узнаем, хорошо&nbsp;ли вы&nbsp;разбираетесь в&nbsp;человеческой натуре.
+							a(href="/test-1.html#test_5").go-test.bg-yellow Пройти тест
+				.flip-container.test-card__item
+					.flipper
+						.front(style="background-image: url(../images/main-page/Test/7.jpg);").white.layer
+							.test-card__item__time
+								span 2 мин
+							span.number-test Тест 6
+							.test-card__item__title
+								p Какой вы&nbsp;руководитель?
+							a(href="/test-1.html#test_7").go-test.bg-yellow Пройти тест
+						.back(style="background-color: #eeeae5;").black
+							.test-card__item__time-center
+								span 2 мин
+							.test-card__item__preview
+								p Пройдите проверку на&nbsp;умение формировать команду и&nbsp;управлять ею.
+							a(href="/test-1.html#test_7").go-test.bg-yellow Пройти тест	
+				.flip-container.test-card__item
+					.flipper
+						.front(style="background-color: #eeeae5;").black
+							.test-card__item__time
+								span 2 мин
+							span.number-test Тест 7
+							.test-card__item__title
+								p
+									| Умеете ли
+									span.shift-block-p
+									| вы экономить
+									span.shift-block-p
+									|  на связи?
+							a(href="/test-1.html#test_8").go-test Пройти тест
+						.back(style="background-image: url(../images/main-page/Test/8.jpg);").white.layer
+							.test-card__item__time-center
+								span 2 мин
+							.test-card__item__preview
+								p Пройдите проверку на&nbsp;умение формировать команду и&nbsp;управлять&nbsp;ею.
+							a(href="/test-1.html#test_8").go-test.bg-yellow Пройти тест
+				.flip-container.test-card__item
+					.flipper
+						.front(style="background-image: url(../images/main-page/Test/9.jpg);").white.layer
+							.test-card__item__time
+								span 2 мин
+							span.number-test Тест 8
+							.test-card__item__title
+								p Вы&nbsp;&mdash; инноватор?
+							a(href="/test-1.html#test_9").go-test.bg-yellow Пройти тест
+						.back(style="background-color: #eeeae5;").black
+							.test-card__item__time-center
+								span 2 мин
+							.test-card__item__preview
+								p Можно&nbsp;ли вас назвать инноватором?
+							a(href="/test-1.html#test_9").go-test.bg-yellow Пройти тест
+			a(href="javascript:boid(0);").js-all-tests
+				div.button_base.roll
+					div Все тесты
+					div Все тесты
+	section.save-on-calls#main-form
+		.container
+			.form-block
+				h3 Комплекс инструментов &laquo;Мобильное предприятие&raquo;
+				p Управляйте продажами по&nbsp;телефону, сокращайте расходы и&nbsp;улучшайте бизнес. 
+				p <b>Первый месяц бесплатно.</b> Просто заполните форму заявки и&nbsp;специалист &laquo;Билайн&raquo;&nbsp;свяжется с&nbsp;вами.
+				.form-block__container
+					form(action="/form.php" id="form-reg" method="POST").connect-form
+						.input-holder
+							input(id="name" name="name" placeholder="Представьтесь, пожалуйста")
+						.field-set
+							.input-holder
+								input(id="email" name="email" placeholder="Укажите ваш e-mail")
+							.input-holder
+								input(id="company" name="company" placeholder="Укажите вашу компанию")
+							.input-holder
+								input(id="telephone" name="telephone" placeholder="Укажите номер телефона")
+						input(type="submit" id="submit-form" value="Отправить")
+						//- span *Первый месяц в подарок
+					.form-block__container__ok
+						p Спасибо!<br /> C&nbsp;вами свяжется специалист компании &laquo;Билайн&raquo;

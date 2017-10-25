@@ -1,0 +1,920 @@
+doctype html
+- var title = '«Билайн» Бизнес'
+- var og_title = '«БИЛАЙН» БИЗНЕС'
+- var og_description = 'В спецпроекте РБК и «Билайн» рассказываем, как высокие технологии позволяют увеличивать продажи, наращивать прибыль и побеждать конкурентов.'
+- var og_image = '../images/main-sharing.jpg'
+- var twitter_description = '«Билайн» Бизнес: прорывные технологии для больших побед'
+
+block vars
+
+html.no-js(lang="")
+  head
+    meta(charset="utf-8")
+    meta(name="description", content="")
+    meta(name="viewport", content="width=device-width, initial-scale=1, minimal-ui")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    title #{title}
+    link(rel="stylesheet", href="styles/vendor.css")
+    link(rel="stylesheet", href="styles/main.css")
+    link(rel="apple-touch-icon-precomposed", sizes="57x57", href="images/favicon/apple-touch-icon-57x57.png")
+    link(rel="apple-touch-icon-precomposed", sizes="114x114", href="images/favicon/apple-touch-icon-114x114.png")
+    link(rel="apple-touch-icon-precomposed", sizes="72x72", href="images/favicon/apple-touch-icon-72x72.png")
+    link(rel="apple-touch-icon-precomposed", sizes="144x144", href="images/favicon/apple-touch-icon-144x144.png")
+    link(rel="apple-touch-icon-precomposed", sizes="60x60", href="images/favicon/apple-touch-icon-60x60.png")
+    link(rel="apple-touch-icon-precomposed", sizes="120x120", href="images/favicon/apple-touch-icon-120x120.png")
+    link(rel="apple-touch-icon-precomposed", sizes="76x76", href="images/favicon/apple-touch-icon-76x76.png")
+    link(rel="apple-touch-icon-precomposed", sizes="152x152", href="images/favicon/apple-touch-icon-152x152.png")
+    link(rel="icon", type="image/png", href="images/favicon/favicon-196x196.png", sizes="196x196")
+    link(rel="icon", type="image/png", href="images/favicon/favicon-96x96.png", sizes="96x96")
+    link(rel="icon", type="image/png", href="images/favicon/favicon-32x32.png", sizes="32x32")
+    link(rel="icon", type="image/png", href="images/favicon/favicon-16x16.png", sizes="16x16")
+    link(rel="icon", type="image/png", href="images/favicon/favicon-128.png", sizes="128x128")
+    meta(name="application-name", content="&nbsp;")
+    meta(name="msapplication-TileColor", content="#FFFFFF ")
+    meta(name="msapplication-TileImage", content="mstile-144x144.png")
+    meta(name="msapplication-square70x70logo", content="mstile-70x70.png")
+    meta(name="msapplication-square150x150logo", content="mstile-150x150.png")
+    meta(name="msapplication-wide310x150logo", content="mstile-310x150.png")
+    meta(name="msapplication-square310x310logo", content="mstile-310x310.png")
+
+    meta(name="og:title" content="#{og_title}")
+    meta(name="og:description" content="#{og_description}")
+    meta(name="og:image" content="#{og_image}")
+    meta(name="twitter:image:src" content="#{og_image}")
+    meta(name="twitter:description" content="#{twitter_description}")
+
+  body
+
+
+    header
+        .header-rbc
+            .header-rbc__logo-rbc
+                a(href="http://www.rbc.ru/" target="_blank")
+                    img(src="../images/main-page/Topline/RBC_logo.svg", alt="Логотип РБК")
+            .header-rbc__logo-beeline
+                a(href="https://beeline.ru/b2b/products/?utm_source=RBC&utm_medium=banner&utm_term=Beeline_business&utm_content=fix&utm_campaign=Beeline_VIV_B2B_Digital_SP_RBC_Mar-Oct2017" target="_blank")
+                    img(src="../images/main-page/Topline/Logo_beeline.svg", alt="Логотип Билайн")
+            .header-rbc__logo-skolkovo
+                a(href="http://skolkovo.ru/" target="_blank")
+                    img(src="../images/main-page/Topline/Skolkovo.svg", alt="Логотип Сколково")
+            .header-rbc__together
+                span совместный проект
+        .header-more
+            .container
+                span 
+                    span.header-text &laquo;Мобильное предприятие&raquo;&nbsp;&mdash; это система для эффективного управления компанией и&nbsp;бесплатные виртуальные номера.
+                a(href="https://delo.beeline.ru/?utm_source=RBC&utm_medium=banner&utm_term=Mobilnoe_predpriyatie&utm_content=fix&utm_campaign=Beeline_VIV_B2B_Digital_SP_RBC_Mar-Oct2018" target="_blank").link-more--style 
+                    span Подробнее
+
+    .beeline-wrapper
+        block content
+
+    footer(class="footer-block")
+        .footer-block__participants
+            .footer-block__participants__members
+                p Директор спецпроектов: Полина Абдуллина.
+                p Менеджер спецпроекта: Павел Серышев.
+                p Дизайнер: Алена Поботкина.
+            .footer-block__participants__copyright
+                p &copy; 1995-2017 РосБизнесКонсалтинг
+
+        .footer-block__social-share
+            p Поделиться проектом:
+
+            ul.footer-js-share
+                li
+                    a(href="https://www.facebook.com/sharer/sharer.php?u=", class="footer-block__social-share__icon footer-block__social-share__icon--fb").fbook.static-sharing.js-footer-share
+                li
+                    a(href="https://vk.com/share.php?url=", class="footer-block__social-share__icon footer-block__social-share__icon--vk").vkt.static-sharing.js-footer-share
+                li
+                    a(href="https://twitter.com/intent/tweet?text=", class="footer-block__social-share__icon footer-block__social-share__icon--tw").twt.static-sharing.js-footer-share
+
+    script.
+        var playerBusiness, playerClient, playing = false,
+            currentVideoName, myTimer, flag = false, flag2 = false;
+
+        function onYouTubeIframeAPIReady() {
+            playerBusiness = new YT.Player( 'business-video', {
+              events: { 'onStateChange': onPlayerStateChange }
+            });
+
+            playerClient = new YT.Player( 'client-video', {
+              events: { 'onStateChange': onPlayerStateChange }
+            });
+
+            //Special for videos-slider
+
+            playerClient1 = new YT.Player( 'client-video-1', {
+              events: { 'onStateChange': onPlayerStateChange }
+            });
+
+            playerClient2 = new YT.Player( 'client-video-2', {
+              events: { 'onStateChange': onPlayerStateChange }
+            });
+
+            playerClient3 = new YT.Player( 'client-video-3', {
+              events: { 'onStateChange': onPlayerStateChange }
+            });
+
+            playerClient4 = new YT.Player( 'client-video-4', {
+                events: { 'onStateChange': onPlayerStateChange }
+            });
+            
+            playerClient5 = new YT.Player( 'client-video-5', {
+                events: { 'onStateChange': onPlayerStateChange }
+            });
+            
+            playerClient6 = new YT.Player( 'client-video-6', {
+                events: { 'onStateChange': onPlayerStateChange }
+            });
+
+            playerClient7 = new YT.Player( 'client-video-7', {
+                events: { 'onStateChange': onPlayerStateChange }
+            })
+
+            playerClient8 = new YT.Player( 'client-video-8', {
+                events: { 'onStateChange': onPlayerStateChange }
+            })
+
+            playerClient9 = new YT.Player('client-video-9', {
+                events: {'onStateChange': onPlayerStateChange}
+            })
+        }
+
+        //Видео закончилось(стоп)
+        function hiddenAndSeek(currentTarget) {
+            $('#'+currentTarget).parent().parent().find('.interview-block__video__block__muted').css({
+                display: 'none'
+            })
+            $('#'+currentTarget).parent().prev('.full-block-control').removeAttr('style');
+            $('#'+currentTarget).parent().parent().find('.interview-block__video__block__info').removeClass('fading-interview');
+            $('#'+currentTarget).parent().parent().find('.interview-block__video__block__filter').removeClass('fading-interview');
+        }
+        
+        //Если запускаем(плей)
+        function progressVideo(currentTarget, video) {
+            var playerTotalTime = video.getDuration();
+            var resHalf = false;
+            var isHalf = video.getCurrentTime();
+            var videoHalf = playerTotalTime / 2;
+            
+            myTimer = setInterval(function() {
+                if (flag2) {
+                  flag2 = false;
+                  ga("send", "event", "video", "half", $('#'+currentTarget).parent().parent().find('.interview-block__video__block__info').find('h3').text());  
+                }
+                
+                var isHalf = video.getCurrentTime();
+                
+                if (isHalf > videoHalf - 2 && !flag) {
+                  flag = true;
+                  flag2 = true;              
+                }
+                
+                var playerCurrentTime = video.getCurrentTime();
+
+                var playerTimeDifference = (playerCurrentTime / playerTotalTime) * 100;//процент по времени
+
+                var element = $('#' + currentTarget).parent().prev('.full-block-control').find('.full-block-control__main-line');
+                var elementBar = $('#' + currentTarget).parent().prev('.full-block-control').find('.full-block-control__main-line__progress');
+
+                var progressBarWidth = playerTimeDifference * element.width() / 100; //процент по ширине
+
+                //- elementBar.animate({ width: progressBarWidth });
+
+                elementBar.css('width', progressBarWidth + 'px');
+            }, 1000);
+        }
+
+        //Если видео на паузе
+        function stopProgress() {
+            clearInterval(myTimer);
+        }
+
+        //Если переключаем время видео
+        function clickProgress(currentTarget, video, x) {
+
+            var element = $('#' + currentTarget).parent().prev('.full-block-control').find('.full-block-control__main-line');
+            var elementBar = $('#' + currentTarget).parent().prev('.full-block-control').find('.full-block-control__main-line__progress');
+            var elementTotalWidth = element.width();
+            var currentClick = x * 100 / elementTotalWidth; //процент ширины
+
+
+            elementBar.css('transition', 'none');
+
+            elementBar.css('width', (elementTotalWidth * currentClick / 100) + 'px');
+
+            //- elementBar.css('transition', 'width 1s');
+
+            var playerTotalTime = video.getDuration();
+            var currentDot =  playerTotalTime * currentClick / 100; //Процент видоса
+
+            video.seekTo(currentDot);
+
+        }
+
+        //Изменение состояния видео
+        function onPlayerStateChange(event) {
+            switch(event.data) {
+                case 0:
+                    ga("send", "event", "video", "finish", $('#'+event.target.a.id).parent().parent().find('.interview-block__video__block__info').find('h3').text());
+                    if (event.target.a.id === 'business-video') {
+                        hiddenAndSeek(event.target.a.id)
+
+                        playerBusiness.seekTo(0);
+                        playerBusiness.pauseVideo();
+
+                        stopProgress();
+
+                    }
+                    if (event.target.a.id === 'client-video') {
+                        hiddenAndSeek(event.target.a.id)
+
+                        playerClient.seekTo(0);
+                        playerClient.pauseVideo();
+
+                        stopProgress();
+                    }
+
+                    if (event.target.a.id === 'client-video-1') {
+                        hiddenAndSeek(event.target.a.id)
+
+                        playerClient1.seekTo(0);
+                        playerClient1.pauseVideo();
+
+                        stopProgress();
+                    }
+
+                    if (event.target.a.id === 'client-video-2') {
+                        hiddenAndSeek(event.target.a.id)
+
+                        playerClient2.seekTo(0);
+                        playerClient2.pauseVideo();
+
+                        stopProgress();
+                    }
+
+                    if (event.target.a.id === 'client-video-3') {
+                        hiddenAndSeek(event.target.a.id)
+
+                        playerClient3.seekTo(0);
+                        playerClient3.pauseVideo();
+
+                        stopProgress();
+                    }
+
+                    if (event.target.a.id === 'client-video-4') {
+                        hiddenAndSeek(event.target.a.id)
+
+                        playerClient4.seekTo(0);
+                        playerClient4.pauseVideo();
+
+                        stopProgress();
+                    }
+                    if (event.target.a.id === 'client-video-5') {
+                      hiddenAndSeek(event.target.a.id)
+
+                      playerClient5.seekTo(0);
+                      playerClient5.pauseVideo();
+
+                      stopProgress();
+                    }
+                    
+                    if (event.target.a.id === 'client-video-6') {
+                      hiddenAndSeek(event.target.a.id);
+                      
+                      playerClient6.seekTo(0);
+                      playerClient6.pauseVideo();
+                      
+                      stopProgress();
+                    }
+
+                    if (event.target.a.id === 'client-video-7') {
+                      hiddenAndSeek(event.target.a.id);
+                      
+                      playerClient7.seekTo(0);
+                      playerClient7.pauseVideo();
+                      
+                      stopProgress();
+                    }
+                    
+                    if (event.target.a.id === 'client-video-8') {
+                      hiddenAndSeek(event.target.a.id);
+                      
+                      playerClient8.seekTo(0);
+                      playerClient8.pauseVideo();
+                      
+                      stopProgress();
+                    }
+
+                    if (event.target.a.id === 'client-video-9') {
+                        hiddenAndSeek(event.target.a.id);
+
+                        playerClient9.seekTo(0);
+                        playerClient9.pauseVideo();
+
+                        stopProgress();
+                    }
+                break;
+                case 1:
+                    if (event.target.a.id === 'business-video') {
+                        progressVideo(event.target.a.id, playerBusiness);
+                        //Клик по незаполненой области
+                        $('#'+event.target.a.id).parent().prev().find('.full-block-control__main-line').on('click', function(e) {
+                            let offset = $(this).offset();
+                            let relativeX = (e.pageX - offset.left);
+
+                            clearInterval(myTimer);
+                            clickProgress(event.target.a.id, playerBusiness, relativeX);
+                        });
+                        $('#'+event.target.a.id).parent().prev().find('.full-block-control__main-line__progress').on('click', function(e) {
+                            let offset = $(this).offset();
+                            let relativeX = (e.pageX - offset.left);
+
+                            clearInterval(myTimer);
+                            clickProgress(event.target.a.id, playerBusiness, relativeX);
+                        });
+                    }
+
+                    if (event.target.a.id === 'client-video') {
+                        progressVideo(event.target.a.id, playerClient);
+                        //Клик по незаполненой области
+                        $('#'+event.target.a.id).parent().prev().find('.full-block-control__main-line').on('click', function(e) {
+                            let offset = $(this).offset();
+                            let relativeX = (e.pageX - offset.left);
+
+                            clearInterval(myTimer);
+                            clickProgress(event.target.a.id, playerClient, relativeX);
+                        });
+                        $('#'+event.target.a.id).parent().prev().find('.full-block-control__main-line__progress').on('click', function(e) {
+                            let offset = $(this).offset();
+                            let relativeX = (e.pageX - offset.left);
+
+                            clearInterval(myTimer);
+                            clickProgress(event.target.a.id, playerClient, relativeX);
+                        });
+                    }
+
+                    if (event.target.a.id === 'client-video-1') {
+                        progressVideo(event.target.a.id, playerClient1);
+                        //Клик по незаполненой области
+                        $('#'+event.target.a.id).parent().prev().find('.full-block-control__main-line').on('click', function(e) {
+                            let offset = $(this).offset();
+                            let relativeX = (e.pageX - offset.left);
+
+                            clearInterval(myTimer);
+                            clickProgress(event.target.a.id, playerClient1, relativeX);
+                        });
+                        $('#'+event.target.a.id).parent().prev().find('.full-block-control__main-line__progress').on('click', function(e) {
+                            let offset = $(this).offset();
+                            let relativeX = (e.pageX - offset.left);
+
+                            clearInterval(myTimer);
+                            clickProgress(event.target.a.id, playerClient1, relativeX);
+                        });
+                    }
+
+                    if (event.target.a.id === 'client-video-2') {
+                        progressVideo(event.target.a.id, playerClient2);
+                        //Клик по незаполненой области
+                        $('#'+event.target.a.id).parent().prev().find('.full-block-control__main-line').on('click', function(e) {
+                            let offset = $(this).offset();
+                            let relativeX = (e.pageX - offset.left);
+
+                            clearInterval(myTimer);
+                            clickProgress(event.target.a.id, playerClient2, relativeX);
+                        });
+                        $('#'+event.target.a.id).parent().prev().find('.full-block-control__main-line__progress').on('click', function(e) {
+                            let offset = $(this).offset();
+                            let relativeX = (e.pageX - offset.left);
+                            clearInterval(myTimer);
+                            clickProgress(event.target.a.id, playerClient2, relativeX);
+                        });
+                    }
+
+                    if (event.target.a.id === 'client-video-3') {
+                        progressVideo(event.target.a.id, playerClient3);
+                        //Клик по незаполненой области
+                        $('#'+event.target.a.id).parent().prev().find('.full-block-control__main-line').on('click', function(e) {
+                            let offset = $(this).offset();
+                            let relativeX = (e.pageX - offset.left);
+
+                            clearInterval(myTimer);
+                            clickProgress(event.target.a.id, playerClient3, relativeX);
+                        });
+                        $('#'+event.target.a.id).parent().prev().find('.full-block-control__main-line__progress').on('click', function(e) {
+                            let offset = $(this).offset();
+                            let relativeX = (e.pageX - offset.left);
+
+                            clearInterval(myTimer);
+                            clickProgress(event.target.a.id, playerClient3, relativeX);
+                        });
+                    }
+                    
+                    if (event.target.a.id === 'client-video-4') {
+                        progressVideo(event.target.a.id, playerClient4);
+                        //Клик по незаполненой области
+                        $('#'+event.target.a.id).parent().prev().find('.full-block-control__main-line').on('click', function(e) {
+                            let offset = $(this).offset();
+                            let relativeX = (e.pageX - offset.left);
+
+                            clearInterval(myTimer);
+                            clickProgress(event.target.a.id, playerClient4, relativeX);
+                        });
+                        $('#'+event.target.a.id).parent().prev().find('.full-block-control__main-line__progress').on('click', function(e) {
+                            let offset = $(this).offset();
+                            let relativeX = (e.pageX - offset.left);
+
+                            clearInterval(myTimer);
+                            clickProgress(event.target.a.id, playerClient4, relativeX);
+                        });
+                    }
+
+                    if (event.target.a.id === 'client-video-5') {
+                        progressVideo(event.target.a.id, playerClient5);
+                        //Клик по незаполненой области
+                        $('#'+event.target.a.id).parent().prev().find('.full-block-control__main-line').on('click', function(e) {
+                            let offset = $(this).offset();
+                            let relativeX = (e.pageX - offset.left);
+
+                            clearInterval(myTimer);
+                            clickProgress(event.target.a.id, playerClient5, relativeX);
+                        });
+                        $('#'+event.target.a.id).parent().prev().find('.full-block-control__main-line__progress').on('click', function(e) {
+                            let offset = $(this).offset();
+                            let relativeX = (e.pageX - offset.left);
+
+                            clearInterval(myTimer);
+                            clickProgress(event.target.a.id, playerClient5, relativeX);
+                        });
+                    }
+                    
+                    if (event.target.a.id === 'client-video-6') {
+                      progressVideo(event.target.a.id, playerClient6);
+                      
+                      $('#'+event.target.a.id).parent().prev().find('.full-block-control__main-line').on('click', function(e) {
+                        let offset = $(this).offset();
+                        let relativeX = (e.pageX - offset.left);
+
+                        clearInterval(myTimer);            
+                        clickProgress(event.target.a.id, playerClient6, relativeX);
+                      });  
+                      $('#'+event.target.a.id).parent().prev().find('.full-block-control__main-line__progress').on('click', function(e) {
+                        let offset = $(this).offset();
+                        let relativeX = (e.pageX - offset.left);
+                        
+                        clearInterval(myTimer);
+                        clickProgress(event.target.a.id, playerCLient6, relativeX);
+                      })
+                    }
+
+                    if (event.target.a.id === 'client-video-7') {
+                      progressVideo(event.target.a.id, playerClient7);
+                      
+                      $('#'+event.target.a.id).parent().prev().find('.full-block-control__main-line').on('click', function(e) {
+                        let offset = $(this).offset();
+                        let relativeX = (e.pageX - offset.left);
+                        
+                        clearInterval(myTimer);
+                        clickProgress(event.target.a.id, playerClient7, relativeX);
+                      });  
+                      $('#'+event.target.a.id).parent().prev().find('.full-block-control__main-line__progress').on('click', function(e) {
+                        let offset = $(this).offset();
+                        let relativeX = (e.pageX - offset.left);
+                        
+                        clearInterval(myTimer);
+                        clickProgress(event.target.a.id, playerClient7, relativeX);
+                      })
+                    }
+                    
+                    if (event.target.a.id === 'client-video-8') {
+                      progressVideo(event.target.a.id, playerClient8);
+                      
+                      $('#'+event.target.a.id).parent().prev().find('.full-block-control__main-line').on('click', function(e) {
+                        let offset = $(this).offset();
+                        let relativeX = (e.pageX - offset.left);
+                        
+                        clearInterval(myTimer);
+                        clickProgress(event.target.a.id, playerClient8, relativeX);
+                      });  
+                      $('#'+event.target.a.id).parent().prev().find('.full-block-control__main-line__progress').on('click', function(e) {
+                        let offset = $(this).offset();
+                        let relativeX = (e.pageX - offset.left);
+                        
+                        clearInterval(myTimer);
+                        clickProgress(event.target.a.id, playerClient8, relativeX);
+                      })
+                    }
+
+                    if (event.target.a.id === 'client-video-9') {
+                        progressVideo(event.target.a.id, playerClient9);
+
+                        $('#' + event.target.a.id).parent().prev().find('.full-block-control__main-line').on('click', function (e) {
+                            let offset = $(this).offset();
+                            let relativeX = (e.pageX - offset.left);
+
+                          clearInterval(myTimer);
+                          clickProgress(event.target.a.id, playerClient9, relativeX);
+                        });
+                        $('#' + event.target.a.id).parent().prev().find('.full-block-control__main-line__progress').on('click', function (e) {
+                            let offset = $(this).offset();
+                            let relativeX = (e.pageX - offset.left);
+
+                          clearInterval(myTimer);
+                          clickProgress(event.target.a.id, playerClient9, relativeX);
+                        })
+                    }
+                    break;
+
+              default:
+                break;
+            }
+        }
+
+    script(type="text/javascript" src="https://www.youtube.com/iframe_api")
+    script(type="text/javascript" src="scripts/vendor.js")
+    script(type="text/javascript" src="scripts/app.js")
+    script(type="text/javascript").
+        <!-- Yandex.Metrika counter -->
+            (function (d, w, c) {
+            (w[c] = w[c] || []).push(function () {
+                try {
+                    w.yaCounter44415967 = new Ya.Metrika({
+                        id: 44415967,
+                        clickmap: true,
+                        trackLinks: true,
+                        accurateTrackBounce: true
+                    });
+                } catch (e) {
+                }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+        })
+        (document, window, "yandex_metrika_callbacks");
+    script(type="text/javascript").
+      var axel = Math.random() + "";
+      var a = axel * 10000000000000;
+      document.write('<img src="https://ad.doubleclick.net/ddm/activity/src=5291139;type=doubl017;cat=doubl0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=1?" width="1" height="1" alt="" style="visibility: hidden; opacity: 0; position: absolute;"/>');
+    noscript
+        img(src="https://ad.doubleclick.net/ddm/activity/src=5291139;type=doubl017;cat=doubl0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=1?" width="1" height="1" alt="" style="visibility: hidden; opacity: 0; position: absolute; left: -9999px")
+    img(src="http://www.tns-counter.ru/V13a****rbc_ru/ru/UTF-8/tmsec=rbc_total/" style="position:absolute; left:-9999px;" width="0" height="0" alt="")
+    noscript
+        div
+            img(src="https://mc.yandex.ru/watch/44415967" style="position:absolute; left:-9999px;" alt="")
+        <!-- /Yandex.Metrika counter -->
+    script.
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-90428516-19', 'auto');
+        ga('create', 'UA-90428516-32', 'auto', 'rbcspec');
+        
+        ga('send', 'pageview');
+        ga('rbcspec.send', 'pageview');
+
+        window.onload = function () {
+            setTimeout(function () {
+                ga("rbcspec.send", "event", "page", "spent_on_page_15_sec");  
+                ga("send", "event", "page", "spent_on_page_15_sec");
+            }, 15000);
+        };
+        $('.actual-article__item').on('click', function(e) {
+            ga("send", "event", "main page", "article click", $(this).find('h2').text());
+        });
+
+        $('.js-all-article .button_base').on('click', function(e) {
+            ga("send", "event", "main page", "article click", "all");
+        });
+
+        $('.cases .cases__item').on('click', function(e) {
+            ga("send", "event", "main page", "case click", $(this).find('.cases__item__text span').text());
+        });
+
+        $('.all-cases').on('click', function(e) {
+            ga("send", "event", "main page", "case click", "all");
+        });
+        
+        //ga on 23.06.2017
+        
+        $('.side-menu-holder .menu-item').on('click', function(e) {
+          ga("send", "event", "menu", "item click", $(this).find('span').text());
+        })
+
+        //CHECKED!
+
+        $('.videos-slider #start-client-video-1, .videos-slider #start-client-video-2, .videos-slider #start-client-video-3').on('click', function(e) {
+            ga("send", "event", "see also bottom", "interview click", $(this).parent().find('h3').text());
+        })
+
+        $('.videos-slider #start-business-video').on('click', function(e) {
+            ga("send", "event", "see also bottom", "interview click", $(this).parent().find('h3').text());
+        })
+
+        $('.speakers__item').on('click', function(e) {
+            ga("send", "event", "main page", "interview click", $(this).find('h3').text());
+        });
+
+        $('.all-interview .button_base').on('click', function(e) {
+            ga("send", "event", "main page", "interview click", "all");
+        });
+        //End of first trial
+        $('.lifehack__item').on('click', function (e) {
+            ga("send", "event", "main page", "lifehack click", $(this).find('h3').text());
+        });
+
+        $('.js-get-lifehack').on('click', function(e) {
+            ga("send", "event", "main page", "lifehack click", "show new");
+        });
+
+        $('.go-test').on('click', function (e) {
+            ga("send", "event", "main page", "test click", $(this).parents('.flip-container').find('.test-card__item__title p').text());
+        });
+
+        $('.test-block__other-test .test-block__other-test__next').on('click', function(e) {
+            ga("set", "page", "/test_1" + $(this).find('a').attr('href'));
+            ga("send", "pageview", "/test_1" + $(this).find('a').attr('href'));
+            ga("send", "event", "nav footer test", "header nav links", 'up');
+        });
+
+        $('.test-block__other-test .test-block__other-test__prev').on('click', function(e) {
+            ga("set", "page", "/test_1" + $(this).find('a').attr('href'));
+            ga("send", "pageview", "/test_1" + $(this).find('a').attr('href'));
+            ga("send", "event", "nav footer test", "header nav links", 'back');
+        });
+
+        $('.save-slider__item').on('click', function (e) {
+            ga("send", "event", "client link beeline", "banner on main page bottom", $(this).find('span').text());
+        });
+
+        $('.call-button').on('click', function(e) {
+            ga("send", "event", "form", "open", $(this).parent().find('.slick-active').find('span').text());
+        });
+
+        $('.header-more a').on('click', function(e) {
+            ga("send", "event", "client link beeline", "orange line");
+        });
+
+        $('.advice-content__block p a, .advice-content__block li a').on('click', function(e) {
+            ga("send", "event", "link in text", "link click", $(this).attr('href'));
+        })
+
+        $('.article-block p a, .advice-content__block__documents ul li a').on('click', function(e) {
+            ga("send", "event", "link in text", "link click", $(this).attr('href'));
+        });
+
+        $('.advice-content__block__step__inner a').on('click', function(e) {
+            ga("send", "event", "client link beeline", "tizer click", $(this).parent().find('h3').text());
+        });
+
+        //- $('.speakers--alone a').on('click', function(e) {
+        //-     ga("send", "event", "tizer on page", "interview tizer", $(this).parents('.speakers--alone').find('h3').text());
+        //- });
+
+        $('div.link .prev-link').on('click', function (e) {
+            ga("send", "event", "nav header page", "header nav links", 'back');
+        });
+
+        $('div.link .next-link').on('click', function (e) {
+            ga("send", "event", "nav header page", "header nav links", 'up');
+        });
+
+        $('.next-article-preview').on('click', function (e) {
+            ga("send", "event", "see also bottom", "banner click", $(this).find('h1').text());
+        });
+
+        $('.speakers--alone').on('click', function(e) {
+            ga("send", "event", "tizer on page", "interview tizer", $(this).find('h3').text());
+        })
+
+        $('.article-block-slider__item').on('click', function (e) {
+            ga("send", "event", "see also bottom", "item on slider click", $(this).find('span').text());
+        });
+
+        $('.advices-block-slider .advices-block-slider__item').on('click', function(e) {
+            ga("send", "event", "see also bottom", "item on slider click", $(this).find('p').text());
+        });
+
+        $('.interview-block__speakers__item').on('click', function (e) {
+            ga("send", "event", "see also bottom", "item on slider click", $(this).find('h3').text());
+        });
+
+        $('.js-share a.fbook, .share-icon a.fbook').on('click', function (e) {
+            if (/article/.test(location.pathname) || /lifehack/.test(location.pathname) || /advice/.test(location.pathname)) {
+                var typeOfShare, socialName = 'facebook', nameOfShare = $(this).parents('.beeline-wrapper').find('h1')[0].innerHTML;
+
+                if (/article/.test(location.pathname)) {
+                    typeOfShare = 'article';
+                }
+
+                if (/lifehack/.test(location.pathname)) {
+                    typeOfShare = 'lifehack';
+                }
+
+                if (/advice/.test(location.pathname)) {
+                    typeOfShare = 'advice';
+                }
+                ga("send", "event", "share " + typeOfShare, typeOfShare + " share on " + socialName, nameOfShare);
+
+            } else if (/interview/.test(location.pathname)) {
+                ga("send", "event", "share interview", "interview share on facebook", $(this).parents('.interview-block__main-tab--active').find('h3').text());
+            } else if (/test-1/.test(location.pathname)) {
+                ga("send", "event", "share test", "test share on facebook", $(this).parents('.test-block--wrapper').find('.test-block__title').text());
+            }
+        });
+
+        $('.js-share a.vkt, .share-icon a.vkt').on('click', function (e) {
+            if (/article/.test(location.pathname) || /lifehack/.test(location.pathname) || /advice/.test(location.pathname)) {
+                var typeOfShare, socialName = 'vk', nameOfShare = $(this).parents('.beeline-wrapper').find('h1')[0].innerHTML;
+
+                if (/article/.test(location.pathname)) {
+                    typeOfShare = 'article';
+                }
+
+                if (/lifehack/.test(location.pathname)) {
+                    typeOfShare = 'lifehack';
+                }
+
+                if (/advice/.test(location.pathname)) {
+                    typeOfShare = 'advice';
+                }
+                ga("send", "event", "share " + typeOfShare, typeOfShare + " share on " + socialName, nameOfShare);
+
+            } else if (/interview/.test(location.pathname)) {
+                ga("send", "event", "share interview", "interview share on vk", $(this).parents('.interview-block__main-tab--active').find('h3').text());
+            } else if (/test-1/.test(location.pathname)) {
+                ga("send", "event", "share test", "test share on vk", $(this).parents('.test-block--wrapper').find('.test-block__title').text());
+            }
+        });
+
+
+        $('.js-share a.twt, .share-icon a.twt').on('click', function (e) {
+            if (/article/.test(location.pathname) || /lifehack/.test(location.pathname) || /advice/.test(location.pathname)) {
+                var typeOfShare, socialName = 'twitter', nameOfShare = $(this).parents('.beeline-wrapper').find('h1')[0].innerHTML;
+
+                if (/article/.test(location.pathname)) {
+                    typeOfShare = 'article';
+                }
+
+                if (/lifehack/.test(location.pathname)) {
+                    typeOfShare = 'lifehack';
+                }
+
+                if (/advice/.test(location.pathname)) {
+                    typeOfShare = 'advice';
+                }
+                ga("send", "event", "share " + typeOfShare, typeOfShare + " share on " + socialName, nameOfShare);
+
+            } else if (/interview/.test(location.pathname)) {
+                ga("send", "event", "share interview", "interview share on twitter", $(this).parents('.interview-block__main-tab--active').find('h3').text());
+            } else if (/test-1/.test(location.pathname)) {
+                ga("send", "event", "share test", "test share on twitter", $(this).parents('.test-block--wrapper').find('.test-block__title').text());
+            }
+
+        });
+
+        $('.footer-js-share a.fbook').on('click', function (e) {
+            ga("send", "event", "share project", "project share on facebook");
+        })
+
+        $('.footer-js-share a.twt').on('click', function (e) {
+            ga("send", "event", "share project", "project share on twitter");
+        })
+
+        $('.footer-js-share a.vkt').on('click', function (e) {
+            ga("send", "event", "share project", "project share on vk");
+        })
+
+        $('#start-business-video').on('click', function(e) {
+            ga("send", "event", "interview", "interview click", $(this).parent().find('h3').text());
+        })
+
+        $('#start-client-video, #start-client-video-1, #start-client-video-2, #start-client-video-3').on('click', function(e) {
+            ga("send", "event", "interview", "interview click", $(this).parent().find('h3').text());
+        })
+
+        $('#show-interview-client').on('click', function(e) {
+            ga("send", "event", "interview", "text version click", $(this).parent().parent().parent().find('h3').text());
+        });
+
+        $('#show-interview-business').on('click', function(e) {
+            ga("send", "event", "interview", "text version click", $(this).parent().parent().parent().find('h3').text());
+        });
+
+        $('.header-rbc__logo-skolkovo').on('click', function(e) {
+              ga("send", "event", "client link skolkovo", "header logo click");
+              //ga("send", "event", "client logo", "logo on main page", "skolkovo");
+          });
+
+        $('.header-rbc__logo-beeline').on('click', function (e) {
+              ga("send", "event", "client link beeline", "header logo click");
+              //ga("send", "event", "client logo", "logo on main page", "beeline");
+        });
+
+        //for pages contest
+        //клик по "участвовать"
+        $('.contest-case-jumbotron').find('.link-contest').on('click', function (e) {
+            ga("send", "event", "contest", "take part", $(this).parent().find('h1').text());
+        });
+        $('.contest-content-text').find('.link-contest').on('click', function (e) {
+            ga("send", "event", "contest", "take part", $(this).parent().find('h1').text());
+        });
+        $('.contest-content-text-2').find('.link-contest').on('click', function (e) {
+            ga("send", "event", "contest", "take part", $(this).parent().find('h2').text());
+        });
+        $('.contest-content-text-3').find('.link-contest').on('click', function (e) {
+            ga("send", "event", "contest", "take part", $(this).parent().parent().find('h2').text());
+        });
+        $('.link-participants').on('click', function (e) {
+            ga("send", "event", "contest", "take part", $(this).parent().parent().find('h2').text());
+        });
+        //- $('.link-contest').on('click', function (e) {
+        //-     ga("send", "event", "contest", "take part", $(this).parent().find('h2').text());
+        //- });
+        //- $('.link-contest').on('click', function (e) {
+        //-     ga("send", "event", "contest", "take part", $(this).parent().parent().find('h2').text());
+        //- });
+        //- $('.link-participants').on('click', function (e) {
+        //-     ga("send", "event", "contest", "take part", $(this).parent().parent().find('h2').text());
+        //- });
+        //клик отправки формы
+        $(document).delegate('#submit-form-link', 'click', function() {
+            console.log($(this).attr('data-title'));
+
+            ga("send", "event", "contest", "click send", $(this).attr('data-title'));
+        });
+        //успешная отправка формы
+        if($('.contest-popup--thanks .modal-popup').hasClass('modal-popup--show')) {
+            ga("send", "event", "contest", "success send");
+        }
+        //клик по табам
+        $('.contest-block__tab__interview').on('click', function (e) {
+           ga("send", "event", "contest", "tabs",  $(this).text());
+        });
+
+        $('.participants-block__tab__interview').on('click', function (e) {
+           ga("send", "event", "contest", "tabs",  $(this).text());
+        });
+        //клик по участникам
+        $(document).delegate('.work-item--wrapper', 'click', function() {
+          ga("send", "event", "contest", "work click", $(this).find('.work-item__title--name').text());
+        });
+        //открытие поп апа участника
+        $(document).delegate('.work-item--wrapper', 'click', function() { 
+            ga("send", "event", "contest", "work open", $('.modal-participant-popup__popup--show').find('.slick-current').find('.top-line__name-participant').find('h1').text());
+        });
+        //переключение\переход по слайдам участников
+        $(document).delegate('.interview-block__speakers__button', 'click', function() { 
+            ga("send", "event", "contest", "work open", $('.modal-participant-popup__popup--show').find('.slick-current').find('.top-line__name-participant').find('h1').text());
+        });
+        //клик по кнопке "смотреть все"(1 - контест, 2 - участники)
+        $('.contest-content-text-3').find('.link-constest-more').on('click', function (e) {
+           ga("send", "event", "contest", "work click", "show all");
+        }); 
+
+        $('.link-see-all').on('click', function (e) {
+           ga("send", "event", "contest", "work click", "show all");
+        });
+        //клик по кнопке лайк в поп апе участника
+        $(document).delegate('.link-like', 'click', function() { 
+            ga("send", "event", "contest", "work like", $('.modal-participant-popup__popup--show').find('.slick-current').find('.top-line__name-participant').find('h1').text());
+        });
+        //клик по кнопке шера в поп апе участника
+        $(document).delegate('.sharing-popup .share-icon__item', 'click', function() {
+            ga("send", "event", "share contest", 'contest share on ' + $(this).attr('data-shar'));
+        });
+        //клик по кнопке шера в поп апе участника(с подбором фио)
+        $(document).delegate('.sharing-popup .share-icon__item', 'click', function() {
+            ga("send", "event", "share contest work", 'contest work share on ' + $(this).attr('data-shar') + ' ' + $('.modal-participant-popup__popup--show').find('.slick-current').find('.top-line__name-participant').find('h1').text());
+        });
+        //клик по блокам участников
+        $(document).delegate('.contest-popular__work-item', 'click', function() {
+            ga("send", "event", "contest", "work click", $(this).find('.work-item__title--name').text());
+        });
+        $(document).delegate('.participants-popular__work-item', 'click', function() {
+            ga("send", "event", "contest", "work click", $(this).find('.work-item__title--name').text());
+        });
+        //шеринг конкурса
+        $('.sharing-block-contest--footer').find('.share-icon__item').on('click', function (e) {
+           ga("send", "event", "share contest", 'contest share o ' + $(this).attr('data-shar'));
+        });
+
+block scripts

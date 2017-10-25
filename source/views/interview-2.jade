@@ -1,0 +1,403 @@
+extends templates/layout
+block vars
+
+block content
+    .interview-block
+        .interview-block--wrapper
+            .interview-block__back
+                .interview-block__back--arrow
+                a(href="index.html") Вернуться на главную
+            .interview-block__main-tab(data-tab="1")
+                .interview-block__video
+                    .interview-block__video__block
+                        .interview-block__video__block__muted.video_muted.block-control
+                            .block-control__pause
+                            .block-control__play
+                        .full-block-control
+                            .full-block-control__play
+                            .full-block-control__time
+                            .full-block-control__main-line
+                                .full-block-control__main-line__progress
+                            .full-block-control__sound
+                        .interview-block__video__block__interview
+                            iframe(id="business-video" width="780" height="440" src="https://www.youtube.com/embed/3yGfnP8eaRE?list=PLv42Kp4x57LC_mrA0OAEqpo5r1LEMAL66&amp;controls=0&amp;showinfo=0&enablejsapi=1&rel=0" frameborder="0" allowfullscreen)
+                        .interview-block__video__block__filter(style="background-image: url(images/interview-speakers/business/Business_2.jpg)")
+                        .interview-block__video__block__info
+                            h3 Константин Церазов
+                            p.regalia Член правления, руководитель инвестиционного блока банка &laquo;ФК&nbsp;Открытие&raquo;,член совета директоров &laquo;Открытия Капитал&raquo;
+                            p.hide-in-mobile Где найти капитал на&nbsp;стартап, как &laquo;зажечь&raquo; инвестора, почему богатый профессиональный опыт иногда играет против нас, а&nbsp;также зачем креативить и&nbsp;генерить идеи.
+                            .interview-block__video__block__info__playbutton(id="start-business-video")
+                    .interview-block__video__sharing.clearfix
+                        ul.js-share
+                            li
+                                a(href="https://www.facebook.com/sharer/sharer.php?u=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--fb" data-interview="cherazov").fbook.js-double-share
+                            li
+                                a(href="https://vk.com/share.php?url=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--vk" data-interview="cherazov").vkt.js-double-share
+                            li
+                                a(href="https://twitter.com/intent/tweet?text=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--tw" data-interview="cherazov").twt.js-double-share
+                        .interview-block__video__decypher
+                            span.interview-block__video__decypher--text(id="show-interview-client") Расшифровка интервью
+                            span.interview-block__video__decypher--img(id="show-interview-client")
+                .interview-block__interview
+                    span.interview-block__interview--decypher Расшифровка интервью
+
+                    .interview-block__interview--little
+                        p Скажите, пожалуйста, как можно найти потенциального инвестора начинающему бизнесмену, стартаперу? Какие сейчас методы работают?
+                    p Чтобы ответить на&nbsp;вопрос, как найти потенциального инвестора, надо понимать, в&nbsp;какой проект, на&nbsp;какой стадии вы&nbsp;этого инвестора ищете, индивидуальная или групповая требуется инвестиция, небольшой объем денег или масштабные вливания. Конечно, есть некий набор универсальных правил, например, использовать всю свою сеть контактов, людей, которых вы&nbsp;знаете так или иначе, посещать профильные мероприятия, например, отраслевые конференции или тематические семинары, которые проводят разные университеты. Можно делать рассылки или посты в&nbsp;социальных сетях Facebook, Vkontakte, это тоже работает. Все в&nbsp;конечном итоге зависит от&nbsp;того, что вы&nbsp;хотите получить, какой эффект, а&nbsp;также от&nbsp;той цели, которую вы&nbsp;для себя ставите.
+                    .interview-block__interview--little.hidden-block
+                        p А&nbsp;какие общеизвестные способы, на&nbsp;ваш взгляд, не&nbsp;очень работают?
+                    p.hidden-block Если вы&nbsp;начинающий бизнесмен, то, наверное, поиск инвесторов в&nbsp;фондах, то&nbsp;есть среди тех людей, кто профессионально занимается инвестированием, будет довольно сложным. На&nbsp;начальном этапе у&nbsp;вас практически ничего нет&nbsp;&mdash; скорее всего, только <nobr>бизнес-план</nobr>. Безусловно, с&nbsp;точки зрения профессиональной коммуникации и&nbsp;презентации проекта общение с&nbsp;венчурами будет для вас полезным опытом&nbsp;&mdash; напротив вас будут сидеть профи, которые смогут вас покритиковать, дать объективную оценку вашей <nobr>бизнес-идеи</nobr>. Но&nbsp;на&nbsp;выходе, вероятнее всего, денег вы&nbsp;не&nbsp;получите.
+                    .interview_image.hidden-block
+                        img(src="../images/interview-speakers/2-1_Cerazov.jpg")
+                    .interview-block__interview--little.hidden-block
+                        p А&nbsp;если есть только <nobr>бизнес-идея</nobr>, желание, горят глаза, но&nbsp;даже <nobr>бизнес-плана</nobr> нет, потому что нет опыта его составления. Что делать такому человеку?
+                    p.hidden-block Если у&nbsp;вас есть только идея, но&nbsp;нет <nobr>бизнес-плана</nobr>, продать это, получить реальные деньги достаточно сложно. В&nbsp;таком случае можно, наверное, пройтись по&nbsp;родственникам, по&nbsp;знакомым, попросить их&nbsp;профинансировать проект. Но&nbsp;<nobr>бизнес-план</nobr>, хотя&nbsp;бы написанный в&nbsp;произвольной форме, нужен даже не&nbsp;для поиска инвестора, он&nbsp;нужен вам. Идея&nbsp;&mdash; это, конечно, здорово, но, если вы&nbsp;не&nbsp;распишете на&nbsp;бумаге планируемые финансовые потоки, то&nbsp;не&nbsp;поймете рентабельность проекта. Проще говоря, стоит&nbsp;ли вообще им&nbsp;заниматься. По&nbsp;большому счету вам следует в&nbsp;голове разложить проект на&nbsp;составляющие, доказать самому себе в&nbsp;первую очередь, что этот проект интересен и&nbsp;перспективен. Причем интересен не&nbsp;только как идея, как <nobr>что-то</nobr> светлое и&nbsp;прекрасное, а&nbsp;именно как финансовая модель, чтобы в&nbsp;итоге вы&nbsp;смогли монетизировать идею и&nbsp;заработать денег.&nbsp;Цель любого <nobr>бизнес-проекта</nobr>&nbsp;&mdash; монетизация, а&nbsp;не&nbsp;просто воплощение идей.
+                    .interview-block__interview--little.hidden-block
+                        p Хорошо. Есть потенциальный инвестор, который готов потратить деньги на&nbsp;ваш бизнес. Как получить его одобрение? Есть&nbsp;ли у&nbsp;вас свое <nobr>ноу-хау</nobr>?
+                    p.hidden-block Если уже есть потенциальный инвестор, который готов дать денег, вам нужно убедить его вашей идеей. Вы&nbsp;его должны зажечь, чтобы он&nbsp;сам поверил в&nbsp;эту идею и&nbsp;эмоционально включился в&nbsp;проект. Важно, чтобы у&nbsp;вас была связь, не&nbsp;только финансовая, а, скорее, эмоциональная, так сказать &laquo;химия&raquo;. Понятно, что инвестиции&nbsp;&mdash; это холодный финансовый расчет, но&nbsp;мы&nbsp;говорим о&nbsp;совсем ранних начинаниях, неопытных предпринимателях, так вот, если речь именно о&nbsp;такой истории, то&nbsp;для вас также важно, чтобы инвестор участвовал в&nbsp;деле не&nbsp;только деньгами, но&nbsp;и&nbsp;давал вам советы, возможно, привлекал <nobr>инвесторов-партнеров</nobr>, помогал идею развивать.
+                    p.hidden-block Мы&nbsp;говорим об&nbsp;инвесторах как о&nbsp;людях, которые приносят вам как начинающему предпринимателю value&nbsp;&mdash; стоимость, и&nbsp;не&nbsp;только и&nbsp;не&nbsp;столько денежную.
+                    .interview-block__interview--little.hidden-block
+                        p Есть&nbsp;ли <nobr>какой-то</nobr> свод правил, которые нужно помнить, идя на&nbsp;встречу с&nbsp;банкиром?
+                    p.hidden-block Надо сразу подчеркнуть отличие между банкиром и&nbsp;инвестором, потому что банкир&nbsp;&mdash; четко: это прагматичный человек. В&nbsp;кредитовании, как известно, действуют три основных правила: срочность, возвратность и&nbsp;платность, то&nbsp;есть ваш проект должен быть совершенно понятный, рентабельный, должен быть четко изложен на&nbsp;бумаге. Банкир хочет иметь возможность его прочитать, просчитать и&nbsp;иметь четкое понимание, когда и&nbsp;в&nbsp;каком объеме ему вернутся деньги. И&nbsp;здесь эмоциональная составляющая как раз играет малую роль.
+                    p.hidden-block Если&nbsp;же мы&nbsp;говорим об&nbsp;инвесторе, то&nbsp;его как раз нужно &laquo;подцепить&raquo; эмоционально, погрузить в&nbsp;вашу идею, чтобы он&nbsp;в&nbsp;нее поверил. Ему нужно понимание того, как вы&nbsp;будете этим проектом заниматься. Возможно, ваша команда, этапы развития бизнеса, которые инвестор пройдет мысленно с&nbsp;вами, покритикует, позадает вопросы, поразбирает варианты, чтобы на&nbsp;выходе было ощущение, что вы&nbsp;не&nbsp;просто пытались человеку <nobr>что-то</nobr> продать не&nbsp;очень нужное, а&nbsp;на&nbsp;самом деле поделились <nobr>чем-то</nobr> уникальным, даже сокровенным.
+                    .interview-block__interview--big.hidden-block
+                        p &laquo;По&nbsp;мере продвижения по&nbsp;карьерной лестнице или в&nbsp;рамках <nobr>какой-либо</nobr> отрасли, вы&nbsp;становитесь специалистом в&nbsp;своем направлении. C&nbsp;течением времени вы&nbsp;сложнее смотрите на&nbsp;другие сферы, на&nbsp;спорные для вас темы.&raquo;
+                    .interview-block__interview--little.hidden-block
+                        p Смотрит&nbsp;ли инвестор на&nbsp;бэкграунд обратившегося бизнесмена?
+                    p.hidden-block Если у&nbsp;вас есть предыдущий опыт ведения бизнеса, инвестор, конечно, будет принимать его во&nbsp;внимание. Успешный он&nbsp;или нет, по&nbsp;сути не&nbsp;сильно имеет значение, потому что и&nbsp;неудачам можно найти объяснение, например, рыночная конъюнктура не&nbsp;так сложилась. Инвестор будет смотреть на&nbsp;уровень ваших начинаний. И&nbsp;второе&nbsp;&mdash; серьезность, продуманность вашего конкретного проекта. Чем глубже и&nbsp;подробнее вы&nbsp;можете объяснить детали (речь не&nbsp;просто о&nbsp;серьезном выражении лица), тем лучше.
+                    .interview-block__interview--little.hidden-block
+                        p То&nbsp;есть лучше не&nbsp;скрывать, если были <nobr>какие-то</nobr> провалы?
+                    p.hidden-block Конечно, а&nbsp;зачем?.. Вы&nbsp;пришли таким, какой вы&nbsp;есть, врать в&nbsp;принципе можно, но&nbsp;это не&nbsp;имеет никакого смысла, потому что вся информация все равно вскрывается, и&nbsp;если инвестор дотошный, он&nbsp;точно проверит ваш бэкграунд в&nbsp;тех&nbsp;же самых социальных сетях, наведет о&nbsp;вас справки. И&nbsp;ложь точно вам не&nbsp;добавит позитива.
+                    .interview-block__interview--little.hidden-block
+                        p Продолжая тему про бэкграунд, у&nbsp;вас большой корпоративный опыт, как вы&nbsp;считаете, чтобы начать свой бизнес, нужен&nbsp;ли корпоративный опыт, работа на&nbsp;топовых позициях?
+                    p.hidden-block Наличие богатого корпоративного опыта в&nbsp;некоторым смысле является довольно спорным моментом, если говорить о&nbsp;начале собственного дела. Конечно, если вы&nbsp;обладаете таким опытом, вы&nbsp;будете смотреть на&nbsp;все более осмысленно, но&nbsp;в&nbsp;то&nbsp;же время вы&nbsp;будете скованы своим предыдущим опытом. По&nbsp;мере продвижения по&nbsp;карьерной лестнице или в&nbsp;рамках <nobr>какой-либо</nobr> отрасли, вы&nbsp;становитесь специалистом в&nbsp;своем направлении. С&nbsp;возрастом, с&nbsp;течением времени вы&nbsp;сложнее смотрите на&nbsp;другие сферы, на&nbsp;спорные для вас темы. Применительно ко&nbsp;мне, например, если начинать дело в&nbsp;финансовой отрасли, то&nbsp;мой опыт&nbsp;&mdash; это плюс, а&nbsp;если&nbsp;бы я&nbsp;хотел погрузиться в&nbsp;медицинскую сферу&nbsp;&mdash; скорее минус.
+                    p.hidden-block На&nbsp;всех аспектах нового бизнеса вы&nbsp;будете применять свой предыдущий опыт. С&nbsp;одной стороны, опыт поможет быстрее открыть, понять <nobr>что-то</nobr>, с&nbsp;другой&nbsp;&mdash; ваш разум может быть затуманен этим опытом. Отсутствие опыта, в&nbsp;свою очередь, помогает гораздо проще относиться к&nbsp;экспериментам, принимать больше рисков, быть более дерзким.
+                    p.hidden-block Таким образом, нет правильного ответа на&nbsp;вопрос, помогает опыт или нет. Зависит и&nbsp;от&nbsp;конкретного человека (личности), и&nbsp;от&nbsp;идеи, и&nbsp;от&nbsp;сферы.
+                    .interview-block__interview--little.hidden-block
+                        p Кстати про отрасли, стартапы в&nbsp;каких сферах сегодня наиболее перспективны и&nbsp;востребованы?
+                    p.hidden-block Самые перспективные проекты из&nbsp;тех сфер, где можно легко и&nbsp;быстро их&nbsp;масштабировать. На&nbsp;примере <nobr>онлайн-сервисов</nobr> такси Gett, Uber&nbsp;&mdash; это должны быть <nobr>какие-то</nobr> простые идеи, которые дают возможность огромного мультипликатора.
+                    .interview_image.hidden-block
+                        img(src="../images/interview-speakers/2-2_Cerazov.jpg")
+                    .interview-block__interview--little.hidden-block
+                        p Что это значит?
+                    p.hidden-block  Чтобы вашу клиентскую базу или услугу, которую вы&nbsp;предлагаете, можно было <nobr>сегодня-завтра</nobr> переложить на&nbsp;любую другую сферу, любую другую страну, на&nbsp;огромное количество клиентов. Тиражируемость и&nbsp;скорость развертывания бизнеса&nbsp;&mdash; наверное, самые важные критерии, о&nbsp;которых можно подумать начинающему бизнесмену.
+                    p.hidden-block  Даже создав уникальный продукт, у&nbsp;вас будет хороший бизнес, но, если нет возможности его тиражировать, он&nbsp;будет очень маленьким и&nbsp;ограниченным по&nbsp;росту дохода.
+                    .interview-block__interview--little.hidden-block
+                        p Судя по&nbsp;вашему примеру, перспектива&nbsp;&mdash; в&nbsp;<nobr>IT-сфере</nobr>?
+                    p.hidden-block  Нет, не&nbsp;только IT, это может быть финансовая, медицинская сфера или любая другая. Просто проект должен быть таким, чтобы вы&nbsp;могли его тиражировать. Вопрос лежит не&nbsp;в&nbsp;плоскости сферы, а&nbsp;именно в&nbsp;том, как вы&nbsp;упакуете продукт.
+                    .interview-block__interview--little.hidden-block
+                        p Дайте совет начинающим бизнесменам, что важно им&nbsp;донести, на&nbsp;ваш взгляд?
+                    p.hidden-block Основной совет, который можно дать тем, кто начинает бизнес,&nbsp;&mdash; это пробовать реализовать свои начинания, потому что чем старше вы&nbsp;становитесь, тем инертнее двигаетесь, тем меньше рисков готовы принимать, экспериментировать. Не&nbsp;имея такого груза опыта и&nbsp;знания, вам гораздо проще сделать шаг, не&nbsp;бояться неудач, креативить.
+                    p.hidden-block Да, могут приходить в&nbsp;голову всякие бредовые идеи, но&nbsp;это не&nbsp;всегда плохо и&nbsp;даже на&nbsp;самом деле хорошо. Чем больше идей вы&nbsp;вбрасываете в&nbsp;круг своих знакомых, коллег, друзей, пусть даже потенциальных инвесторов, тем интереснее. И&nbsp;соответственно из&nbsp;десяти предложенных идей девять будут отвергнуты, а&nbsp;десятая как раз может быть той самой идеей, которая перевернет мир. Если вы&nbsp;не&nbsp;будете пробовать, то&nbsp;кто будет?&hellip;
+
+
+                    .interview-block__video__sharing.clearfix.hidden-block
+                        ul.js-share
+                            li
+                                a(href="https://www.facebook.com/sharer/sharer.php?u=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--fb" data-interview="cherazov").fbook.js-double-share
+                            li
+                                a(href="https://vk.com/share.php?url=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--vk" data-interview="cherazov").vkt.js-double-share
+                            li
+                                a(href="https://twitter.com/intent/tweet?text=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--tw" data-interview="cherazov").twt.js-double-share
+
+            .interview-block__main-tab(data-tab="2")
+                .interview-block__video
+                    .interview-block__video__block
+                        .interview-block__video__block__muted.video_muted.block-control
+                            .block-control__pause
+                            .block-control__play
+                        .full-block-control
+                            .full-block-control__play
+                            .full-block-control__time
+                            .full-block-control__main-line
+                                .full-block-control__main-line__progress
+                            .full-block-control__sound
+                        .interview-block__video__block__interview
+                            iframe(id="client-video" width="780" height="439" src="https://www.youtube.com/embed/3EaAAjCzSxE?list=PLv42Kp4x57LC_mrA0OAEqpo5r1LEMAL66&amp;controls=0&amp;showinfo=0&enablejsapi=1&rel=0" frameborder="0" allowfullscreen)
+                        .interview-block__video__block__filter(style="background-image: url(images/interview-speakers/business/Client_2.jpg)")
+                        .interview-block__video__block__info
+                            h3 Дмитрий Шлопак
+                            p.regalia Управляющий партнер &laquo;Везендорф групп&raquo;
+                            p.hide-in-mobile Социальная <nobr>бизнес-философия</nobr> и&nbsp;гарантия возврата вложенных средств&nbsp;&mdash; правило, которое позволит приблизить ваш стартап к&nbsp;получению инвестиций.
+                            .interview-block__video__block__info__playbutton(id="start-client-video")
+                    .interview-block__video__sharing.clearfix
+                        ul.js-share
+                            li
+                                a(href="https://www.facebook.com/sharer/sharer.php?u=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--fb" data-interview="shlopack").fbook.js-double-share
+                            li
+                                a(href="https://vk.com/share.php?url=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--vk" data-interview="shlopack").vkt.js-double-share
+                            li
+                                a(href="https://twitter.com/intent/tweet?text=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--tw" data-interview="shlopack").twt.js-double-share
+                        .interview-block__video__decypher
+                            span.interview-block__video__decypher--text Расшифровка интервью
+                            span.interview-block__video__decypher--img(id="show-interview-business")
+                .interview-block__interview
+                    span.interview-block__interview--decypher Расшифровка интервью
+
+                    .interview-block__interview--little
+                        p С&nbsp;чего все началось?
+
+                    p Все началось с&nbsp;желания. Сколько себя помню, я&nbsp;воплощал свои предпринимательские способности, а, наверное, лет с&nbsp;10 пытался реализовать какой-то бизнес-проект. Не&nbsp;всегда это получалось хорошо, иногда даже крайне плохо, иногда вполне достойно. В&nbsp;общем, за&nbsp;жизнь я&nbsp;попробовал вести бизнес в&nbsp;15 разных направлениях и&nbsp;остановился на&nbsp;развитии отельного бизнеса&nbsp;&mdash; мне кажется, он&nbsp;мне ближе всего.
+
+                    .interview-block__interview--little.hidden-block
+                        p Почему?
+
+                    p.hidden-block Во-первых, это, конечно, общение с&nbsp;гостями, возможность внедрять различные интересные вещи, экспериментировать. Мы&nbsp;работаем в&nbsp;формате небольших отелей, и&nbsp;это дает нам возможность как некий бутик-отель совмещать арт-пространство с&nbsp;отельным бизнесом. И&nbsp;у&nbsp;нас периодически неплохо это получается.
+
+                    .interview-block__interview--little.hidden-block
+                        p Почему вы&nbsp;вообще стали предпринимателем?
+
+                    p.hidden-block Я&nbsp;всегда хотел быть предпринимателем, меня никогда не&nbsp;тянуло в&nbsp;госкорпорации или глобальные международные компании. У&nbsp;меня в&nbsp;детстве еще была мечта&nbsp;&mdash; сцена, думал, что буду великим артистом. Артистом я&nbsp;стал, но&nbsp;в&nbsp;другом деле&hellip; В&nbsp;предпринимательском.
+                    p.hidden-block А&nbsp;так я&nbsp;все время пытался что-то продать, что-то сделать. Так, у&nbsp;меня была сеть спортивных клубов, потом мы&nbsp;занялись торговыми центрами, потом мы&nbsp;продавали антиквариат, потом мы&nbsp;экспортировали и&nbsp;импортировали фрукты. Во&nbsp;многих бизнесах я&nbsp;сильно прогорел, но&nbsp;это меня многому научило.
+
+                    .interview-block__interview--little.hidden-block
+                        p Не&nbsp;остановило?
+
+                    p.hidden-block Не&nbsp;только не&nbsp;остановило, но&nbsp;и&nbsp;вдохновило на&nbsp;новые подвиги. Каждый шаг, даже если он&nbsp;негативный, ведет так или иначе к&nbsp;победе. Главное&nbsp;&mdash; не&nbsp;сходить с&nbsp;этого пути, идти к&nbsp;своей мечте, что я&nbsp;и&nbsp;делаю.
+
+                    .interview-block__interview--little.hidden-block
+                        p Кто для вас бизнес-партнер?
+
+                    p.hidden-block Бизнес-партнеров у&nbsp;меня много, но&nbsp;мой бизнес-партнер в&nbsp;идеале&nbsp;&mdash; это тот, кто разделяет мою идеологию, она весьма специфическая для российского рынка. Это люди, готовые поверить мне, которые дают свободу действий.
+
+                    .interview-block__interview--little.hidden-block
+                        p Они&nbsp;же вкладывают деньги&hellip; А&nbsp;вы?
+
+                    p.hidden-block Да, но&nbsp;и&nbsp;я&nbsp;инвестирую. Я&nbsp;никогда не&nbsp;участвую в&nbsp;бизнесах, в&nbsp;которые не&nbsp;вкладываю деньги. Я&nbsp;всегда являюсь соинвестором, даже если в&nbsp;меньшей степени, но&nbsp;всегда участвую финансами и&nbsp;еще всегда несу гарантию возврата вложенных средств своим словом и&nbsp;своими активами. По-другому я&nbsp;не&nbsp;вступаю.
+
+                    .interview-block__interview--little.hidden-block
+                        p Что самое важное для вас в&nbsp;работе?
+
+                    p.hidden-block В&nbsp;первую очередь для меня важен процесс. И&nbsp;я&nbsp;обучаю этому свою команду&nbsp;&mdash; концентрироваться на&nbsp;процессе. И&nbsp;тогда результат будет гораздо выше, чем ты&nbsp;ожидаешь, когда просто движешься к&nbsp;цели. Поэтому мы&nbsp;стараемся целеполагание использовать иначе, мы&nbsp;концентрируемся на&nbsp;процессе и&nbsp;получаем удовольствие от&nbsp;сегодняшнего дня.
+
+                    .interview-block__interview--little.hidden-block
+                        p Насколько важны в&nbsp;бизнесе люди?
+
+                    p.hidden-block Люди&nbsp;&mdash; это основной актив в&nbsp;любом бизнесе, особенно касающемся сферы услуг.&nbsp;Мы&nbsp;используем такую методику&nbsp;&mdash; практически не&nbsp;привлекаем профессионалов, берем молодых людей со&nbsp;своим видением и&nbsp;с&nbsp;желанием работать, чтобы они не&nbsp;были зашоренными какими-то сложившимися представлениями. С&nbsp;такими людьми реально можно многое сделать. Иногда профессионал не&nbsp;возьмется за&nbsp;что-то, за&nbsp;что возьмется новичок. Просто потому, что новичок не&nbsp;знает, насколько это сложно&hellip; И&nbsp;в&nbsp;итоге он&nbsp;делает и&nbsp;даже не&nbsp;понимает, какого результата достиг.&nbsp;Профессионал&nbsp;бы ценил высоко этот результат и&nbsp;говорил, как это нереально сложно. По&nbsp;такому критерию я&nbsp;стараюсь собирать команду.
+
+                    .interview-block__interview--little.hidden-block
+                        p Как привлечь клиентов?
+
+                    p.hidden-block Есть общепринятые интернет-технологии и&nbsp;PR, но&nbsp;для отельного бизнеса лучший показатель&nbsp;&mdash; это возврат постоянного клиента. И&nbsp;здесь мы&nbsp;ухищряемся как можем. Мы&nbsp;придумываем различные мероприятия, мы&nbsp;не&nbsp;только стараемся вовлечь клиентов в&nbsp;жизнь отеля, но&nbsp;и&nbsp;формируем дополнительные истории, куда их&nbsp;можно было&nbsp;бы вовлекать и&nbsp;им&nbsp;было&nbsp;бы это интересно.
+
+                    .interview-block__interview--little.hidden-block
+                        p Какие актуальные задачи для себя вы&nbsp;ставите?
+
+                    p.hidden-block Я&nbsp;переболел историю просто заработка денег, мне это не&nbsp;очень интересно, я&nbsp;за&nbsp;процесс, и&nbsp;я&nbsp;в&nbsp;своих компаньонах и&nbsp;работниках пытаюсь посеять такую мысль, что любое предпринимательство должно быть социально активным. Мы&nbsp;должны не&nbsp;просто купить Ferrari, разбить его на&nbsp;Кутузовском проспекте и&nbsp;выложить фото в&nbsp;соцсеть. Мы&nbsp;все-таки должны понимать, что можем влиять своими деньгами, своими талантами на&nbsp;огромное количество людей. Я&nbsp;это делаю сам и&nbsp;пытаюсь вовлекать в&nbsp;это дело других предпринимателей и&nbsp;своих сотрудников.
+
+                    .interview-block__interview--little.hidden-block
+                        p Например?
+
+                    p.hidden-block Сейчас мы&nbsp;делаем интересный проект&nbsp;&mdash; &laquo;Молодежный молитвенный завтрак&raquo;, который ничего общего не&nbsp;имеет с&nbsp;религией, это бизнес-завтрак. В&nbsp;рамках проекта мы&nbsp;объединяем около 100&nbsp;молодых бизнесменов в&nbsp;возрасте 25&ndash;35 лет. На&nbsp;мероприятии будут задействованы интересные спикеры (даже планируется телемост с&nbsp;Ричардом Бренсоном) и&nbsp;политики, мы&nbsp;будем обсуждать тему социальной ответственности бизнеса. Особое внимание этим вопросам уделяют в&nbsp;Европе и&nbsp;США, люди участвуют в&nbsp;различных программах КСО, и&nbsp;мы&nbsp;бы хотели внедрять в&nbsp;мышление наших молодых предпринимателей: если у&nbsp;тебя что-то хорошо получается, не&nbsp;надо использовать это только в&nbsp;целях получения прибыли и&nbsp;PR. Свою успешность можно применять в&nbsp;благих целях, например, можно быть наставником, передавать свой опыт начинающим предпринимателям. Речь может идти и&nbsp;о&nbsp;благотворительности, и&nbsp;об&nbsp;экологических проектах.
+
+                    p.hidden-block Наша основная задача&nbsp;&mdash; изменить понимание, что такое предпринимательство и&nbsp;что вы&nbsp;должны нести в&nbsp;этот мир, занимаясь бизнесом&hellip;
+
+                    .interview-block__interview--little.hidden-block
+                        p Ваша социальная ответственность&nbsp;&mdash; делиться опытом, так?
+
+                    p.hidden-block Да, я&nbsp;это делаю и&nbsp;часто. Причем я&nbsp;в&nbsp;первую очередь делюсь негативным опытом, могу рассказать, как я&nbsp;падал, поднимался, что меня вдохновляло, к&nbsp;каким выводам я&nbsp;в&nbsp;итоге пришел.
+
+                    .interview-block__interview--little.hidden-block
+                        p В&nbsp;чем секрет бизнес-успеха?
+
+                    p.hidden-block Это размытое понятие весьма. Для кого-то это покупка двухэтажного пентхауса, дорогого автомобиля, личного самолета&hellip; В&nbsp;моем понимании бизнес-успех&nbsp;&mdash; не&nbsp;то, что ты&nbsp;нажил сам, а&nbsp;то&nbsp;количество людей, которые рядом с&nbsp;тобой стали успешными, потому что нет другой глобальной цели, чем служить другим людям. Я&nbsp;бы хотел, чтобы мой опыт служил другим во&nbsp;благо. И, конечно, я&nbsp;бы хотел, чтобы люди рядом со&nbsp;мной, а&nbsp;я&nbsp;рядом с&nbsp;ними, становились все успешнее.
+
+                    .interview-block__interview--little.hidden-block
+                        p Кто сегодня выигрывает в&nbsp;бизнесе?
+
+                    p.hidden-block Сформулировать, что есть проигрыш в&nbsp;бизнесе и&nbsp;что есть выигрыш,&nbsp;&mdash; сложная штука. Вообще вопрос выигрыша довольно странный, человек проигрывающий часто чувствует, что он&nbsp;победитель на&nbsp;самом деле. Это долгосрочная история, и&nbsp;мы&nbsp;только через призму времени можем узнать, что реально выиграли. Вот я&nbsp;так несколько раз чувствовал, что я&nbsp;молодец, а&nbsp;потом оказалось, что это был проигрыш. В&nbsp;то&nbsp;же время эти неудачные истории спасали меня от&nbsp;других ошибок. У&nbsp;каждого свои критерии, поэтому не&nbsp;стал&nbsp;бы давать определение выигрыша и&nbsp;выигравшего предпринимателя.
+
+                    .interview-block__interview--little.hidden-block
+                        p Как вы&nbsp;развиваете свой бизнес?
+
+                    p.hidden-block Мы&nbsp;развиваем его, используя весь спектр технологий, решений, методик, пробуем инновационные подходы. Но&nbsp;в&nbsp;итоге все равно в&nbsp;нашем бизнесе работают человеческие качества. Это основа.
+
+                    p.hidden-block Что касается технологий, то&nbsp;для отельного бизнеса очень важен беспроводной интернет и&nbsp;его наличие на&nbsp;объектах. Сегодня выбор отеля в&nbsp;90% случаев зависит от&nbsp;наличия там сети.
+
+                    p.hidden-block Это для нас один из&nbsp;важных вопросов, и&nbsp;неоднократно мы&nbsp;сталкивались с&nbsp;некачественными провайдерами. В&nbsp;итоге мы&nbsp;подключились к &ensp;&laquo;Билайн&raquo; Бизнес, и&nbsp;у&nbsp;нашего оператора приобрели услугу Wi-Fi. Все отлично работает!
+
+                    p.hidden-block Также у&nbsp;нас есть красивый <a href="http://beeline.ru/b2b/products/telephony/services/details/gorodskie-telefonnye-nomera/?utm_source=RBC&utm_medium=banner&utm_term=Pryamoj_gorodskoj_nomer&utm_content=fix&utm_campaign=Beeline_VIV_B2B_Digital_SP_RBC_Mar-Oct2017" target="_blank" class="linked">прямой городской номер</a>, что также удобно для клиентов и&nbsp;отлично влияет на&nbsp;имидж, повышает серьезность бренда.
+
+                    .interview-block__interview--little.hidden-block
+                        p Есть&nbsp;ли какие-то советы, как получить финансирование на&nbsp;развитие бизнеса или его старт?
+
+                    p.hidden-block Работа с&nbsp;инвесторами&nbsp;&mdash; сложная штука, и&nbsp;каждый предприниматель индивидуально подходит к&nbsp;этому вопросу. У&nbsp;меня есть один принцип, который я&nbsp;всегда тиражирую на&nbsp;работу с&nbsp;партнерами: я&nbsp;захожу в&nbsp;бизнес всегда со&nbsp;своими ресурсами. И&nbsp;еще даю полную гарантию возврата средств в&nbsp;случае провала. Гарантирую своими активами, имуществом, а&nbsp;инвестор как раз ничем не&nbsp;рискует. Это дает положительную динамику и&nbsp;бизнесу. Вместо того чтобы вставать в&nbsp;10 утра, я&nbsp;ночами думаю и&nbsp;работаю над тем, чтобы быстрее пройти начальный этап и&nbsp;приблизиться к&nbsp;успеху.
+
+                    p.hidden-block Были ситуации, когда у&nbsp;меня не&nbsp;получалось, я&nbsp;возвращал средства инвесторам. Несмотря на&nbsp;то&nbsp;что это неприятно и&nbsp;сложно, у&nbsp;меня всегда было ощущение, как&nbsp;же это правильно и&nbsp;здорово. В&nbsp;такой ситуации все стараются разбежаться, скрыться, а&nbsp;я&nbsp;иду и&nbsp;отдаю. В&nbsp;результате я&nbsp;со&nbsp;всеми своими прежними партнерами общаюсь, даже дружу, и&nbsp;каждый из&nbsp;них будет готов участвовать в&nbsp;моих новых проектах. Их&nbsp;финансы обезопашены, в&nbsp;этом суть.
+
+                    p.hidden-block Но, конечно, также важно, чтобы инвестор поверил в&nbsp;идею. Хотя некоторые наши идеи в&nbsp;отельном бизнесе сумасшедшие, например, недавно мы&nbsp;придумали экоотели, интегрированные прямо в&nbsp;лесную чащу. И&nbsp;реализуем этот проект с&nbsp;огромными госкомпаниями&hellip;
+
+                    p.hidden-block Когда даешь инвестору личную гарантию возврата финансов, расстояние между защитой бизнес-плана и&nbsp;его реализацией, воплощением в&nbsp;жизнь уменьшается.
+
+                    .interview-block__interview--little.hidden-block
+                        p На&nbsp;чем в&nbsp;бизнесе нельзя экономить?
+
+                    p.hidden-block Многие люди говорят, что нельзя экономить на&nbsp;рекламе. Но&nbsp;ведь и&nbsp;не&nbsp;всем бизнесам она нужна&hellip; Мы&nbsp;пытаемся экономить на&nbsp;всем, где это возможно. В&nbsp;то&nbsp;же время мы&nbsp;не&nbsp;экономим на&nbsp;саморазвитии, внедрении технологий, на&nbsp;персонале, на&nbsp;идейных вещах. Мы&nbsp;не&nbsp;экономим на&nbsp;этих статьях, но&nbsp;и&nbsp;не&nbsp;разбрасываемся&hellip;
+
+                    .interview-block__video__sharing.clearfix.hidden-block
+                        ul.js-share
+                            li
+                                a(href="https://www.facebook.com/sharer/sharer.php?u=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--fb" data-interview="shlopack").fbook.js-double-share
+                            li
+                                a(href="https://vk.com/share.php?url=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--vk" data-interview="shlopack").vkt.js-double-share
+                            li
+                                a(href="https://twitter.com/intent/tweet?text=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--tw" data-interview="shlopack").twt.js-double-share
+
+        .external-speaker-block
+            .interview-block--wrapper
+                .interview-block__tab
+                    .interview-block__tab__interview.interview-block__tab--bman(tab-index="1")
+                        | Бизнес
+                        .shift-tab
+                        | от первого лица
+                    .interview-block__tab__interview.interview-block__tab--client(tab-index="2")
+                        | Правила
+                        .shift-tab
+                        | предпринимателя
+            .inter-block__speakers--wrapper(speakers-tab="1")
+                .interview-block__speakers
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-1.html")
+                                img(src="images/interview-speakers/business/1.Popov.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-1.html") Александр Попов
+                            p Директор EasyFinance.ru
+                            a(href="/interview-1.html").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                          a(href="/interview-3.html")
+                            img(src="images/interview-speakers/business/3.Feldman.png")
+                        .interview-block__speakers__item__text
+                            h3
+                              a(href="/interview-3.html")  Максим Фельдман
+                            p Руководитель направления по работе с клиентами Московской школы управления СКОЛКОВО
+                            a(href="/interview-3.html").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-4.html")
+                                img(src="images/interview-speakers/business/4.Volshuck.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-4.html") Александр Волощук
+                            p Генеральный директор сервиса Dr.Tariffи студии разработки QStudio.org
+                            a(href="/interview-4.html").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-5.html")
+                                img(src="images/interview-speakers/business/5.Avedei.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-5.html") Алексей Авдей
+                            p Директор по продукту ЦИАН
+                            a(href="/interview-5.html").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-6.html")
+                                img(src="images/interview-speakers/business/6.Panov.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-6.html") Сергей Панов
+                            p Сооснователь и&nbsp;генеральный директор <nobr>интернет-бухгалтерии</nobr> &laquo;Моё дело&raquo;
+                            a(href="/interview-6.html").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-7.html")
+                                img(src="images/interview-speakers/business/7.Jukov.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-7.html") Михаил Жуков
+                            p Генеральный директор HeadHunter
+                            a(href="/interview-7.html").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-8.html")
+                                img(src="images/interview-speakers/business/8.Tabolin.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-8.html") Сергей Таболин
+                            p Руководитель по&nbsp;сегментному маркетингу &laquo;Билайн&raquo; Бизнес
+                            a(href="/interview-8.html").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-9.html")
+                                img(src="images/interview-speakers/business/9.Li.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-9.html") Дмитрий Ли
+                            p Директор по&nbsp;маркетингу бизнес-сегмента &laquo;Билайн&raquo;
+                            a(href="/interview-9.html").watch-interview Смотреть
+            .inter-block__speakers--wrapper(speakers-tab="2")
+                .interview-block__speakers
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-1.html#client")
+                                img(src="images/interview-speakers/clients/1.-Chaplinski.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-1.html#client") Павел Чаплинский
+                            p Основатель BOX&ROSES
+                            a(href="/interview-1.html#client").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-3.html#client")
+                                img(src="images/interview-speakers/clients/3.-Zamai.png")
+                        .interview-block__speakers__item__text
+                            h3 
+                                a(href="/interview-3.html#client") Андрей Замай
+                            p Генеральный директор компании «Первая Интеллектуальная Реклама»
+                            a(href="/interview-3.html#client").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-4.html#client")
+                                img(src="images/interview-speakers/clients/4.-Lasckov.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-4.html#client") Игорь Ласьков
+                            p Генеральный директор ООО «Стройкомфорт»
+                            a(href="/interview-4.html#client").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-5.html#client")
+                                img(src="images/interview-speakers/clients/5.-Smirnov.png")
+                        .interview-block__speakers__item__text
+                            h3 
+                                a(href="/interview-5.html#client") Илья Смирнов
+                            p IT-директор компании «Ай Ти Ви групп»
+                            a(href="/interview-5.html#client").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-6.html#client")
+                                img(src="images/interview-speakers/clients/6.-Shelmanova.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-6.html#client") Ольга Шеламова
+                            p Совладелец компании «Олимп»
+                            a(href="/interview-6.html#client").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-7.html#client")
+                                img(src="images/interview-speakers/clients/7.-Silhev.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-7.html#client") Андрей Сильчев
+                            p Директор по развитию IT Partner
+                            a(href="/interview-7.html#client").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-8.html#client")
+                                img(src="images/interview-speakers/clients/8.Shkolerov.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-8.html#client") Дмитрий Шкловер
+                            p Основатель интернет-магазина 613bricks.ru
+                            a(href="/interview-8.html#client").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-9.html#client")
+                                img(src="images/interview-speakers/clients/9. Poryadneev.png")
+                        .interview-block__speakers__item__text
+                            h3 Кирилл Поряднев
+                            p Генеральный директор «Результат Плюс»
+                            a(href="/interview-9.html#client").watch-interview Смотреть

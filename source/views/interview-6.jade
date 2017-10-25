@@ -1,0 +1,365 @@
+extends templates/layout
+block vars
+
+block content
+    .interview-block
+        .interview-block--wrapper
+            .interview-block__back
+                .interview-block__back--arrow
+                a(href="index.html") Вернуться на главную
+            .interview-block__main-tab(data-tab="1")
+                .interview-block__video
+                    .interview-block__video__block
+                        .interview-block__video__block__muted.video_muted.block-control
+                            .block-control__pause
+                            .block-control__play
+                        .full-block-control
+                            .full-block-control__play
+                            .full-block-control__time
+                            .full-block-control__main-line
+                                .full-block-control__main-line__progress
+                            .full-block-control__sound
+                        .interview-block__video__block__interview
+                            iframe(id="business-video" width="780" height="439" src="https://www.youtube.com/embed/xQRC1yijb0c?list=PLv42Kp4x57LC_mrA0OAEqpo5r1LEMAL66&amp;controls=0&amp;showinfo=0&enablejsapi=1&rel=0" frameborder="0" allowfullscreen)
+                        .interview-block__video__block__filter(style="background-image: url(images/interview-speakers/business/Business_6.jpg)")
+                        .interview-block__video__block__info
+                            h3 Сергей Панов
+                            p.regalia Сооснователь и&nbsp;генеральный директор <nobr>интернет-бухгалтерии</nobr> &laquo;Моё дело&raquo;
+                            p.hide-in-mobile О&nbsp;том, как современные <nobr>ИТ-решения</nobr> позволяют комфортно вести бизнес, как выбирать надежных партнеров и&nbsp;как проверять контрагентов до&nbsp;начала работы.
+                            .interview-block__video__block__info__playbutton(id="start-business-video")
+                    .interview-block__video__sharing.clearfix
+                        ul.js-share
+                            li
+                                a(href="https://www.facebook.com/sharer/sharer.php?u=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--fb" data-interview="panov").fbook.js-double-share
+                            li
+                                a(href="https://vk.com/share.php?url=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--vk" data-interview="panov").vkt.js-double-share
+                            li
+                                a(href="https://twitter.com/intent/tweet?text=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--tw" data-interview="panov").twt.js-double-share
+                        .interview-block__video__decypher
+                            span.interview-block__video__decypher--text(id="show-interview-client") Расшифровка интервью
+                            span.interview-block__video__decypher--img(id="show-interview-client")
+                .interview-block__interview
+                    span.interview-block__interview--decypher. Расшифровка интервью
+                    .interview-block__interview--little
+                        p Как возникла идея вашего бизнеса?
+                    p &laquo;Мое дело&raquo;&nbsp;&mdash; сервис интернет-бухгалтерии. Мы&nbsp;делаем учет удобным для бизнеса. Мы&nbsp;верим, что развитие общества создается силой и&nbsp;энергией предпринимателей, и&nbsp;хотим, чтобы ведение бизнеса было простым и&nbsp;удобным.
+                    p До&nbsp;собственного бизнеса я&nbsp;долгое время занимался выпуском методической литературы и&nbsp;профессиональных изданий для бухгалтеров. Я&nbsp;знаю, что вести учет&nbsp;&mdash; это непросто. Бизнесмены вынуждены содержать штат бухгалтеров и&nbsp;тратить на&nbsp;это существенные деньги. С&nbsp;развитием технологий стало понятно, что вести учет и&nbsp;сдавать отчетность в&nbsp;налоговую может делать сервис, большую часть рутинных операций можно автоматизировать. И&nbsp;мы&nbsp;решили действовать в&nbsp;этом направлении.
+                    .interview-block__interview--little.hidden-block
+                        p С&nbsp;какого рода контрагентами вам приходится сталкиваться в&nbsp;вашем бизнесе?
+                    p.hidden-block Наш бизнес связан с&nbsp;разработкой программного обеспечения и&nbsp;предоставлением сервиса, поэтому хостинг, ЦОД, связь, разработка &laquo;софта&raquo;&nbsp;&mdash; то, что составляет основу нашего бизнеса и&nbsp;те&nbsp;сферы, где мы&nbsp;выбираем партнеров.
+                    .interview_image.hidden-block
+                        img(src="../images/interview-speakers/panov1.jpg")
+                    .interview-block__interview--little.hidden-block
+                        p По&nbsp;каким принципам компания проводит отбор партнеров и&nbsp;подрядчиков?                    
+                    p.hidden-block Есть обычные категории партнеров, свойственные любому бизнесу. Это, например, банк, арендатор и т. д. Наши задачи еще&nbsp;&mdash; это стройка и&nbsp;ремонт, потому что мы&nbsp;меняемся, расширяемся, меняем расположение&nbsp;&mdash; в&nbsp;общем, часто вынуждены ремонтировать наши офисы. Когда мы&nbsp;выбираем партнера, самыми важными факторами являются репутация и&nbsp;цена. Еще один фактор, который я&nbsp;для себя всегда выделяю,&nbsp;&mdash; насколько партнер хочет работать с&nbsp;нами, почему для него это важно. Насколько подрядчик хочет нас как заказчика. Причем не&nbsp;собственник компании-исполнителя, а&nbsp;непосредственно та&nbsp;команда, которая будет делать работу.
+                    .interview-block__interview--little.hidden-block
+                        p Вам просто рассуждать, у&nbsp;вас крупный и&nbsp;известный бренд. А&nbsp;что делать компании, которая не&nbsp;имеет имени, статуса?
+                    p.hidden-block Маленькие компании размещают небольшие заказы. Перед ними встает проблема выбора, потому что такие заказы может выполнить масса фирм и&nbsp;предпринимателей. И&nbsp;таких&nbsp;же начинающих бизнесов и&nbsp;крупных компаний. Выбирая исполнителя, сложно на&nbsp;что-то опереться, цена часто сильно различается, а&nbsp;сама услуга может быть похожей по&nbsp;качеству исполнения. В&nbsp;этом случае важно учитывать репутацию, то, что делали эти люди раньше. И&nbsp;опять-таки то, насколько им&nbsp;интересен ваш заказ.
+                    p.hidden-block Если речь идет о&nbsp;профессиональных услугах&nbsp;&mdash; о&nbsp;разработке сайта, о&nbsp;предоставлении услуг связи, бухгалтерии, юридических услугах,&nbsp;&mdash; возникает риск того, что услуга, которую вы&nbsp;получите, будет ненадлежащего качества. Вы&nbsp;рискуете намного больше, чем сэкономите.
+                    .interview-block__interview--little.hidden-block
+                        p Как&nbsp;же это определить, насколько исполнитель заинтересован?
+                    p.hidden-block В&nbsp;процессе переговоров. Это и&nbsp;есть талант предпринимателей&nbsp;&mdash; понять, насколько партнер серьезно заинтересован в&nbsp;контракте. Надо посмотреть на&nbsp;его бизнес, чем он&nbsp;занимается, кто является его клиентами.
+                    p.hidden-block Например, у&nbsp;него есть один крупный клиент, а&nbsp;небольшие заказы он&nbsp;добирает время от&nbsp;времени. Если стратегический клиент вдруг закажет у&nbsp;него большой объем работ, он, скорее всего, отложит вас или поставит в&nbsp;очередь.
+                    .interview_image.hidden-block
+                        img(src="../images/interview-speakers/panov2.jpg")
+                    .interview-block__interview--little.hidden-block
+                        p То&nbsp;есть лучше для малого бизнеса&nbsp;&mdash; выбирать тех исполнителей, у&nbsp;которых нет больших клиентов?
+                    p.hidden-block Нет универсального рецепта для выбора контрагента. Это комбинация факторов и&nbsp;ситуации, в&nbsp;которой вы&nbsp;находитесь. Прежде всего надо смотреть, насколько люди заинтересованы в&nbsp;вашем заказе. Конечно, стоит проверить историю подрядчика, рейтинг контрагентов&nbsp;&mdash; например, воспользоваться одним из&nbsp;инструментов&nbsp;&mdash; сервисом по&nbsp;проверке контрагентов.
+                    .interview-block__interview--little.hidden-block
+                        p А&nbsp;как понять, не&nbsp;обманывают&nbsp;ли вас, не&nbsp;пытаются&nbsp;ли на&nbsp;вас заработать?
+                    p.hidden-block Если на&nbsp;тебе не&nbsp;пытаются заработать, то&nbsp;точно обманывают! Потому что бизнес построен на&nbsp;заработке. И&nbsp;нужно понять, где именно человек на&nbsp;тебе зарабатывает,-либо он&nbsp;делает на&nbsp;тебе репутацию, либо он&nbsp;занимает свои производственные мощности, которые простаивают, либо он&nbsp;хочет заработать на&nbsp;тебе справедливую маржу. Если контрагент говорит, что на&nbsp;вас нет заработка, скорее всего, не&nbsp;надо соглашаться на&nbsp;этот контракт.
+                    .interview-block__interview--little.hidden-block
+                        p Может быть, он&nbsp;сумму просто завышает, и&nbsp;в&nbsp;этом заключается обман&hellip;
+                    p.hidden-block На&nbsp;это и&nbsp;нужен талант предпринимателя, чтобы понять, где вас обманывают, а&nbsp;где нет. Повторюсь, универсального рецепта нет, стоит опросить партнеров, с&nbsp;кем работал этот контрагент раньше, кому он&nbsp;выполнял работы.
+                    .interview-block__interview--little.hidden-block
+                        p Как считаете, лучше всегда работать с&nbsp;проверенными партнерами или рисковать и&nbsp;браться за&nbsp;работу с&nbsp;новыми подрядчиками? Вот вы&nbsp;знаете, что ваш надежный партнер все сделает классно и&nbsp;в&nbsp;срок&hellip; Но&nbsp;новый предлагает более выгодную цену. Какое решение вы&nbsp;примите? 
+                    p.hidden-block У&nbsp;бизнесмена не&nbsp;так много ключевых компетенций. Одна из&nbsp;них&nbsp;&mdash; это находить правильных работников и&nbsp;партнеров. Это такая компетенция, которую нужно все время &laquo;прокачивать&raquo;. Искать новых партнеров&nbsp;&mdash; это не&nbsp;значит, что надо бросать старых. Мы&nbsp;с&nbsp;ключевыми партнерами работаем практически с&nbsp;самого старта бизнеса&nbsp;&mdash; более 5 лет. И&nbsp;их&nbsp;не&nbsp;меняли. Но&nbsp;это не&nbsp;значит, что мы&nbsp;не&nbsp;рассматриваем предложения, не&nbsp;делаем тестов с&nbsp;другими исполнителями.
+                    p.hidden-block Кстати, со&nbsp;старыми партнерами тоже надо уметь работать. Надо отслеживать предложения, знать рынок, если вы&nbsp;хотите оставаться в&nbsp;прибыли.
+                    .interview_image.hidden-block
+                        img(src="../images/interview-speakers/panov3.jpg")
+                    .interview-block__interview--little.hidden-block
+                        p Как нужно правильно &laquo;брифовать&raquo; партнеров, чтобы избежать проблем в&nbsp;будущем?
+                    p.hidden-block Стоит обратить внимание на&nbsp;три вещи. Нужно узнать, как давно компания работает, с&nbsp;кем уже имела дело. Как давно работает ключевой состав компании, те, кто будет собственно делать работу и&nbsp;выполнять услуги для вас. Также проверьте, на&nbsp;каких условиях она работает со&nbsp;своими партнерами: есть&nbsp;ли надежные партнеры у&nbsp;вашего потенциального контрагента. Хорошо&nbsp;бы также спросить рекомендации и&nbsp;отзывы о&nbsp;выполненной работе.
+                    .interview-block__interview--little.hidden-block
+                        p Насколько уместен в&nbsp;бизнесе такой принцип &laquo;ничего личного, кроме бизнеса&raquo;?
+                    p.hidden-block Личные отношения в&nbsp;бизнесе очень важны. Конечно, есть коммерция, есть сухой остаток в&nbsp;том, что вы&nbsp;видите в&nbsp;счетах от&nbsp;контрагента и&nbsp;в&nbsp;итоге в&nbsp;вашей прибыли. Но&nbsp;стоит учитывать надежность и&nbsp;отношения контрагентов к&nbsp;вам как к&nbsp;партнеру и&nbsp;к&nbsp;бизнесу. У&nbsp;надежных старых партнеров всегда можно попросить отсрочку, можно договориться о&nbsp;снижении цены на&nbsp;период, если ваш бизнес находится в&nbsp;сложной ситуации. Старые партнеры так&nbsp;же относятся и&nbsp;к&nbsp;вам&nbsp;&mdash; как к&nbsp;надежному партнеру, который долгое время выполнял свои обязательства. И&nbsp;вы&nbsp;можете рассчитывать на&nbsp;определенные скидки и&nbsp;особое отношение, конечно, если вы&nbsp;так&nbsp;же относитесь и&nbsp;к&nbsp;ним. Ведь любая сделка&nbsp;&mdash; это интерес двух сторон.
+                    .interview-block__interview--little.hidden-block
+                        p У&nbsp;вас есть истории из&nbsp;личного опыта с&nbsp;такими непростыми ситуациями?
+                    p.hidden-block Конечно. Сервис &laquo;Мое дело&raquo; как стартап во&nbsp;время развития испытывал разные проблемы, в&nbsp;том числе стоял и&nbsp;вопрос финансирования. И&nbsp;однажды мы&nbsp;поняли, что не&nbsp;сможем в&nbsp;прежнем объеме на&nbsp;прежнем уровне качества поддерживать один из&nbsp;сервисов. Обратились к&nbsp;партнеру и&nbsp;получили снижение цены на&nbsp;длительный период. Конечно, мы&nbsp;могли&nbsp;бы найти на&nbsp;рынке что-то дешевле или сделать эту работу сами, но&nbsp;то, что мы&nbsp;долго кооперировали и&nbsp;находились в&nbsp;правильной коммуникации с&nbsp;партнерами, позволило нам не&nbsp;заморачиваться с&nbsp;этим вопросом и&nbsp;решить его быстро и&nbsp;легко.
+                    .interview-block__interview--little.hidden-block
+                        p А&nbsp;есть какой-то не&nbsp;очень удачный опыт, который вас научил?
+                    p.hidden-block Да, это история про сапожника без сапог.&nbsp;Одна из&nbsp;причин, почему мы&nbsp;решили сделать сервис &laquo;Проверка контрагентов&raquo; внутри системы,&nbsp;&mdash; это мой личный пример. Нам нужно было оперативно отремонтировать офис в&nbsp;Пензе. Для Пензы площадь порядка 500&nbsp;метров была довольно крупной. Причем ремонт нужно было сделать из&nbsp;&laquo;нулевого&raquo; состояния в&nbsp;офис класса&nbsp;Б с&nbsp;кол-центром, то&nbsp;есть с&nbsp;большим количеством коммуникаций. Выполнить такой объем в&nbsp;Пензе могли лишь несколько компаний.
+                    .interview_image.hidden-block
+                        img(src="../images/interview-speakers/panov4.jpg")
+                    p.hidden-block Выбрали исполнителя, посмотрели примеры объектов, которые делала данная фирма. Объекты большие, люди показались профессиональными и&nbsp;адекватными. Подписали договор, внесли предоплату. Но&nbsp;мы&nbsp;так намучились с&nbsp;ними после&nbsp;&mdash; мы&nbsp;еле предоплату отработали.
+                    p.hidden-block Все дело в&nbsp;том, что я&nbsp;не&nbsp;сделал проверку этой компании. Выяснилось, что у&nbsp;нее уже тогда было 2 арбитражных дела, и&nbsp;все свои объекты они затягивали, не&nbsp;сдавали своевременно, хотя в&nbsp;общем-то работали качественно.
+                    p.hidden-block У&nbsp;нас и&nbsp;сервис для проверки был, но, чтобы им&nbsp;воспользоваться, надо было ввести логин, пароль, собственно, проверить компанию. А&nbsp;мне просто было некогда это сделать&hellip;
+                    p.hidden-block После этого мы&nbsp;решили, что нужно сделать такой сервис, который автоматически проверяет контрагента, как только вы&nbsp;собираетесь вступить с&nbsp;ним в&nbsp;договорные отношения или отправить платеж.
+                    .interview-block__interview--little.hidden-block
+                        p Выскакивает статус относительно судебных дел?
+                    p.hidden-block В&nbsp;нашем случае это светофор различного цвета&nbsp;&mdash; красный, желтый, зеленый. И&nbsp;если красный или желтый, вы&nbsp;можете зайти и&nbsp;посмотреть, почему этому контрагенту надо уделить особое внимание. Либо это судебные дела, либо смена директора, либо претензии налоговой, все это отображается в&nbsp;протоколе рейтинга.
+                    p.hidden-block Чтобы воспользоваться сервисом, не&nbsp;нужно никуда специально идти, &laquo;гуглить&raquo;, вводить какие-то пароли, платить за&nbsp;отдельную систему, наш сервис уже встроен в&nbsp;бизнес-процесс. Сервис использует несколько банков, которым мы&nbsp;его поставляем как часть их&nbsp;инет-банка, другие компании автоматически рейтингуют контрагентов в&nbsp;своих CRM-системах.
+                    .interview-block__interview--little.hidden-block
+                        p Как правильно расставаться с&nbsp;контрагентами, если вы&nbsp;поняли, что вас что-то не&nbsp;устраивает?
+                    p.hidden-block Правильно расставаться без суда и&nbsp;следствия. По&nbsp;первому образованию я&nbsp;юрист и&nbsp;скажу, что мы&nbsp;почти всегда расстаемся с&nbsp;контрагентами, не&nbsp;прибегая к&nbsp;государственной власти.
+                    p.hidden-block Хотя иногда это тоже надо иметь в&nbsp;виду. Самое банальное&nbsp;&mdash; вы&nbsp;выезжаете из&nbsp;помещения, и&nbsp;вам не&nbsp;хотят возвращать либо уменьшают сумму залога под различными предлогами. Большинство предпринимателей с&nbsp;этим сталкивались&hellip;
+                    p.hidden-block Расставаясь с&nbsp;контрагентами, надо объяснять, почему вы&nbsp;это делаете,&nbsp;&mdash; например, вам предложили более выгодную цену, качество услуг больше не&nbsp;устраивает, или вы&nbsp;просто не&nbsp;нуждаетесь в&nbsp;этих услугах&hellip;
+                    .interview-block__interview--little.hidden-block
+                        p А&nbsp;испортить себе репутацию такой честностью нельзя?
+                    p.hidden-block Возможно, вам придется вернуться к&nbsp;этому партнеру и&nbsp;строить снова с&nbsp;ним отношения. Поэтому расставаться надо честно.
+                    p.hidden-block Все люди в&nbsp;бизнесе понимают, что скандалы не&nbsp;способствуют укреплению и&nbsp;развитию дела. Никто не&nbsp;будет разбираться потом, кто из&nbsp;партнеров был прав, кто виноват. Как говорится, &laquo;ложечки нашлись, а&nbsp;осадочек остался&raquo;. Просто останется ощущение на&nbsp;рынке, что вы&nbsp;&mdash; скандальный человек, и&nbsp;это хуже отразится на&nbsp;репутации.
+                    .interview-block__interview--little.hidden-block
+                        p Что лучше работает&nbsp;&mdash; &laquo;прогуглить&raquo; отзывы в&nbsp;интернете, поговорить с&nbsp;прежними клиентами подрядчика или проверить документальные судимости?
+                    p.hidden-block Работает и&nbsp;то, и&nbsp;то. Сами понимаете, что отзывы в&nbsp;интернете не&nbsp;всегда реальные: как компании размещают положительные отзывы про себя, есть целая индустрия такая в&nbsp;медиа, так и&nbsp;конкуренты размещают негативные отзывы о&nbsp;компании. Опирайтесь на&nbsp;объективную инфу&nbsp;&mdash; сведения из&nbsp;ЕГРЮЛ, из&nbsp;судов, органов власти.
+                    .interview-block__interview--little.hidden-block
+                        p Ваш личный совет для начинающих бизнесменов.
+                    p.hidden-block Не&nbsp;бойтесь доверять своей интуиции, но&nbsp;проверяйте партнеров, собирая объективные факты.
+                    .interview-block__video__sharing.clearfix.hidden-block
+                        ul.js-share
+                            li
+                                a(href="https://www.facebook.com/sharer/sharer.php?u=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--fb" data-interview="panov").fbook.js-double-share
+                            li
+                                a(href="https://vk.com/share.php?url=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--vk" data-interview="panov").vkt.js-double-share
+                            li
+                                a(href="https://twitter.com/intent/tweet?text=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--tw" data-interview="panov").twt.js-double-share
+            .interview-block__main-tab(data-tab="2")
+                .interview-block__video
+                    .interview-block__video__block
+                        .interview-block__video__block__muted.video_muted.block-control
+                            .block-control__pause
+                            .block-control__play
+                        .full-block-control
+                            .full-block-control__play
+                            .full-block-control__time
+                            .full-block-control__main-line
+                                .full-block-control__main-line__progress
+                            .full-block-control__sound
+                        .interview-block__video__block__interview
+                            iframe(id="client-video" width="780" height="439" src="https://www.youtube.com/embed/uul0w-NuDCw?list=PLv42Kp4x57LC_mrA0OAEqpo5r1LEMAL66&amp;controls=0&amp;showinfo=0&enablejsapi=1&rel=0" frameborder="0" allowfullscreen)
+                        .interview-block__video__block__filter(style="background-image: url(images/interview-speakers/business/Client_6.jpg)")
+                        .interview-block__video__block__info
+                            h3 Ольга Шемалова
+                            p.regalia совладелец компании &laquo;Олимп&raquo;
+                            p.hide-in-mobile Партнеров надо выбирать с&nbsp;точки зрения надежности и&nbsp;взаимовыгодности сотрудничества. От&nbsp;правильных бизнес-партнеров и&nbsp;подрядчиков во&nbsp;многом зависит развитие компании.
+                            .interview-block__video__block__info__playbutton(id="start-client-video")
+                    .interview-block__video__sharing.clearfix
+                        ul.js-share
+                            li
+                                a(href="https://www.facebook.com/sharer/sharer.php?u=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--fb" data-interview="shelamova").fbook.js-double-share
+                            li
+                                a(href="https://vk.com/share.php?url=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--vk" data-interview="shelamova").vkt.js-double-share
+                            li
+                                a(href="https://twitter.com/intent/tweet?text=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--tw" data-interview="shelamova").twt.js-double-share
+                        .interview-block__video__decypher
+                            span.interview-block__video__decypher--text Расшифровка интервью
+                            span.interview-block__video__decypher--img(id="show-interview-business")
+                .interview-block__interview
+                    span.interview-block__interview--decypher Расшифровка интервью
+                    .interview-block__interview--little
+                        p Почему вы&nbsp;решили стать предпринимателем?
+                    p Предпринимателем меня сделала жизнь. У&nbsp;меня богатый жизненный опыт, я&nbsp;человек, рожденный в&nbsp;70-е годы. Перестройка, дефицит, что-то достать, что-то кому-то перепродать&nbsp;&mdash; это было сложно. 90-е годы то&nbsp;же самое. Одна палка колбасы на&nbsp;три-четыре дня рождения моей семьи. Все хотели жить хорошо. Я&nbsp;пыталась уехать в&nbsp;США. Я&nbsp;быстро выучилась и&nbsp;хотела стать зубным техником. Потом мама сказала, что в&nbsp;Америку мы&nbsp;не&nbsp;поедем, я&nbsp;пошла в&nbsp;банковскую школу, закончила ее, и&nbsp;меня по&nbsp;контракту взяли в&nbsp;Кредо-банк.
+                    p Я&nbsp;довольно долго работала в&nbsp;банке, пока не&nbsp;поняла, что это приносит не&nbsp;так много денег, как хотелось&nbsp;бы. Банковская структура стала рушиться, и&nbsp;мне пришлось искать другую работу. И&nbsp;так я&nbsp;пришла именно в&nbsp;автомобильную тематику.
+                    p Поскольку я&nbsp;с&nbsp;12 лет занималась в&nbsp;авто-мотоклубе, мне показалось, что это то, чем я&nbsp;могу заниматься, мне это близко и&nbsp;понятно.
+                    .interview-block__interview--little.hidden-block
+                        p Что для вас бизнес-партнер?
+                    p.hidden-block Бизнес-партнер для меня значит много, даже, я&nbsp;бы сказала, все. Без моего бизнес-партнера я&nbsp;никто. Это мое второе я. Многие люди мечтают иметь клона, который сделает все так&nbsp;же хорошо, как они. Вот это мой бизнес-партнер сегодня.
+                    .interview-block__interview--little.hidden-block
+                        p Что для вас важно в&nbsp;работе?
+                    p.hidden-block Быстрота действий, открытость перед партнерами, честность моих коллег.
+                    .interview-block__interview--little.hidden-block
+                        p Насколько важны в&nbsp;бизнесе люди?
+                    p.hidden-block Есть такая поговорка &laquo;Один в&nbsp;поле не&nbsp;воин&raquo;. Один человек не&nbsp;может сдвинуть глыбу снега. Для того чтобы двигаться дальше, надо не&nbsp;просто делать это в&nbsp;два раза сильнее или быстрее, надо иметь поддержку и&nbsp;с&nbsp;левой стороны, и&nbsp;с&nbsp;правой&nbsp;&mdash; это люди в&nbsp;бизнесе.
+                    p.hidden-block Ни&nbsp;одни швейцарские часы не&nbsp;могут работать без огромного количества шестеренок, которые приводят их&nbsp;в&nbsp;действие. И&nbsp;так&nbsp;же важна четкая работа каждого элемента, каждой шестеренки, чтобы часы хорошо работали. Соответственно компания&nbsp;&mdash; это швейцарские часы. А&nbsp;команда&nbsp;&mdash; это шестеренки.
+                    p.hidden-block Команда очень важна, каждый человек, каждое звено очень важны, чтобы бизнес куда-то двигался, лучше всего в&nbsp;том направлении, которое вы&nbsp;сами себе наметили.
+                    .interview-block__interview--little.hidden-block
+                        p Какие актуальные задачи для развития бизнеса вы&nbsp;сейчас ставите перед собой?
+                    p.hidden-block Передо мной стоят задачи мобильности и&nbsp;надежности всех <nobr>IT-систем</nobr>. Я&nbsp;должен сделать так, чтобы рабочее место программиста/продавца было максимально надежным, мобильным и&nbsp;доступным везде.
+                    .interview-block__interview--little.hidden-block
+                        p Как привлечь клиента?
+                    p.hidden-block Это можно сделать разными способами. Для этого есть масса маркетинговых инструментов, ходов. Если брать мой бизнес, то&nbsp;мы&nbsp;с&nbsp;моим бизнес-партнером по&nbsp;моей инициативе запустили один продукт, который в&nbsp;нашем регионе продается не&nbsp;очень хорошо, а&nbsp;именно охлаждающую жидкость, которая может применяться при температуре -65 градусов. Чтобы продавать это здесь, мы&nbsp;предложили в&nbsp;подарок дистиллированную воду, которая позволит развести этот продукт до&nbsp;нужной консистенции, до&nbsp;температуры, которая есть в&nbsp;конкретном регионе, сэкономить на&nbsp;этом. То&nbsp;есть в&nbsp;целом подарки к&nbsp;покупкам хорошо работают для привлечения клиентов.
+                    .interview-block__interview--little.hidden-block
+                        p Какие актуальные задачи вы&nbsp;ставите для себя сейчас?
+                    p.hidden-block Сдвинуться с&nbsp;мертвой точки. Жизнь&nbsp;&mdash; это такая кардиограмма, и&nbsp;бизнес тоже. Сегодня ты&nbsp;взлетаешь, потом опустился, прямой линии быть не&nbsp;может. В&nbsp;бизнесе иногда наступает такой момент, когда тебе кажется, что ты&nbsp;стоишь на&nbsp;мертвой точке и&nbsp;не&nbsp;движешься дальше. Для нас важно, когда мы&nbsp;достигли определенного этапа, сдвинуться с&nbsp;этой точки и&nbsp;продвинуться дальше.
+                    .interview-block__interview--little.hidden-block
+                        p Как вы&nbsp;развиваете свой бизнес?
+                    p.hidden-block Мы&nbsp;развиваем бизнес разными способами. Мы&nbsp;живем в&nbsp;21 веке, и&nbsp;есть масса технологий, которые нельзя не&nbsp;использовать,&nbsp;&mdash; электронные площадки, интернет-продажи, планшеты. Чтобы все это работало, надо использовать технологии&nbsp;&mdash; мобильную связь, облачную АТС и&nbsp;другие, которые позволяют продвигать наш сайт, нашу торговлю. Чтобы наши продажи росли, мы&nbsp;подключили облачную АТС. Как подключить телефон? Путь один&nbsp;&mdash; пойти к&nbsp;сотовому оператору, обратиться к&nbsp;профессионалам, что мы&nbsp;и&nbsp;сделали. Нам предложили облачную АТС, что позволило получить московский номер, не&nbsp;терять ни&nbsp;один пропущенный звонок, полученный с&nbsp;сайта. Мы&nbsp;смогли также туда подключить наши мобильные телефоны и&nbsp;&laquo;закольцевать&raquo;. Это позволяет нам не&nbsp;терять клиентов, даже если мы&nbsp;находимся не&nbsp;в&nbsp;офисе, а, что называется, &laquo;в&nbsp;полях&raquo;.
+                    .interview-block__interview--little.hidden-block
+                        p Секрет успеха в&nbsp;бизнесе, на&nbsp;ваш взгляд?
+                    p.hidden-block Труд, ежедневный титанический труд, колоссальное трудолюбие, невозможность себе позволить отдыхать сколько хочется. &laquo;Дорогу осилит идущий&raquo;&nbsp;&mdash; эта пословица хорошо работает. А&nbsp;еще везет тому, кто везет&hellip; :)
+                    p.hidden-block Бизнес заставляет вставать рано и&nbsp;ложиться поздно, если вы&nbsp;хотите добиться серьезного результата. Я&nbsp;хочу, чтобы люди, друзья и&nbsp;даже враги, видели мой результат.
+                    .interview-block__interview--little.hidden-block
+                        p Кто сегодня выигрывает?
+                    p.hidden-block Сегодня, на&nbsp;мой взгляд, выигрывает честный бизнес, честный и&nbsp;открытый продавец. Что я&nbsp;вкладываю в&nbsp;это понятие? Отсутствие в&nbsp;продвижении того или иного продукта маркетинговых ходов, а&nbsp;именно честный и&nbsp;открытый бизнес, чтобы клиент видел, что купил, почему мы&nbsp;сделали такую наценку, чтобы он&nbsp;понимал, что его не&nbsp;обманули. Открытость с&nbsp;партнерами, с&nbsp;клиентами.
+                    .interview-block__interview--little.hidden-block
+                        p На&nbsp;чем вы&nbsp;экономите? И&nbsp;на&nbsp;чем экономить нельзя?
+                    p.hidden-block Мой подход к&nbsp;бизнесу такой: где можно сэкономить, там надо экономить. Например, можно сэкономить на&nbsp;канцтоварах, на&nbsp;офисе. Но&nbsp;нельзя экономить на&nbsp;команде. Люди, которые на&nbsp;тебя работают, должны чувствовать себя полноценными членами команды, поэтому на&nbsp;своих сотрудниках нельзя экономить.
+                    .interview-block__interview--little.hidden-block
+                        p Принцип &laquo;ничего личного, только бизнес&raquo;&nbsp;&mdash; насколько он&nbsp;применим в&nbsp;бизнесе, на&nbsp;ваш взгляд?
+                    p.hidden-block Раньше я&nbsp;так не&nbsp;считала, но&nbsp;сейчас считаю, что так и&nbsp;есть. Раньше мне каждому хотелось сделать что-то хорошее, но&nbsp;люди становятся более материально заинтересованными. Мой отец говорит: &laquo;Чем чаще счет, тем крепче дружба&raquo;. И&nbsp;вот сейчас я&nbsp;это понимаю. Если я&nbsp;что-то выдаю, я&nbsp;хочу за&nbsp;это получить какую-то цену, а&nbsp;не&nbsp;просто сделать что-то хорошее. Мой принцип при работе с&nbsp;партнерами&nbsp;&mdash; ничего личного, только бизнес.
+                    .interview-block__video__sharing.clearfix.hidden-block
+                        ul.js-share
+                            li
+                                a(href="https://www.facebook.com/sharer/sharer.php?u=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--fb" data-interview="shelamova").fbook.js-double-share
+                            li
+                                a(href="https://vk.com/share.php?url=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--vk" data-interview="shelamova").vkt.js-double-share
+                            li
+                                a(href="https://twitter.com/intent/tweet?text=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--tw" data-interview="shelamova").twt.js-double-share
+
+        .external-speaker-block
+            .interview-block--wrapper
+                .interview-block__tab
+                    .interview-block__tab__interview.interview-block__tab--bman(tab-index="1")
+                        | Бизнес
+                        .shift-tab
+                        | от первого лица
+                    .interview-block__tab__interview.interview-block__tab--client(tab-index="2")
+                        | Правила
+                        .shift-tab
+                        | предпринимателя
+            .inter-block__speakers--wrapper(speakers-tab="1")
+                .interview-block__speakers
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-1.html")
+                                img(src="images/interview-speakers/business/1.Popov.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-1.html") Александр Попов
+                            p Директор EasyFinance.ru
+                            a(href="/interview-1.html").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-2.html")
+                                img(src="images/interview-speakers/business/2.Cerazov.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-2.html") Константин Церазов
+                            p Член правления,руководитель инвестиционного блока банка «ФК Открытие»,член совета директоров «Открытия Капитал»
+                            a(href="/interview-2.html").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                          a(href="/interview-3.html")
+                            img(src="images/interview-speakers/business/3.Feldman.png")
+                        .interview-block__speakers__item__text
+                            h3
+                              a(href="/interview-3.html") Максим Фельдман
+                            p Руководитель направления по работе с клиентами Московской школы управления СКОЛКОВО
+                            a(href="/interview-3.html").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-4.html")
+                                img(src="images/interview-speakers/business/4.Volshuck.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-4.html") Александр Волощук
+                            p Генеральный директор сервиса Dr.Tariffи студии разработки QStudio.org
+                            a(href="/interview-4.html").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-5.html")
+                                img(src="images/interview-speakers/business/5.Avedei.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-5.html") Алексей Авдей
+                            p Директор по продукту ЦИАН
+                            a(href="/interview-5.html").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-7.html")
+                                img(src="images/interview-speakers/business/7.Jukov.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-7.html") Михаил Жуков
+                            p Генеральный директор HeadHunter
+                            a(href="/interview-7.html").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-8.html")
+                                img(src="images/interview-speakers/business/8.Tabolin.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-8.html") Сергей Таболин
+                            p Руководитель по&nbsp;сегментному маркетингу &laquo;Билайн&raquo; Бизнес
+                            a(href="/interview-8.html").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-9.html")
+                                img(src="images/interview-speakers/business/9.Li.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-9.html") Дмитрий Ли
+                            p Директор по&nbsp;маркетингу бизнес-сегмента &laquo;Билайн&raquo;
+                            a(href="/interview-9.html").watch-interview Смотреть
+            .inter-block__speakers--wrapper(speakers-tab="2")
+                .interview-block__speakers
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-1.html#client")
+                                img(src="images/interview-speakers/clients/1.-Chaplinski.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-1.html#client") Павел Чаплинский
+                            p Основатель BOX&ROSES
+                            a(href="/interview-1.html#client").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-2.html#client")
+                                img(src="images/interview-speakers/clients/2.-Shlopack.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-2.html#client") Дмитрий Шлопак
+                            p Управляющий партнер «Везендорф групп»
+                            a(href="/interview-2.html#client").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-3.html#client")
+                                img(src="images/interview-speakers/clients/3.-Zamai.png")
+                        .interview-block__speakers__item__text
+                            h3 
+                                a(href="/interview-3.html#client") Андрей Замай
+                            p Генеральный директор компании «Первая Интеллектуальная Реклама»
+                            a(href="/interview-3.html#client").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-4.html#client")
+                                img(src="images/interview-speakers/clients/4.-Lasckov.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-4.html#client") Игорь Ласьков
+                            p Генеральный директор ООО «Стройкомфорт»
+                            a(href="/interview-4.html#client").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-5.html#client")
+                                img(src="images/interview-speakers/clients/5.-Smirnov.png")
+                        .interview-block__speakers__item__text
+                            h3 
+                                a(href="/interview-5.html#client") Илья Смирнов
+                            p IT-директор компании «Ай Ти Ви групп»
+                            a(href="/interview-5.html#client").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-7.html#client")
+                                img(src="images/interview-speakers/clients/7.-Silhev.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-7.html#client") Андрей Сильчев
+                            p Директор по развитию IT Partner
+                            a(href="/interview-7.html#client").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-8.html#client")
+                                img(src="images/interview-speakers/clients/8.Shkolerov.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-8.html#client") Дмитрий Шкловер
+                            p Основатель интернет-магазина 613bricks.ru
+                            a(href="/interview-8.html#client").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-9.html#client")
+                                img(src="images/interview-speakers/clients/9. Poryadneev.png")
+                        .interview-block__speakers__item__text
+                            h3 Кирилл Поряднев
+                            p Генеральный директор «Результат Плюс»
+                            a(href="/interview-9.html#client").watch-interview Смотреть

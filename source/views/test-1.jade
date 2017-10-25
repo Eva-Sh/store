@@ -1,0 +1,342 @@
+extends templates/layout
+block vars
+- var title = 'Какой вы стартапер?'
+- var og_title = 'Какой вы стартапер?'
+- var og_description = ''
+- var og_image = '../images/million.jpg'
+- var twitter_description = ''
+
+block content
+    .test-block.test-block--first-test(data-test="1", style="background-image: url(../images/test-section/test-1-bg.jpg)")
+        .test-block--wrapper
+                .test-block__back
+                    .test-block__back--arrow
+                    a(href="index.html") Вернуться на главную
+                .test-block__title
+                .test-block__card(data-question="1")
+                    .test-block__card__number
+                        .test-block__card__number__quest-number
+                        .test-block__card__number__shadow
+                    .test-block__card__question
+                    .test-block__card__answers
+
+                    .test-block__card__next
+                        a(href="#") Следующий вопрос
+                .test-block__results.card-visible
+                    .test-block__results--superpuper
+                    .test-block__results__number
+                        .test-block__results__number__shadow
+                    .test-block__results__img(style="background-image: url(images/test-section/1_Result.svg)")
+                    .test-block__results__content
+                        h3
+                        
+                    .test-block__results__share
+                        p
+                            span Поделитесь своим результатом
+                            ul.js-share
+                                li
+                                    a(href="https://vk.com/share.php?url=", class="test-results__card__share__icon test-results__card__share__icon--vk").vkt.js-result-test
+                                li
+                                    a(href="https://www.facebook.com/sharer/sharer.php?u=", class="test-results__card__share__icon test-results__card__share__icon--fb").fbook.js-result-test
+                                li
+                                    a(href="https://twitter.com/intent/tweet?text=", class="test-results__card__share__icon test-results__card__share__icon--tw").twt.js-result-test
+            .test-block__other-test
+                .test-block__other-test__prev.disabled-test__prev
+                    .test-block__other-test__prev--arrow
+                    a(href="#test_0") Предыдущий тест
+                .test-block__other-test__separator
+                    span &#124;
+                .test-block__other-test__next
+                    a(href="#test_2") Следующий тест
+                    .test-block__other-test__next--arrow
+    .test-block.test-block--second-test(data-test="2", style="background-image: url(../images/test-section/test-2-bg.jpg)")
+        .test-block--wrapper
+            .test-block__back
+                .test-block__back--arrow
+                a(href="index.html") Вернуться на главную
+            .test-block__title
+            .test-block__card(data-question="1")
+                .test-block__card__number
+                    .test-block__card__number__quest-number
+                    .test-block__card__number__shadow
+                .test-block__card__question
+                .test-block__card__answers
+
+                .test-block__card__next
+                    a(href="#") Следующий вопрос
+            .test-block__results.card-visible
+                .test-block__results--superpuper
+                .test-block__results__number
+                    .test-block__results__number__shadow
+                .test-block__results__img(style="background-image: url(images/test-section/1_Result.svg)")
+                .test-block__results__content
+                    h3
+                    
+                .test-block__results__share
+                    p
+                        span Поделитесь своим результатом
+                        ul.js-share
+                            li
+                                a(href="https://vk.com/share.php?url=", class="test-results__card__share__icon test-results__card__share__icon--vk").vkt.js-result-test
+                            li
+                                a(href="https://www.facebook.com/sharer/sharer.php?u=", class="test-results__card__share__icon test-results__card__share__icon--fb").fbook.js-result-test
+                            li
+                                a(href="https://twitter.com/intent/tweet?text=", class="test-results__card__share__icon test-results__card__share__icon--tw").twt.js-result-test
+        .test-block__other-test
+            .test-block__other-test__prev
+                .test-block__other-test__prev--arrow
+                a(href="#test_1") Предыдущий тест
+            .test-block__other-test__separator
+                span &#124;
+            .test-block__other-test__next
+                a(href="#test_3") Следующий тест
+                .test-block__other-test__next--arrow
+
+    .test-block.test-block--second-test(data-test="3", style="background-image: url(../images/test-section/test-3-bg.jpg)")
+        .test-block--wrapper
+            .test-block__back
+                .test-block__back--arrow
+                a(href="index.html") Вернуться на главную
+            .test-block__title
+            .test-block__card(data-question="1")
+                .test-block__card__number
+                    .test-block__card__number__quest-number
+                    .test-block__card__number__shadow
+                .test-block__card__question
+                .test-block__card__answers
+
+                .test-block__card__next
+                    a(href="#") Следующий вопрос
+            .test-block__results.card-visible
+                .test-block__results--superpuper
+                .test-block__results__number
+                    .test-block__results__number__shadow
+                .test-block__results__img(style="background-image: url(images/test-section/1_Result.svg)")
+                .test-block__results__content
+                    h3
+                    
+                .test-block__results__share
+                    p
+                        span Поделитесь своим результатом
+                        ul.js-share
+                            li
+                                a(href="https://vk.com/share.php?url=", class="test-results__card__share__icon test-results__card__share__icon--vk").vkt.js-result-test
+                            li
+                                a(href="https://www.facebook.com/sharer/sharer.php?u=", class="test-results__card__share__icon test-results__card__share__icon--fb").fbook.js-result-test
+                            li
+                                a(href="https://twitter.com/intent/tweet?text=", class="test-results__card__share__icon test-results__card__share__icon--tw").twt.js-result-test
+        .test-block__other-test
+            .test-block__other-test__prev
+                .test-block__other-test__prev--arrow
+                a(href="#test_2") Предыдущий тест
+            .test-block__other-test__separator
+                span &#124;
+            .test-block__other-test__next
+                a(href="#test_4") Следующий тест
+                .test-block__other-test__next--arrow
+
+    .test-block.test-block--second-test(data-test="4", style="background-image: url(../images/test-section/test-4-bg.jpg)")
+        .test-block--wrapper
+            .test-block__back
+                .test-block__back--arrow
+                a(href="index.html") Вернуться на главную
+            .test-block__title
+            .test-block__card(data-question="1")
+                .test-block__card__number
+                    .test-block__card__number__quest-number
+                    .test-block__card__number__shadow
+                .test-block__card__question
+                .test-block__card__answers
+                .test-block__card__next
+                    a(href="#") Следующий вопрос
+            .test-block__results.card-visible
+                .test-block__results--superpuper
+                .test-block__results__number
+                    .test-block__results__number__shadow
+                .test-block__results__img(style="background-image: url(images/test-section/1_Result.svg)")
+                .test-block__results__content
+                    h3
+                    
+                .test-block__results__share
+                    p
+                        span Поделитесь своим результатом
+                        ul.js-share
+                            li
+                                a(href="https://vk.com/share.php?url=", class="test-results__card__share__icon test-results__card__share__icon--vk").vkt.js-result-test
+                            li
+                                a(href="https://www.facebook.com/sharer/sharer.php?u=", class="test-results__card__share__icon test-results__card__share__icon--fb").fbook.js-result-test
+                            li
+                                a(href="https://twitter.com/intent/tweet?text=", class="test-results__card__share__icon test-results__card__share__icon--tw").twt.js-result-test
+        .test-block__other-test
+            .test-block__other-test__prev
+                .test-block__other-test__prev--arrow
+                a(href="#test_3") Предыдущий тест
+            .test-block__other-test__separator
+                span &#124;
+            .test-block__other-test__next
+                a(href="#test_5") Следующий тест
+                .test-block__other-test__next--arrow
+    .test-block.test-block--second-test(data-test="5", style="background-image: url(../images/test-section/test-5-bg.jpg)")
+        .test-block--wrapper
+            .test-block__back
+                .test-block__back--arrow
+                a(href="index.html") Вернуться на главную
+            .test-block__title
+            .test-block__card(data-question="1")
+                .test-block__card__number
+                    .test-block__card__number__quest-number
+                    .test-block__card__number__shadow
+                .test-block__card__question
+                .test-block__card__answers
+                .test-block__card__next
+                    a(href="#") Следующий вопрос
+            .test-block__results.card-visible
+                .test-block__results--superpuper
+                .test-block__results__number
+                    .test-block__results__number__shadow
+                .test-block__results__img(style="background-image: url(images/test-section/1_Result.svg)")
+                .test-block__results__content
+                    h3
+                    
+                .test-block__results__share
+                    p
+                        span Поделитесь своим результатом
+                        ul.js-share
+                            li
+                                a(href="https://vk.com/share.php?url=", class="test-results__card__share__icon test-results__card__share__icon--vk").vkt.js-result-test
+                            li
+                                a(href="https://www.facebook.com/sharer/sharer.php?u=", class="test-results__card__share__icon test-results__card__share__icon--fb").fbook.js-result-test
+                            li
+                                a(href="https://twitter.com/intent/tweet?text=", class="test-results__card__share__icon test-results__card__share__icon--tw").twt.js-result-test
+        .test-block__other-test
+            .test-block__other-test__prev
+                .test-block__other-test__prev--arrow
+                a(href="#test_4") Предыдущий тест
+            .test-block__other-test__separator
+                span &#124;
+            .test-block__other-test__next
+                a(href="#test_7") Следующий тест
+                .test-block__other-test__next--arrow
+    .test-block.test-block--second-test(data-test="7", style="background-image: url(../images/test-section/test-7-bg.jpg)")
+        .test-block--wrapper
+            .test-block__back
+                .test-block__back--arrow
+                a(href="index.html") Вернуться на главную
+            .test-block__title
+            .test-block__card(data-question="1")
+                .test-block__card__number
+                    .test-block__card__number__quest-number
+                    .test-block__card__number__shadow
+                .test-block__card__question
+                .test-block__card__answers
+                .test-block__card__next
+                    a(href="#") Следующий вопрос
+            .test-block__results.card-visible
+                .test-block__results--superpuper
+                .test-block__results__number
+                    .test-block__results__number__shadow
+                .test-block__results__img(style="background-image: url(images/test-section/1_Result.svg)")
+                .test-block__results__content
+                    h3
+                    
+                .test-block__results__share
+                    p
+                        span Поделитесь своим результатом
+                        ul.js-share
+                            li
+                                a(href="https://vk.com/share.php?url=", class="test-results__card__share__icon test-results__card__share__icon--vk").vkt.js-result-test
+                            li
+                                a(href="https://www.facebook.com/sharer/sharer.php?u=", class="test-results__card__share__icon test-results__card__share__icon--fb").fbook.js-result-test
+                            li
+                                a(href="https://twitter.com/intent/tweet?text=", class="test-results__card__share__icon test-results__card__share__icon--tw").twt.js-result-test
+        .test-block__other-test
+            .test-block__other-test__prev
+                .test-block__other-test__prev--arrow
+                a(href="#test_5") Предыдущий тест
+            .test-block__other-test__separator
+                span &#124;
+            .test-block__other-test__next
+                a(href="#test_8") Следующий тест
+                .test-block__other-test__next--arrow
+    .test-block.test-block--second-test(data-test="8", style="background-image: url(../images/test-section/test-8-bg.jpg)")
+        .test-block--wrapper
+            .test-block__back
+                .test-block__back--arrow
+                a(href="index.html") Вернуться на главную
+            .test-block__title
+            .test-block__card(data-question="1")
+                .test-block__card__number
+                    .test-block__card__number__quest-number
+                    .test-block__card__number__shadow
+                .test-block__card__question
+                .test-block__card__answers
+                .test-block__card__next
+                    a(href="#") Следующий вопрос
+            .test-block__results.card-visible
+                .test-block__results--superpuper
+                .test-block__results__number
+                    .test-block__results__number__shadow
+                .test-block__results__img(style="background-image: url(images/test-section/1_Result.svg)")
+                .test-block__results__content
+                    h3
+                    
+                .test-block__results__share
+                    p
+                        span Поделитесь своим результатом
+                        ul.js-share
+                            li
+                                a(href="https://vk.com/share.php?url=", class="test-results__card__share__icon test-results__card__share__icon--vk").vkt.js-result-test
+                            li
+                                a(href="https://www.facebook.com/sharer/sharer.php?u=", class="test-results__card__share__icon test-results__card__share__icon--fb").fbook.js-result-test
+                            li
+                                a(href="https://twitter.com/intent/tweet?text=", class="test-results__card__share__icon test-results__card__share__icon--tw").twt.js-result-test
+        .test-block__other-test
+            .test-block__other-test__prev
+                .test-block__other-test__prev--arrow
+                a(href="#test_7") Предыдущий тест
+            .test-block__other-test__separator
+                span &#124;
+            .test-block__other-test__next
+                a(href="#test_9") Следующий тест
+                .test-block__other-test__next--arrow
+    .test-block.test-block--second-test(data-test="9", style="background-image: url(../images/test-section/test-9-bg.jpg)")
+        .test-block--wrapper
+            .test-block__back
+                .test-block__back--arrow
+                a(href="index.html") Вернуться на главную
+            .test-block__title
+            .test-block__card(data-question="1")
+                .test-block__card__number
+                    .test-block__card__number__quest-number
+                    .test-block__card__number__shadow
+                .test-block__card__question
+                .test-block__card__answers
+                .test-block__card__next
+                    a(href="#") Следующий вопрос
+            .test-block__results.card-visible
+                .test-block__results--superpuper
+                .test-block__results__number
+                    .test-block__results__number__shadow
+                .test-block__results__img(style="background-image: url(images/test-section/1_Result.svg)")
+                .test-block__results__content
+                    h3
+                    
+                .test-block__results__share
+                    p
+                        span Поделитесь своим результатом
+                        ul.js-share
+                            li
+                                a(href="https://vk.com/share.php?url=", class="test-results__card__share__icon test-results__card__share__icon--vk").vkt.js-result-test
+                            li
+                                a(href="https://www.facebook.com/sharer/sharer.php?u=", class="test-results__card__share__icon test-results__card__share__icon--fb").fbook.js-result-test
+                            li
+                                a(href="https://twitter.com/intent/tweet?text=", class="test-results__card__share__icon test-results__card__share__icon--tw").twt.js-result-test
+        .test-block__other-test
+            .test-block__other-test__prev
+                .test-block__other-test__prev--arrow
+                a(href="#test_8") Предыдущий тест
+            .test-block__other-test__separator
+                span &#124;
+            .test-block__other-test__next
+                a(href="#test_1") Следующий тест
+                .test-block__other-test__next--arrow

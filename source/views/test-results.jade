@@ -1,0 +1,37 @@
+extends templates/layout
+block vars
+
+block content
+  .test-results
+    .test-results--wrapper
+      .test-results__back
+        .test-results__back--arrow
+        a(href="index.html") Вернуться на главную
+      .test-results__title Какой ты стартапер?
+      .test-results__card
+        .test-results__card--superpuper
+        .test-results__card__number
+          .test-results__card__number__shadow
+        .test-results__card__img(style="background-image: url(images/test-section/1_Result.svg)")
+        .test-results__card__content
+          h3 Вы стартапер хоть куда
+          p Готовы рискнуть всем, а, когда нужно, можете принять взвешенное решение. Вы инициативны, упорны, верите в успех и способны всей душой отдаваться делу. Вам свойственно чувство ответственности, и вы умеете прислушиваться к чужому мнению. Стартаперу с таким набором качеств, пожалуй, не хватает только одного — своего бизнеса. Если у вас его ещё нет — дерзайте, дело того точно стоит.
+        .test-results__card__share
+          p
+            span Поделитесь своим результатом
+            ul.js-share
+                li
+                    a(href="https://www.facebook.com/sharer/sharer.php?u=", class="footer-block__social-share__icon footer-block__social-share__icon--fb").fbook
+                li
+                    a(href="https://vk.com/share.php?url=", class="footer-block__social-share__icon footer-block__social-share__icon--vk").vkt
+                li
+                    a(href="https://twitter.com/intent/tweet?text=", class="footer-block__social-share__icon footer-block__social-share__icon--tw").twt
+      .test-results__other-test
+        .test-results__other-test__prev
+          .test-results__other-test__prev--arrow
+          a(href="#") Предыдущий тест
+        .test-results__other-test__separator
+          span &#124;
+        .test-results__other-test__next
+          a(href="#") Следующий тест
+          .test-results__other-test__next--arrow

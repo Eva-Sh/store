@@ -1,0 +1,320 @@
+extends templates/layout
+block vars
+    - var title = '«БИЛАЙН» БИЗНЕС'
+    - var og_title = 'За рамками компании'
+    - var og_description = 'Сегодня на аутсорсинг можно передать любую бизнес-задачу — от ведения бухгалтерии до техподдержки клиентов. Что поручить сторонней компании, а что все-таки лучше делать своими силами — читайте в спецпроекте РБК и «Билайн».'
+    - var og_image = '../images/advices/sovet-4/Sovet_4.jpg'
+    - var twitter_description = '«Билайн» Бизнес: прорывные технологии для больших побед.'
+block content
+    section.lifehack-case-jumbotron.jumbotron-height(style="background-image: url('../images/advices/sovet-4/Sovet-4_cover_1920x310.jpg');")
+        a(href="/index.html").link-back Вернуться на главную
+        span Совет
+        h1 За рамками компании
+        .link
+            a(href="/advice-3.html").prev-link Предыдущий совет
+            span |
+            a(href="/advice-1.html").next-link Следующий совет
+    section.content-text
+        .advice-content__block
+            .container
+                .advice-content__block__step
+                    h3 За рамками компании
+                    p  Аутсорcинг можно использовать для организации различных процессов в&nbsp;компании и&nbsp;экономии затрат, но&nbsp;иногда он&nbsp;несет в&nbsp;себе риски потери контроля над управлением бизнеса. В&nbsp;каких случаях аутсорсинг&nbsp;&mdash; эффективный инструмент оптимизации деятельности, а&nbsp;в&nbsp;каких&nbsp;&mdash; возможная причина для неправильных управленческих решений, разберемся в&nbsp;нашем материале.
+                    p  Аутсорсинг&nbsp;&mdash; это передача части процессов в&nbsp;компании или части функций сотрудников фирмы сторонним исполнителями (физическим лицам или организациям), не&nbsp;являющимися штатными сотрудниками и&nbsp;частью структуры компании. Аутсорсинг принято считать целесообразным, если компания выводит неключевые свои функции и&nbsp;задачи за&nbsp;штат. Однако иногда передача определенных задач в&nbsp;сторонние руки может привести к&nbsp;снижению качества их&nbsp;выполнения, ухудшению результатов бизнеса и&nbsp;даже потере управленческого контроля. Итак, посмотрим, когда аутсорсинг эффективен и&nbsp;нужен...
+                .advice-content__block__step
+                    h3 Шаг&nbsp;1. Определяем целесообразность
+                    p Аутсорсинг подразделяется на&nbsp;два вида: производственный аутсорсинг и&nbsp;аутсорсинг бизнес-процессов. Производственный аутсорсинг&nbsp;&mdash; это передача всего или части производства во&nbsp;вне (такое часто делают крупные одежные, обувные бренды). Аутсорсинг бизнес-процессов, как правило, очерчивает такие функции, как бухгалтерские, юридические услуги, ИТ, охрана, клининг и&nbsp;т.д., то&nbsp;есть различные побочные направления деятельности фирмы. Этот вид аутсорсинга как раз часто эффективен для представителей малого и&nbsp;среднего бизнеса.
+                .advice-content__block__image(style="margin-bottom: 32px;")
+                    img(src="../images/advices/sovet-4/4_sovet_main1.jpg")
+                    p.last-image-text Чтобы принять решение о&nbsp;целесообразности аутсорсинга, надо проанализировать бизнес-процессы компании на&nbsp;предмет следующих вопросов:
+                    ul
+                        li определить, в&nbsp;чем заключается основная деятельность компании (которая направлена на&nbsp;достижение основных целей и&nbsp;в&nbsp;которой должны быть задействованы максимальные ресурсы);
+                        li определить основные блоки/этапы работ в&nbsp;вашем бизнесе&nbsp;&mdash; другими словами, разложить деятельность на&nbsp;бизнес-процессы;
+                        li выделить вспомогательные процессы и&nbsp;оценить возможность их&nbsp;передачи с&nbsp;точки зрения юридических вопросов, конфиденциальности, простоты контроля и&nbsp;т.д.;
+                        li сравнить затраты на&nbsp;выполнение этих процессов внутренними и&nbsp;внешними силами.
+                .advice-content__block__documents
+                    h3 Пример&nbsp;1
+                    p  Для выполнения финансовой работы в&nbsp;вашей компании требуется штат бухгалтеров из&nbsp;трех человек, которые будут в&nbsp;среднем получать по&nbsp;60&nbsp;тыс. рублей. Итого 180&nbsp;тыс. рублей, а&nbsp;с&nbsp;налогами это порядка 260-270&nbsp;тыс. рублей. Аутсорсинг бухучета, как вам подсчитали, обойдется в&nbsp;60&nbsp;тыс. рублей в&nbsp;месяц. Очевидно, что аутсорсинг в&nbsp;этом случае выгоднее.
+                .advice-content__block__documents
+                    h3 Пример&nbsp;2
+                    p  Сервисная поддержка сети обходится вам в&nbsp;зарплату &laquo;айтишника&raquo;, работающего на&nbsp;полставки,&nbsp;&mdash; около 50&nbsp;тыс. рублей в&nbsp;месяц с&nbsp;бюджетными отчислениями. Сопровождение небольшой сети в&nbsp;сторонней фирме обойдется во&nbsp;столько&nbsp;же или даже немного дороже. В&nbsp;этом случае проще обойтись штатным сотрудником.
+                .advice-content__block__step
+                    h3 Шаг&nbsp;2. Определяем причины для аутсорсинга
+                    p Также вам стоит подумать, а есть ли у вас вообще причины обращаться к аутсорсингу. Обычно выделяют следующие причины:
+                    ul
+                        li сокращение расходов (например бухучет);
+                        li более быстрое или более эффективное выполнение функций, задач (например передача креативных работ);
+                        li высвобождение ключевых ресурсов (например передача документооборота).
+                    p Аутсорсинг призван сделать ваш бизнес более гибким, адаптивным и&nbsp;эффективным. Однако если названные функции выполняются отлично внутренними ресурсами и&nbsp;за&nbsp;небольшие затраты, не&nbsp;факт, что вам нужно обращаться к&nbsp;подобной модели бизнеса.
+        .advice-content__block
+            .container
+                .advice-content__block__step
+                    h3 Шаг&nbsp;3. Выделяем функции для аутсорсинга
+                .advice-content__block__step.article-block.no-top
+                    .tests-block.tests-block--alone.tests-block--custom-advice
+                        .container
+                            .test-card--alone
+                                .flip-container.flip-container--alone.test-card__item
+                                    .flipper
+                                        .front(style="background-image: url(../images/main-page/Test/4.jpg);").white.layer
+                                            .test-card__item__time
+                                                span 2 мин
+                                            span.number-test Тест 4
+                                            .test-card__item__title
+                                                p
+                                                    | Способны ли
+                                                    span.shift-block-p
+                                                    | вы оптимизировать
+                                                    span.shift-block-p
+                                                    |  бизнес-расходы?
+                                            a(href="/test-1.html#test_4").go-test.bg-yellow Пройти тест
+                    p Передача тех или иных процессов на&nbsp;аутсорсинг зависит в&nbsp;том числе от&nbsp;специфики бизнеса, структуры организации, особенностей ее&nbsp;развития. В&nbsp;целом можно выделить несколько основных наиболее популярных для передачи функций:
+                .advice-content__block__step
+                    ul
+                        li бухгалтерские услуги. Сторонняя бухгалтерская компания может полностью выполнять все бухгалтерские функции вплоть до&nbsp;проведения банковских платежей и&nbsp;подготовки первичных документов контрагентам. Причем делать это подрядчик может более качественно, быстро и&nbsp;гибко, чем штатные бухгалтеры. Также плюсом аутсорсинга бухучета является ответственность за&nbsp;организацию учета и&nbsp;правильность его ведения, которую по&nbsp;договору можно возложить на&nbsp;аутсорсера. Это значит, что, если вдруг налоги будут рассчитаны неправильно или отчетность подана не&nbsp;вовремя, компенсация расходов на&nbsp;штрафы и&nbsp;пени ляжет на&nbsp;плечи подрядчика. Удобно. Минусом бухгалтерского аутсорсинга является потеря конфиденциальности;
+                        li ИТ-услуги. Здесь речь идет о&nbsp;широком круге функций, которые могут быть переданы частично или полностью подрядчику. То&nbsp;есть это может быть и&nbsp;обслуживание парка техники, и&nbsp;сервис компьютерной сети, и&nbsp;предоставление мощностей сервера, ЦОДа, и&nbsp;многое другое. Чаще всего для малого бизнеса удобно передавать на&nbsp;аутсорсинг настройку и&nbsp;обновление оборудования и&nbsp;ПО, ремонт и&nbsp;замену оборудования и&nbsp;т.д.;
+                        li маркетинг и&nbsp;реклама. В&nbsp;этом направлении функционал, который можно передать на&nbsp;аутсорсинг, уникален для каждой компании и&nbsp;определяется особенностями бизнеса. Возможно, целесообразно отдать за&nbsp;штат в&nbsp;целом анализ и&nbsp;разработку маркетинговой стратегии при выпуске нового продукта или выходе на&nbsp;новый рынок. Можно говорить о&nbsp;проектном аутсорсинге, например, заказать в&nbsp;стороннем рекламном агентстве рекламную кампанию или конкурс в&nbsp;социальных сетях;
+                        li услуги кол-центра для прямых продаж: &laquo;холодные&raquo; звонки, опрос клиентов и&nbsp;т.д. Из&nbsp;минусов&nbsp;&mdash; сложно проверить качество данного вида работ.
+                .advice-content__block__image(style="margin-bottom: 32px;")
+                    img(src="../images/advices/sovet-4/4_sovet_main2.jpg")
+                .advice-content__block__step
+                    h3 Шаг&nbsp;4. Подытоживаем плюсы и&nbsp;минусы
+                    p Итак, при аутсорсинге ваша компания может сэкономить:
+                    ul
+                        li прямые расходы на&nbsp;сотрудников, выполняющих определенный фронт работ: зарплата, оплата отпусков, больничных, страховые взносы в&nbsp;бюджет, обучение и&nbsp;повышение квалификации, подбор новых специалистов при увольнении;
+                        li косвенные расходы на&nbsp;сотрудников: создание и&nbsp;поддержание рабочих мест, обновление&nbsp;ПО, и&nbsp;т.д.;
+                        li потенциальные расходы и&nbsp;штрафы, если организация не&nbsp;может выполнять данные работы качественно.
+                    p   Но&nbsp;организация может и&nbsp;потерять:
+                    ul
+                        li качество;
+                        li конфиденциальность;
+                        li контроль над важными для бизнеса задачами.
+        section.big-table
+            div#title
+                .container
+                    h2 Достоинства и&nbsp;недостатки аутсорсинга
+                table
+                    tr.main
+                        th.about.advice-about Достоинства
+                        th.about.advice-about Недостатки
+            div#content
+                table
+                    tr
+                        td.about.advice-about
+                            ul
+                                li Фокусирование на&nbsp;ключевом виде деятельности.
+                                li Доступ к&nbsp;ресурсам, которых нет в&nbsp;наличии в&nbsp;самой компании, например профессиональные кадры, информационные базы, производственные возможности).
+                                li Снижение расходов на&nbsp;работы, передаваемые на&nbsp;аутсорсинг.
+                                li Снижение рисков за&nbsp;счет масштабных инвестиций и&nbsp;накопленной экспертизы аутсорсеров.
+                                li Повышение качества обслуживания клиентов.
+                                li Снижение расходов на&nbsp;второстепенные направления деятельности.
+                                li Минимизация риска остановки рабочего процесса.
+                                li Повышение производительности труда за&nbsp;счет фокуса на&nbsp;главных направлениях бизнеса и&nbsp;более эффективного использования трудовых ресурсов.
+                                li Создание своего рода &laquo;коллективного&raquo; разума.
+                                li Использование чужого накопленного опыта и&nbsp;бизнес-практик.
+                                li Доступ к&nbsp;технологиям.
+                        td.about.advice-about
+                            ul
+                                li Потеря контроля над переданными функциями.
+                                li Утечка конфиденциальной информации.
+                                li Снижение качества при недобросовестности подрядчика.
+                                li Зависимость от&nbsp;подрядчика.
+                                li Усложнение процессов.
+                                li Нежелание персонала работать с&nbsp;подрядчиком, боязнь быть уволенными.
+                                li Возможность сговора подрядчика с&nbsp;контролирующим его сотрудником вашей компании, риски возникновения в&nbsp;цепочке &laquo;откатов&raquo;.
+    section.content-text
+        .advice-content__block
+            .container
+                .advice-content__block__step
+                    h3 Шаг&nbsp;5. Выбираем компанию-подрядчика
+                    p  Итак, если вы&nbsp;все&nbsp;же определились с&nbsp;необходимостью обращения к&nbsp;аутсорсингу, вам надо выбрать подрядчика. При выборе аутсорсера следует обращать внимание на&nbsp;опыт выполнения аналогичных договоров, профессиональный уровень персонала, репутацию.
+                    p  Чтобы это сделать, вам надо:
+                    ul
+                        li составить четкий бриф, техническое задание того, что вы&nbsp;хотите получить от&nbsp;аутсорсера;
+                        li разослать их&nbsp;в&nbsp;несколько агентств;
+                        li получить от&nbsp;них цены и&nbsp;желательно презентации проектов под вас;
+                        li встретиться с&nbsp;теми, кто вам больше всех понравился.
+                    p  На&nbsp;встрече можно попросить привести несколько аргументов в&nbsp;пользу того, что вы&nbsp;должны нанять именно их&nbsp;и&nbsp;как их&nbsp;работа улучшит ваш бизнес.
+                    p  Попросите рекомендации &laquo;с&nbsp;рынка&raquo;, хорошо, если агентство работало с&nbsp;какими-то известными вам предпринимателями.
+                    p  Наконец, узнайте конечную стоимость работ подрядчика (она зачастую отличается от&nbsp;указанной в&nbsp;презентации).
+    section.content-text
+        .advice-content__block
+            .container
+                .advice-content__block__step
+                    h3 Шаг&nbsp;6. Заключаем договор
+                    p  В&nbsp;договоре на&nbsp;аутсорсинг важно детально определить:
+                    ul
+                        li предоставляемые услуги, выполняемые работы;
+                        li фиксированную цену либо порядок расчета стоимости;
+                        li определяющие качество параметры;
+                        li сроки промежуточных этапов и&nbsp;итоговой сдачи работ;
+                        li сроки промежуточных этапов и&nbsp;итоговой сдачи работ;
+                        li права и&nbsp;обязанности сторон;
+                        li санкции за&nbsp;нарушение обязанностей;
+                        li порядок расторжения договора.
+                    p  Особенность договоров аутсорсинга&nbsp;&mdash; их&nbsp;длительный характер, выполнение комплекса операций, чаще всего повторяющихся, а&nbsp;не&nbsp;разовых. Если комплекс работ может меняться со&nbsp;временем, к&nbsp;договорам можно предусмотреть дополнительные соглашения.
+    section.content-text
+        .advice-content__block
+            .container
+                .advice-content__block__step
+                    h3 Шаг&nbsp;7. Учитываем риски
+                    p  Для признания расходов при расчете налогооблагаемой прибыли они должны быть экономически оправданными и&nbsp;документально подтвержденными. Например, налогооблагаемую прибыль согласно&nbsp;ст.&nbsp;264&nbsp;НК РФ&nbsp;могут уменьшать расходы&nbsp;на:
+                    ul
+                        li юридические и&nbsp;информационные услуги;
+                        li консультационные услуги;
+                        li услуги по&nbsp;ведению бухгалтерского учета.
+                    p  Претензии со&nbsp;стороны налоговиков могут возникать о&nbsp;расходах на&nbsp;подрядчика, если в&nbsp;штате компании есть соответствующие специалисты. Довольно часто предметом споров с&nbsp;налоговиками оказываются расходы на&nbsp;оказание бухгалтерских, юридических, кадровых услуг. Поэтому, если вы&nbsp;обращаетесь к&nbsp;аутсорсингу, в&nbsp;штате у&nbsp;вас должен быть предусмотрен либо минимальный состав работников, либо их&nbsp;отсутствие.
+    section.content-text
+        .advice-content__block
+            .container
+                .advice-content__block__step
+                    h3 Резюме
+                    p  Целесообразно&nbsp;ли вашей компании использовать аутсорсинг, зависит от&nbsp;специфики вашего бизнеса, а&nbsp;также от&nbsp;того, какой процесс (функция) рассматривается для передачи подрядчику-аутсорсеру. Также важно аккумулировать все преимущества и&nbsp;риски, связанные с&nbsp;использованием аутсорсинга.
+        section.sharing-block
+            .share-icon.js-share
+                a(href="https://www.facebook.com/sharer/sharer.php?u=").share-icon__item.share-icon__item--fk.fbook
+                a(href="https://vk.com/share.php?url=").share-icon__item.share-icon__item--vk.vkt
+                a(href="https://twitter.com/intent/tweet?text=").share-icon__item.share-icon__item--tw.twt
+        section.advices-block-slider
+            a(href="/article-1.html").advices-block-slider__item
+                .advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/Article_1.jpg');")
+                .advices-block-slider__item__text
+                    p Малые миллионы
+            a(href="/article-2.html").advices-block-slider__item
+                .advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/Article_2.jpg');")
+                .advices-block-slider__item__text
+                    p Финансы для бизнеса
+            a(href="/article-3.html").advices-block-slider__item
+                .advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/Article_3.jpg');")
+                .advices-block-slider__item__text
+                    p «Океаны» бизнеса
+            a(href="/article-4.html").advices-block-slider__item
+                .advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/4.jpg');")
+                .advices-block-slider__item__text
+                    p Инвестиции в эффективность
+            a(href="/article-5.html").advices-block-slider__item
+                .advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/5.jpg');")
+                .advices-block-slider__item__text
+                    p Плата за&nbsp;эмоции
+            a(href="/article-6.html").advices-block-slider__item
+                .advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/6.jpg');")
+                .advices-block-slider__item__text
+                    p В&nbsp;погоне за&nbsp;надежностью
+            a(href="/article-7.html").advices-block-slider__item
+                .advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/7.jpg');")
+                .advices-block-slider__item__text
+                    p Кадры в кризис: увольнять или нет
+            a(href="/article-8.html").advices-block-slider__item
+                .advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/8.jpg');")
+                .advices-block-slider__item__text
+                    p Связь для бизнеса
+            a(href="/article-9.html").advices-block-slider__item
+                .advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/9.jpg');")
+                .advices-block-slider__item__text
+                    p Машины vs люди
+    .line-grey
+    section.video-slider.video-slider-footer
+        .container
+            h2 Правила предпринимателя
+            .videos-slider.videos-slider--space
+                a()
+                    .interview-block__video
+                        .interview-block__video__block
+                            .interview-block__video__block__muted.video_muted.block-control--slider-4
+                                .block-control__pause
+                                .block-control__play
+                            .full-block-control
+                                .full-block-control__slider--play
+                                .full-block-control__time
+                                .full-block-control__main-line
+                                    .full-block-control__main-line__progress
+                                .full-block-control__sound
+                            .interview-block__video__block__interview
+                                iframe(id="client-video-4" width="780" height="439" src="https://www.youtube.com/embed/jMvRX6AEsQY?list=PLv42Kp4x57LC_mrA0OAEqpo5r1LEMAL66&amp;controls=0&amp;showinfo=0&enablejsapi=1&rel=0" frameborder="0" allowfullscreen)
+                            .interview-block__video__block__filter(style="background-image: url(images/interview-speakers/business/Client_4.jpg); background-size: contain;")
+                            .interview-block__video__block__info
+                                h3 Игорь Ласьков
+                                p.regalia Генеральный директор <nobr>ООО &laquo;Стройкомфорт&raquo;</nobr>
+                                p.hide-in-mobile Снижать расходы и, в&nbsp;то&nbsp;же время, постоянно расширять число клиентов, позволит современная <nobr>CRM-система</nobr> и&nbsp;другие решения мобильного оператора.
+                                .interview-block__video__block__info__playbutton(id="start-client-video-4")
+                    .interview-block__video__sharing.clearfix.no-margin-bottom
+                a()
+                    .interview-block__video
+                        .interview-block__video__block
+                            .interview-block__video__block__muted.video_muted.block-control--slider-3
+                                .block-control__pause
+                                .block-control__play
+                            .full-block-control
+                                .full-block-control__slider--play
+                                .full-block-control__time
+                                .full-block-control__main-line
+                                    .full-block-control__main-line__progress
+                                .full-block-control__sound
+                            .interview-block__video__block__interview
+                                iframe(id="client-video-3" width="780" height="439" src="https://www.youtube.com/embed/D4W_ciHj-Dc?list=PLv42Kp4x57LC_mrA0OAEqpo5r1LEMAL66&amp;controls=0&amp;showinfo=0&enablejsapi=1&rel=0" frameborder="0" allowfullscreen)
+                            .interview-block__video__block__filter(style="background-image: url(images/interview-speakers/business/Client_3.jpg); background-size: contain;")
+                            .interview-block__video__block__info
+                                h3 Андрей Замай
+                                p.regalia Генеральный директор компании «Первая Интеллектуальная Реклама»
+                                p.hide-in-mobile Найти «голубой океан» можно даже на современном конкурентном рынке. А выигрывает в бизнесе тот, кто не боится ошибок, совершает их, но учится на них и совершенствуется.
+                                .interview-block__video__block__info__playbutton(id="start-client-video-3")
+                    .interview-block__video__sharing.clearfix.no-margin-bottom
+                a()
+                    .interview-block__video
+                        .interview-block__video__block
+                            .interview-block__video__block__muted.video_muted.block-control--slider-1
+                                .block-control__pause
+                                .block-control__play
+                            .full-block-control
+                                .full-block-control__slider--play
+                                .full-block-control__time
+                                .full-block-control__main-line
+                                    .full-block-control__main-line__progress
+                                .full-block-control__sound
+                            .interview-block__video__block__interview
+                                iframe(id="client-video-1" width="780" height="501" src="https://www.youtube.com/embed/HLGZqCOwOws?controls=0&amp;showinfo=0&enablejsapi=1&rel=0" frameborder="0" allowfullscreen)
+                            .interview-block__video__block__filter(style="background-image: url(images/interview-speakers/business/Client_1.jpg); background-size: contain;")
+                            .interview-block__video__block__info
+                                h3 Павел Чаплинский
+                                p.regalia Основатель BOX&ROSES
+                                p Создавая компанию, предпринимателю нужно иметь видение, каким бизнес будет через полгода, год, несколько лет, какой будет его команда, какие задачи будут поставлены перед сотрудниками и&nbsp;для чего, вообще, строится этот бизнес.
+                                .interview-block__video__block__info__playbutton(id="start-client-video-1")
+                    .interview-block__video__sharing.clearfix.no-margin-bottom
+                a()
+                    .interview-block__video
+                        .interview-block__video__block
+                            .interview-block__video__block__muted.video_muted.block-control--slider-2
+                                .block-control__pause
+                                .block-control__play
+                            .full-block-control
+                                .full-block-control__slider--play
+                                .full-block-control__time
+                                .full-block-control__main-line
+                                    .full-block-control__main-line__progress
+                                .full-block-control__sound
+                            .interview-block__video__block__interview
+                                iframe(id="client-video-2" width="780" height="501" src="https://www.youtube.com/embed/3EaAAjCzSxE?controls=0&amp;showinfo=0&enablejsapi=1&rel=0" frameborder="0" allowfullscreen)
+                            .interview-block__video__block__filter(style="background-image: url(images/interview-speakers/business/Client_2.jpg); background-size: contain;")
+                            .interview-block__video__block__info
+                                h3 Дмитрий Шлопак
+                                p.regalia Управляющий партнер &laquo;Везендорф групп&raquo;
+                                p Социальная <nobr>бизнес-философия</nobr> и&nbsp;гарантия возврата вложенных средств&nbsp;&mdash; правило, которое позволит приблизить ваш стартап к&nbsp;получению инвестиций.
+                                .interview-block__video__block__info__playbutton(id="start-client-video-2")
+                    .interview-block__video__sharing.clearfix.no-margin-bottom
+    .modal-popup
+        .modal-popup__bg
+        .modal-popup__popup
+            .interview-block__video
+                .interview-block__video__block
+                    .interview-block__video__block__muted.video_muted.block-control
+                        .block-control__pause
+                        .block-control__play
+                    .interview-block__video__block__interview
+                        iframe(id="business-video" width="780" height="639" src="https://www.youtube.com/embed/HLGZqCOwOws?list=PLv42Kp4x57LC_mrA0OAEqpo5r1LEMAL66&amp;controls=0&amp;showinfo=0&enablejsapi=1&rel=0" frameborder="0" allowfullscreen)
+                    .interview-block__video__block__filter(style="background-image: url(images/interview-speakers/business/Client_1.jpg)")
+                    .interview-block__video__block__info
+                        h3 Павел Чаплинский
+                        p.regalia Основатель BOX&ROSES
+                        p Создавая компанию, предпринимателю нужно иметь видение, каким бизнес будет через полгода, год, несколько лет, какой будет его команда, какие задачи будут поставлены перед сотрудниками и&nbsp;для чего, вообще, строится этот бизнес.
+                        .interview-block__video__block__info__playbutton.button-popup(id="start-business-video")
+            .modal-popup__close

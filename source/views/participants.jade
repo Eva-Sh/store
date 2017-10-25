@@ -1,0 +1,75 @@
+extends templates/layout
+block vars
+	- var title = '«БИЛАЙН» БИЗНЕС'
+	- var og_title = 'Быстрее, выше, успешнее'
+	- var og_description = 'Расскажите, как вам удалось изменить свой бизнес к лучшему, и выиграйте ценные призы.'
+	- var og_image = '../images/sharing/contest-sharing.jpg'
+	- var twitter_description = 'Расскажите, как вам удалось изменить свой бизнес к лучшему, и выиграйте ценные призы.'
+
+block content
+	section.participants-case-jumbotron
+		a(href="/index.html").link-back Вернуться на главную		
+	section.participants-content
+		.container
+			.participants-content_block 
+				h1 Конкурс
+				h2 Работы участников
+				p В этом разделе мы публикуем все работы участников конкурса. Если вам есть, что рассказать про свой бизнес, поделитесь — и ваша работа может тоже появиться здесь
+				.participants-block--wrapper
+					.participants-block__tab
+						.participants-block__tab__interview.participants-block__tab__interview--popular.active(tab-index="1")
+							| Популярные
+						.participants-block__tab__interview.participants-block__tab__interview--new(tab-index="2")
+							| Новые
+				.participants-wrap--list-participant.participants-wrap--list-participant--active(participant-tab="1")			
+					.participants-block-popular--wrapper
+
+				.participants-wrap--list-participant(participant-tab="2")			
+					.participants-block-popular--wrapper
+
+				.participants-block-link
+					.link-see-all Смотреть все
+					a(href="/contest.html#popup").link-participants Участвовать
+
+					section.contest-participant-popup.part
+							.modal-participant-popup
+								.modal-participant-popup__bg
+								.modal-participant-popup__popup.participant-popup
+									a.modal-participant-popup__close(href='#')
+									.modal-participant-popup__header
+										.modal-participant-popup__header-item--shadow
+									.modal-participant-popup__header-item--img
+										img(src="../images/contest/page-1.svg", alt="image-contest")
+									.slick-slide--contest
+	
+
+
+	
+	
+				
+											
+
+
+					
+				
+
+
+
+
+
+						
+									
+						
+
+
+							
+				
+				
+			
+				
+					
+				
+						
+		
+		
+					

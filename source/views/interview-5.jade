@@ -1,0 +1,372 @@
+extends templates/layout
+block vars
+
+block content
+    .interview-block
+        .interview-block--wrapper
+            .interview-block__back
+                .interview-block__back--arrow
+                a(href="index.html") Вернуться на главную
+
+            .interview-block__main-tab(data-tab="1")
+                .interview-block__video
+                    .interview-block__video__block
+                        .interview-block__video__block__muted.video_muted.block-control
+                            .block-control__pause
+                            .block-control__play
+                        .full-block-control
+                            .full-block-control__play
+                            .full-block-control__time
+                            .full-block-control__main-line
+                                .full-block-control__main-line__progress
+                            .full-block-control__sound
+                        .interview-block__video__block__interview
+                            iframe(id="business-video" width="780" height="439" src="https://www.youtube.com/embed/Hr89apHSee8?list=PLv42Kp4x57LC_mrA0OAEqpo5r1LEMAL66&amp;controls=0&amp;showinfo=0&enablejsapi=1&rel=0" frameborder="0" allowfullscreen)
+                        .interview-block__video__block__filter(style="background-image: url(images/interview-speakers/business/Business_5.jpg)")
+                        .interview-block__video__block__info
+                            h3 Алексей Авдей
+                            p.regalia Директор по&nbsp;продукту ЦИАН
+                            p.hide-in-mobile Когда нужен офис, а&nbsp;когда в&nbsp;нем нет необходимости, как можно сэкономить на&nbsp;аренде недвижимости, для каких бизнесов важна офисная атмосфера, а&nbsp;для каких это излишество.
+                            .interview-block__video__block__info__playbutton(id="start-business-video")
+                    .interview-block__video__sharing.clearfix
+                        ul.js-share
+                            li
+                                a(href="https://www.facebook.com/sharer/sharer.php?u=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--fb" data-interview="avdei").fbook.js-double-share
+                            li
+                                a(href="https://vk.com/share.php?url=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--vk" data-interview="avdei").vkt.js-double-share
+                            li
+                                a(href="https://twitter.com/intent/tweet?text=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--tw" data-interview="avdei").twt.js-double-share
+                        .interview-block__video__decypher
+                            span.interview-block__video__decypher--text(id="show-interview-client") Расшифровка интервью
+                            span.interview-block__video__decypher--img(id="show-interview-client")
+                .interview-block__interview
+                    span.interview-block__interview--decypher Расшифровка интервью
+                    .interview-block__interview--little
+                        p Как обстоит сегодня ситуация с&nbsp;коммерческой недвижимостью по&nbsp;сравнению с&nbsp;прошлым годом?
+                    p По&nbsp;нашему мнению, ситуация улучшается, ставки на&nbsp;аренду офисов растут, и&nbsp;это связано с&nbsp;тем, что мы&nbsp;уже оттолкнулись от&nbsp;дна, кризис сбавляет обороты. Поэтому, если сейчас стоит задача снять офис, то&nbsp;не&nbsp;стоит ждать, когда недвижимость подешевеет, можно уже искать подходящие варианты.
+                    .interview-block__interview--little.hidden-block
+                        p Изменяются <nobr>как-то</nobr> последние 3&ndash;5 лет запросы бизнесменов, которые ищут офисы?
+                    p.hidden-block Запросы бизнесменов на&nbsp;объекты недвижимости зависят от&nbsp;рода их&nbsp;деятельности. Если мы&nbsp;говорим про офисы, то&nbsp;это конкретные задачи, связанные с&nbsp;документооборотом, встречи с&nbsp;клиентами&nbsp;&mdash; эти составляющие бизнеса в&nbsp;целом не&nbsp;меняются. Несколько меняется отношение к&nbsp;тому, что должно быть в&nbsp;офисе, к&nbsp;комфорту, удобству, потому что в&nbsp;ряде компаний высокая конкуренция за&nbsp;кадры. Например, не&nbsp;хватает программистов, и&nbsp;соискатель приходит и&nbsp;смотрит на&nbsp;офис, на&nbsp;то, где он&nbsp;находится, на&nbsp;уровень комфорта. В&nbsp;целом требования точно такие&nbsp;же, как пять лет назад, меняются лишь нюансы и&nbsp;акценты.
+                    .interview-block__interview--little.hidden-block
+                        p Теперь важна не&nbsp;только близость к&nbsp;метро, но&nbsp;и&nbsp;уровень комфорта?
+                    p.hidden-block В&nbsp;тех отраслях, где высокая конкуренция за&nbsp;сотрудников, действительно очень важно, насколько комфортен офис, насколько он&nbsp;близок к&nbsp;метро, есть&nbsp;ли там все необходимое для &laquo;жизни&raquo; сотрудников: места для отдыха, кафе <nobr>и т. д.</nobr> В&nbsp;остальных отраслях предприниматель сам решает, будет он&nbsp;платить за&nbsp;эти удобства или нет.
+                    .interview_image.hidden-block
+                        img(src="../images/interview-speakers/interview-avdei1.jpg")
+                    .interview-block__interview--little.hidden-block
+                        p Скажите, что сейчас предпочитают&nbsp;&mdash; open space или кабинетные офисы? Какие тенденции сейчас вы&nbsp;бы отметили?
+                    p.hidden-block Open space&nbsp;&mdash; очень интересная история. Была мода на&nbsp;такой формат офисов. Но&nbsp;сейчас она немножко утихает, и&nbsp;все предприниматели начинают думать об&nbsp;офисах с&nbsp;точки зрения эффективности. Для некоторых сотрудников открытое пространство тяжело для продуктивной работы, потому что в&nbsp;нем нельзя сосредоточиться, нельзя спокойно работать. Там&nbsp;же, где много творческой работы и&nbsp;креатива, open space подойдет. Например, модный сейчас <nobr>agile-подход</nobr> в&nbsp;бизнесе как раз проповедует open space, чтобы люди сидели командами и&nbsp;достигали вместе результатов и&nbsp;выполнения задач. Поэтому тенденции зависят от&nbsp;бизнеса и&nbsp;стиля управления.
+                    .interview-block__interview--little.hidden-block
+                        p А&nbsp;какие еще моменты учитывают бизнесмены при поиске офиса?
+                    p.hidden-block В&nbsp;первую очередь предприниматель смотрит на&nbsp;ставку&nbsp;&mdash; сколько это будет стоить, причем не&nbsp;в&nbsp;момент въезда, а&nbsp;сколько это будет стоить через год и&nbsp;больше. Всегда есть дополнительные, постоянные и&nbsp;переменные затраты, поэтому цена это самое главное. Дальше предприниматель смотрит на&nbsp;локацию&nbsp;&mdash; насколько далеко офис находится от&nbsp;транспортных развязок и&nbsp;узлов. Если сотрудники тратят много времени на&nbsp;то, чтобы доехать до&nbsp;работы, это не&nbsp;очень хорошо. Предприниматели смотрят на&nbsp;близость к&nbsp;метро, но&nbsp;не&nbsp;всем нужна прямо минутная доступность, <nobr>все-таки</nobr> в&nbsp;подобных <nobr>бизнес-центрах</nobr> ставка аренды выше. Оптимально снять офис в&nbsp;15&nbsp;минутах от&nbsp;метро. Также смотрят, насколько офис далек от&nbsp;центра города. Чем дальше он&nbsp;располагается, тем сложнее туда добираться, например, если все сотрудники работают в&nbsp;разных районах Москвы. Бизнесмены стремятся найти &laquo;золотую середину&raquo;, исходя из&nbsp;своих потребностей и&nbsp;возможностей. Дальше уже в&nbsp;счет идут нюансы&nbsp;&mdash; парковка, наличие кафе&hellip; Как правило, кафе есть практически везде, так что это небольшое преимущество. Если в&nbsp;компании много работников творческих профессий или <nobr>ИТ-специалистов</nobr>, предприниматели стараются предусмотреть, чтобы в&nbsp;офисе были &laquo;лаундж&raquo;-зоны, <nobr>кофе-пойнты</nobr> и&nbsp;другие создающие атмосферу мелочи.
+                    .interview-block__interview--little.hidden-block
+                        p Есть такой тренд&nbsp;&mdash; уход в&nbsp;удаленные офисы. <nobr>Как-то</nobr> он&nbsp;повлиял на&nbsp;ваш бизнес и&nbsp;на&nbsp;рынок <nobr>b2b-недвижимости</nobr>?
+                    p.hidden-block Когда я&nbsp;два года назад пришел в&nbsp;ЦИАН, то&nbsp;был поражен, сколько сотрудников работает удаленно. На&nbsp;предыдущем месте работы, в&nbsp;&laquo;Яндексе&raquo;, лично в&nbsp;моем подразделении сотрудников, работающих удаленно, было не&nbsp;так много. В&nbsp;ЦИАН&nbsp;же большой процент на&nbsp;&laquo;удаленке&raquo;, плюс часть работы отдается на&nbsp;аутсорсинг.&nbsp;Действительно, последние тенденции показывают, что, если определенный фронт работ можно вывести на&nbsp;аутсорсинг, это надо делать, потому что это дешевле,&nbsp;&mdash; предприниматель не&nbsp;платит налоги, не&nbsp;организует рабочее пространство. Здесь нужно идти от&nbsp;<nobr>бизнес-цели</nobr>: если цель&nbsp;&mdash; быть конкурентоспособной компанией, чтобы твой продукт был дешевле, чем у&nbsp;других, то&nbsp;удаленный офис поможет заметно сэкономить.
+                    .interview-block__interview--little.hidden-block
+                        p А&nbsp;как кто повлияло на&nbsp;спрос на&nbsp;недвижимость? Вы&nbsp;видите <nobr>какие-то</nobr> изменения?
+                    p.hidden-block Если говорить о&nbsp;спросе на&nbsp;недвижимость, то&nbsp;глобально по&nbsp;рынку не&nbsp;такой большой процент людей пока работают удаленно. Однако я&nbsp;читал, что компания &laquo;Билайн&raquo;, действительно крупный арендатор, весомую часть сотрудников переводит на&nbsp;&laquo;удаленку&raquo;, и&nbsp;если этот тренд продолжится, то, конечно, мы&nbsp;увидим изменения по&nbsp;спросу.
+                    .interview-block__interview--little.hidden-block
+                        p А&nbsp;если компания переходит в&nbsp;статус крупного игрока и&nbsp;ее&nbsp;сотрудники практически всегда работали на&nbsp;&laquo;удаленке&raquo;, нужно&nbsp;ли им&nbsp;арендовать офис для поддержания статуса?
+                    p.hidden-block Всегда нужно идти от&nbsp;цели, понимать, зачем тебе офис. Если офис крупному игроку необходим, например, для более эффективной работы творческой команды или стоит задача постоянных встреч с&nbsp;клиентами, то&nbsp;об&nbsp;офисе, безусловно, можно задуматься. Но&nbsp;если до&nbsp;этого офис был не&nbsp;нужен, непонятно, зачем он, ради &laquo;галочки&raquo; не&nbsp;стоит его арендовать. Это просто дополнительные расходы.
+                    .interview_image.hidden-block
+                        img(src="../images/interview-speakers/interview-avdei2.jpg")
+                    .interview-block__interview--little.hidden-block
+                        p А&nbsp;статус? В&nbsp;России это&nbsp;же важно.
+                    p.hidden-block Встречают по&nbsp;одежке, а&nbsp;провожают по&nbsp;уму, поэтому опять&nbsp;же цель&nbsp;&mdash; понять, с&nbsp;какими клиентами ты&nbsp;работаешь, насколько для целевых клиентов статус важен. Например, у&nbsp;меня есть знакомый предприниматель, который снимает офис в&nbsp;центре Москвы, прямо на&nbsp;Никольской улице, потому что он&nbsp;понимает, что работает с&nbsp;теми клиентами, для которых очень важен статус. А&nbsp;для такой компании, как ЦИАН, которая не&nbsp;работает напрямую с&nbsp;клиентами, то&nbsp;есть у&nbsp;нас не&nbsp;так много встреч, и&nbsp;все в&nbsp;онлайн, можно снимать офис на&nbsp;метро &laquo;Электрозаводская&raquo;, можно и&nbsp;на&nbsp;&laquo;Алтуфьево&raquo; переехать, локация не&nbsp;определяет успех бизнеса для нас.
+                    .interview-block__interview--little.hidden-block
+                        p Наличие офиса влияет на&nbsp;имидж компании?
+                    p.hidden-block Смотря в&nbsp;какой сфере. <nobr>ИТ-стартапам</nobr> или компаниям, занимающимся разработкой мобильных приложений, вряд&nbsp;ли нужен офис. Офис&nbsp;&mdash; это возможность для предпринимателей более эффективно построить процессы работы. Если&nbsp;же предприниматель все процессы может построить без офиса, зачем тратить деньги на&nbsp;аренду?
+                    .interview-block__interview--little.hidden-block
+                        p Это ваше личное мнение или реальное положение вещей?
+                    p.hidden-block Простой пример: у&nbsp;меня жена&nbsp;&mdash; предприниматель. Каждые полгода она порывается снять офис недалеко от&nbsp;дома, причем офис в&nbsp;центре класса &laquo;А&raquo;. Я&nbsp;задаю ей&nbsp;вопрос: зачем? Нет постоянного потока денег, зато есть постоянные расходы&hellip; И&nbsp;так у&nbsp;многих предпринимателей. Аренда офиса нужна тогда, когда есть постоянный поток и&nbsp;ты&nbsp;понимаешь, как офис может повысить обороты.
+                    .interview-block__interview--little.hidden-block
+                        p А&nbsp;как&nbsp;же корпоративный дух, который достигается только в&nbsp;физических офисах, а&nbsp;не&nbsp;в&nbsp;онлайне?
+                    p.hidden-block Корпоративный дух&nbsp;&mdash; это необязательно, когда ты&nbsp;человека видишь, а&nbsp;когда ты&nbsp;вместе с&nbsp;ним достигаешь цели, когда вы&nbsp;вместе работаете на&nbsp;результат. Поэтому для совместной работы достаточно системы Slack или подобных решений, которые позволяют совместно продвигать бизнес вперед. Также никто не&nbsp;отменял <nobr>офлайн-встречи</nobr>, когда люди могут прилетать даже из&nbsp;разных уголков страны и&nbsp;встречаться. Понятно, что у&nbsp;нас сейчас очень маленький процент полностью удаленных компаний, но&nbsp;я&nbsp;знаю много стартапов, которые разбросаны по&nbsp;всей земле, и&nbsp;они вполне успешно удаленно работают.
+                    .interview-block__interview--little.hidden-block
+                        p Процент обращающихся в&nbsp;ЦИАН за&nbsp;офисной недвижимостью как изменяется сейчас&nbsp;&mdash; повышается, понижается?
+                    p.hidden-block И&nbsp;в&nbsp;прошлом, и&nbsp;в&nbsp;этом году показатель равен 8%. С&nbsp;одной стороны, не&nbsp;так много, но&nbsp;с&nbsp;другой&nbsp;&mdash; коммерческая недвижимость&nbsp;&mdash; узкий кейс, ниша, когда предприниматели хотят именно снять помещение. Наша аудитория за&nbsp;это время выросла на&nbsp;40%, коммерческая недвижимость приросла на&nbsp;столько&nbsp;же. Спрос восстанавливается. Люди ищут больше недвижимости, не&nbsp;знаю, сколько из&nbsp;них именно малые предприниматели, но&nbsp;я&nbsp;вижу, как люди берут сначала офис на&nbsp;40 квадратных метров, потом расширяются (бывает, что и&nbsp;уменьшают, наоборот).
+                    .interview-block__interview--little.hidden-block
+                        p Почему у&nbsp;нас такой маленький процент компаний, которые могут позволить себе удаленную работу?
+                    p.hidden-block Я&nbsp;думаю, что люди просто боятся отпустить контроль. С&nbsp;другой стороны, сотрудники еще не&nbsp;готовы работать дома, потому что они ждут, что им&nbsp;<nobr>кто-то</nobr> будет давать задания, будет с&nbsp;них спрашивать, они не&nbsp;готовы автономно работать на&nbsp;результат. Но&nbsp;новое поколение молодых людей, которые приходят к&nbsp;нам на&nbsp;собеседования, сразу задают вопрос: а&nbsp;можно&nbsp;ли работать удаленно или в&nbsp;офисе несколько дней в&nbsp;неделю? Поэтому новое поколение уже готово работать в&nbsp;таком формате, не&nbsp;тратить время на&nbsp;поездки, трудиться дома и&nbsp;отвечать за&nbsp;результат. Думаю, со&nbsp;временем и&nbsp;предприниматели начнут это понимать.
+                    .interview-block__interview--little.hidden-block
+                        p Как вы&nbsp;думаете, за&nbsp;этим будущее или нет?
+                    p.hidden-block За&nbsp;удаленной работой, безусловно, будущее, потому что, с&nbsp;одной стороны, есть такие потребности у&nbsp;сотрудников, с&nbsp;другой&nbsp;&mdash; уже есть все условия для этой работы: есть различные каналы связи, мессенджеры, сайты совместной работы, решения для бизнеса <nobr>и т. д.</nobr>, и&nbsp;с&nbsp;третьей&nbsp;&mdash; труд уходит во&nbsp;многом от&nbsp;физического, все больше становится интеллектуальным. В&nbsp;принципе удаленная работа была всегда, можно вспомнить писателей, художников, они всегда работали удаленно, у&nbsp;них не&nbsp;было офисов. Поэтому, если у&nbsp;нас все больше будет творцов, удаленный формат работы будет набирать обороты.
+                    .interview_image.hidden-block
+                        img(src="../images/interview-speakers/interview-avdei3.jpg")
+                    .interview-block__interview--little.hidden-block
+                        p На&nbsp;чем стараются экономить малые предприниматели, когда обращаются к&nbsp;вам с&nbsp;поиском коммерческой недвижимости?
+                    p.hidden-block В&nbsp;первую очередь бизнесмены стараются экономить на&nbsp;всех вещах, которые повышают арендную ставку. Та&nbsp;же близость к&nbsp;метро. Или класс офиса&nbsp;&mdash; если ресурсы ограничены, снимают &laquo;С&raquo;-помещения. Смотрят на&nbsp;ремонт, хотят найти офис с&nbsp;ремонтом или даже еще лучше с&nbsp;мебелью. Иногда просят арендные каникулы на&nbsp;<nobr>какое-то</nobr> время.
+                    .interview-block__interview--little.hidden-block
+                        p Это сейчас возможно?
+                    p.hidden-block Такая возможность есть, когда предприниматель и&nbsp;собственник помещения договариваются между собой и&nbsp;первый месяц аренда не&nbsp;платится. Это называется арендные каникулы.
+                    .interview-block__interview--little.hidden-block
+                        p Как быть, если офис нужен, а&nbsp;средств совсем мало? Каков ваш совет? Может быть, коворкинг?
+                    p.hidden-block Нужно понять, для чего нужен офис, какие процессы или совместные действия в&nbsp;нем предполагается осуществлять. Действительно, может помочь и&nbsp;коворкинг, и&nbsp;кафе.
+                    .interview-block__interview--little.hidden-block
+                        p Ведь некоторые компании снимают офис только для встреч и&nbsp;&laquo;планерок&raquo; с&nbsp;сотрудниками&hellip;
+                    p.hidden-block Если стоит задача встретиться с&nbsp;клиентом и&nbsp;<nobr>что-то</nobr> обсудить, помещение можно снять разово в&nbsp;тех&nbsp;же коворкингах. Или иметь <nobr>какой-то</nobr> небольшой тариф, например 5000&nbsp;рублей в&nbsp;месяц, и&nbsp;легко приезжать и&nbsp;работать
+                    .interview-block__interview--little.hidden-block
+                        p Дайте совет начинающим предпринимателям.
+                    p.hidden-block Если у&nbsp;предпринимателя стоит задача снять офис, сначала задайте себе вопрос: зачем? Если вы&nbsp;не&nbsp;можете объяснить, не&nbsp;снимайте. Если сможете объяснить, снимайте, вам помогут в&nbsp;этом разные сервисы.
+                    .interview-block__video__sharing.clearfix.hidden-block
+                        ul.js-share
+                            li
+                                a(href="https://www.facebook.com/sharer/sharer.php?u=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--fb" data-interview="avdei").fbook.js-double-share
+                            li
+                                a(href="https://vk.com/share.php?url=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--vk" data-interview="avdei").vkt.js-double-share
+                            li
+                                a(href="https://twitter.com/intent/tweet?text=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--tw" data-interview="avdei").twt.js-double-share
+
+            .interview-block__main-tab(data-tab="2")
+                .interview-block__video
+                    .interview-block__video__block
+                        .interview-block__video__block__muted.video_muted.block-control
+                            .block-control__pause
+                            .block-control__play
+                        .full-block-control
+                            .full-block-control__play
+                            .full-block-control__time
+                            .full-block-control__main-line
+                                .full-block-control__main-line__progress
+                            .full-block-control__sound
+                        .interview-block__video__block__interview
+                            iframe(id="client-video" width="780" height="439" src="https://www.youtube.com/embed/Dn_tOvfZiI0?list=PLv42Kp4x57LC_mrA0OAEqpo5r1LEMAL66&amp;controls=0&amp;showinfo=0&enablejsapi=1&rel=0" frameborder="0" allowfullscreen)
+                        .interview-block__video__block__filter(style="background-image: url(images/interview-speakers/business/Client_5.jpg)")
+                        .interview-block__video__block__info
+                            h3 Илья Смирнов
+                            p.regalia <nobr>IT-директор</nobr> компании &laquo;Ай&nbsp;Ти&nbsp;Ви&nbsp;групп&raquo;
+                            p.hide-in-mobile Формат удаленного офиса создает комфортные условия для работы сотрудников, служит дополнительной мотивацией, а&nbsp;также позволяет компании эффективнее управлять расходами.
+                            .interview-block__video__block__info__playbutton(id="start-client-video")
+                    .interview-block__video__sharing.clearfix
+                        ul.js-share
+                            li
+                                a(href="https://www.facebook.com/sharer/sharer.php?u=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--fb" data-interview="smirnov").fbook.js-double-share
+                            li
+                                a(href="https://vk.com/share.php?url=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--vk" data-interview="smirnov").vkt.js-double-share
+                            li
+                                a(href="https://twitter.com/intent/tweet?text=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--tw" data-interview="smirnov").twt.js-double-share
+                        .interview-block__video__decypher
+                            span.interview-block__video__decypher--text Расшифровка интервью
+                            span.interview-block__video__decypher--img(id="show-interview-business")
+                .interview-block__interview
+                    span.interview-block__interview--decypher Расшифровка интервью
+                    //h1.hidden-block Интервью бизнесменов и бизнесменов клиентов
+
+                    .interview-block__interview--little
+                        p С&nbsp;чего начался бизнес?
+                    p
+                        | Все началось в&nbsp;2004 году, когда 10 талантливых программистов собрались вместе и&nbsp;решили, что рынок аналоговых систем видеонаблюдения надо ломать. Мы&nbsp;сделали первую цифровую систему видеонаблюдения. С&nbsp;тех пор компания выросла до&nbsp;штата 500 человек, у&nbsp;нас есть порядка 50 офисов по&nbsp;всему миру, в&nbsp;России&nbsp;&mdash; 15.
+                    .interview-block__interview--little.hidden-block
+                        p Кто для вас <nobr>бизнес-партнеры</nobr>?
+                    p.hidden-block
+                        | Наши партнеры&nbsp;&mdash; это наша ценность, это <nobr>компании-интеграторы</nobr>, которые устанавливают системы видеонаблюдения в&nbsp;офисы, коттеджи, дома. Насколько я&nbsp;знаю, в&nbsp;студии РБК тоже стоит система видеонаблюдения, установленная нашими партнерами.
+                    .interview-block__interview--little.hidden-block
+                        p Что для вас важно в&nbsp;работе?
+                    p.hidden-block
+                        | Моя работа заключается в&nbsp;поддержке IT&nbsp;всех <nobr>бизнес-процессов</nobr> компании&nbsp;&mdash; от&nbsp;производства софта до&nbsp;его продажи. И&nbsp;в&nbsp;том числе поддержка партнеров. Поэтому в&nbsp;моей работе важно иметь поставщиков софта для обеспечения этой работы.
+                    .interview-block__interview--little.hidden-block
+                        p Насколько люди важны в&nbsp;вашей компании?
+                    p.hidden-block
+                        | На&nbsp;сегодняшний момент, особенно в&nbsp;нашей отрасли IT, люди несомненно очень важны. Талантливые программисты сейчас на&nbsp;вес золота. Но&nbsp;в&nbsp;то&nbsp;же время <nobr>IT-системы</nobr> позволяют нивелировать этот фактор, уменьшить зависимость от&nbsp;людей.
+                    .interview-block__interview--little.hidden-block
+                        p Какие актуальные задачи для развития бизнеса вы&nbsp;сейчас ставите перед собой?
+                    p.hidden-block
+                        | Передо мной стоят задачи мобильности и&nbsp;надежности всех <nobr>IT-систем</nobr>. Я&nbsp;должен сделать так, чтобы рабочее место программиста/продавца было максимально надежным, мобильным и&nbsp;доступным везде.
+                    .interview-block__interview--little.hidden-block
+                        p Как привлечь клиента?
+                    p.hidden-block
+                        | Вопрос не&nbsp;совсем ко&nbsp;мне&hellip; Но, так как я&nbsp;вхожу во&nbsp;многие отрасли, в&nbsp;том числе в&nbsp;коммерческую, я&nbsp;знаю, что наш коммерческий департамент привлекает клиентов отовсюду: через сайт, с&nbsp;помощью рекламы на&nbsp;телевидении, на&nbsp;билбордах, через выставки. Мы&nbsp;стараемся это делать любыми способами. То&nbsp;есть наш коммерческий департамент не&nbsp;упускает ни&nbsp;одной возможности, чтобы привлечь клиента.
+                    .interview-block__interview--little.hidden-block
+                        p Кто сегодня выигрывает и&nbsp;почему?
+                    p.hidden-block
+                        | По&nbsp;моему мнению, сегодня выигрывают быстрые компании. Те, кто оперативно реагирует на&nbsp;изменения внешней среды. Мы&nbsp;стараемся любые изменения внедрять как можно скорее и&nbsp;доводить их&nbsp;до&nbsp;продукта максимально быстро.
+                    .interview-block__interview--little.hidden-block
+                        p Как вы&nbsp;развиваете свой бизнес?
+                    p.hidden-block
+                        | В&nbsp;данный момент развитие бизнеса у&nbsp;нас идет по&nbsp;двум направлениям. Первое&nbsp;&mdash; территориальная экспансия. Мы&nbsp;очень активно развиваемся по&nbsp;миру. 50 офисов, которые уже есть у&nbsp;нашей компании, это даже не&nbsp;конечная точка и&nbsp;не&nbsp;середина, это только начало пути. Мы&nbsp;хотим присутствовать в&nbsp;каждой стране мира. Второе&nbsp;&mdash; мы&nbsp;стараемся постоянно совершенствовать свой продукт. Наша система становится быстрее и&nbsp;лучше, обрастает новыми функциями.
+                    .interview-block__interview--little.hidden-block
+                        p На&nbsp;чем вы&nbsp;экономите?
+                    p.hidden-block
+                        | Передо мной как перед <nobr>IT-директором</nobr>, естественно, стоит задача снизить издержки, в&nbsp;том числе на&nbsp;связь, коммуникации, рабочее место, и&nbsp;мы&nbsp;этого успешно достигаем с&nbsp;нашими партнерами&nbsp;&mdash; теми, кто предоставляет нам услуги связи, программное обеспечение и&nbsp;оборудование.
+                    p.hidden-block
+                        | Мы&nbsp;стараемся все технологии, которые использовали ранее, переводить в&nbsp;облако, использовать облачные технологии. Это касается и&nbsp;офисных приложений, и&nbsp;связи, в&nbsp;том числе АТС. Важным для нас проектом стала виртуализация АТС в&nbsp;России с&nbsp;помощью услуг &laquo;Билайн Бизнес&raquo;. Благодаря современным решениям нашего мобильного оператора мы&nbsp;имеем мобильный офис, и&nbsp;наша компания может гибко вести бизнес и&nbsp;управлять расходами и&nbsp;процессами.
+                    p.hidden-block
+                        | Виртуальная АТС позволила нам решить огромное количество задач. Одной из&nbsp;них была, конечно&nbsp;же, экономия, а&nbsp;также широкая функциональность. Облачная АТС позволила нам практически мгновенно открывать офисы (мобильные), потому что не&nbsp;нужно прокладывать проводов, создавать офисную инфраструктуру. В&nbsp;итоге можно сказать, что данный проект позволил нам заметно снизить затраты на&nbsp;связь и&nbsp;телефонию (АТС), а&nbsp;также помог оперативно решить задачу быстрого открытия новых филиалов, новых точек продаж, то&nbsp;есть тиражирования и&nbsp;масштабирования бизнеса. Несомненным плюсом для нас стала неожиданная обратная связь от&nbsp;сотрудников. Дело в&nbsp;том, что вместе с&nbsp;приобретением виртуальной АТС компания стала оплачивать мобильную связь сотрудникам. А&nbsp;это было приятно многим.
+                    .interview-block__interview--little.hidden-block
+                        p Были <nobr>какие-то</nobr> сложные моменты при внедрении виртуальной АТС?
+                    p.hidden-block
+                        | Конечно, при внедрении облачной АТС мы&nbsp;столкнулись с&nbsp;определенными трудностями. Продукт для нас новый, и, в&nbsp;частности, мы&nbsp;не&nbsp;знали, как связать АТС с&nbsp;другими решениями, которые уже используются у&nbsp;нас в&nbsp;компании,&nbsp;&mdash; например, с&nbsp;системой CRM, с&nbsp;системой внутреннего учета. Но&nbsp;благодаря нашему партнеру &laquo;Билайн Бизнес&raquo; нам удалось все эти проблемы достаточно быстро решить.
+                    p.hidden-block
+                        | В&nbsp;частности, мобильный оператор помог с&nbsp;решением вопроса интеграции облачной АТС с&nbsp;существующими системами. Буквально за&nbsp;две недели мы&nbsp;получили готовое решение, &laquo;заточенное&raquo; под наш бизнес.
+                    p.hidden-block
+                        | Еще одна трудность&nbsp;&mdash; организационная, техническая. Мы&nbsp;&mdash; компания со&nbsp;своим штатом юристов, и&nbsp;наш партнер&nbsp;&mdash; также большая компания. При внедрении облачной АТС возникла масса бумажной работы. Но&nbsp;опять&nbsp;же, несмотря на&nbsp;эту &laquo;волокиту&raquo;, я&nbsp;считаю, что мы&nbsp;справились за&nbsp;рекордные сроки. АТС у&nbsp;нас была внедрена в&nbsp;15 городах за&nbsp;три недели.
+                    .interview-block__interview--little.hidden-block
+                        p Что такое для вас удаленный офис?
+
+                    p.hidden-block
+                        | Для нашей компании, как я&nbsp;уже говорил, очень важна мобильность сотрудников. Это подразумевает и&nbsp;удаленность от&nbsp;центрального офиса. Есть два типа очень важных для нас сотрудников. <nobr>Во-первых</nobr>, это разработчики. Не&nbsp;всегда, но&nbsp;часто они не&nbsp;любят ездить в&nbsp;офис и&nbsp;работать в&nbsp;жестком графике. Это неформальные люди. Так вот, виртуальная АТС помогла нам быть на&nbsp;связи с&nbsp;ними, но&nbsp;в&nbsp;то&nbsp;же время не&nbsp;заставлять их&nbsp;приходить ежедневно в&nbsp;скучный для них рутинный офис. <nobr>Во-вторых</nobr>, это менеджеры по&nbsp;продажам, мобильность которых нужно обеспечить, ведь, как говорит наш коммерческий директор, &laquo;волка ноги кормят&raquo;. Они постоянно в&nbsp;пути, у&nbsp;партнеров, в&nbsp;разъездах, и&nbsp;возможность связаться с&nbsp;ними в&nbsp;любое время&nbsp;&mdash; это бесценно. Эту задачу мы&nbsp;также смогли успешно решить с&nbsp;помощью облачной АТС.
+                    .interview-block__video__sharing.clearfix.hidden-block
+                        ul.js-share
+                            li
+                                a(href="https://www.facebook.com/sharer/sharer.php?u=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--fb" data-interview="smirnov").fbook.js-double-share
+                            li
+                                a(href="https://vk.com/share.php?url=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--vk" data-interview="smirnov").vkt.js-double-share
+                            li
+                                a(href="https://twitter.com/intent/tweet?text=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--tw" data-interview="smirnov").twt.js-double-share
+        .external-speaker-block
+            .interview-block--wrapper
+                .interview-block__tab
+                    .interview-block__tab__interview.interview-block__tab--bman(tab-index="1")
+                        | Бизнес
+                        .shift-tab
+                        | от первого лица
+                    .interview-block__tab__interview.interview-block__tab--client(tab-index="2")
+                        | Правила
+                        .shift-tab
+                        | предпринимателя
+            .inter-block__speakers--wrapper(speakers-tab="1")
+                .interview-block__speakers
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-1.html")
+                                img(src="images/interview-speakers/business/1.Popov.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-1.htm") Александр Попов
+                            p Директор EasyFinance.ru
+                            a(href="/interview-1.html").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-2.html")
+                                img(src="images/interview-speakers/business/2.Cerazov.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-2.html") Константин Церазов
+                            p Член правления,руководитель инвестиционного блока банка «ФК Открытие»,член совета директоров «Открытия Капитал»
+                            a(href="/interview-2.html").watch-interview Смотреть
+                    .interview-block__speakers__item
+                      a(href="/interview-3.html")
+                        .interview-block__speakers__item__img
+                            img(src="images/interview-speakers/business/3.Feldman.png")
+                        .interview-block__speakers__item__text
+                            h3
+                              a(href="/interview-3.html") Максим Фельдман
+                            p Руководитель направления по работе с клиентами Московской школы управления СКОЛКОВО
+                            a(href="/interview-3.html").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-4.html")
+                                img(src="images/interview-speakers/business/4.Volshuck.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-4.html") Александр Волощук
+                            p Генеральный директор сервиса Dr.Tariffи студии разработки QStudio.org
+                            a(href="/interview-4.html").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-6.html")
+                                img(src="images/interview-speakers/business/6.Panov.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-6.html") Сергей Панов
+                            p Сооснователь и&nbsp;генеральный директор <nobr>интернет-бухгалтерии</nobr> &laquo;Моё дело&raquo;
+                            a(href="/interview-6.html").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-7.html")
+                                img(src="images/interview-speakers/business/7.Jukov.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-7.html") Михаил Жуков
+                            p Генеральный директор HeadHunter
+                            a(href="/interview-7.html").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-8.html")
+                                img(src="images/interview-speakers/business/8.Tabolin.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-8.html") Сергей Таболин
+                            p Руководитель по&nbsp;сегментному маркетингу &laquo;Билайн&raquo; Бизнес
+                            a(href="/interview-8.html").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-9.html")
+                                img(src="images/interview-speakers/business/9.Li.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-9.html") Дмитрий Ли
+                            p Директор по&nbsp;маркетингу бизнес-сегмента &laquo;Билайн&raquo;
+                            a(href="/interview-9.html").watch-interview Смотреть
+            .inter-block__speakers--wrapper(speakers-tab="2")
+                .interview-block__speakers
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-1.html#client")
+                                img(src="images/interview-speakers/clients/1.-Chaplinski.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-1.html#client") Павел Чаплинский
+                            p Основатель BOX&ROSES
+                            a(href="/interview-1.html#client").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-2.html#client")
+                                img(src="images/interview-speakers/clients/2.-Shlopack.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-2.html#client") Дмитрий Шлопак
+                            p Управляющий партнер «Везендорф групп»
+                            a(href="/interview-2.html#client").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-3.html#client")
+                                img(src="images/interview-speakers/clients/3.-Zamai.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-3.html#client") Андрей Замай
+                            p Генеральный директор компании «Первая Интеллектуальная Реклама»
+                            a(href="/interview-3.html#client").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-4.html#client")
+                                img(src="images/interview-speakers/clients/4.-Lasckov.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-4.html#client") Игорь Ласьков
+                            p Генеральный директор ООО «Стройкомфорт»
+                            a(href="/interview-4.html#client").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-6.html#client")
+                                img(src="images/interview-speakers/clients/6.-Shelmanova.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-6.html#client") Ольга Шеламова
+                            p Совладелец компании «Олимп»
+                            a(href="/interview-6.html#client").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-7.html#client")
+                                img(src="images/interview-speakers/clients/7.-Silhev.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-7.html#client") Андрей Сильчев
+                            p Директор по развитию IT Partner
+                            a(href="/interview-7.html#client").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-8.html#client")
+                                img(src="images/interview-speakers/clients/8.Shkolerov.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-8.html#client") Дмитрий Шкловер
+                            p Основатель интернет-магазина 613bricks.ru
+                            a(href="/interview-8.html#client").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-9.html#client")
+                                img(src="images/interview-speakers/clients/9. Poryadneev.png")
+                        .interview-block__speakers__item__text
+                            h3 Кирилл Поряднев
+                            p Генеральный директор «Результат Плюс»
+                            a(href="/interview-9.html#client").watch-interview Смотреть

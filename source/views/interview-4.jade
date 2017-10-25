@@ -1,0 +1,351 @@
+extends templates/layout
+block vars
+
+block content
+    .interview-block
+        .interview-block--wrapper
+            .interview-block__back
+                .interview-block__back--arrow
+                a(href="index.html") Вернуться на главную
+            .interview-block__main-tab(data-tab="1")
+                .interview-block__video
+                    .interview-block__video__block
+                        .interview-block__video__block__muted.video_muted.block-control
+                            .block-control__pause
+                            .block-control__play
+                        .full-block-control
+                            .full-block-control__play
+                            .full-block-control__time
+                            .full-block-control__main-line
+                                .full-block-control__main-line__progress
+                            .full-block-control__sound
+                        .interview-block__video__block__interview
+                            iframe(id="business-video" width="780" height="439" src="https://www.youtube.com/embed/I_klcoUuKFY?list=PLv42Kp4x57LC_mrA0OAEqpo5r1LEMAL66&amp;controls=0&amp;showinfo=0&loop=0&enablejsapi=1&rel=0" frameborder="0" allowfullscreen)
+                        .interview-block__video__block__filter(style="background-image: url(images/interview-speakers/business/Business_4.jpg)")
+                        .interview-block__video__block__info
+                            h3 Александр Волощук
+                            p.regalia Генеральный директор сервиса Dr. Tariff и&nbsp;студии разработки QStudio.org
+                            p.hide-in-mobile О&nbsp;том, как <nobr>ИТ-решения</nobr> позволяют снизить затраты на&nbsp;каждодневные процессы, не&nbsp;&laquo;раздувать&raquo; штат и&nbsp;повышать эффективность бизнеса.
+                            .interview-block__video__block__info__playbutton(id="start-business-video")
+                    .interview-block__video__sharing.clearfix
+                        .interview-block__video__sharing.clearfix
+                        ul.js-share
+                            li
+                                a(href="https://www.facebook.com/sharer/sharer.php?u=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--fb" data-interview="voloshuk").fbook.js-double-share
+                            li
+                                a(href="https://vk.com/share.php?url=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--vk" data-interview="voloshuk").vkt.js-double-share
+                            li
+                                a(href="https://twitter.com/intent/tweet?text=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--tw" data-interview="voloshuk").twt.js-double-share
+                        .interview-block__video__decypher
+                            span.interview-block__video__decypher--text(id="show-interview-client") Расшифровка интервью
+                            span.interview-block__video__decypher--img(id="show-interview-client")
+                .interview-block__interview
+                    span.interview-block__interview--decypher Расшифровка интервью
+                    .interview-block__interview--little
+                        p Как появилась идея бизнеса? Как она выросла в&nbsp;довольно успешное дело?
+                    p Идея приложения Dr.Tariff у&nbsp;меня родилась, когда я&nbsp;еще был студентом. Я&nbsp;занимался организационной деятельностью и&nbsp;понял, что за&nbsp;одну неделю потратил 2&nbsp;тысячи рублей на&nbsp;сотовую связь. Решил, что это слишком много за&nbsp;одну неделю, и&nbsp;пришел к&nbsp;выводу, что надо выбрать другой тариф. Раньше я&nbsp;уже менял оператора, и&nbsp;подбор необходимых опций и&nbsp;тарифа занял у&nbsp;меня пару часов, чтобы во&nbsp;всем разобраться, посмотреть услуги на&nbsp;сайте мобильного оператора. Тогда уже появлялись первые сервисные приложения, и&nbsp;я&nbsp;подумал, что было&nbsp;бы неплохо создать такое приложение, которое могло&nbsp;бы автоматически предлагать&nbsp;то, что нужно абоненту. Приложение, которое&nbsp;бы за&nbsp;меня выполняло работу, подбирая оптимальный тариф, опции, следило за&nbsp;моими расходами на&nbsp;связь. Ведь есть&nbsp;же такие сервисы, которые оценивают, на&nbsp;что тратится батарея смартфона...
+                    .interview_image.hidden-block
+                        img(src="../images/interview-speakers/1. Volshuk.jpg")
+                    .interview-block__interview--little.hidden-block
+                    p.hidden-block Я&nbsp;стал думать, как это сделать, опыта разработки мобильных приложений у&nbsp;меня не&nbsp;было. Поэтому получился довольно долгий путь от&nbsp;самой идеи до&nbsp;ее&nbsp;воплощения в&nbsp;приложение. Сначала выступил в&nbsp;&laquo;Сколково&raquo; с&nbsp;презентацией моего продукта и&nbsp;нашел отклик у&nbsp;аудитории&nbsp;&mdash; три программиста подошли поговорить. С&nbsp;ними мы&nbsp;начали разрабатывать прототип. Все трое в&nbsp;итоге отказались от&nbsp;работы, пришлось искать новых исполнителей. Познакомился с&nbsp;человеком, который сделал для меня первую версию приложения. Потом и&nbsp;с&nbsp;ним начали происходить разные события&nbsp;&mdash; потерялся, попал в&nbsp;больницу, в&nbsp;общем, опять я&nbsp;оказался в&nbsp;ситуации, что у&nbsp;меня по&nbsp;сути нет продукта. Да&nbsp;и&nbsp;еще я&nbsp;потерял деньги.
+                    p.hidden-block Тогда я&nbsp;подошел к&nbsp;решению вопроса с&nbsp;другой стороны. Поехал в&nbsp;свой родной вуз (МФТИ), начал там общаться с&nbsp;разработчиками и&nbsp;за&nbsp;день нашел партнера, который со&nbsp;мной уже три года работает над Dr.Tariff.
+                    .interview-block__interview--little.hidden-block
+                        p Насколько ваше приложение востребовано, успешно и&nbsp;на&nbsp;кого оно рассчитано?
+                    p.hidden-block Так сложилось, что на&nbsp;разработку первой работающей версии у&nbsp;нас ушло три года. В&nbsp;первый месяц после запуска приложение скачали около 40&nbsp;тысяч пользователей. Я&nbsp;тогда понял, что продукт востребован рынком и&nbsp;надо развивать проект дальше. На&nbsp;сегодняшний день Dr.Tariff&nbsp;&mdash; это порядка миллиона абонентов, и&nbsp;у&nbsp;нас есть версия как для физических лиц, так и&nbsp;для компаний. Для компаний мы&nbsp;в&nbsp;индивидуальном порядке подбираем оптимальные корпоративные тарифы.
+                    .interview-block__interview--little.hidden-block
+                        p Есть&nbsp;ли у&nbsp;вас цифры по&nbsp;экономии для компаний с&nbsp;помощью Dr.Tariff?
+                    p.hidden-block Если говорить про наш корпоративный клиентский сегмент, то&nbsp;средний штат&nbsp;&mdash; это около 200&nbsp;сотрудников, и&nbsp;это экономия около 3&nbsp;тысяч рублей в&nbsp;год на&nbsp;одного сотрудника. Соответственно средняя экономия&nbsp;&mdash; до&nbsp;600 тысяч рублей в&nbsp;год для одной компании.
+                    .interview-block__interview--big.hidden-block
+                        p &laquo;Если говорить про российский бизнес в&nbsp;целом, то, мне кажется, что до&nbsp;кризисных времен было принято думать о&nbsp;том, как заработать, а&nbsp;о&nbsp;расходах никто особо не&nbsp;переживал. Сейчас тренд пошел в&nbsp;обратную сторону.&raquo;
+                    .interview-block__interview--little.hidden-block
+                        p Почему, на&nbsp;ваш взгляд, важно экономить в&nbsp;бизнесе? И&nbsp;экономили&nbsp;ли вы, создавая свой стартап?
+                    p.hidden-block У&nbsp;нас, как у&nbsp;любой начинающей компании, был очень ограниченный бюджет на&nbsp;старте, и&nbsp;мы&nbsp;экономили буквально на&nbsp;всем. Мы&nbsp;не&nbsp;арендовали офис, работали в&nbsp;квартире, которую снимали с&nbsp;моим партнером.
+                    p.hidden-block Также у&nbsp;нас был выбор&nbsp;&mdash; либо размещать серверы в&nbsp;облаке, либо поднять свой сервер, закупить железо и&nbsp;хранить все у&nbsp;себя в&nbsp;офисе. Мы&nbsp;выбрали второй вариант, потому что, посчитав, поняли, что он&nbsp;окупится за&nbsp;три месяца. Соответственно эти серверы проработали у&nbsp;нас несколько лет и&nbsp;&laquo;отбили&raquo; себя 5-10&nbsp;раз.
+                    p.hidden-block Если говорить про российский бизнес в&nbsp;целом, то, мне кажется, что до&nbsp;кризисных времен было принято думать о&nbsp;том, как заработать, а&nbsp;о&nbsp;расходах никто особо не&nbsp;переживал. Сейчас тренд пошел в&nbsp;обратную сторону, и&nbsp;мы&nbsp;видим, что многие ИТ-решения позволяют снизить расходы на&nbsp;документы, на&nbsp;оптимизацию работы с&nbsp;сотрудниками. При этом внедрение ИТ-решений позволяет не&nbsp;только экономить, но&nbsp;и&nbsp;зарабатывать. Как пример: в&nbsp;рамках нашей студии КОСТУДИЯ.ОРГ мы&nbsp;сделали решение для розничных сетей, которое дает возможность не&nbsp;только регистрировать абонентов в&nbsp;облаке, избавляясь от&nbsp;огромного количества ненужного документооборота, но&nbsp;и&nbsp;в&nbsp;рамках приложения обслуживать клиента, уменьшать очередь и&nbsp;быстрее продавать в&nbsp;отделении или в&nbsp;салоне связи. Это решение также позволяет узнать о&nbsp;клиенте больше и&nbsp;повышает лояльность клиентов к&nbsp;определенному бренду.
+                    .interview-block__interview--little.hidden-block
+                        p А&nbsp;какая самая большая проблема, с&nbsp;которой вы&nbsp;сталкивались? В&nbsp;том числе как разработчики приложений и&nbsp;стартапов?
+                    p.hidden-block Сейчас в&nbsp;России &laquo;золотое&raquo; время для стартапов, для того, чтобы запускать новые компании. На&nbsp;рынке присутствует довольно много фондов, которые активно инвестируют в&nbsp;проекты на&nbsp;посевной и&nbsp;средней стадиях. Яркий пример&nbsp;&mdash; ФРИ, наш первый инвестор. Также хочу отметить, что конкуренция практически отсутствует, и&nbsp;во&nbsp;многих нишах просто не&nbsp;хватает компетенций и&nbsp;рабочих рук, которые могут поставлять решения для бизнеса.
+                    .interview_image.hidden-block
+                        img(src="../images/interview-speakers/2. Volshuk.jpg")
+                    .interview-block__interview--little.hidden-block
+                        p Что самое важное для успеха стартапа?
+                    p.hidden-block Для успеха стартапа на&nbsp;начальной стадии нужны две вещи. В&nbsp;любом бизнесе с&nbsp;развитием будут появляться проблемы, которых вы&nbsp;не&nbsp;ждете, так вот: нужно продолжать двигаться вперед, сохранять спокойствие и&nbsp;понимать, что первые полгода-год будет очень тяжело. Вторая важная вещь&nbsp;&mdash; искать, кому нужно ваше решение. Обычно стартап меняется три-пять раз от&nbsp;первой задумки, первой идеи до&nbsp;того момента, как он&nbsp;доходит до&nbsp;реализации и&nbsp;первых денег. И&nbsp;нужно нормально к&nbsp;этому относиться. Никто с&nbsp;первого раза не&nbsp;попадает в&nbsp;цель. К&nbsp;успеху нужно идти от&nbsp;неудачи к&nbsp;неудаче, сохраняя энтузиазм.
+                    .interview-block__interview--little.hidden-block
+                        p Что для вас лично значит бизнес и&nbsp;личное дело? Почему вы&nbsp;сделали такой выбор, а&nbsp;не, скажем, пошли работать менеджером в&nbsp;крупную технологическую компанию?
+                    p.hidden-block После окончания вуза передо мной встал выбор&nbsp;&mdash; пойти работать в&nbsp;крупную компанию, заниматься какими-то интересными проектами в&nbsp;рамках корпоративной структуры или открыть свое дело. Я&nbsp;решил, что предпринимательство интереснее, потому что оно развивает тебя лично.
+                    .interview-block__interview--little.hidden-block
+                        p А&nbsp;на&nbsp;чем в&nbsp;бизнесе нельзя экономить?
+                    p.hidden-block Несмотря на&nbsp;то&nbsp;что наш стартап про экономию, могу выделить вещи, на&nbsp;которых экономить нельзя. Прежде всего это развитие сотрудников. И&nbsp;еще момент&nbsp;&mdash; аналитика. Принятие решений должно быть основано на&nbsp;метриках, показателях, то&nbsp;есть развивать продукт по&nbsp;наитию можно только на&nbsp;первых порах. Дальше должны быть четкие решения, тесты, метрики и&nbsp;тому подобные инструменты, в&nbsp;которые нужно вкладываться.
+                    p.hidden-block Сейчас стартапы конкурируют между собой скоростью проверки гипотез, проведения тестов, а&nbsp;не&nbsp;кодом или дизайном. Потому что тот, кто может быстрее анализировать свою аудиторию, кто находит &laquo;хаки&raquo;, как увеличить трафик органически, тот и&nbsp;выигрывает.
+                    .interview_image.hidden-block
+                        img(src="../images/interview-speakers/3.Volshuk.jpg")
+                    .interview-block__interview--little.hidden-block
+                        p Какие стартапы сегодня в&nbsp;тренде?
+                    p.hidden-block Если говорить про стартапы в&nbsp;области мобильных приложений, я&nbsp;считаю, что сейчас наиболее актуальны два типа приложений: первый&nbsp;&mdash; это приложения, которые меняют что-то в&nbsp;офлайне (хороший пример&nbsp;&mdash; это Gett или Uber, которые изменили&nbsp;то, как мы&nbsp;вызываем и&nbsp;пользуемся такси); второй&nbsp;&mdash; это мобильные приложения, которые имеют в&nbsp;своем ДНК вирусный эффект.
+                    p.hidden-block При этом&nbsp;90% приложений&nbsp;&mdash; это мертвые приложения, которые никто не&nbsp;скачивает, они просто висят в&nbsp;App Store, корпорации тратят огромные средства на&nbsp;их&nbsp;продвижение, цена одной загрузки стала стоить несколько долларов. Выживают только те&nbsp;приложения, которыми пользователи активно делятся между собой, которые могут развиваться за&nbsp;счет &laquo;сарафанного радио&raquo;. Пять лет назад это были социальные сети, несколько лет назад это были мессенджеры, сейчас такой эффект получают приложения, которые позволяют своим пользователям делать что-то фановое и&nbsp;веселое. Приложения, которые работают в&nbsp;один клик.
+                    .interview-block__interview--little.hidden-block
+                        p Дайте совет, с&nbsp;чего начать предпринимателям в&nbsp;ИТ-сфере?
+                    p.hidden-block Для тех, кто только начинает входить в&nbsp;ИТ-бизнес и&nbsp;хочет развиваться в&nbsp;нем, я&nbsp;бы посоветовал смотреть сразу на&nbsp;три-пять лет вперед, что будет актуально в&nbsp;будущем. Я&nbsp;считаю, что в&nbsp;ближайшее время будут актуальными решения на&nbsp;основе нейросетей и&nbsp;искусственного интеллекта в&nbsp;области безопасности, то&nbsp;есть анализ различных видеопотоков, и&nbsp;решения для медицины. В&nbsp;качестве примера можно привести отечественную разработку &laquo;ВижнЛабс&raquo;, это решение, которое по&nbsp;видеозаписям в&nbsp;банках позволяет распознать мошенников и&nbsp;не&nbsp;выдавать кредиты таким людям. Это экономит огромные средства финансовым компаниям. В&nbsp;медицине это огромный спектр решений, которые позволяют найти какие-то отклонения и&nbsp;заболевания заранее, по&nbsp;костным факторам и&nbsp;на&nbsp;основе анализа больших данных.
+                    .interview-block__video__sharing.clearfix.hidden-block
+                        ul.js-share
+                            li
+                                a(href="https://www.facebook.com/sharer/sharer.php?u=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--fb" data-interview="voloshuk").fbook.js-double-share
+                            li
+                                a(href="https://vk.com/share.php?url=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--vk" data-interview="voloshuk").vkt.js-double-share
+                            li
+                                a(href="https://twitter.com/intent/tweet?text=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--tw" data-interview="voloshuk").twt.js-double-share
+            .interview-block__main-tab(data-tab="2")
+                .interview-block__video
+                    .interview-block__video__block
+                        .interview-block__video__block__muted.video_muted.block-control
+                            .block-control__pause
+                            .block-control__play
+                        .full-block-control
+                            .full-block-control__play
+                            .full-block-control__time
+                            .full-block-control__main-line
+                                .full-block-control__main-line__progress
+                            .full-block-control__sound
+                        .interview-block__video__block__interview
+                            iframe(id="client-video" width="780" height="439" src="https://www.youtube.com/embed/jMvRX6AEsQY?list=PLv42Kp4x57LC_mrA0OAEqpo5r1LEMAL66&amp;controls=0&amp;showinfo=0&enablejsapi=1&rel=0" frameborder="0" allowfullscreen)
+                        .interview-block__video__block__filter(style="background-image: url(images/interview-speakers/business/Client_4.jpg)")
+                        .interview-block__video__block__info
+                            h3 Игорь Ласьков
+                            p.regalia Генеральный директор <nobr>ООО &laquo;Стройкомфорт&raquo;</nobr>
+                            p.hide-in-mobile Снижать расходы и, в&nbsp;то&nbsp;же время, постоянно расширять число клиентов, позволит современная <nobr>CRM-система</nobr> и&nbsp;другие решения мобильного оператора.
+                            .interview-block__video__block__info__playbutton(id="start-client-video")
+                    .interview-block__video__sharing.clearfix
+                        ul.js-share
+                            li
+                                a(href="https://www.facebook.com/sharer/sharer.php?u=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--fb" data-interview="laskov").fbook.js-double-share
+                            li
+                                a(href="https://vk.com/share.php?url=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--vk" data-interview="laskov").vkt.js-double-share
+                            li
+                                a(href="https://twitter.com/intent/tweet?text=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--tw" data-interview="laskov").twt.js-double-share
+                        .interview-block__video__decypher
+                            span.interview-block__video__decypher--text Расшифровка интервью
+                            span.interview-block__video__decypher--img(id="show-interview-business")
+                .interview-block__interview
+                    span.interview-block__interview--decypher Расшифровка интервью
+                    //h1.hidden-block Интервью бизнесменов и бизнесменов клиентов
+
+                    .interview-block__interview--little
+                        p Как вы&nbsp;пришли в&nbsp;этот бизнес?
+                    p
+                        | Все началось не&nbsp;так давно, в&nbsp;2012 году я&nbsp;переехал жить в&nbsp;Москву и&nbsp;пробовал себя в&nbsp;разных ипостасях. Я&nbsp;попал в&nbsp;одну организацию, которая занималась строительством, и&nbsp;прошел весь путь от&nbsp;самых низов&nbsp;&mdash; от&nbsp;менеджера компании до&nbsp;линейного руководителя. Так зародился мой бизнес. Таким образом, я&nbsp;прошел длинный путь, посмотрел, как это работает, смог организовать фирму сам и&nbsp;смог этим делом руководить.
+                    .interview-block__interview--little.hidden-block
+                        p Почему вы&nbsp;вообще решили уйти из&nbsp;наемных сотрудников и&nbsp;стать предпринимателем?
+                    p.hidden-block
+                        | Наемный сотрудник часто бывает недооценен. Тот потенциал, ту&nbsp;энергию, которую он&nbsp;вкладывает, она не&nbsp;всегда остается замеченной. При этом, когда работаешь на&nbsp;кого-то, выполняешь поручения какого-то руководителя, которые на&nbsp;самом деле не&nbsp;всегда верны. Менеджеру, плотно взаимодействующему с&nbsp;клиентами, виднее, как все должно быть устроено. Мнение&nbsp;же руководящих людей иногда с&nbsp;реалиями не&nbsp;совпадает. Так и&nbsp;получилось, что мне стало удобнее работать на&nbsp;себя и&nbsp;тем самым повысить качество того продукта, который я&nbsp;продаю.
+                    .interview-block__interview--little.hidden-block
+                        p Кто для вас бизнес-партнер?
+                    p.hidden-block
+                        | Это тот человек, который радеет за&nbsp;свое дело, который качественно выполняют свою работу. С&nbsp;такими людьми хочется продолжать работать.
+                    .interview-block__interview--little.hidden-block
+                        p Что для вас важно в&nbsp;работе?
+                    p.hidden-block
+                        | Важно оставаться профессионалом, при этом всегда поднимать планку, не&nbsp;оставаться на&nbsp;одном уровне, а&nbsp;расти.
+                    .interview-block__interview--little.hidden-block
+                        p Важны&nbsp;ли в&nbsp;бизнесе люди?
+                    p.hidden-block
+                        | Однозначно важны, причем важны проверенные люди, с&nbsp;которыми у&nbsp;тебя уже состоялся контакт, которые находятся с&nbsp;тобой на&nbsp;одной волне и&nbsp;преследуют те&nbsp;же цели.
+                    .interview-block__interview--little.hidden-block
+                        p Как привлечь клиента?
+                    p.hidden-block
+                        | Хорошей работой.
+                    .interview-block__interview--little.hidden-block
+                        p Какие актуальные задачи сегодня для себя вы&nbsp;ставите?
+                    p.hidden-block
+                        | Саморазвитие и&nbsp;развитие компании. Мы&nbsp;каждый день пытаемся сделать что-то новое и&nbsp;применить это в&nbsp;работе. Рынок переполнен, конкуренция высокая. Люди, которые работают над собой и&nbsp;развитием своей компании, обычно приходят к&nbsp;успеху.
+                    .interview-block__interview--little.hidden-block
+                        p Как вы&nbsp;развиваете свой бизнес?
+                    p.hidden-block
+                        | Мы&nbsp;занимаемся постоянным мониторингом российских и&nbsp;западных компаний, смотрим на&nbsp;опыт партнеров и&nbsp;конкурентов, изучаем практики и&nbsp;внедряем новые технологии у&nbsp;себя. Мир развивается, не&nbsp;стоит на&nbsp;месте. Мы&nbsp;стараемся следовать этой тенденции.
+                    .interview-block__interview--little.hidden-block
+                        p В&nbsp;чем секрет бизнес-успеха?
+                    p.hidden-block
+                        | Не&nbsp;жалеть себя. Идти к&nbsp;намеченной цели, несмотря ни&nbsp;на&nbsp;что.
+                    .interview-block__interview--little.hidden-block
+                        p Кто сегодня выигрывает?
+                    p.hidden-block
+                        | Не&nbsp;только сегодня, но&nbsp;и&nbsp;всегда выигрывают целеустремленные люди, которые качественно делают свою работу.
+
+                    .interview-block__interview--little.hidden-block
+                        p Есть&nbsp;ли у&nbsp;вас какой-нибудь полезный лайфхак, как малому бизнесу можно снизить расходы?
+
+                    p.hidden-block
+                        | Да. Какое-то время назад я&nbsp;понял, что работа с&nbsp;бумагой, куда записываешь клиентскую информацию, устарела. Работа с&nbsp;файлами в&nbsp;&laquo;Эксель&raquo; тоже не&nbsp;приносит желаемых результатов. Так мы&nbsp;пришли к&nbsp;современным решениям мобильного оператора, которые позволили нам в&nbsp;конечном результате заметно снизить расходы компании. Мы&nbsp;подключили ряд онлайн-услуг, которые помогают развивать отношения с&nbsp;клиентами и&nbsp;повышают эффективность взаимодействия внутри компании.
+                        | Речь идет об&nbsp;CRM-системе для ведения клиентов, которая дает возможность оперативно отвечать на&nbsp;все вопросы и&nbsp;запросы наших клиентов и&nbsp;тем самым помогает не&nbsp;заблудиться в&nbsp;своем бизнесе, не&nbsp;потерять заказы и&nbsp;качественно делать свою работу. Внутренние инструменты, например &laquo;Облачная АТС&raquo;, платформа &laquo;Мобильное предприятие&raquo; от&nbsp;&laquo;Билайн Бизнес&raquo; дают возможность более эффективной коммуникации между сотрудниками&nbsp;&mdash; маршрутизировать звонки, работать в&nbsp;том числе в&nbsp;удаленном формате и&nbsp;т.д. Также они позволяют мне ставить задачи и&nbsp;контролировать их&nbsp;выполнение.
+
+                    .interview-block__interview--little.hidden-block
+                        p А&nbsp;какая получилась экономия?
+
+                    p.hidden-block
+                        | Посчитать ее&nbsp;можно следующим образом. Если я&nbsp;поговорил с&nbsp;клиентом, записал это куда-то и&nbsp;забыл, я&nbsp;потерял клиента. Когда у&nbsp;меня есть современные технологии, которые позволяют мне не&nbsp;хранить все в&nbsp;голове, я&nbsp;ничего не&nbsp;теряю. Один непотерянный клиент компенсирует все затраты.
+
+                    .interview-block__video__sharing.clearfix.hidden-block
+                        ul.js-share
+                            li
+                                a(href="https://www.facebook.com/sharer/sharer.php?u=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--fb" data-interview="laskov").fbook.js-double-share
+                            li
+                                a(href="https://vk.com/share.php?url=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--vk" data-interview="laskov").vkt.js-double-share
+                            li
+                                a(href="https://twitter.com/intent/tweet?text=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--tw" data-interview="laskov").twt.js-double-share
+        .external-speaker-block
+            .interview-block--wrapper
+                .interview-block__tab
+                    .interview-block__tab__interview.interview-block__tab--bman(tab-index="1")
+                        | Бизнес
+                        .shift-tab
+                        | от первого лица
+                    .interview-block__tab__interview.interview-block__tab--client(tab-index="2")
+                        | Правила
+                        .shift-tab
+                        | предпринимателя
+            .inter-block__speakers--wrapper(speakers-tab="1")
+                .interview-block__speakers
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-1.html")
+                                img(src="images/interview-speakers/business/1.Popov.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-1.html") Александр Попов
+                            p Директор EasyFinance.ru
+                            a(href="/interview-1.html").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-2.html")
+                                img(src="images/interview-speakers/business/2.Cerazov.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-2.html") Константин Церазов
+                            p Член правления,руководитель инвестиционного блока банка «ФК Открытие»,член совета директоров «Открытия Капитал»
+                            a(href="/interview-2.html").watch-interview Смотреть
+                    .interview-block__speakers__item
+                      a(href="/interview-3.html")
+                        .interview-block__speakers__item__img
+                            img(src="images/interview-speakers/business/3.Feldman.png")
+                        .interview-block__speakers__item__text
+                            h3
+                              a(href="/interview-3.html") Максим Фельдман
+                            p Руководитель направления по работе с клиентами Московской школы управления СКОЛКОВО
+                            a(href="/interview-3.html").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-5.html")
+                                img(src="images/interview-speakers/business/5.Avedei.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-5.html") Алексей Авдей
+                            p Директор по продукту ЦИАН
+                            a(href="/interview-5.html").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-6.html")
+                                img(src="images/interview-speakers/business/6.Panov.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-6.html") Сергей Панов
+                            p Сооснователь и&nbsp;генеральный директор <nobr>интернет-бухгалтерии</nobr> &laquo;Моё дело&raquo;
+                            a(href="/interview-6.html").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-7.html")
+                                img(src="images/interview-speakers/business/7.Jukov.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-7.html") Михаил Жуков
+                            p Генеральный директор HeadHunter
+                            a(href="/interview-7.html").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-8.html")
+                                img(src="images/interview-speakers/business/8.Tabolin.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-8.html") Сергей Таболин
+                            p Руководитель по&nbsp;сегментному маркетингу &laquo;Билайн&raquo; Бизнес
+                            a(href="/interview-8.html").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-9.html")
+                                img(src="images/interview-speakers/business/9.Li.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-9.html") Дмитрий Ли
+                            p Директор по&nbsp;маркетингу бизнес-сегмента &laquo;Билайн&raquo;
+                            a(href="/interview-9.html").watch-interview Смотретьо
+            .inter-block__speakers--wrapper(speakers-tab="2")
+                .interview-block__speakers
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-1.html#client")
+                                img(src="images/interview-speakers/clients/1.-Chaplinski.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-1.html#client") Павел Чаплинский
+                            p Основатель BOX&ROSES
+                            a(href="/interview-1.html#client").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-2.html#client")
+                                img(src="images/interview-speakers/clients/2.-Shlopack.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-2.html#client") Дмитрий Шлопак
+                            p Управляющий партнер «Везендорф групп»
+                            a(href="/interview-2.html#client").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-3.html#client")
+                                img(src="images/interview-speakers/clients/3.-Zamai.png")
+                        .interview-block__speakers__item__text
+                            h3 
+                                a(href="/interview-3.html#client") Андрей Замай
+                            p Генеральный директор компании «Первая Интеллектуальная Реклама»
+                            a(href="/interview-3.html#client").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-5.html#client")
+                                img(src="images/interview-speakers/clients/5.-Smirnov.png")
+                        .interview-block__speakers__item__text
+                            h3 
+                                a(href="/interview-5.html#client") Илья Смирнов
+                            p IT-директор компании «Ай Ти Ви групп»
+                            a(href="/interview-5.html#client").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-6.html#client")
+                                img(src="images/interview-speakers/clients/6.-Shelmanova.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-6.html#client") Ольга Шеламова
+                            p Совладелец компании «Олимп»
+                            a(href="/interview-6.html#client").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-7.html#client")
+                                img(src="images/interview-speakers/clients/7.-Silhev.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-7.html#client") Андрей Сильчев
+                            p Директор по развитию IT Partner
+                            a(href="/interview-7.html#client").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-8.html#client")
+                                img(src="images/interview-speakers/clients/8.Shkolerov.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-8.html#client") Дмитрий Шкловер
+                            p Основатель интернет-магазина 613bricks.ru
+                            a(href="/interview-8.html#client").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-9.html#client")
+                                img(src="images/interview-speakers/clients/9. Poryadneev.png")
+                        .interview-block__speakers__item__text
+                            h3 Кирилл Поряднев
+                            p Генеральный директор «Результат Плюс»
+                            a(href="/interview-9.html#client").watch-interview Смотреть

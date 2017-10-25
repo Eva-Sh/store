@@ -1,0 +1,372 @@
+extends templates/layout
+block vars
+    - var title = '«Билайн» Бизнес'
+    - var og_title = 'Анализируем звонки'
+    - var og_description = 'Как с помощью аналитики звонков повысить эффективность рекламы — узнайте в спецпроекте РБК и «Билайн».'
+    - var og_image = '../images/lifehack-9/Lifehack_9.jpg'
+    - var twitter_description = '«Билайн» Бизнес: прорывные технологии для больших побед.'
+
+block content
+    section.lifehack-case-jumbotron.jumbotron-height(style="background-image: url('../images/lifehack-9/Lifehack-9_Cover_1920x310.jpg');")
+        a(href="index.html").link-back Вернуться на главную
+        span Лайфхак
+        h1 Анализируем звонки
+        .link
+            a(href="/lifehack-8.html").prev-link Предыдущий лайфхак
+            span |
+            a(href="/lifehack-1.html").next-link Следующий лайфхак
+    section.content-text.content-text--lifehack
+        .container
+            p.
+                Прослушивайте звонки и&nbsp;качество их&nbsp;обработки. Оценивайте эффективность каждого рекламного канала с&nbsp;помощью разных номеров и&nbsp;экономьте деньги. Современные решения позволяют решить эту задачу практически в&nbsp;один клик.
+            .line-dots
+
+            .image-block.image-block--left
+                .image-block__rectangle
+                .image-block__img
+                    img(src="../images/lifehack-9/Image_1.jpg", alt="")
+            p.
+                Аналитика звонков по&nbsp;рекламе (другими словами, <nobr>колл-трекинг</nobr>)&nbsp;&mdash; это система или набор инструментов/решений, которые позволяют связывать входящие телефонные звонки с&nbsp;источником рекламы. Вы&nbsp;размещаете в&nbsp;рекламе один из&nbsp;многоканальных номеров и&nbsp;настраиваете в&nbsp;личном кабинете отслеживание звонков, поступающих на&nbsp;этот номер. А&nbsp;дальше ежедневно получаете отчет об&nbsp;эффективности рекламных площадок.
+                По&nbsp;данным опрошенных РБК предпринимателей, многие из&nbsp;них так и&nbsp;не&nbsp;занимаются анализом телефонных разговоров, считая этот процесс сложным с&nbsp;точки зрения организации и&nbsp;затратным с&nbsp;точки зрения ресурсов. Однако это миф, на&nbsp;рынке представлено достаточно эффективных и&nbsp;в&nbsp;то&nbsp;же время бюджетных систем/решений <nobr>кол-трекинга</nobr>.
+
+            .line-dots
+            h2 Почему важно анализировать звонки?
+            p.
+                <nobr>Кол-трекинг</nobr> дает бизнесу возможность эффективно использовать рекламные бюджеты&nbsp;&mdash; отказываться от&nbsp;каналов и&nbsp;инструментов, которые не&nbsp;приносят клиентов, и, напротив, вычислять эффективные и&nbsp;перекидывать деньги на&nbsp;них. Например, ваш сайт может быть оптимизирован на&nbsp;&laquo;Яндексе&raquo; или&nbsp;другой системе, при этом вы&nbsp;за&nbsp;месяц получаете всего несколько заказов напрямую с&nbsp;сайта. Как вы&nbsp;понимаете, это не&nbsp;значит, что вы&nbsp;зря тратили деньги на&nbsp;&laquo;Яндекс. Директ&raquo;, клиенты могли, изучив сайт, сделать заказ по&nbsp;телефону. Не&nbsp;учитывая и&nbsp;не&nbsp;анализируя эту статистику, вы&nbsp;получите в&nbsp;целом некорректный результат.
+            .line-dots
+            h2 Инструменты для отслеживания звонков
+            p.
+                Наиболее известные способы отслеживания звонков по&nbsp;каналам:
+            ul
+                li <nobr>блиц-опрос</nobr> клиента через оператора. Для этого оператор спрашивает звонивших, откуда они узнали о&nbsp;компании;
+                li кодовое слово, назвав которое, можно получить скидку на&nbsp;заказ. Кодовое слово при этом есть лишь на&nbsp;определённых рекламных носителях;
+                li использование разных номеров для каждого источника рекламы.
+            p.
+                Опрос силами операторов требует временных ресурсов. Кроме того, в&nbsp;данном случае действует человеческий фактор&nbsp;&mdash; оператор может ошибиться или записать и&nbsp;передать некорректную информацию
+            p.
+                Недостатком использования кодового слова является то, что люди могут просто узнать о&nbsp;специальной акции и&nbsp;назвать это слово, совсем не&nbsp;читая рекламу, а, например, услышав от&nbsp;знакомого, чтобы получить подарок, особые условия, скидку.
+            p.
+                Наиболее точным и&nbsp;надежным инструментом является именно использование различных номеров в&nbsp;разных каналах рекламы. И&nbsp;для этого можно воспользоваться услугами <nobr>кол-трекинговых</nobr> сервисов. Они позволяют собирать достоверные сведения и&nbsp;могут сказать не&nbsp;просто, с&nbsp;какого ресурса пришел покупатель, но&nbsp;и&nbsp;по&nbsp;какому поисковому запросу.
+            .line-dots
+            h2 Статика и&nbsp;динамика
+            p.
+                Системы <nobr>кол-трекинга</nobr> делятся на&nbsp;две группы:
+            ul
+                li статические, когда выдается номер телефона или несколько номеров для отслеживания звонков с&nbsp;определенных источников клиентского трафика. С&nbsp;помощью таких систем вы&nbsp;можете получать статистику по&nbsp;количеству звонков с&nbsp;каждого рекламного канала;
+                li динамические, в&nbsp;рамках которых каждому посетителю сайта присваивается номер и&nbsp;кодовое слово и&nbsp;есть возможность узнать не&nbsp;только рекламный канал, но&nbsp;и&nbsp;ключевое слово, по&nbsp;которому пришел покупатель.
+            .image-block.image-block--right
+                .image-block__rectangle
+                .image-block__img
+                    img(src="../images/lifehack-9/Image_2.jpg", alt="")
+            p.
+                Суть статистического <nobr>кол-трекинга</nobr> заключается в&nbsp;том, что на&nbsp;различных носителях рекламы указываются разные номера. Например, клиенты, пришедшие по&nbsp;контексту, видят номер телефона, который заканчивается на&nbsp;05, а&nbsp;с&nbsp;баннера&nbsp;&mdash; на&nbsp;03. Это позволяет подсчитать количество звонков по&nbsp;каждому источнику рекламы и&nbsp;оценить его эффективность. Статический <nobr>кол-трекинг</nobr> делает для компании первичную аналитику, далее с&nbsp;этими данными надо работать.<br />
+            p.
+                Динамический <nobr>кол-трекинг</nobr> закрепляет телефонные номера не&nbsp;по&nbsp;источникам рекламы, а&nbsp;за&nbsp;каждым посетителем сайта&nbsp;&mdash; каждый зашедший видит &laquo;свой&raquo; номер телефона. Это позволяет понять и&nbsp;источник рекламы, и&nbsp;фразу (слово), по&nbsp;которому он&nbsp;пришел. Такой более детализированный отчет позволяет составить портрет потенциального клиента и&nbsp;типовые запросы для него. Дальше можно сравнить стоимость привлечения клиента из&nbsp;разных источников и&nbsp;оптимизировать расходы на&nbsp;рекламу.
+
+            p.
+                Динамический <nobr>кол-трекинг</nobr> анализирует ключевые слова, выявляет неэффективные и&nbsp;работающие, которые приносят львиную долю обращений. Понятно, что их&nbsp;и&nbsp;стоит применять. Также динамический <nobr>кол-трекинг</nobr> позволяет определить оптимальное время для показа рекламы, часы, которые приносят больше всего клиентов. То&nbsp;же самое можно сказать об&nbsp;эффективности разных дизайнов страниц. И, наконец, динамический <nobr>кол-трекинг</nobr> позволяет оптимизировать работу <nobr>кол-центра</nobr>&nbsp;&mdash; показывает, как операторы работают с&nbsp;возражениями, скриптами, какова оптимальная численность и&nbsp;время работы <nobr>кол-центра</nobr>.
+            .line-dots
+            h2 Системы <nobr>кол-трекинга</nobr>
+            p На&nbsp;рынке представлен ряд решений <nobr>кол-трекинга</nobr>, поговорим о&nbsp;наиболее известных и&nbsp;востребованных.
+            p.
+                Сервис Callibri&nbsp;&mdash; платный, но&nbsp;довольно бюджетный вариант с&nbsp;большим выбором тарифов (&laquo;Страус&raquo;, &laquo;Пингвин&raquo;, &laquo;Дятел&raquo;, &laquo;Синица&raquo;), которые отличаются друг друга в&nbsp;основном количеством номеров и&nbsp;рекомендованным числом уникальных посетителей. &laquo;Синица&raquo; с&nbsp;одним номером стоит 1&nbsp;тыс.&nbsp;рублей, остальные обойдутся немного дороже, при этом сервис предоставляет тестовый период (когда не&nbsp;взимается плата), в&nbsp;течение которого можно посмотреть на&nbsp;работу Callibri и&nbsp;разобраться в&nbsp;нюансах. Также за&nbsp;каждый номер взимает плату &laquo;Целевой звонок 2.0 от&nbsp;Яндекса&raquo;, он&nbsp;максимально удобный и&nbsp;бюджетный, но&nbsp;подойдет не&nbsp;всем. Доступен он&nbsp;только для номеров с&nbsp;кодами 495, 498, 499, 800, 812, 831, 846.<br />
+            p.
+                Аналитический сервис Co&nbsp;Magic позволяет оценить эффективность, изучая данные о&nbsp;продажах. Сервис агрегирует данные с&nbsp;сайта и&nbsp;CRM и&nbsp;дает комплексную оценку системы продаж. При этом есть возможность воспользоваться и&nbsp;вариантом статического, и&nbsp;вариантом динамического Co&nbsp;Magic. По&nbsp;цене также выйдет немного&nbsp;&mdash; от&nbsp;3&nbsp;тыс.&nbsp;рублей. Эксперты рекомендуют, если вы&nbsp;не&nbsp;пользовались <nobr>кол-трекингом</nobr>, начать со&nbsp;статического решения, а&nbsp;потом, уже освоив его, перейти на&nbsp;динамические варианты.<br />
+            p.
+                Динамический <nobr>кол-трекинг</nobr> с&nbsp;незатейливым названием CallTracking стоит от&nbsp;1,5&nbsp;тыс.&nbsp;рублей (тариф &laquo;Базовый&raquo;) и&nbsp;позволяет считать и&nbsp;анализировать звонки в&nbsp;комбинации такой сложности, как вы&nbsp;пожелаете (по&nbsp;каналам, ключевым фразам). В&nbsp;демоверсии сервиса можно посмотреть его работу, сформировать отчет и&nbsp;в&nbsp;целом оценить возможности <nobr>кол-трекинга</nobr>.<br />
+            p.
+                Ну&nbsp;и&nbsp;лидер рынка&nbsp;&mdash; CallTouch, о&nbsp;котором мы&nbsp;уже говорили в&nbsp;одном из&nbsp;материалов. Сервис предлагает решения и&nbsp;для динамического, и&nbsp;для статического <nobr>кол-трекингов</nobr>. Он&nbsp;обойдется предпринимателю немного дороже сходных продуктов, но&nbsp;обладает наибольшим числом функций для детального анализа.
+    section.big-table
+        div#title
+            table
+                tr.main
+                    th.solution Решение
+                    th.price Цена, руб. в месяц
+                    th.region Регионы работы
+                    th.condition Условия/преимущества
+        div#content
+            table
+                tr
+                    td.solution
+                        span Целевой звонок
+                    td.price
+                        h3 от 330
+                    td.region
+                        p Москва, Санкт-Петербург, Нижний Новгород и область, Самара и область
+                    td.condition
+                        p Невысокие цены, простота подключения
+            table
+                tr
+                    td.solution
+                        span Callibri
+                    td.price
+                        h3 от 1 000
+                    td.region
+                        p 99 городов России
+                    td.condition
+                        p Бюджетный вариант, хорошая служба поддержки
+            table
+                tr
+                    td.solution
+                        span CoMagic
+                    td.price
+                        h3 от 1 000
+                    td.region
+                       p 37 регионов
+                    td.condition
+                        p Интеграция с CRM, сложная аналитика
+            table
+                tr
+                    td.solution
+                        span Calltracking
+                    td.price
+                        h3 от 1 500
+                    td.region
+                        p 63 региона
+                    td.condition
+                        p Интуитивность, простота.
+            table
+                tr
+                    td.solution
+                        span CallTouch
+                    td.price
+                        h3 от 4 900
+                    td.region
+                        p 68 регионов в России,<br> 15 стран
+                    td.condition
+                        p Широкий функционал динамического и статического коллтрекинга
+    section.sharing-block
+        .share-icon.js-share
+            a(href="https://www.facebook.com/sharer/sharer.php?u=").share-icon__item.share-icon__item--fk.fbook
+            a(href="https://vk.com/share.php?url=").share-icon__item.share-icon__item--vk.vkt
+            a(href="https://twitter.com/intent/tweet?text=").share-icon__item.share-icon__item--tw.twt
+    section.advices-block-slider.lifehack-hidden
+        a(href="/article-1.html").advices-block-slider__item
+            .advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/Article_1.jpg');")
+            .advices-block-slider__item__text
+                p Малые миллионы
+        a(href="/article-2.html").advices-block-slider__item
+            .advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/Article_2.jpg');")
+            .advices-block-slider__item__text
+                p Финансы для бизнеса
+        a(href="/article-3.html").advices-block-slider__item
+            .advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/Article_3.jpg');")
+            .advices-block-slider__item__text
+                p «Океаны» бизнеса
+        a(href="/article-4.html").advices-block-slider__item
+            .advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/4.jpg');")
+            .advices-block-slider__item__text
+                p Инвестиции в эффективность
+        a(href="/article-5.html").advices-block-slider__item
+            .advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/5.jpg');")
+            .advices-block-slider__item__text
+                p Плата за&nbsp;эмоции
+        a(href="/article-6.html").advices-block-slider__item
+            .advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/6.jpg');")
+            .advices-block-slider__item__text
+                p В&nbsp;погоне за&nbsp;надежностьюс
+        a(href="/article-7.html").advices-block-slider__item
+            .advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/7.jpg');")
+            .advices-block-slider__item__text
+                p Кадры в кризис: увольнять или нет
+        a(href="/article-8.html").advices-block-slider__item
+            .advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/8.jpg');")
+            .advices-block-slider__item__text
+                p Связь для бизнеса
+        a(href="/article-9.html").advices-block-slider__item
+            .advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/9.jpg');")
+            .advices-block-slider__item__text
+                p Машины vs люди
+    .line-grey.line-grey--lf.lifehack-hidden
+    section.video-slider.video-slider-footer.lifehack-hidden
+        .container
+            h2 Правила предпринимателя
+            .videos-slider.videos-slider--space
+                a()
+                    .interview-block__video
+                        .interview-block__video__block
+                            .interview-block__video__block__muted.video_muted.block-control--slider-9
+                                .block-control__pause
+                                .block-control__play
+                            .full-block-control
+                                .full-block-control__slider--play
+                                .full-block-control__time
+                                .full-block-control__main-line
+                                    .full-block-control__main-line__progress
+                                .full-block-control__sound
+                            .interview-block__video__block__interview
+                                iframe(id="client-video-9" width="780" height="439" src="https://www.youtube.com/embed/C1utc77_2q4?list=PLv42Kp4x57LC_mrA0OAEqpo5r1LEMAL66&amp;controls=0&amp;showinfo=0&enablejsapi=1&rel=0" frameborder="0" allowfullscreen)
+                            .interview-block__video__block__filter(style="background-image: url(images/interview-speakers/business/Client_9.jpg); background-size: contain;")
+                            .interview-block__video__block__info
+                                h3 Кирилл Поряднев
+                                p.regalia Генеральный директор «Результат Плюс»
+                                p.hide-in-mobile Самое важное конкурентное преимущество современного бизнеса&nbsp;&mdash; технологичность, а&nbsp;самый ценный ресурс&nbsp;&mdash; время. Неумение&nbsp;же пользоваться современными решениями и&nbsp;экономить время рано или поздно приведет к&nbsp;проигрышу.
+                                .interview-block__video__block__info__playbutton(id="start-client-video-9")
+                    .interview-block__video__sharing.clearfix.no-margin-bottom
+                a()
+                    .interview-block__video
+                        .interview-block__video__block
+                            .interview-block__video__block__muted.video_muted.block-control--slider-8
+                                .block-control__pause
+                                .block-control__play
+                            .full-block-control
+                                .full-block-control__slider--play
+                                .full-block-control__time
+                                .full-block-control__main-line
+                                    .full-block-control__main-line__progress
+                                .full-block-control__sound
+                            .interview-block__video__block__interview
+                                iframe(id="client-video-8" width="780" height="439" src="https://www.youtube.com/embed/Wdxdzoskexc?list=PLv42Kp4x57LC_mrA0OAEqpo5r1LEMAL66&amp;controls=0&amp;showinfo=0&enablejsapi=1&rel=0" frameborder="0" allowfullscreen)
+                            .interview-block__video__block__filter(style="background-image: url(images/interview-speakers/business/Client_8.jpg); background-size: contain;")
+                            .interview-block__video__block__info
+                                h3 Дмитрий Шкловер
+                                p.regalia Основатель <nobr>интернет-магазина</nobr> 613bricks.ru
+                                p.hide-in-mobile Современные решения сотовых операторов позволяют оптимизировать операционные затраты компании. О&nbsp;том, какие инструменты существуют для начинающих бизнесменов и&nbsp;как аутсорсинг связи повышает эффективность и&nbsp;прибыльность бизнеса.
+                                .interview-block__video__block__info__playbutton(id="start-client-video-8")
+                a()
+                    .interview-block__video
+                        .interview-block__video__block
+                            .interview-block__video__block__muted.video_muted.block-control--slider-7
+                                .block-control__pause
+                                .block-control__play
+                            .full-block-control
+                                .full-block-control__slider--play
+                                .full-block-control__time
+                                .full-block-control__main-line
+                                    .full-block-control__main-line__progress
+                                .full-block-control__sound
+                            .interview-block__video__block__interview
+                                iframe(id="client-video-7" width="780" height="439" src="https://www.youtube.com/embed/KbLuskLYiks?list=PLv42Kp4x57LC_mrA0OAEqpo5r1LEMAL66&amp;controls=0&amp;showinfo=0&enablejsapi=1&rel=0" frameborder="0" allowfullscreen)
+                            .interview-block__video__block__filter(style="background-image: url(images/interview-speakers/business/Client_7.jpg); background-size: contain;")
+                            .interview-block__video__block__info
+                                h3 Андрей Сильчев
+                                p.regalia Директор по развитию IT Partner
+                                p.hide-in-mobile Люди&nbsp;&mdash; основной элемент бизнеса, сегодня особенно востребованы люди-&laquo;многостаночники&raquo;, способные закрыть сразу несколько областей работы.
+                                .interview-block__video__block__info__playbutton(id="start-client-video-7")
+                    .interview-block__video__sharing.clearfix.no-margin-bottom
+                a()
+                    .interview-block__video
+                        .interview-block__video__block
+                            .interview-block__video__block__muted.video_muted.block-control--slider-6
+                                .block-control__pause
+                                .block-control__play
+                            .full-block-control
+                                .full-block-control__slider--play
+                                .full-block-control__time
+                                .full-block-control__main-line
+                                    .full-block-control__main-line__progress
+                                .full-block-control__sound
+                            .interview-block__video__block__interview
+                                iframe(id="client-video-6" width="780" height="439" src="https://www.youtube.com/embed/uul0w-NuDCw?list=PLv42Kp4x57LC_mrA0OAEqpo5r1LEMAL66&amp;controls=0&amp;showinfo=0&enablejsapi=1&rel=0" frameborder="0" allowfullscreen)
+                            .interview-block__video__block__filter(style="background-image: url(images/interview-speakers/business/Client_6.jpg); background-size: contain;")
+                            .interview-block__video__block__info
+                                h3 Ольга Шеламова
+                                p.regalia совладелец компании &laquo;Олимп&raquo;
+                                p.hide-in-mobile Партнеров надо выбирать с&nbsp;точки зрения надежности и&nbsp;взаимовыгодности сотрудничества. От&nbsp;правильных <nobr>бизнес-партнеров</nobr> и&nbsp;подрядчиков во&nbsp;многом зависит развитие компании.
+                                .interview-block__video__block__info__playbutton(id="start-client-video-6")
+                    .interview-block__video__sharing.clearfix.no-margin-bottom
+                a()
+                    .interview-block__video
+                        .interview-block__video__block
+                            .interview-block__video__block__muted.video_muted.block-control--slider-5
+                                .block-control__pause
+                                .block-control__play
+                            .full-block-control
+                                .full-block-control__slider--play
+                                .full-block-control__time
+                                .full-block-control__main-line
+                                    .full-block-control__main-line__progress
+                                .full-block-control__sound
+                            .interview-block__video__block__interview
+                                iframe(id="client-video-5" width="780" height="439" src="https://www.youtube.com/embed/Dn_tOvfZiI0?list=PLv42Kp4x57LC_mrA0OAEqpo5r1LEMAL66&amp;controls=0&amp;showinfo=0&enablejsapi=1&rel=0" frameborder="0" allowfullscreen)
+                            .interview-block__video__block__filter(style="background-image: url(images/interview-speakers/business/Client_5.jpg); background-size: contain;")
+                            .interview-block__video__block__info
+                                h3 Илья Смирнов
+                                p.regalia <nobr>IT-директор</nobr> компании &laquo;Ай&nbsp;Ти&nbsp;Ви&nbsp;групп&raquo;
+                                p.hide-in-mobile Формат удаленного офиса создает комфортные условия для работы сотрудников, служит дополнительной мотивацией, а&nbsp;также позволяет компании эффективнее управлять расходами.
+                                .interview-block__video__block__info__playbutton(id="start-client-video-5")
+                    .interview-block__video__sharing.clearfix.no-margin-bottom
+                a()
+                    .interview-block__video
+                        .interview-block__video__block
+                            .interview-block__video__block__muted.video_muted.block-control--slider-4
+                                .block-control__pause
+                                .block-control__play
+                            .full-block-control
+                                .full-block-control__slider--play
+                                .full-block-control__time
+                                .full-block-control__main-line
+                                    .full-block-control__main-line__progress
+                                .full-block-control__sound
+                            .interview-block__video__block__interview
+                                iframe(id="client-video-4" width="780" height="439" src="https://www.youtube.com/embed/jMvRX6AEsQY?list=PLv42Kp4x57LC_mrA0OAEqpo5r1LEMAL66&amp;controls=0&amp;showinfo=0&enablejsapi=1&rel=0" frameborder="0" allowfullscreen)
+                            .interview-block__video__block__filter(style="background-image: url(images/interview-speakers/business/Client_4.jpg); background-size: contain;")
+                            .interview-block__video__block__info
+                                h3 Игорь Ласьков
+                                p.regalia Генеральный директор <nobr>ООО &laquo;Стройкомфорт&raquo;</nobr>
+                                p.hide-in-mobile Снижать расходы и, в&nbsp;то&nbsp;же время, постоянно расширять число клиентов, позволит современная <nobr>CRM-система</nobr> и&nbsp;другие решения мобильного оператора.
+                                .interview-block__video__block__info__playbutton(id="start-client-video-4")
+                    .interview-block__video__sharing.clearfix.no-margin-bottom
+                a()
+                    .interview-block__video
+                        .interview-block__video__block
+                            .interview-block__video__block__muted.video_muted.block-control--slider-3
+                                .block-control__pause
+                                .block-control__play
+                            .full-block-control
+                                .full-block-control__slider--play
+                                .full-block-control__time
+                                .full-block-control__main-line
+                                    .full-block-control__main-line__progress
+                                .full-block-control__sound
+                            .interview-block__video__block__interview
+                                iframe(id="client-video-3" width="780" height="439" src="https://www.youtube.com/embed/D4W_ciHj-Dc?list=PLv42Kp4x57LC_mrA0OAEqpo5r1LEMAL66&amp;controls=0&amp;showinfo=0&enablejsapi=1&rel=0" frameborder="0" allowfullscreen)
+                            .interview-block__video__block__filter(style="background-image: url(images/interview-speakers/business/Client_3.jpg); background-size: contain;")
+                            .interview-block__video__block__info
+                                h3 Андрей Замай
+                                p.regalia Генеральный директор компании «Первая Интеллектуальная Реклама»
+                                p.hide-in-mobile Найти «голубой океан» можно даже на современном конкурентном рынке. А выигрывает в бизнесе тот, кто не боится ошибок, совершает их, но учится на них и совершенствуется.
+                                .interview-block__video__block__info__playbutton(id="start-client-video-3")
+                    .interview-block__video__sharing.clearfix.no-margin-bottom
+                a()
+                    .interview-block__video
+                        .interview-block__video__block
+                            .interview-block__video__block__muted.video_muted.block-control--slider-1
+                                .block-control__pause
+                                .block-control__play
+                            .full-block-control
+                                .full-block-control__slider--play
+                                .full-block-control__time
+                                .full-block-control__main-line
+                                    .full-block-control__main-line__progress
+                                .full-block-control__sound
+                            .interview-block__video__block__interview
+                                iframe(id="client-video-1" width="780" height="501" src="https://www.youtube.com/embed/HLGZqCOwOws?controls=0&amp;showinfo=0&enablejsapi=1&rel=0" frameborder="0" allowfullscreen)
+                            .interview-block__video__block__filter(style="background-image: url(images/interview-speakers/business/Client_1.jpg); background-size: contain;")
+                            .interview-block__video__block__info
+                                h3 Павел Чаплинский
+                                p.regalia Основатель BOX&ROSES
+                                p Создавая компанию, предпринимателю нужно иметь видение, каким бизнес будет через полгода, год, несколько лет, какой будет его команда, какие задачи будут поставлены перед сотрудниками и&nbsp;для чего, вообще, строится этот бизнес.
+                                .interview-block__video__block__info__playbutton(id="start-client-video-1")
+                    .interview-block__video__sharing.clearfix.no-margin-bottom
+                a()
+                    .interview-block__video
+                        .interview-block__video__block
+                            .interview-block__video__block__muted.video_muted.block-control--slider-2
+                                .block-control__pause
+                                .block-control__play
+                            .full-block-control
+                                .full-block-control__slider--play
+                                .full-block-control__time
+                                .full-block-control__main-line
+                                    .full-block-control__main-line__progress
+                                .full-block-control__sound
+                            .interview-block__video__block__interview
+                                iframe(id="client-video-2" width="780" height="501" src="https://www.youtube.com/embed/3EaAAjCzSxE?controls=0&amp;showinfo=0&enablejsapi=1&rel=0" frameborder="0" allowfullscreen)
+                            .interview-block__video__block__filter(style="background-image: url(images/interview-speakers/business/Client_2.jpg); background-size: contain;")
+                            .interview-block__video__block__info
+                                h3 Дмитрий Шлопак
+                                p.regalia Управляющий партнер &laquo;Везендорф групп&raquo;
+                                p Социальная <nobr>бизнес-философия</nobr> и&nbsp;гарантия возврата вложенных средств&nbsp;&mdash; правило, которое позволит приблизить ваш стартап к&nbsp;получению инвестиций.
+                                .interview-block__video__block__info__playbutton(id="start-client-video-2")
+                    .interview-block__video__sharing.clearfix.no-margin-bottom

@@ -1,0 +1,199 @@
+extends templates/layout
+block vars
+	- var title = '«БИЛАЙН» БИЗНЕС'
+	- var og_title = 'Как открыть свое дело в России'
+	- var og_description = 'В спецпроекте РБК и «Билайн» рассказываем, как открыть своё дело в России. Простая инструкция из нескольких шагов для далекоидущего бизнеса.'
+	- var og_image = '../images/bussines.jpg'
+	- var twitter_description = '«Билайн» Бизнес: прорывные технологии для больших побед.'
+
+block content
+	section.lifehack-case-jumbotron.jumbotron-height(style="background-image: url('../images/advices/sovet-1/SOVET_1(Cover).jpg');")
+		a(href="/index.html").link-back Вернуться на главную
+		span Совет
+		h1 Как открыть свое дело в России
+		.link
+			a(href="/advice-7.html").prev-link Предыдущий совет
+			span |
+			a(href="/advice-2.html").next-link Следующий совет
+	section.content-text
+		.advice-content__block
+			.container
+				p Запустить свой бизнес&nbsp;&mdash; дело ответственное, рискованное, но, в&nbsp;первую очередь, организационно не&nbsp;самое простое. Мы&nbsp;составили простую пошаговую инструкцию, которая позволит вам проще пройти все формальные этапы организации фирмы или ИП.
+				.advice-content__block__step
+					h3 Шаг 1. Определиться с&nbsp;организационно-правовой формой: фирма или ИП?
+					p Зарегистрировать свой бизнес можно в&nbsp;качестве фирмы (ООО, ОАО) и&nbsp;в&nbsp;качестве индивидуального предпринимателя (ИП). Вариант регистрации ИП&nbsp;проще по&nbsp;пакету документов, но&nbsp;считается, что иногда серьезные клиенты предпочитают иметь дело с&nbsp;фирмой. Также лучше организовать компанию, если в&nbsp;деле участвуют несколько человек: тогда все смогут принимать участие в&nbsp;ее&nbsp;деятельности и&nbsp;разделят ответственность.
+				.advice-content__block__documents
+					h3 Документы для регистрации ИП:
+					ul
+						li заявление о&nbsp;государственной регистрации физического лица в&nbsp;качестве индивидуального предпринимателя (форма &#8470;&nbsp;Р21001);
+						li копия российского паспорта;
+						li квитанция об&nbsp;уплате госпошлины в&nbsp;размере 800&nbsp;руб. Сформировать квитанцию на&nbsp;уплату госпошлины можно с&nbsp;помощью сервиса &laquo;Уплата госпошлины&raquo; на&nbsp; <a href="https://www.nalog.ru/rn61/" target="_blank">www.nalog.ru</a>.
+					p Подать документы можно лично в налоговую инспекцию, а можно удаленно <a href="https://www.nalog.ru/rn77/ip/interest/reg_ip/petition/" target="_blank">здесь</a>.
+					p Также можно подать документы на&nbsp;регистрацию ИП&nbsp;через многофункциональные центры (МФЦ), которые работают в&nbsp;большинстве крупных городов России в&nbsp;формате &laquo;единого окна&raquo;. Это единственный способ для тех, кто не&nbsp;хочет платить лишние деньги и&nbsp;таскаться по&nbsp;куче адресов.
+					p Стоимость открытия ИП&nbsp;через МФЦ такая&nbsp;же, как если идти в&nbsp;налоговую лично. Размер госпошлины для ИП&nbsp;составляет 800&nbsp;рублей. Документы для подачи такие&nbsp;же. Только нужно указать адрес и&nbsp;наименование отделения ФНС, в&nbsp;котором будет происходить регистрация вашего ИП. Он&nbsp;зависит от&nbsp;адреса вашей прописки. Срок регистрации через МФЦ для ИП&nbsp;&mdash; 5 дней с&nbsp;момента подачи документов.
+				.advice-content__block__documents
+					h3 Документы для регистрации фирмы (ООО):
+					ul
+						li подписанное заявителем заявление о&nbsp;государственной регистрации (форма &#8470;&nbsp;P11001);
+						li решение о&nbsp;создании юридического лица в&nbsp;виде протокола, договора;
+						li учредительные документы;
+						li документ об&nbsp;уплате государственной пошлины в&nbsp;размере 4000&nbsp;руб.
+					p Порядок подачи документов предусмотрен только личный, удаленно можно направить документы по&nbsp;почте. Подробнее о&nbsp;регистрации ООО можно прочитать <a href="https://www.nalog.ru/rn77/yul/interest/reg_yl/register/" target="_blank">здесь</a>.
+				.advice-content__block__image
+					img(src="../images/advices/sovet-1/SOVET_1(Image_1).jpg")
+				.advice-content__block__step
+					h3 Шаг 2. Выбрать налоговый режим
+					p Далее выбирайте режим налогообложения. По&nbsp;умолчанию действует общий режим, предполагающий уплату НДС, налога на&nbsp;прибыль, налога на&nbsp;имущество. Кроме того, что это налоговая нагрузка, это еще и&nbsp;бумаги&nbsp;&mdash; декларации, отчеты <nobr>и т. д.</nobr> Поэтому для начала небольшого дела лучше выбирать один из&nbsp;специальных налоговых режимов&nbsp;&mdash; упрощенная система налогообложения или единый налог на&nbsp;вмененный доход. Ко&nbsp;всему прочему они позволяют еще и&nbsp;платить меньше налогов в&nbsp;совокупности. ЕВНД подойдет фирмам и&nbsp;предпринимателям, занимающимся специальными категориями бизнеса (социальный бизнес, предоставление услуг населению <nobr>и т. д.</nobr>), которые каждый регион выделяет самостоятельно. &laquo;Упрощенка&raquo;&nbsp;же подойдет остальным представителям малого бизнеса. Для применения УСН есть ограничение по&nbsp;выручке: так, для перехода на&nbsp;УСН с&nbsp;2018 года сумма дохода за&nbsp;9&nbsp;месяцев 2017&nbsp;г. не&nbsp;должна превышать 90&nbsp;млн&nbsp;руб. Подробнее о&nbsp;налогах для малого бизнеса читайте в&nbsp;основном материале темы &laquo;Старт бизнеса&raquo;.
+				.advice-content__block__step
+					h3 Шаг 3. Регистрировать в&nbsp;ПФР и&nbsp;других органах
+					p После ФНС следующий шаг&nbsp;&mdash; регистрация в&nbsp;Пенсионном фонде, ФОМС, ФСС, Росстате. Сюда надо собрать следующий пакет:
+					ul
+						li оригинал/ксерокопия паспорта;</li><li> оригинал/ксерокопия <acronym title="Идентификационный номер налогоплательщика" lang="ru">ИНН</acronym>;
+						li документ, подтверждающий наличие регистрации в&nbsp;налоговой инспекции с&nbsp;выпиской о&nbsp;выбранных ОКВЭД;
+						li документ об&nbsp;оплате госпошлины;
+						li заявление о&nbsp;выбранной системе налогообложения.
+					p Подавать документы можно самостоятельно, а&nbsp;можно, например, воспользоваться услугами посредников, оформив на&nbsp;них доверенность.
+		.quote-block
+			.container
+				.quote-block__author
+					.quote-block__author__logo.quote-block__author__logo--woman
+					h3 Ирина Салей
+				.quote-block__author--about
+					p адвокат коллегии адвокатов &laquo;Князев и&nbsp;партнеры&raquo;
+				.quote-block__citate
+					p Порядок запуска компании, а&nbsp;именно ее&nbsp;регистрация, несложный. Хоть и&nbsp;сама процедура занимает достаточно много времени и&nbsp;усилий в&nbsp;связи с&nbsp;большим объемом документов, подать их&nbsp;<nobr>все-таки</nobr> возможно. Тем более для &laquo;быстрой&raquo; регистрации сейчас существует большое количество компаний, специализирующихся на&nbsp;этом направлении.
+					p Чтобы упростить саму процедуру регистрации бизнеса, необходимо изначально определиться с&nbsp;его <nobr>организационно-правовой</nobr> формой. Открывать ООО и&nbsp;ОАО ради &laquo;магазинчика&raquo;, например, выпечки <nobr>все-таки</nobr> не&nbsp;стоит (достаточно ИП), а&nbsp;вот если у&nbsp;вас промышленное производство, тогда лучше остановиться на&nbsp;варианте ООО. Зарегистрироваться как индивидуальный предприниматель довольно просто, уставный капитал не&nbsp;требуется, и&nbsp;это отличный вариант для ведения малого бизнеса. Чтобы зарегистрировать ООО или ОАО, нужен уставный капитал и&nbsp;намного больше документации, ведение бухгалтерского учёта <nobr>и т. д.</nobr>
+		.advice-content__block
+			.container
+				.advice-content__block__step
+					h3 Шаг 4. Создать сайт для бизнеса
+					p Сайт многие называют витриной бизнеса, особенно если речь идет о&nbsp;торговле товарами/услугами. Можно создавать страничку руками разработчиков, а&nbsp;можно воспользоваться конструктором сайтов и&nbsp;сделать его самостоятельно. Примеры конструкторов&nbsp;&mdash; NetHouse, Tilda, Wix и&nbsp;др.
+					.advice-content__block__step__inner
+						h3 Мобильный интернет для бизнеса
+						p Если вам нужно оперативно развернуть новый офис, необязательно подключаться к&nbsp;проводному интернету. К&nbsp;вашим услугам тариф <a href="http://inet-4g.beeline.ru?utm_source=RBC&utm_medium=banner&utm_term=Delovoj_internet&utm_content=fix&utm_campaign=Beeline_VIV_B2B_Digital_SP_RBC_Mar-Oct2017" target="_blank" class="linked">&laquo;Деловой Интернет&raquo;</a>, который позволит сотрудникам с&nbsp;первого дня вашего бизнеса пользоваться высокоскоростным интернетом с&nbsp;помощью беспроводного 4G+ <nobr>Wi-Fi-роутера</nobr> c&nbsp;<nobr>sim-картой</nobr>.
+						a(href="http://inet-4g.beeline.ru?utm_source=RBC&utm_medium=banner&utm_term=Delovoj_internet&utm_content=fix&utm_campaign=Beeline_VIV_B2B_Digital_SP_RBC_Mar-Oct2017" target="_blank").arrow-block Подробнее
+							span
+				.advice-content__block__step
+					h3 Шаг 5. Открыть счет в банке
+					p Параллельно с&nbsp;регистрацией дела в&nbsp;соответствующих органах выбирайте банк для открытия расчетного счета. Лучше всего сделать это в&nbsp;финансовой организации, &laquo;заточенной&raquo; под обслуживание субъектов малого бизнеса.
+					p <nobr>Во-первых</nobr>, такие банки, как правило, помимо РКО и&nbsp;других стандартных финансовых услуг предлагают удобные сервисы для подачи отчетности, ведения <nobr>онлайн-бухгалтерии</nobr>, склада, юридическое сопровождение <nobr>и т. д.</nobr>
+					p <nobr>Во-вторых</nobr>, активные в&nbsp;сегменте малого бизнеса кредитные организации проще выдают кредиты на&nbsp;развитие дела &laquo;малышам&raquo; и&nbsp;бизнесменам покрупнее, что актуально практически для всех начинающих фирм и&nbsp;предпринимателей.
+				.advice-content__block__image
+					img(src="../images/advices/sovet-1/SOVET_1(Image_2).jpg")
+				.advice-content__block__step.no-bottom
+					h3 Шаг 6. Получить госсубсидию на&nbsp;старт дела
+					p Субсидии на&nbsp;бизнес выдают различные государственные инстанции. Так, есть субсидии безработным на&nbsp;открытие бизнеса в&nbsp;Центрах занятости населения, есть субсидии, которые предоставляют региональные организации поддержки предпринимательства.
+					p В&nbsp;Центр занятости населения сначала надо встать на&nbsp;учет как безработный, предоставив: паспорт, <acronym title="Идентификационный номер налогоплательщика" lang="ru">ИНН</acronym>, СНИЛС, диплом, справку <nobr>2-НДФЛ</nobr> с&nbsp;последнего места работы о&nbsp;размере заработной платы за&nbsp;последние 3&nbsp;месяца до&nbsp;увольнения, заявление на&nbsp;участие в&nbsp;программе самозанятости населения, а&nbsp;также <nobr>бизнес-план</nobr> своего дела. Правда, субсидия от&nbsp;Центра занятости невелика&nbsp;&mdash; даже в&nbsp;Москве она составляет 58&nbsp;800&nbsp;рублей.
+		.advice-content__block
+			.container
+				.advice-content__block__step.article-block.no-top
+					.tests-block.tests-block--alone
+						.container
+							.test-card--alone
+								.flip-container.flip-container--alone.test-card__item
+									.flipper								
+										.front(style="background-image: url(../images/main-page/Test/1.jpg);").white.layer
+											.test-card__item__time
+												span 2 мин
+											span.number-test Тест 1
+											.test-card__item__title
+												p Какой вы&nbsp;стартапер?
+											a(href="/test-1.html#test_1").go-test.bg-yellow Пройти тест
+					p В&nbsp;органах местного самоуправления можно получить более существенную финансовую поддержку, также защитив свой <nobr>бизнес-план</nobr>. Средняя сумма местной субсидии&nbsp;&mdash; 300 тысяч рублей (она будет варьироваться от&nbsp;региона, сферы бизнеса <nobr>и т. д.</nobr>). Изучайте тему в&nbsp;своем городе. Скажем, бизнесмены, зарегистрированные в&nbsp;Москве, в&nbsp;2017 году смогут получить от&nbsp;ГБУ &laquo;Малый бизнес Москвы&raquo; до&nbsp;500 тысяч рублей. В&nbsp;большинстве регионов в&nbsp;приоритете сегодня бизнесы, связанные с&nbsp;инновациями, технологиями, медициной, образованием, социальными услугами, туризмом <nobr>и т. д.</nobr>
+					p Можно претендовать также на&nbsp;получение субсидий, предусмотренных для компенсации различных видов затрат. Они также варьируются по&nbsp;территориальному признаку. Например, в&nbsp;Орловской области можно рассчитывать на&nbsp;субсидирование части затрат, связанных с&nbsp;уплатой процентов по&nbsp;кредитам, привлеченным представителями СМБ, в&nbsp;Новосибирской области&nbsp;&mdash; получить возмещение части расходов по&nbsp;кредитам или лизингу, а&nbsp;также расходов, связанных с&nbsp;продвижением продукции (участие в&nbsp;<nobr>выставочно-ярмарочных</nobr> мероприятиях, изготовление рекламной продукции и&nbsp;пр.), в&nbsp;Нижегородской области предусмотрено субсидирование части затрат представителей СМБ, связанных с&nbsp;приобретением оборудования и&nbsp;модернизации производства.
+					p Госпомощь малому и&nbsp;среднему бизнесу может состоять не&nbsp;только в&nbsp;субсидиях, но&nbsp;и&nbsp;в&nbsp;бесплатных услугах: например, обучение (семинары, тренинги и&nbsp;прочее), консультирование по&nbsp;юридическим и&nbsp;экономическим вопросам, организация ярмарок и&nbsp;выставок для продвижения товаров и&nbsp;услуг, предоставление земли и&nbsp;помещений.
+				.advice-content__block__step
+					h3 Шаг 7. Получить финансирование на&nbsp;развитие бизнеса
+					p Безусловно, субсидии и&nbsp;бесплатные услуги&nbsp;&mdash; это небольшие деньги, которых не&nbsp;хватит на&nbsp;развитие бизнеса. Про поиск инвестиций/кредитования мы&nbsp;поговорим подробно в&nbsp;отдельном материале, здесь мы&nbsp;вкратце наметим основные направления.
+					p Финансовую поддержку (кредиты) представителям малого бизнеса оказывают банки, различные венчурные фонды и&nbsp;государственные институты поддержки.
+					p Например, Фонд содействия инновациям специализируется на&nbsp;инновационных бизнесах. В&nbsp;частности, по&nbsp;программе этого фонда &laquo;Старт&raquo; стартап (возрастом до&nbsp;2 лет) может получить до&nbsp;5&nbsp;млн&nbsp;рублей. В&nbsp;первый год средства выделяются исключительно на&nbsp;НИОКР (от&nbsp;медицины до&nbsp;информационных и&nbsp;биотехнологий). Максимальная сумма&nbsp;&mdash; 2&nbsp;млн&nbsp;рублей, срок&nbsp;&mdash; 12&nbsp;месяцев, по&nbsp;истечении которых придется предъявить фонду созданную интеллектуальную собственность. Второй этап&nbsp;&mdash; начало продажи созданной инновационной продукции. На&nbsp;эти цели можно получить от&nbsp;государства еще 3&nbsp;млн&nbsp;рублей.
+					p Еще один важный институт поддержки&nbsp;&mdash; <a href="http://corpmsp.ru/about/" target="_blank">Корпорация МСП</a>&nbsp;&mdash; через сеть <nobr>банков-партнеров</nobr> оказывает поддержку с&nbsp;кредитными ресурсами микробизнесу, предпринимателям, малым и&nbsp;средним компаниям.
+		section.sharing-block
+			.share-icon.js-share
+				a(href="https://www.facebook.com/sharer/sharer.php?u=").share-icon__item.share-icon__item--fk.fbook
+				a(href="https://vk.com/share.php?url=").share-icon__item.share-icon__item--vk.vkt
+				a(href="https://twitter.com/intent/tweet?text=").share-icon__item.share-icon__item--tw.twt
+		section.advices-block-slider
+			a(href="/article-1.html").advices-block-slider__item
+				.advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/Article_1.jpg');")
+				.advices-block-slider__item__text
+					p Малые миллионы
+			a(href="/article-2.html").advices-block-slider__item
+				.advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/Article_2.jpg');")
+				.advices-block-slider__item__text
+					p Финансы для бизнеса
+			a(href="/article-3.html").advices-block-slider__item
+				.advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/Article_3.jpg');")
+				.advices-block-slider__item__text
+					p «Океаны» бизнеса
+			a(href="/article-4.html").advices-block-slider__item
+				.advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/4.jpg');")
+				.advices-block-slider__item__text
+					p Инвестиции в эффективность
+			a(href="/article-5.html").advices-block-slider__item
+				.advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/5.jpg');")
+				.advices-block-slider__item__text
+					p Плата за&nbsp;эмоции
+			a(href="/article-6.html").advices-block-slider__item
+				.advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/6.jpg');")
+				.advices-block-slider__item__text
+					p В&nbsp;погоне за&nbsp;надежностью
+			a(href="/article-7.html").advices-block-slider__item
+				.advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/7.jpg');")
+				.advices-block-slider__item__text
+					p Кадры в кризис: увольнять или нет
+			a(href="/article-8.html").advices-block-slider__item
+				.advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/8.jpg');")
+				.advices-block-slider__item__text
+					p Связь для бизнеса
+			a(href="/article-9.html").advices-block-slider__item
+				.advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/9.jpg');")
+				.advices-block-slider__item__text
+					p Машины vs люди
+	.line-grey
+	section.video-slider.video-slider-footer
+		.container
+			h2 Правила предпринимателя
+			.videos-slider.videos-slider--space
+				a()
+					.interview-block__video
+						.interview-block__video__block
+							.interview-block__video__block__muted.video_muted.block-control--slider-1
+								.block-control__pause
+								.block-control__play
+							.full-block-control
+								.full-block-control__slider--play
+								.full-block-control__time
+								.full-block-control__main-line
+									.full-block-control__main-line__progress
+								.full-block-control__sound
+							.interview-block__video__block__interview
+								iframe(id="client-video-1" width="780" height="501" src="https://www.youtube.com/embed/HLGZqCOwOws?controls=0&amp;showinfo=0&enablejsapi=1&rel=0" frameborder="0" allowfullscreen)
+							.interview-block__video__block__filter(style="background-image: url(images/interview-speakers/business/Client_1.jpg); background-size: contain;")
+							.interview-block__video__block__info
+								h3 Павел Чаплинский
+								p.regalia Основатель BOX&ROSES
+								p Создавая компанию, предпринимателю нужно иметь видение, каким бизнес будет через полгода, год, несколько лет, какой будет его команда, какие задачи будут поставлены перед сотрудниками и&nbsp;для чего, вообще, строится этот бизнес.
+								.interview-block__video__block__info__playbutton(id="start-client-video-1")
+					.interview-block__video__sharing.clearfix.no-margin-bottom
+				a()
+					.interview-block__video
+						.interview-block__video__block
+							.interview-block__video__block__muted.video_muted.block-control--slider-2
+								.block-control__pause
+								.block-control__play
+							.full-block-control
+								.full-block-control__slider--play
+								.full-block-control__time
+								.full-block-control__main-line
+									.full-block-control__main-line__progress
+								.full-block-control__sound
+							.interview-block__video__block__interview
+								iframe(id="client-video-2" width="780" height="501" src="https://www.youtube.com/embed/3EaAAjCzSxE?controls=0&amp;showinfo=0&enablejsapi=1&rel=0" frameborder="0" allowfullscreen)
+							.interview-block__video__block__filter(style="background-image: url(images/interview-speakers/business/Client_2.jpg); background-size: contain;")
+							.interview-block__video__block__info
+								h3 Дмитрий Шлопак
+								p.regalia Управляющий партнер &laquo;Везендорф групп&raquo;
+								p Социальная <nobr>бизнес-философия</nobr> и&nbsp;гарантия возврата вложенных средств&nbsp;&mdash; правило, которое позволит приблизить ваш стартап к&nbsp;получению инвестиций.
+								.interview-block__video__block__info__playbutton(id="start-client-video-2")
+					.interview-block__video__sharing.clearfix.no-margin-bottom

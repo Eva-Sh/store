@@ -1,0 +1,184 @@
+extends templates/layout
+block vars
+	- var title = '«Билайн» Бизнес'
+	- var og_title = 'Попытка не пытка'
+	- var og_description = 'В спецпроекте РБК и «Билайн» мы собрали кейсы успешных российских стартапов-первопроходцев. Читайте и вдохновляйтесь.'
+	- var og_image = '../images/attempt.jpg'
+	- var twitter_description = '«Билайн» Бизнес: прорывные технологии для больших побед.'
+
+block content
+	section.lifehack-case-jumbotron.jumbotron-height(style="background-image: url('../images/lifehack-1/cover.jpg');")
+		a(href="index.html").link-back Вернуться на главную
+		span Лайфхак
+		h1 Попытка не пытка
+		.link
+			a(href="/lifehack-7.html").prev-link Предыдущий лайфхак
+			span |
+			a(href="/lifehack-2.html").next-link Следующий лайфхак
+	section.content-text.content-text--lifehack
+		.container
+			p.
+				Несмотря на&nbsp;неоднозначную экономическую ситуацию, в&nbsp;России ярких стартапов меньше не&nbsp;становится. Мы&nbsp;разобрали несколько из&nbsp;них, чтобы понять, в&nbsp;чем ключевые принципы успеха для начинающего бизнесмена.
+			p.
+				Для одних предпринимателей сегодня&nbsp;&mdash; сложная ситуация на&nbsp;рынке, а&nbsp;для других&nbsp;&mdash; самое время для ярких новых бизнесов и&nbsp;развития. Пока одни заняты снижением затрат и&nbsp;попытками выжить на&nbsp;падающем рынке, другие находят новые пустые ниши, спрос, новые востребованные продукты и&nbsp;услуги и&nbsp;в&nbsp;итоге создают истории успеха, которые вдохновляют.
+			p.
+				Конечно&nbsp;же, во&nbsp;главе угла&nbsp;&mdash; работающая идея.
+			.line-dots
+			.image-block.image-block--left.margin-h
+				.image-block__rectangle
+				.image-block__img
+					img(src="../images/lifehack-1/Image_1.jpg", alt="")
+			.line-dots.visible-mobile
+			h2 Сделать жизнь людей проще
+			p.
+				Можно выделить группу успешных стартапов, нацеленных на&nbsp;конкретные потребности простого человека и&nbsp;упрощающих ему жизнь.
+			p.
+				Например, сервис комплексного обслуживания аренды квартиры Maroom (зарегистрирован в&nbsp;2015&nbsp;году). &laquo;Комплекс&raquo; включает все возможные услуги для собственника и&nbsp;нанимателя&nbsp;&mdash; это и&nbsp;получение выписки ЕГРП для проверки собственника, и&nbsp;клининг помещения (Qlean), и&nbsp;специализированное страхование, и&nbsp;проверка нанимателя через скоринг (&laquo;Скориста&raquo;), и&nbsp;урегулирование ущерба с&nbsp;помощью системы удержаний, и&nbsp;личный кабинет с&nbsp;мониторингом всех платежей, событий и&nbsp;документов. Сервис позволяет и&nbsp;собственнику, и&nbsp;нанимателю не&nbsp;пересекаться и&nbsp;в&nbsp;то&nbsp;же время избежать любых конфликтов. К&nbsp;слову, Maroom получил грант от&nbsp;ФРИИ более 2&nbsp;млн на&nbsp;развитие.
+			p.
+				В&nbsp;основе бизнеса компании &laquo;Складовка&raquo; лежит привычка людей собирать все ненужное на&nbsp;балконах и&nbsp;нежелание выкидывать скарб. Для таких вот &laquo;залежей&raquo; можно арендовать изолированный бокс в&nbsp;теплом сухом и&nbsp;чистом помещении от&nbsp;1&nbsp;до&nbsp;22&nbsp;квадратных метров на&nbsp;одном из&nbsp;складов &laquo;Складовки&raquo;. Сервис не&nbsp;только позволит разгрузить пространство, но&nbsp;и&nbsp;берет на&nbsp;себя услуги по&nbsp;упаковке и&nbsp;транспортировке. Хранение безопасно, температура в&nbsp;помещениях поддерживается довольно низкая, так что ничего не&nbsp;испортится. В&nbsp;2015 году заработал уже 7-й комплекс &laquo;Складовки&raquo; в&nbsp;Москве.
+			.line-dots
+			h2 Быть в тренде
+			p.
+				Еще одна группа успешных историй связана с&nbsp;онлайном, проникновением интернета во&nbsp;все сферы человеческой жизни и&nbsp;любви людей к&nbsp;различным мобильным примочкам. И&nbsp;в&nbsp;данном случае совсем необязательно, чтобы такого рода мобильные разработки несли какую-то реальную пользу людям.
+
+			p.
+				Самый показательный пример&nbsp;&mdash; мобильное приложение Prizma, детище рук российского разработчика Алексея Моисеенкова. Приложение позволяет превращать фото пользователей в&nbsp;картины, &laquo;написанные&raquo; в&nbsp;различных стилях. За&nbsp;10&nbsp;первых дней существования приложение получило больше миллиона скачиваний в&nbsp;App Store, что больше, чем Instagram и&nbsp;MSQRD, а&nbsp;крупнейший российский интернет-холдинг Mail. Ru&nbsp;Group объявил, что выступит инвестором проекта. По&nbsp;различным данным, Mail. Ru&nbsp;Group вложила до&nbsp;$2&nbsp;млн в&nbsp;Prizma в&nbsp;обмен на&nbsp;долю примерно в&nbsp;10%. Также монетизация проекта достигается за&nbsp;счет размещения рекламы. В&nbsp;январе 2017 года американский Forbes включил автора сервиса Алексея Моисеенкова в&nbsp;топ-лист персон года моложе 30&nbsp;лет в&nbsp;категории &laquo;Потребительские технологии&raquo;. Конечно, к&nbsp;концу прошлого года популярность приложения снизилась, но&nbsp;показатель MAU (monthly active users&nbsp;&mdash; активных пользователей в&nbsp;месяц) держится на&nbsp;стабильном уровне с&nbsp;сентября 2016 года&nbsp;&mdash; 15&ndash;20&nbsp;млн. Общий объем скачиваний сейчас составляет около 90&nbsp;млн.
+			.line-dots
+			.image-block.image-block--right.margin-h
+				.image-block__rectangle
+				.image-block__img
+					img(src="../images/lifehack-1/Image_2.jpg", alt="")
+			.line-dots.visible-mobile
+			h2 Онлайн-помощники
+			p.
+				Третья группа&nbsp;&mdash; пересечение двух предыдущих, мобильные разработки и&nbsp;сервисы, которые позволяют решить определенные дела быстрее, чем&nbsp;прежде, дистанционно. Например, российский сервис Youdo, с&nbsp;помощью которого можно находить исполнителей для решения бытовых и&nbsp;бизнес-задач (уборка, курьерская доставка, маникюр, няни и&nbsp;т.&nbsp;д.). Или еще один получатель гранта от&nbsp;ФРИИ&nbsp;&mdash; облачный сервис MoyGrafik, который помогает уже бизнесу. Сервис борется с&nbsp;опозданиями сотрудников и&nbsp;повышает эффективность их&nbsp;работы. MoyGrafik помогает в&nbsp;режиме 24/7 вести график работы конкретных сотрудников, регистрировать приход, уход, присутствие специалистов на&nbsp;рабочем месте с&nbsp;помощью их&nbsp;мобильных телефонов, а&nbsp;также формировать отчеты для оценки персонала.
+			.line-dots
+			h2 От чего зависит успех
+			p.
+				Как рассказывают успешные предприниматели, успех любого бизнес-проекта складывается из&nbsp;нескольких составляющих. Едва&nbsp;ли не&nbsp;самое важное&nbsp;&mdash; найти свое место на&nbsp;рынке товаров или услуг. Ключевой момент&nbsp;&mdash; идея. Чем более эксклюзивным и&nbsp;неординарным является бизнес-проект, тем больше у&nbsp;него шансов на&nbsp;успех. Также немаловажно разработать четкий и&nbsp;реалистичный финансовый план и&nbsp;по&nbsp;ходу реализации проекта контролировать расходы. Очень&nbsp;многое зависит от&nbsp;человеческого фактора, от&nbsp;управленческих талантов руководителя и&nbsp;эффективной команды. Конечно, свою роль играет и&nbsp;внедрение инновационных технологий.
+			.line-dots
+		.quote-block
+			.container
+				.quote-block__author
+					.quote-block__author__logo.quote-block__author__logo--man
+					h3 Андрей Романенко
+				.quote-block__author--about
+					p генеральный директор и&nbsp;акционер &laquo;Эвотор&raquo;
+				.quote-block__citate
+					p.
+						Если начинаешь проект, нужно обязательно проверить несколько гипотез. Первое&nbsp;&mdash; проект должен обязательно иметь виральность. Мы&nbsp;сегодня наблюдаем это&nbsp;в&nbsp;&laquo;Эвоторе&raquo;. Точки, в&nbsp;которых теперь есть наши смарт-терминалы, растут как грибы вокруг одной улицы. Поскольку первый предприниматель установил устройство, соседний подсмотрел, понял, что это удобно, увеличивает прибыль, установил себе такой&nbsp;же и&nbsp;так далее. Эффект сарафанного радио. Второе&nbsp;&mdash; проект должен быть обязательно масштабируем за&nbsp;пределы родной страны. Нам сегодня уже предлагают запускаться в&nbsp;Украине, им&nbsp;нравится идея, цена и&nbsp;другие факторы. Третий совет, вытекающий из&nbsp;второго,&nbsp;&mdash; выходить за&nbsp;рубеж можно только тогда, когда твой бизнес обрел &laquo;коробочную&raquo; версию. То&nbsp;есть привез уже готовое решение, открыл и&nbsp;сразу все заработало. При этом не&nbsp;нужно распыляться, чтобы не&nbsp;потерять фокус. Ну&nbsp;и&nbsp;конечно, часто приходят за&nbsp;инвестициями и&nbsp;говорят: дайте денег и&nbsp;дайте команду. Но&nbsp;никто не&nbsp;поверит в&nbsp;основателя бизнеса, который не&nbsp;может собрать команду. И&nbsp;поверят&nbsp;в&nbsp;того&nbsp;фаундера, у&nbsp;которого уже есть команда, который может увлечь и&nbsp;научить, передать свою энергию, зарядить на&nbsp;успех. И&nbsp;да, стоит сразу отказаться от&nbsp;миллионных гонораров у&nbsp;директоров, в&nbsp;то&nbsp;время когда сам проект еще даже не&nbsp;начал приносить прибыль. Всему свое время.
+					p.
+						Успешный предприниматель&nbsp;&mdash; это тот, который смотрит на&nbsp;2&ndash;3 года вперед. Сегодня мы&nbsp;переживаем эру трансформации в&nbsp;онлайн. Нельзя игнорировать технологии, будь у&nbsp;тебя небольшой салон красоты или дворовый магазинчик продуктов. Сделай онлайн-запись к&nbsp;парикмахеру, создай карты лояльности для покупателей, установи виджет &laquo;Обратный звонок с&nbsp;сайта&raquo; к&nbsp;себе на&nbsp;страницу и&nbsp;ссылку на&nbsp;&laquo;Облачную АТС&raquo;, где есть эта функция,&nbsp;&mdash; ты&nbsp;будешь на&nbsp;шаг впереди конкурентов, увеличишь клиентский поток и&nbsp;выручку. Старайся внедрять технологии всегда и&nbsp;везде. И&nbsp;напоследок&nbsp;&mdash; лучше попробовать сейчас, чем мечтать о&nbsp;том, что сделаешь потом. Лучших и&nbsp;идеальных условий не&nbsp;будет никогда. Если откладывать на&nbsp;завтра, оно никогда не&nbsp;наступит. Поэтому не&nbsp;надо ничего ждать, нужно делать.
+	section.content-text
+		.container
+			.line-dots.line-dots--no-top
+			.image-block.image-block--left.margin-h
+				.image-block__rectangle
+				.image-block__img
+					img(src="../images/lifehack-1/Image_3.jpg", alt="")
+			.line-dots.visible-mobile
+			h2 Зачем экономить на старте
+			p.
+				Разумная экономия&nbsp;&mdash; еще одна важная составляющая успеха бизнеса, в&nbsp;том числе начинающего. Согласно исследованию Deloitte о&nbsp;предпринимательском климате для МСБ&nbsp;в&nbsp;России, около&nbsp;90% опрошенных компаний МСБ определили, что ключевыми для них являются вопросы ведения бухгалтерии и&nbsp;оптимизации налогообложения, юридической и&nbsp;маркетинговой поддержки, а&nbsp;также управления и&nbsp;проверки безопасности деятельности. Поэтому уже на&nbsp;стадии планирования будущего бизнеса нужно рассчитать затраты на&nbsp;удовлетворение этих базовых нужд. В&nbsp;принципе очень важно на&nbsp;старте бизнеса оптимизировать&nbsp;все&nbsp;затратные потоки.
+			.line-dots
+		.quote-block.quote-block--no-bottom
+			.container
+				.quote-block__author
+					.quote-block__author__logo.quote-block__author__logo--man
+					h3 Николай Тюрников
+				.quote-block__author--about
+					p создатель круглосуточной юридической службы &laquo;ПравоКард&raquo;
+				.quote-block__citate
+					p.
+						Очевидными преимуществами небольших компаний и&nbsp;команд являются гибкость, быстрая реакция на&nbsp;изменения, быстрое внедрение новых продуктов и&nbsp;внесение изменений в&nbsp;существующие, быстрое согласование различных вопросов внутри компании. В&nbsp;этом небольшие компании имеют преимущества перед уже выросшими бизнесами с&nbsp;перегруженными управленческими структурами и&nbsp;множественными согласованиями. На&nbsp;Западе даже возникло такое понятие как Two&nbsp;Pizza&nbsp;Team, т.&nbsp;е.&nbsp;небольшая&nbsp;команда, которую можно прокормить 2&nbsp;пиццами, это около 6&ndash;8&nbsp;человек. Такая команда более мобильна и&nbsp;быстрее реагирует на&nbsp;изменения, поэтому имеет больше шансов выиграть в&nbsp;конкурентной борьбе.
+					p.
+						Наша компания &laquo;ПравоКард&raquo; сегодня обеспечивает недорогой и&nbsp;оперативной юридической поддержкой более 2000 субъектов МСБ на&nbsp;всей территории России. По&nbsp;опыту скажу, что создаваемым компаниям лучше сразу задуматься над управлением издержками, для этого может потребоваться перенос всех или части процессов в&nbsp;регионы, а&nbsp;в&nbsp;идеале&nbsp;&mdash; в&nbsp;автоматизированные системы. К&nbsp;примеру, мы&nbsp;юридически зарегистрированы во&nbsp;Владимире&nbsp;&mdash; там расположен круглосуточный юридический кол-центр компании. Юрист в&nbsp;регионе (зарплата, налоги, аренда) обходится в&nbsp;2,5 раза дешевле, чем в&nbsp;Москве. При этом качество работы зачастую даже выше. Владимир является городом с&nbsp;традиционно очень высоким уровнем юридического образования, поэтому нам просто подобрать достаточное количество профессиональных мотивированных юристов. Часть функций мы&nbsp;передаем автоматизированным системам&nbsp;&mdash; отдельное внимание уделяем постоянной актуализации в&nbsp;нашей CRM ответов юристов на&nbsp;стандартные вопросы и&nbsp;передаче наиболее частых вопросов нашему роботу-юристу. Талантливые разработчики нашего робота-юриста, кстати, первого в&nbsp;России, находятся в&nbsp;Самаре.
+	section.sharing-block
+			.share-icon.js-share
+				a(href="https://www.facebook.com/sharer/sharer.php?u=").share-icon__item.share-icon__item--fk.fbook
+				a(href="https://vk.com/share.php?url=").share-icon__item.share-icon__item--vk.vkt
+				a(href="https://twitter.com/intent/tweet?text=").share-icon__item.share-icon__item--tw.twt
+	section.advices-block-slider.lifehack-hidden
+			a(href="/article-1.html").advices-block-slider__item
+				.advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/Article_1.jpg');")
+				.advices-block-slider__item__text
+					p Малые миллионы
+			a(href="/article-2.html").advices-block-slider__item
+				.advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/Article_2.jpg');")
+				.advices-block-slider__item__text
+					p Финансы для бизнеса
+			a(href="/article-3.html").advices-block-slider__item
+				.advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/Article_3.jpg');")
+				.advices-block-slider__item__text
+					p «Океаны» бизнеса
+			a(href="/article-4.html").advices-block-slider__item.advices-block-slider__item
+				.advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/4.jpg');")
+				.advices-block-slider__item__text
+					p Инвестиции в эффективность
+			a(href="/article-5.html").advices-block-slider__item
+				.advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/5.jpg');")
+				.advices-block-slider__item__text
+					p Плата за&nbsp;эмоции
+			a(href="/article-6.html").advices-block-slider__item
+				.advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/6.jpg');")
+				.advices-block-slider__item__text
+					p В&nbsp;погоне за&nbsp;надежностью
+			a(href="/article-7.html").advices-block-slider__item
+				.advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/7.jpg');")
+				.advices-block-slider__item__text
+					p Кадры в кризис: увольнять или нет
+			a(href="/article-8.html").advices-block-slider__item
+				.advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/8.jpg');")
+				.advices-block-slider__item__text
+					p Связь для бизнеса
+			a(href="/article-9.html").advices-block-slider__item
+				.advices-block-slider__item__img(style="background-image: url('../images/main-page/Article/9.jpg');")
+				.advices-block-slider__item__text
+					p Машины vs люди
+	.line-grey.line-grey--lf.lifehack-hidden
+	section.video-slider.video-slider-footer.lifehack-hidden
+		.container
+			h2 Правила предпринимателя
+			.videos-slider.videos-slider--space
+				a()
+					.interview-block__video
+						.interview-block__video__block
+							.interview-block__video__block__muted.video_muted.block-control--slider-1
+								.block-control__pause
+								.block-control__play
+							.full-block-control
+								.full-block-control__slider--play
+								.full-block-control__time
+								.full-block-control__main-line
+									.full-block-control__main-line__progress
+								.full-block-control__sound
+							.interview-block__video__block__interview
+								iframe(id="client-video-1" width="780" height="501" src="https://www.youtube.com/embed/HLGZqCOwOws?controls=0&amp;showinfo=0&enablejsapi=1&rel=0" frameborder="0" allowfullscreen)
+							.interview-block__video__block__filter(style="background-image: url(images/interview-speakers/business/Client_1.jpg); background-size: contain;")
+							.interview-block__video__block__info
+								h3 Павел Чаплинский
+								p.regalia Основатель BOX&ROSES
+								p Создавая компанию, предпринимателю нужно иметь видение, каким бизнес будет через полгода, год, несколько лет, какой будет его команда, какие задачи будут поставлены перед сотрудниками и&nbsp;для чего, вообще, строится этот бизнес.
+								.interview-block__video__block__info__playbutton(id="start-client-video-1")
+					.interview-block__video__sharing.clearfix.no-margin-bottom
+				a()
+					.interview-block__video
+						.interview-block__video__block
+							.interview-block__video__block__muted.video_muted.block-control--slider-2
+								.block-control__pause
+								.block-control__play
+							.full-block-control
+								.full-block-control__slider--play
+								.full-block-control__time
+								.full-block-control__main-line
+									.full-block-control__main-line__progress
+								.full-block-control__sound
+							.interview-block__video__block__interview
+								iframe(id="client-video-2" width="780" height="501" src="https://www.youtube.com/embed/3EaAAjCzSxE?controls=0&amp;showinfo=0&enablejsapi=1&rel=0" frameborder="0" allowfullscreen)
+							.interview-block__video__block__filter(style="background-image: url(images/interview-speakers/business/Client_2.jpg); background-size: contain;")
+							.interview-block__video__block__info
+								h3 Дмитрий Шлопак
+								p.regalia Управляющий партнер &laquo;Везендорф групп&raquo;
+								p Социальная <nobr>бизнес-философия</nobr> и&nbsp;гарантия возврата вложенных средств&nbsp;&mdash; правило, которое позволит приблизить ваш стартап к&nbsp;получению инвестиций.
+								.interview-block__video__block__info__playbutton(id="start-client-video-2")
+					.interview-block__video__sharing.clearfix.no-margin-bottom

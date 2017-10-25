@@ -1,0 +1,348 @@
+extends templates/layout
+block vars
+
+block content
+    .interview-block
+        .interview-block--wrapper
+            .interview-block__back
+                .interview-block__back--arrow
+                a(href="index.html") Вернуться на главную
+            .interview-block__main-tab(data-tab="1")
+                .interview-block__video
+                    .interview-block__video__block
+                        .interview-block__video__block__muted.video_muted.block-control
+                            .block-control__pause
+                            .block-control__play
+                        .full-block-control
+                            .full-block-control__play
+                            .full-block-control__time
+                            .full-block-control__main-line
+                                .full-block-control__main-line__progress
+                            .full-block-control__sound
+                        .interview-block__video__block__interview
+                            iframe(id="business-video" width="780" height="439" src="https://www.youtube.com/embed/06f8IaqFmSY?list=PLv42Kp4x57LC_mrA0OAEqpo5r1LEMAL66&amp;controls=0&amp;showinfo=0&enablejsapi=1&rel=0" frameborder="0" allowfullscreen)
+                        .interview-block__video__block__filter(style="background-image: url(images/interview-speakers/business/Business_9.jpg)")
+                        .interview-block__video__block__info
+                            h3 Дмитрий Ли
+                            p.regalia Директор по&nbsp;маркетингу <nobr>бизнес-сегмента</nobr> &laquo;Билайн&raquo;
+                            p.hide-in-mobile Каким будет бизнес будущего: какие онлайн- и&nbsp;мобильные решения позволят развиваться малому бизнесу технологически, какие процессы вскоре отдадут на&nbsp;откуп машинам и&nbsp;роботам, а&nbsp;чем будут заниматься люди.
+                            .interview-block__video__block__info__playbutton(id="start-business-video")
+                    .interview-block__video__sharing.clearfix
+                        ul.js-share
+                            li
+                                a(href="https://www.facebook.com/sharer/sharer.php?u=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--fb" data-interview="li").fbook.js-double-share
+                            li
+                                a(href="https://vk.com/share.php?url=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--vk" data-interview="li").vkt.js-double-share
+                            li
+                                a(href="https://twitter.com/intent/tweet?text=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--tw" data-interview="li").twt.js-double-share
+                        .interview-block__video__decypher
+                            span.interview-block__video__decypher--text(id="show-interview-client") Расшифровка интервью
+                            span.interview-block__video__decypher--img(id="show-interview-client")
+                .interview-block__interview
+                    span.interview-block__interview--decypher Расшифровка интервью
+                    .interview-block__interview--little
+                        p Что вы&nbsp;даете компании?
+                    p Как любой маркетолог, я&nbsp;надеюсь, что задаю правильные направления, которые помогают всей команде определить, куда нужно двигаться компании, как это правильно делать, что можно отложить, потому что это не&nbsp;важно, хотя, может быть, и&nbsp;очень хочется в&nbsp;моменте. Надеюсь, что мы, команда маркетинга, являемся консолидирующим звеном для всей бизнес-команды в&nbsp;определении того, что важно, а&nbsp;что не&nbsp;важно.
+                    .interview-block__interview--little.hidden-block
+                        p Получается, что будущее &laquo;Билайн&raquo; в&nbsp;ваших руках?
+                    p.hidden-block Не&nbsp;только в&nbsp;моих, будущее компании&nbsp;&mdash; в&nbsp;руках всей нашей замечательной команды.
+                    .interview-block__interview--little.hidden-block
+                        p Мобильный интернет в&nbsp;сегменте &laquo;Бизнес&raquo;&nbsp;&mdash; это дань моде или решение, которое помогает экономить и&nbsp;сделать бизнес эффективнее и&nbsp;рациональнее?
+                    p.hidden-block Мобильный интернет в&nbsp;бизнес-сегменте&nbsp;&mdash; это скорее необходимость, это то, что прежде, чем все остальное. Скажу банальную вещь, но&nbsp;жизнь людей и&nbsp;мир вообще становятся все более мобильными, интернет проникает во&nbsp;все сферы сейчас, и&nbsp;поэтому невозможно себе представить какой-то бизнес без интернета, в&nbsp;том числе мобильного. Если вдруг такой бизнес есть, наверное, ему нужно срочно что-то сделать, чтобы мобильный интернет в&nbsp;этой компании появился. Интернет везде. Если я&nbsp;хочу пообщаться со&nbsp;своими сотрудниками, я&nbsp;могу воспользоваться мессенджером, если мне нравится живое общение, я&nbsp;могу использовать видеосвязь, сейчас она вполне доступна где угодно, хоть в&nbsp;офисе, хоть в&nbsp;кафе, хоть на&nbsp;улице. Я&nbsp;могу получить файлы, обработать документы, загрузить их&nbsp;в&nbsp;&laquo;облако&raquo;, где вся моя команда их&nbsp;может увидеть, даже если какие-то сотрудники находятся в&nbsp;других офисах, других регионах. Я&nbsp;говорю о&nbsp;себе, но&nbsp;в&nbsp;принципе я&nbsp;также имею в&nbsp;виду любого нашего клиента, любого предпринимателя.
+                    p.hidden-block Помимо того, что интернет&nbsp;&mdash; это необходимость для развития бизнеса, конечно, мы&nbsp;даем возможность и&nbsp;сэкономить. Мы&nbsp;предоставляем достаточно интересное, на&nbsp;мой взгляд, опционное предложение на&nbsp;оборудование, будь то&nbsp;роутеры, модемы или мобильные телефоны, смартфоны. У&nbsp;&laquo;Билайн&raquo; всегда можно получить конкретную услугу дешевле, интереснее, быстрее, чем у&nbsp;наших конкурентов.
+                    .interview_image.hidden-block
+                        img(src="../images/interview-speakers/li_1.jpg")
+                    .interview-block__interview--little.hidden-block
+                        p &laquo;Билайн&raquo;&nbsp;&mdash; это высокотехнологичная компания. Но&nbsp;в&nbsp;малом бизнесе есть те, кто до&nbsp;сих пор не&nbsp;освоил онлайн-технологии. Нужно&nbsp;ли им&nbsp;делать это для будущего? Или&nbsp;же есть такие виды бизнеса, которым это не&nbsp;важно?
+                    p.hidden-block Возможно, у&nbsp;меня немного деформировано сознание, учитывая тот факт, что я&nbsp;работаю в&nbsp;высокотехнологичной компании, но&nbsp;у&nbsp;меня есть ощущение, что бизнесов без онлайна не&nbsp;осталось. Просто для кого-то это происходит в&nbsp;большей, для кого-то в&nbsp;меньшей степени. Даже фермер или торговец на&nbsp;рынке овощей задумывается, я&nbsp;уверен, о&nbsp;том, как&nbsp;бы наладить продвижение своей продукции в&nbsp;интернете. Он&nbsp;думает, например, как выделиться из&nbsp;толпы таких&nbsp;же людей, которые сидят на&nbsp;рынке и&nbsp;продают помидоры. Пока освоение онлайн-канала происходит так, что он&nbsp;фотографирует помидоры и&nbsp;выкладывает их&nbsp;в&nbsp;&laquo;Инстаграм&raquo;, через это продает часть продукции. Тем не&nbsp;менее, 90% бизнесов так или иначе сталкиваются с&nbsp;онлайном и&nbsp;поэтому нуждаются в&nbsp;определенной интернет-поддержке. Проблема малого предпринимателя заключается не&nbsp;в&nbsp;том, что у&nbsp;него инструментов нет. Инструментов масса, и&nbsp;бизнесмен должен по&nbsp;сути пользоваться десятью разными сервисами, приложениями на&nbsp;компьютере, в&nbsp;смартфоне, в&nbsp;планшете. Сегодня мы&nbsp;сталкиваемся с&nbsp;такой тенденцией, что современному предпринимателю некогда даже работать. Он&nbsp;постоянно занимается разными новыми историями, которые его увлекают и&nbsp;отнимают время от&nbsp;стратегических бизнес-задач. Мы&nbsp;видим одной из&nbsp;наших основных целей, даже нашей миссией&nbsp;&mdash; создавать комплексные продукты, которые помогли&nbsp;бы предпринимателю не&nbsp;тратить время на&nbsp;изучение сложных вещей, а&nbsp;облегчили&nbsp;бы жизнь и&nbsp;были&nbsp;бы просты в&nbsp;использовании&nbsp;&mdash; предприниматель просто мог&nbsp;бы купить &laquo;коробку&raquo; у&nbsp;нас, открыть ее&nbsp;и&nbsp;начать пользоваться. У&nbsp;нас есть такие продукты, и&nbsp;мы&nbsp;будем продолжать их&nbsp;запускать.
+                    p.hidden-block Первым большим шагом в&nbsp;этом направлении стала платформа &laquo;Мобильное предприятие&raquo;, которая дает предпринимателю различные услуги, например, продажи на&nbsp;входящих звонках, систему управления продажами, CRM &laquo;лайт&raquo;-формата, аналитику рекламы, мессенджер для бизнеса, разумеется. Но&nbsp;это только первый заход, первая ласточка. Во-первых, мы&nbsp;будем расширять функционал продукта. Во-вторых, будем разрабатывать и&nbsp;внедрять еще ряд продуктов для компаний, которые не&nbsp;занимаются продажами на&nbsp;входящих звонках, работают в&nbsp;других сферах. До&nbsp;конца года &laquo;Билайн&raquo; порадует предпринимателей еще пару раз комплексными решениями.
+                    .interview-block__interview--little.hidden-block
+                        p В&nbsp;ближайшие пять лет снабдите&nbsp;ли вы&nbsp;интернет-инструментами эти 10% бизнеса, которые сейчас не&nbsp;сталкиваются с&nbsp;онлайн-технологиями?
+                    p.hidden-block 10% малых бизнесов, которые пока не&nbsp;онлайн, конечно, мы&nbsp;хотим обеспечить технологиями. Им&nbsp;точно нужно начать пользоваться онлайном. Но&nbsp;гораздо более глобальной задачей являются как раз те&nbsp;90%, которые уже в&nbsp;онлайне, пользуются интернетом, но&nbsp;не&nbsp;в&nbsp;полную меру, дорого или неудобно, не&nbsp;так, как надо.
+                    p.hidden-block Мы&nbsp;видим своей задачей обеспечить их&nbsp;правильными инструментами. Возможно, в&nbsp;партнерстве с&nbsp;другими компаниями, потому что, не&nbsp;думаю, что мы&nbsp;сможем 100% потребностей клиента закрывать самостоятельно. У&nbsp;нас есть масса партнеров, и&nbsp;постоянно появляются новые, с&nbsp;помощью которых мы&nbsp;можем эти 100% потребностей удовлетворить, помогая бизнесменам зарабатывать больше денег и&nbsp;при этом легче и&nbsp;комфортнее работать.
+                    .interview_image.hidden-block
+                        img(src="../images/interview-speakers/li_2.jpg")
+                    .interview-block__interview--little.hidden-block
+                        p Появление онлайна в&nbsp;бизнесе может&nbsp;ли привести в&nbsp;будущем к&nbsp;минимизации человеческого ресурса?
+                    p.hidden-block Все эти технологии, конечно, помогают человеку меньше заниматься рутинными операциями. Помню, еще в&nbsp;детстве я&nbsp;читал фантастов, которые предсказывали, что автоматизация будет достигать все больших и&nbsp;больших масштабов, и&nbsp;людям вообще не&nbsp;надо будет работать, машины сами будут между собой общаться. Сегодня технологии интернета вещей и&nbsp;Machine Learning повсеместно развиваются. Для нас как высокотехнологичной компании это не&nbsp;пустой звук. Сейчас период экспериментов, но&nbsp;уже скоро будут промышленные решения. Сегодня технологии уже позволяют холодильнику взаимодействовать с&nbsp;микроволновкой, для бизнеса со&nbsp;временем это будет не&nbsp;менее важно, и&nbsp;бизнес-устройства начнут общаться между собой, а&nbsp;мы&nbsp;обеспечим необходимые решения для компаний. В&nbsp;то&nbsp;же время я&nbsp;не&nbsp;верю, что люди исчезнут из&nbsp;бизнеса совсем. Они просто начнут заниматься другими вещами, может быть, более интеллектуальными, более творческими, оставив на&nbsp;откуп машинам рутинные операции и&nbsp;технические вопросы, которые не&nbsp;требуют креативности и&nbsp;самоотдачи. Новые технологии позволят нам общаться больше: машины будут помогать делать бизнес, а&nbsp;мы&nbsp;теснее и&nbsp;плодотворнее&nbsp;&mdash; коммуницировать друг с&nbsp;другом.
+                    .interview-block__interview--little.hidden-block
+                        p Некоторые компании внедряют машинное обучение сотрудников или хотят это сделать. Как вы&nbsp;к&nbsp;этому относитесь? Есть&nbsp;ли что-то подобное в&nbsp;&laquo;Билайне&raquo;?
+                    p.hidden-block Такая тенденция есть. Мы&nbsp;пока до&nbsp;того, чтобы машины целиком обучали сотрудников, не&nbsp;доросли. Мы&nbsp;используем электронные курсы, проводим вэбинары. Но, исходя из&nbsp;моего опыта, человеку важно учиться у&nbsp;другого человека&nbsp;&mdash; возможно, не&nbsp;машины, а&nbsp;люди не&nbsp;готовы к&nbsp;автоматизации этого процесса. Человек эмоционально face-to-face доносит информацию, поясняет на&nbsp;примерах, от&nbsp;человека исходит энергия, и&nbsp;это имеет гораздо больший эффект. Недавно мы&nbsp;запустили новый продукт &laquo;Мобильное предприятие&raquo;, и&nbsp;мы&nbsp;проводили обучение и&nbsp;в&nbsp;реале, и&nbsp;удаленное&nbsp;&mdash; в&nbsp;формате вэбинара. Во&nbsp;втором случае информация усваивается гораздо хуже. При машинном обучении люди отвлекаются от&nbsp;процесса, у&nbsp;них нет прямого контакта, поэтому они пытаются делать какую-то параллельную работу с&nbsp;учебой, выполнять какой-то еще процесс. А&nbsp;когда люди оказываются в&nbsp;одной аудитории, идет интерактив, они задают вопросы, и&nbsp;им&nbsp;дают конкретные ответы, получается совсем другой результат. Так что я&nbsp;считаю, что живое обучение лучше и&nbsp;эффективнее. В&nbsp;то&nbsp;же время для оптимизации затрат можно вывести обучение в&nbsp;дистанционные каналы. Еще машинное обучение хорошо работает для проверки знаний, тестирования, где участие живого человека необязательно.
+                    .interview-block__interview--little.hidden-block
+                        p Как вы&nbsp;считаете, какие виды бизнеса наиболее перспективны сегодня? На&nbsp;что делать ставку?
+                    p.hidden-block Любые виды бизнеса надо развивать, вопрос&nbsp;&mdash; как их&nbsp;развивать. Понято, что мир становится все более цифровым, и&nbsp;бизнес диджитализируется, но, на&nbsp;мой взгляд, это не&nbsp;значит, что надо срочно придумывать какой-то цифровой бизнес и&nbsp;открывать его. Например, продажа в&nbsp;интернете облачных хранилищ&nbsp;&mdash; сейчас тренд, на&nbsp;гребне волны, но&nbsp;завтра неизвестно, что за&nbsp;новые технологии появятся, что будет со&nbsp;спросом на&nbsp;эти хранилища. Думаю, важнее в&nbsp;обычных, привычных, нужных отраслях, например продукты питания, развивать цифровизацию. Просто чтобы делать эту отрасль эффективнее. Как итог&nbsp;&mdash; продукция таких компаний станет доступнее, дешевле и&nbsp;качественнее, и&nbsp;в&nbsp;этом я&nbsp;вижу важную миссию современных бизнесменов.
+                    .interview_image.hidden-block
+                        img(src="../images/interview-speakers/li_3.jpg")
+                    .interview-block__interview--little.hidden-block
+                        p Какие еще технологические тренды действуют сейчас и&nbsp;в&nbsp;перспективе на&nbsp;ближайшие 5 лет?
+                    p.hidden-block Тренды по&nbsp;новым технологиям я&nbsp;бы разделил на&nbsp;две части. Есть технологии &laquo;на&nbsp;гребне волны&raquo;, у&nbsp;которых еще нет практического применения или оно очень эпизодическое (например интернет вещей). Мы&nbsp;его используем, даже продаем такие продукты, но&nbsp;пока это не&nbsp;массовое решение. Есть новые технологии, уровень использования которых пока не&nbsp;столь высок, но&nbsp;они уже существуют достаточно давно. Яркий пример&nbsp;&mdash; услуга мониторинга, который позволяет определять местоположение сотрудников, автомобилей из&nbsp;автопарка, курьеров, чего и&nbsp;кого угодно. Услуга недорогая, и&nbsp;она доступна уже несколько лет, в&nbsp;том числе компаниям из&nbsp;сферы малого бизнеса. И&nbsp;она закрывает массу потребностей. Но, к&nbsp;сожалению, ею&nbsp;далеко не&nbsp;все пользуются, да&nbsp;и&nbsp;не&nbsp;все знают. Кто-то относится скептически, кто-то думает, что это дорого. Постепенно мы&nbsp;с&nbsp;нашими коллегами &laquo;обучаем&raquo; рынок, рассказываем предпринимателям о&nbsp;возможностях решения мониторинга. В&nbsp;результате проникновение этих услуг растет.
+                    p.hidden-block Или, скажем, тот&nbsp;же мобильный интернет. Да, казалось&nbsp;бы, большинство людей и&nbsp;бизнесов им&nbsp;уже пользуются, но&nbsp;не&nbsp;все пользуются правильно. Для многих мобильный интернет остается чем-то вроде развлечения&nbsp;&mdash; посмотреть ролик на&nbsp;Youtube, поболтать в&nbsp;мессенджере, но&nbsp;люди мало пользуются этим сервисом для целей бизнеса. В&nbsp;то&nbsp;же время даже мессенджеры дают массу деловых возможностей, например, с&nbsp;точки зрения оперативности (на&nbsp;сообщение в&nbsp;Whatsapp ответ вы&nbsp;получите через 30 секунд, а&nbsp;на&nbsp;письма люди отвечают дольше). Мессенджер&nbsp;&mdash; самое оперативное средство коммуникации между людьми, но&nbsp;используют его в&nbsp;рабочих целях далеко не&nbsp;все. Таким образом, технологии могут развиваться именно за&nbsp;счет уже существующих решений, но&nbsp;которые применяются не&nbsp;полностью или не&nbsp;в&nbsp;тех целях.
+                    .interview-block__interview--little.hidden-block
+                        p Как вы&nbsp;доносите информацию об&nbsp;онлайн- и&nbsp;мобильных сервисах до&nbsp;начинающих бизнесменов? К&nbsp;примеру, я&nbsp;могу завтра открыть бургерную на&nbsp;Арбате, но&nbsp;про облачную АТС я&nbsp;ничего не&nbsp;знаю. Где мне об&nbsp;этом узнать?
+                    p.hidden-block Проще всего обо всем, конечно, узнать в&nbsp;интернете. В&nbsp;свою очередь, мы&nbsp;как компания стараемся говорить не&nbsp;только о&nbsp;том, сколько стоит та&nbsp;или иная услуга, а&nbsp;еще и&nbsp;о&nbsp;том, какие потребности она соответственно закрывает, какие проблемы может решить, очень много сейчас уделяем внимания продвижению в&nbsp;digital-среде в&nbsp;разных видах. Я&nbsp;говорю не&nbsp;о&nbsp;прямой рекламе, мы&nbsp;видим своей миссией обучение предпринимательского сообщества.
+                    p.hidden-block Хотя немного рекламироваться мы&nbsp;стали, в&nbsp;том числе по&nbsp;телевизору, рассказываем о&nbsp;наших услугах. У&nbsp;нас достаточно много консультантов, продавцов, которые тоже готовы всегда рассказать, причем можно поговорить с&nbsp;ними в&nbsp;офисах, а&nbsp;можно всегда заказать их&nbsp;консультацию по&nbsp;телефону или в&nbsp;интернете, оставив заявку на&nbsp;любом из&nbsp;наших сайтов или на&nbsp;посадочных страницах.
+                    .interview-block__interview--little.hidden-block
+                        p А&nbsp;если человек еще не&nbsp;ваш клиент?
+                    p.hidden-block Тогда мы&nbsp;попробуем до&nbsp;него дотянуться новыми способами, экспериментируем с&nbsp;новыми формами&nbsp;&mdash; и&nbsp;цифровыми, и&nbsp;оффлайн. В&nbsp;части оффлайна мы&nbsp;развиваем продукты в&nbsp;наших магазинах, в&nbsp;офисах продаж. При этом мы&nbsp;не&nbsp;пытаемся выставить туда все 100 наших замечательных продуктов для бизнеса, мы&nbsp;фокусируемся на&nbsp;самых актуальных, самых передовых, на&nbsp;той&nbsp;же облачной АТС, на&nbsp;мобильном интернете, на&nbsp;Wi-Fi. Также я&nbsp;уверен, что любой предприниматель, который озабочен повышением эффективности своего бизнеса, обязательно узнает о&nbsp;современных решениях связи.
+                    .interview-block__interview--little.hidden-block
+                        p Что&nbsp;бы вы&nbsp;посоветовали начинающих предпринимателям?
+                    p.hidden-block Заниматься бизнесом&nbsp;&mdash; это важно, помимо заработка денег это&nbsp;же еще и&nbsp;социальная миссия, дополнительные рабочие места, повышение благосостояния всей страны, поэтому нужно осознанно это делать и&nbsp;использовать передовые и&nbsp;эффективные инструменты для развития бизнеса. Иначе, к&nbsp;сожалению, для предпринимателя это все может закончиться крахом. И&nbsp;моя рекомендация, конечно,&nbsp;&mdash; вступать в&nbsp;диалог с&nbsp;нами, технологичными компаниями, которые пытаются создавать новые инструменты для бизнеса, доносить нам свои пожелания и&nbsp;требования. Мой совет&nbsp;&mdash; не&nbsp;бояться и&nbsp;учиться, постоянно совершенствоваться, оптимизировать инструменты, которыми предприниматель пользуется для развития своего бизнеса. А&nbsp;косность и&nbsp;консерватизм лучше оставить где-то за&nbsp;бортом. Используйте самые передовые решения, в&nbsp;том числе от&nbsp;компании &laquo;Билайн&raquo;, и&nbsp;мы&nbsp;всегда будем рады бизнесу в&nbsp;этом помочь.
+                    .interview-block__video__sharing.clearfix.hidden-block
+                        ul.js-share
+                            li
+                                a(href="https://www.facebook.com/sharer/sharer.php?u=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--fb" data-interview="li").fbook.js-double-share
+                            li
+                                a(href="https://vk.com/share.php?url=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--vk" data-interview="li").vkt.js-double-share
+                            li
+                                a(href="https://twitter.com/intent/tweet?text=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--tw" data-interview="li").twt.js-double-share
+
+            .interview-block__main-tab(data-tab="2")
+                .interview-block__video
+                    .interview-block__video__block
+                        .interview-block__video__block__muted.video_muted.block-control
+                            .block-control__pause
+                            .block-control__play
+                        .full-block-control
+                            .full-block-control__play
+                            .full-block-control__time
+                            .full-block-control__main-line
+                                .full-block-control__main-line__progress
+                            .full-block-control__sound
+                        .interview-block__video__block__interview
+                            iframe(id="client-video" width="780" height="439" src="https://www.youtube.com/embed/C1utc77_2q4?list=PLv42Kp4x57LC_mrA0OAEqpo5r1LEMAL66&amp;controls=0&amp;showinfo=0&enablejsapi=1&rel=0" frameborder="0" allowfullscreen)
+                        .interview-block__video__block__filter(style="background-image: url(images/interview-speakers/business/Client_9.jpg)")
+                        .interview-block__video__block__info
+                            h3 Кирилл Поряднев
+                            p.regalia Генеральный директор «Результат Плюс»
+                            p.hide-in-mobile Самое важное конкурентное преимущество современного бизнеса&nbsp;&mdash; технологичность, а&nbsp;самый ценный ресурс&nbsp;&mdash; время. Неумение&nbsp;же пользоваться современными решениями и&nbsp;экономить время рано или поздно приведет к&nbsp;проигрышу.
+                            .interview-block__video__block__info__playbutton(id="start-client-video")
+                    .interview-block__video__sharing.clearfix
+                        ul.js-share
+                            li
+                                a(href="https://www.facebook.com/sharer/sharer.php?u=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--fb" data-interview="porednev").fbook.js-double-share
+                            li
+                                a(href="https://vk.com/share.php?url=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--vk" data-interview="porednev").fbook.js-double-share
+                            li
+                                a(href="https://twitter.com/intent/tweet?text=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--tw" data-interview="porednev").fbook.js-double-share
+                        .interview-block__video__decypher
+                            span.interview-block__video__decypher--text Расшифровка интервью
+                            span.interview-block__video__decypher--img(id="show-interview-business")
+                .interview-block__interview
+                    span.interview-block__interview--decypher Расшифровка интервью
+                    //h1.hidden-block Интервью бизнесменов и бизнесменов клиентов
+
+                    .interview-block__interview--little
+                        p Почему вы&nbsp;решили стать предпринимателем?
+                    p
+                        | Я&nbsp;очень самостоятельный человек и&nbsp;уже давно занимаюсь юридическим бизнесом. С&nbsp;<nobr>90-х</nobr> годов. И&nbsp;я&nbsp;даже не&nbsp;могу ответить, почему я&nbsp;стал предпринимателем&hellip; Наверное, потому, что я&nbsp;очень сложно воспринимаю руководство над собой.
+                    .interview-block__interview--little.hidden-block
+                        p С&nbsp;чего все началось в&nbsp;текущем бизнесе? Как родилась идея?
+                    p.hidden-block
+                        | Все началось с&nbsp;того, что я&nbsp;<nobr>по-другому</nobr> начал организовывать работу с&nbsp;людьми, чтобы они не&nbsp;погрязали в&nbsp;юридических вопросах, а&nbsp;находили у&nbsp;нас решение.<br />
+                        | Важную роль в&nbsp;этом сыграло мое видение бизнеса и&nbsp;несовпадение этого видения, взглядов с&nbsp;теми партнерами, что у&nbsp;меня были на&nbsp;тот момент. Я&nbsp;увидел бизнес <nobr>по-другому</nobr>, именно так, и&nbsp;это был новый проект. Наша компания занимается тем, что нужно человеку, а&nbsp;не&nbsp;тем, что, как мы&nbsp;считаем, нужно делать нам. Человек приходит к&nbsp;нам с&nbsp;вопросом, и&nbsp;мы&nbsp;этот вопрос решаем, двигаемся, добиваемся результата. Поэтому и&nbsp;такое название!
+                    p.hidden-block
+                        | Первая моя компания, кстати, имела в&nbsp;своем названии слово &laquo;консалтинг&raquo;. Сейчас таких наименований много, и&nbsp;мы&nbsp;идем своим путем.
+                    .interview-block__interview--little.hidden-block
+                        p Что для вас значит бизнес-партнер?
+                    p.hidden-block
+                        | <nobr>Бизнес-партнеры</nobr>&nbsp;&mdash; это те, кто помогает. Раньше я&nbsp;считал, что это люди, которые со&nbsp;мной рядом. Теперь, когда современные технологии изменили коммуникации, мои партнеры могут находиться за&nbsp;много километров от&nbsp;меня. Я&nbsp;их&nbsp;не&nbsp;вижу каждый день, и&nbsp;в&nbsp;принципе есть люди, которых лично я&nbsp;никогда не&nbsp;видел. Но&nbsp;я&nbsp;их&nbsp;считаю своими <nobr>бизнес-партнерами</nobr>, потому что они помогают мне решать те&nbsp;вопросы, которые у&nbsp;меня возникают в&nbsp;бизнесе.
+                    .interview-block__interview--little.hidden-block
+                        p Насколько важны в&nbsp;бизнесе люди?
+                    p.hidden-block
+                        | Наш бизнес построен только на&nbsp;отношениях с&nbsp;людьми, только на&nbsp;человеческом факторе. На&nbsp;самом деле юрист&nbsp;&mdash; это очень коммуникативная профессия. Мы&nbsp;не&nbsp;можем работать без вопросов, с&nbsp;которыми к&nbsp;нам приходят клиенты. Мы&nbsp;не&nbsp;создаем продукт, чтобы сложить его на&nbsp;склад. Наш бизнес&nbsp;&mdash; это решение вопроса, с&nbsp;которым к&nbsp;нам пришел человек или компания. С&nbsp;этого все и&nbsp;начинается.
+                    .interview-block__interview--little.hidden-block
+                        p Как привлечь клиента?
+                    p.hidden-block
+                        | Сложный вопрос. Наверное, привлечь клиента можно открытостью, общением, взаимодействием, моментом хороших отношений, хотя они не&nbsp;всегда бывают добрые. В&nbsp;рамках общения, решения проблем, с&nbsp;которыми к&nbsp;нам обращаются, в&nbsp;этом и&nbsp;есть наш успех.
+                    p.hidden-block
+                        | Чтобы привлечь клиента, по&nbsp;сути нужно просто хорошо делать свое дело. Если ты&nbsp;хочешь быть человеком, который добивается <nobr>чего-то</nobr> в&nbsp;бизнесе, выполнять те&nbsp;задачи, которые ты&nbsp;перед собой ставишь, это и&nbsp;есть твой успех. Только ты&nbsp;для этого должен помогать клиентам решать их&nbsp;вопросы. Если ты&nbsp;это делаешь ответственно, выполняешь то, что от&nbsp;тебя ждут, ты&nbsp;привлекаешь клиента.</p>
+                    .interview-block__interview--little.hidden-block
+                        p Какие актуальные задачи вы&nbsp;ставите перед собой сегодня?
+                    p.hidden-block
+                        | Их&nbsp;очень много. Задачи, которые я&nbsp;вижу перед собой,&nbsp;&mdash; наладить общение между моей компанией и&nbsp;клиентами. Мы&nbsp;должны понимать, что от&nbsp;нас хотят, и&nbsp;делать то, что от&nbsp;нас ждут. Общение между сотрудниками в&nbsp;компании&nbsp;&mdash; также очень важно. Мы&nbsp;хотим стать успешной компанией, достичь <nobr>какого-то</nobr> довольно высокого уровня. Мы&nbsp;хотим, чтобы наши возможности были на&nbsp;рынке востребованы.
+                    .interview-block__interview--little.hidden-block
+                        p В&nbsp;чем секрет <nobr>бизнес-успеха</nobr>?
+                    p.hidden-block
+                        | Секрет успеха в&nbsp;бизнесе&nbsp;&mdash; то, что является секретом и&nbsp;для меня. Наверное, это и&nbsp;вера в&nbsp;себя самого. Если ты&nbsp;веришь в&nbsp;то, что ты&nbsp;делаешь, если ты&nbsp;стремишься делать это лучше, ты&nbsp;добьешься успеха и&nbsp;станешь тем, кем хочешь быть.
+                    .interview-block__interview--little.hidden-block
+                        p Кто сегодня выигрывает и&nbsp;почему?
+                    p.hidden-block
+                        | При равных возможностях выигрывают сегодня те, кто более технологичен. Как это ни&nbsp;странно звучит, уходят в&nbsp;прошлое времена спокойной работы. И&nbsp;даже мы&nbsp;в&nbsp;своей профессии, которой уже многие сотни лет, используем в&nbsp;своей работе многие современные технологии. Многие юристы <nobr>из-за</nobr> того и&nbsp;проигрывают, что не&nbsp;могут овладеть новыми технологиями. Да, профессия консервативная. Но&nbsp;мы&nbsp;стараемся внедрять вещи, которые позволяют экономить временной ресурс компании, это и&nbsp;является основой успеха сегодня.
+                    .interview-block__interview--little.hidden-block
+                        p На&nbsp;чем нужно экономить и&nbsp;на&nbsp;чем, напротив, нельзя?
+                    p.hidden-block
+                        | Экономить нельзя ни&nbsp;на&nbsp;чем. Надо планово расходовать свои ресурсы. Если мы&nbsp;говорим об&nbsp;успехе бизнеса, то&nbsp;главный наш ресурс&nbsp;&mdash; это время. Если ты&nbsp;можешь <nobr>что-то</nobr> сделать за&nbsp;5&nbsp;минут, ты&nbsp;всегда будешь лучше, чем те, кто сделает это за&nbsp;час. И&nbsp;в&nbsp;этой ситуации можно экономить на&nbsp;всем, кроме внедрения новых технологий, оборудования, <nobr>ИТ-решений</nobr>. Нужно быть в&nbsp;струе, в&nbsp;движении, в&nbsp;понимании трендов. Не&nbsp;всегда ты&nbsp;это понимаешь и&nbsp;успеваешь делать. И&nbsp;надо много изучать, даже то, что не&nbsp;относится к&nbsp;профессии, а&nbsp;больше относится к&nbsp;общим вопросам бизнеса. Резюмируя, можно сказать, что нельзя экономить на&nbsp;новых возможностях для бизнеса.
+                    .interview-block__interview--little.hidden-block
+                        p Расскажите о&nbsp;новых решениях, которые вы&nbsp;внедрили в&nbsp;бизнесе?
+                    p.hidden-block
+                        | Мы&nbsp;стараемся использовать всегда <nobr>что-то</nobr> новое. Постоянно <nobr>что-то</nobr> внедряем. Я&nbsp;неплохо разбираюсь в&nbsp;ПО, CRM. И&nbsp;мы&nbsp;стараемся внедрять коммуникационную линейку, которая позволяет нам обеспечить взаимодействие от&nbsp;начала и&nbsp;до&nbsp;конца, сквозной продукт на&nbsp;базе нескольких решений, начиная от&nbsp;входящего звонка нашего клиента и&nbsp;заканчивая результатом. Одним из&nbsp;таких решений является облачная АТС от&nbsp;&laquo;Билайн&raquo; Бизнес.
+                    p.hidden-block
+                        | Скажу так, что я&nbsp;долго в&nbsp;это не&nbsp;верил, но, когда столкнулся с&nbsp;ПО, стал понимать, что облачная АТС&nbsp;&mdash; это некий переход к&nbsp;CRM. Потому что мы&nbsp;воспринимаем общение не&nbsp;с&nbsp;точки зрения <nobr>какого-то</nobr> контакта, а&nbsp;с&nbsp;точки зрения <nobr>какой-то</nobr> информации, которая дает толчок для развития отношений с&nbsp;клиентами. В&nbsp;этом плане облачная АТС очень удобна, нет привязки к&nbsp;офису. Мы&nbsp;можем обеспечивать коммуникации дистанционно далеко друг от&nbsp;друга, где&nbsp;бы наш клиент ни&nbsp;находился. Облачная АТС постоянно совершенствуется. Для нас это и&nbsp;база общения между сотрудниками, и&nbsp;база общения с&nbsp;клиентами, и&nbsp;инструмент получения информации, которую мы&nbsp;используем в&nbsp;нашей работе. Выбор провайдера облачной АТС был сложным, и&nbsp;главным фактором для нас была надежность мобильного оператора и&nbsp;то, насколько он&nbsp;будет инвестировать в&nbsp;развитие продукта. Что еще меня приятно поразило&nbsp;&mdash; меня слышат, учитывают все мои пожелания. И&nbsp;все трудности, которые возникают, решаются совместно с&nbsp;&laquo;Билайн&raquo;.
+                    .interview-block__video__sharing.clearfix.hidden-block
+                        ul.js-share
+                            li
+                                a(href="https://www.facebook.com/sharer/sharer.php?u=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--fb" data-interview="porednev").fbook.js-double-share
+                            li
+                                a(href="https://vk.com/share.php?url=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--vk" data-interview="porednev").vkt.js-double-share
+                            li
+                                a(href="https://twitter.com/intent/tweet?text=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--tw" data-interview="porednev").twt.js-double-share
+
+        .external-speaker-block
+            .interview-block--wrapper
+                .interview-block__tab
+                    .interview-block__tab__interview.interview-block__tab--bman(tab-index="1")
+                        | Бизнес
+                        .shift-tab
+                        | от первого лица
+                    .interview-block__tab__interview.interview-block__tab--client(tab-index="2")
+                        | Правила
+                        .shift-tab
+                        | предпринимателя
+            .inter-block__speakers--wrapper(speakers-tab="1")
+                .interview-block__speakers
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-1.html#businessman")
+                                img(src="images/interview-speakers/business/1.Popov.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-1.html#businessman") Александр Попов
+                            p Директор EasyFinance.ru
+                            a(href="/interview-1.html#businessman").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-2.html#businessman")
+                                img(src="images/interview-speakers/business/2.Cerazov.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-2.html#businessman") Константин Церазов
+                            p Член правления,руководитель инвестиционного блока банка «ФК Открытие»,член совета директоров «Открытия Капитал»
+                            a(href="/interview-2.html#businessman").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-3.html#businessman")
+                              img(src="images/interview-speakers/business/3.Feldman.png")
+                        .interview-block__speakers__item__text
+                            h3
+                              a(href="/interview-3.html#businessman") Максим Фельдман
+                            p Руководитель направления по работе с клиентами Московской школы управления СКОЛКОВО
+                            a(href="/interview-3.html#businessman").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-4.html")
+                                img(src="images/interview-speakers/business/4.Volshuck.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-4.html") Александр Волощук
+                            p Генеральный директор сервиса Dr.Tariffи студии разработки QStudio.org
+                            a(href="/interview-4.html").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-5.html")
+                                img(src="images/interview-speakers/business/5.Avedei.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-5.html") Алексей Авдей
+                            p Директор по продукту ЦИАН
+                            a(href="/interview-5.html").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-6.html")
+                                img(src="images/interview-speakers/business/6.Panov.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-6.html") Сергей Панов
+                            p Сооснователь и&nbsp;генеральный директор <nobr>интернет-бухгалтерии</nobr> &laquo;Моё дело&raquo;
+                            a(href="/interview-6.html").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-7.html")
+                                img(src="images/interview-speakers/business/7.Jukov.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-7.html") Михаил Жуков
+                            p Генеральный директор HeadHunter
+                            a(href="/interview-7.html").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-8.html")
+                                img(src="images/interview-speakers/business/8.Tabolin.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-8.html") Сергей Таболин
+                            p Руководитель по&nbsp;сегментному маркетингу &laquo;Билайн&raquo; Бизнес
+                            a(href="/interview-8.html").watch-interview Смотреть
+            .inter-block__speakers--wrapper(speakers-tab="2")
+                .interview-block__speakers
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-1.html#client")
+                                img(src="images/interview-speakers/clients/1.-Chaplinski.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-1.html#client") Павел Чаплинский
+                            p Основатель BOX&ROSES
+                            a(href="/interview-1.html#client").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-2.html#client")
+                                img(src="images/interview-speakers/clients/2.-Shlopack.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-2.html#client") Дмитрий Шлопак
+                            p Управляющий партнер «Везендорф групп»
+                            a(href="/interview-2.html#client").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-3.html#client")
+                                img(src="images/interview-speakers/clients/3.-Zamai.png")
+                        .interview-block__speakers__item__text
+                            h3 
+                                a(href="/interview-3.html#client") Андрей Замай
+                            p Генеральный директор компании «Первая Интеллектуальная Реклама»
+                            a(href="/interview-3.html#client").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-4.html#client")
+                                img(src="images/interview-speakers/clients/4.-Lasckov.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-4.html#client") Игорь Ласьков
+                            p Генеральный директор ООО «Стройкомфорт»
+                            a(href="/interview-4.html#client").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-5.html#client")
+                                img(src="images/interview-speakers/clients/5.-Smirnov.png")
+                        .interview-block__speakers__item__text
+                            h3 
+                                a(href="/interview-5.html#client") Илья Смирнов
+                            p IT-директор компании «Ай Ти Ви групп»
+                            a(href="/interview-5.html#client").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-6.html#client")
+                                img(src="images/interview-speakers/clients/6.-Shelmanova.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-6.html#client") Ольга Шеламова
+                            p Совладелец компании «Олимп»
+                            a(href="/interview-6.html#client").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-7.html#client")
+                                img(src="images/interview-speakers/clients/7.-Silhev.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-7.html#client") Андрей Сильчев
+                            p Директор по развитию IT Partner
+                            a(href="/interview-7.html#client").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-8.html#client")
+                                img(src="images/interview-speakers/clients/8.Shkolerov.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-8.html#client") Дмитрий Шкловер
+                            p Основатель интернет-магазина 613bricks.ru
+                            a(href="/interview-8.html#client").watch-interview Смотреть

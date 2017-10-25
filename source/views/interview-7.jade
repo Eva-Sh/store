@@ -1,0 +1,373 @@
+extends templates/layout
+block vars
+
+block content
+    .interview-block
+        .interview-block--wrapper
+            .interview-block__back
+                .interview-block__back--arrow
+                a(href="index.html") Вернуться на главную
+            .interview-block__main-tab(data-tab="1")
+                .interview-block__video
+                    .interview-block__video__block
+                        .interview-block__video__block__muted.video_muted.block-control
+                            .block-control__pause
+                            .block-control__play
+                        .full-block-control
+                            .full-block-control__play
+                            .full-block-control__time
+                            .full-block-control__main-line
+                                .full-block-control__main-line__progress
+                            .full-block-control__sound
+                        .interview-block__video__block__interview
+                            iframe(id="business-video" width="780" height="439" src="https://www.youtube.com/embed/we2kbp7JR_I?list=PLv42Kp4x57LC_mrA0OAEqpo5r1LEMAL66&amp;controls=0&amp;showinfo=0&enablejsapi=1&rel=0" frameborder="0" allowfullscreen)
+                        .interview-block__video__block__filter(style="background-image: url(images/interview-speakers/business/Business_7.jpg)")
+                        .interview-block__video__block__info
+                            h3 Михаил Жуков
+                            p.regalia Генеральный директор HeadHunter
+                            p.hide-in-mobile О&nbsp;том, какие люди могут привести стартап к&nbsp;успеху, как правильно искать сотрудников, а&nbsp;также о&nbsp;том, какую роль в&nbsp;рекрутинге играет Facebook.
+                            .interview-block__video__block__info__playbutton(id="start-business-video")
+                    .interview-block__video__sharing.clearfix
+                        ul.js-share
+                            li
+                                a(href="https://www.facebook.com/sharer/sharer.php?u=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--fb" data-interview="jukov").fbook.js-double-share
+                            li
+                                a(href="https://vk.com/share.php?url=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--vk" data-interview="jukov").vkt.js-double-share
+                            li
+                                a(href="https://twitter.com/intent/tweet?text=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--tw" data-interview="jukov").twt.js-double-share
+                        .interview-block__video__decypher
+                            span.interview-block__video__decypher--text(id="show-interview-client") Расшифровка интервью
+                            span.interview-block__video__decypher--img(id="show-interview-client")
+                .interview-block__interview
+                    span.interview-block__interview--decypher Расшифровка интервью
+                    .interview-block__interview--little
+                        p Есть&nbsp;ли какая-то черта российского менталитета, которая влияет на&nbsp;ваш бизнес?
+                    p Думаю, нет каких-то специфических черт, которые влияют на&nbsp;наш бизнес. Есть вопрос времени, цикла жизни продукта или сервиса, готовности рынка, но&nbsp;принципиально бизнес есть бизнес. Это универсальное понятие.
+                    .interview-block__interview--little.hidden-block
+                        p Если сравнивать рекрутинговый бизнес в&nbsp;России и&nbsp;в&nbsp;других странах, есть&nbsp;ли что-то, что работает у&nbsp;них и&nbsp;не&nbsp;работает у&nbsp;нас, и&nbsp;наоборот?
+                    p.hidden-block С&nbsp;точки зрения ментальности бизнеса подходы к&nbsp;его ведению и&nbsp;в&nbsp;России, и&nbsp;в&nbsp;западных странах схожи. В&nbsp;силу своего образования и&nbsp;опыта я&nbsp;считаю, что нет драматических страновых различий между культурами ведения бизнеса. Есть только исторические и&nbsp;совсем немного культурологические нюансы, но&nbsp;они не&nbsp;влияют на&nbsp;то, как люди ведут бизнес.
+                    .interview-block__interview--little.hidden-block
+                        p Бизнес Headhunter активно развивается в&nbsp;регионах. Можете&nbsp;ли вы&nbsp;сказать, чем отличается московский рынок рекрутинга от&nbsp;периферийного?
+                    p.hidden-block Разница между рынками только в&nbsp;их&nbsp;зрелости&nbsp;&mdash; зрелости людей, зрелости подходов, зрелости методов. То, что было в&nbsp;Москве и&nbsp;Петербурге лет 20 назад, мы&nbsp;сейчас наблюдаем в&nbsp;регионах. Ситуация развивается очень динамично.
+                    .interview_image.hidden-block
+                        img(src="../images/interview-speakers/jukov_1.jpg")
+                    .interview-block__interview--little.hidden-block
+                        p А&nbsp;что развивается? В&nbsp;удаленных регионах есть еще люди, которые обводят ручкой объявления о&nbsp;поиске соискателей в&nbsp;газетах&hellip; 
+                    p.hidden-block Конечно, есть определенная разница в&nbsp;проникновении услуги, как мы&nbsp;это называем, то&nbsp;есть доля людей, которые готовы пользоваться интернетом. В&nbsp;регионах, конечно&nbsp;же, доля тех, кто ищет объявления по&nbsp;старинке в&nbsp;газетах, еще очень велика, но&nbsp;довольно быстро сокращается. Становится все больше соискателей, понимающих все прелести онлайн-рекрутмента. Это просто вопрос времени.
+                    .interview-block__interview--little.hidden-block
+                        p Как вы&nbsp;вот этого добиваетесь? Почему так происходит?
+                    p.hidden-block &laquo;Хэдхантер&raquo; как компания тратит много усилий и&nbsp;времени на&nbsp;то, чтобы образовывать рынок. Мы&nbsp;стараемся вести эйчаров за&nbsp;собой, показывая им&nbsp;лучшие мировые и&nbsp;российские практики, и&nbsp;просто учим людей работать. Наши сотрудники в&nbsp;регионах начинали свою деятельность с&nbsp;того, что приходили к&nbsp;работодателям, даже к&nbsp;крупным клиентам, садились с&nbsp;кадровиками перед компьютером и&nbsp;изучали сайт hh.ru. Сейчас такой практики уже нет, тем не&nbsp;менее, образовательная, консультационная функция занимает значительное время у&nbsp;наших сотрудников.
+                    .interview-block__interview--little.hidden-block
+                        p Насколько быстро соискатели и&nbsp;работодатели приходят к&nbsp;тому, что искать работу/кандидата надо в&nbsp;интернете?
+                    p.hidden-block Соискатели приходят к&nbsp;этому быстрее, к&nbsp;идее поиска работы через интернет, во-первых, потому что в&nbsp;интернете им&nbsp;доступна масса информации о&nbsp;возможных местах работы&nbsp;&mdash; и&nbsp;в&nbsp;разрезе профессии, и&nbsp;в&nbsp;смежных областях, и&nbsp;в&nbsp;разрезе регионов. У&nbsp;соискателей больше мотивации к&nbsp;релокациям. Они могут увидеть не&nbsp;только вакансии в&nbsp;своем родном, скажем, Новосибирске, но&nbsp;и&nbsp;солнечном Сочи, принять для себя решение о&nbsp;том, что хотят работать в&nbsp;другом городе, переехать. Эти соискатели будут откликаться на&nbsp;вакансии в&nbsp;разных регионах, в&nbsp;свою очередь, работодатели позитивно относятся к&nbsp;соискателям, готовым к&nbsp;релокации.
+                    .interview-block__interview--little.hidden-block
+                        p Как получается &laquo;приучить&raquo; к&nbsp;онлайн-рекрутингу кадровиков, выходцев из&nbsp;советских бюрократизированных предприятий? Это вообще возможно?
+                    p.hidden-block Кадровиков переучиваем, демонстрируя им&nbsp;возможности нашего ресурса, те&nbsp;огромные объемы информации про соискателей, которые они могут получить, используя интернет.
+                    .interview-block__interview--little.hidden-block
+                        p А&nbsp;если кадровик непробиваемый, можно&nbsp;ли директору донести необходимость применения современных подходов?
+                    p.hidden-block Как говорится, война за&nbsp;таланты проиграна, победили таланты. Поэтому по&nbsp;мере поиска талантливых сотрудников любой нормальный руководитель предприятия увидит, какой &laquo;материал&raquo; ему поставляют кадровики. Постоянно растущие требования к&nbsp;кадрам вынуждают даже закоренелых эйчаров самим развиваться, улучшать свои навыки поиска, расширять каналы поиска сотрудников, и&nbsp;здесь, конечно, с&nbsp;интернетом ничего не&nbsp;может сравниться.
+                    .interview-block__interview--little.hidden-block
+                        p В&nbsp;некоторых сферах работа особенно легко находится через социальные сети. Например, человек опубликовал пост в&nbsp;Facebook, его перепостили&nbsp;друзья, и&nbsp;это работает. Работодатели (руководители), видя пост у&nbsp;каких-то своих знакомых, считают, что это проверенный человек. Как вы&nbsp;на&nbsp;это явление смотрите?
+                    p.hidden-block Мы&nbsp;все ищем работу на&nbsp;самом деле через социальную сеть. Другое дело, что это за&nbsp;социальная сеть. Это может быть ваша записная книжка, это может быть Facebook, это могут быть любые другие социальные сети или ваши контакты с&nbsp;людьми на&nbsp;улице или в&nbsp;кафе&nbsp;&mdash; это все социальные взаимодействия. Вопрос&nbsp;&mdash; какой инструмент социального взаимодействия вы&nbsp;выбираете, это дело личного комфорта. Конечно, люди используют социальные сети, мессенджеры, онлайн-сервисы для поиска работы. Это нормально. Это просто еще один канал. Более того, эйчары с&nbsp;большим удовольствием используют социальные сети для поиска сотрудников и&nbsp;для сбора информации о&nbsp;потенциальных соискателях. О&nbsp;том, что они делают в&nbsp;социальных сетях, какие фото постят, чем живут, это все важно.
+                    .interview-block__interview--little.hidden-block
+                        p Ваше личное мнение, это этично? Это&nbsp;же личная информация в&nbsp;социальных сетях.
+                    p.hidden-block Интерес эйчара носит практический характер. Он&nbsp;в&nbsp;некотором смысле отвечает за&nbsp;человека, который приходит в&nbsp;компанию, и&nbsp;если поведение, демонстрируемое человеком в&nbsp;соцсетях, может негативно или позитивно повлиять на&nbsp;его работу в&nbsp;компании, то&nbsp;эйчар обязан это учитывать.
+                    .interview-block__interview--little.hidden-block
+                        p То&nbsp;есть вы&nbsp;не&nbsp;допускаете того, что сотрудник, выходя на&nbsp;работу, становится другим человеком?
+                    p.hidden-block Сегодня все сильно пересекается, я&nbsp;считаю, личная жизнь с&nbsp;рабочей неразрывна. Невозможно включить в&nbsp;офисе режим образцового сотрудника, а, выйдя за&nbsp;пределы офиса, начать бить стекла и&nbsp;пить, например.
+                    .interview-block__interview--little.hidden-block
+                        p У&nbsp;вас есть какая-то статистика, насколько часто потенциальные работодатели обращаются к&nbsp;этому каналу, изучают своего потенциального сотрудника через соцсети?
+                    p.hidden-block Мы&nbsp;предлагаем нашим клиентам-работодателям возможность изучения профилей соискателей в&nbsp;соцсетях. Примерно половина поисковых запросов на&nbsp;изучение резюме кандидатов сопровождается анализом того, как человек ведет себя вне работы, как он&nbsp;выглядит, какое у&nbsp;него окружение, какие интересы. И&nbsp;это действительно влияет на&nbsp;производительность, на&nbsp;то, насколько органично человек впишется в&nbsp;конкретную среду, в&nbsp;конкретную корпоративную культуру. Конечно, для некоторых соискателей еще пару лет назад было таким открытием, что работодатель посмотрел его фото в&nbsp;профиле Vkontakte, как он&nbsp;мог&hellip; Но&nbsp;сейчас к&nbsp;этому надо привыкать. И&nbsp;надо понимать, что, если вы&nbsp;рассчитываете, что социальные сети помогут вам найти работу, вы&nbsp;должны заботиться о&nbsp;том, как там выглядите. К&nbsp;слову, люди, которые начинают кричать в&nbsp;соцсетях, что они ищут работу, не&nbsp;самые привлекательные кандидаты для рекрутеров, поверьте моему опыту.
+                    .interview-block__interview--little.hidden-block
+                        p Почему?
+                    p.hidden-block Как правило, на&nbsp;большинство позиций офисного персонала, экспертов, специалистов, менеджмента рекрутеры предпочитают так называемых пассивных кандидатов, тех, кто активно работу не&nbsp;ищет.
+                    .interview_image.hidden-block
+                        img(src="../images/interview-speakers/jukov_2.jpg")
+                    .interview-block__interview--little.hidden-block
+                        p А&nbsp;о&nbsp;чем это говорит?
+                    p.hidden-block Это говорит в&nbsp;некоторым смысле о&nbsp;критичности той ситуации, в&nbsp;которой находится человек. Потому что поиск работы&nbsp;&mdash; штука интимная. Качественный кандидат, скорее всего, тихо поищет работу, сходит на&nbsp;собеседования, найдет ее, скажет прежнему работодателю &laquo;спасибо, я&nbsp;увольняюсь&raquo;. Это нормальный паттерн для уровня экспертов и&nbsp;управленцев. А&nbsp;когда люди говорят &laquo;я&nbsp;увольняюсь&raquo;, а&nbsp;потом начинают искать работу, это вызывает вопросы у&nbsp;рекрутеров, почему так произошло. Конечно, есть люди, которые говорят: все, я&nbsp;не&nbsp;могу работать, например, с&nbsp;этим руководителем, я&nbsp;действительно верю в&nbsp;себя и&nbsp;проживу какое-то время без зарплаты на&nbsp;сбережения и&nbsp;потрачу время на&nbsp;поиск лучшей работы. Но&nbsp;таких, поверьте, не&nbsp;так много. Если человек кричит о&nbsp;поиске работы, то&nbsp;это значит, что с&nbsp;человеком расстались, и&nbsp;он&nbsp;судорожно начал использовать все каналы &laquo;рекрутинга&raquo;.
+                    .interview-block__interview--little.hidden-block
+                        p Если с&nbsp;ним расстались, это&nbsp;же не&nbsp;значит, что он&nbsp;плохой специалист&hellip;
+                    p.hidden-block Верно, но&nbsp;есть такое устойчивое поверье у&nbsp;рекрутеров, с&nbsp;которым нельзя не&nbsp;считаться.
+                    .interview-block__interview--little.hidden-block
+                        p А&nbsp;вот, например, молодой бизнесмен решил запустить стартап и&nbsp;ищет сотрудников. Какие будут от&nbsp;вас ЦУ?
+                    p.hidden-block Если говорить о&nbsp;бизнесменах, которые ищут себе людей в&nbsp;стартап, это все-таки немножко другая модель поиска. Можно потерпеть довольно трудного человека, но&nbsp;получить его навыки сегодня и&nbsp;сейчас для того, чтобы запустить бизнес. То&nbsp;есть в&nbsp;данном случае важнее навык, нежели комфортность работы с&nbsp;человеком. Предпринимателя интересует конечный результат, и&nbsp;все методы хороши.
+                    p.hidden-block Но&nbsp;по&nbsp;мере того, как компания развивается, люди, которые для себя ищут команду, прежде всего должны понимать свои сильные и&nbsp;слабые стороны. Например, если вы&nbsp;сильны в&nbsp;аналитике, для вас важны мелочи, но&nbsp;сложно абстрагироваться от&nbsp;ситуации и&nbsp;смотреть глобально на&nbsp;вещи, ищите людей, которые могут иметь комплементарные с&nbsp;вами навыки. Если вы&nbsp;сформируете команду, скажем, из&nbsp;10 человек, похожих на&nbsp;вас, которые сильны в&nbsp;мелочах, то&nbsp;вы&nbsp;все будете заниматься мелочами до&nbsp;конца жизни.
+                    p.hidden-block Поэтому главный совет&nbsp;&mdash; прежде всего узнайте себя. Определите свои сильные стороны и&nbsp;слабые. Подумайте, каких компетенций вам не&nbsp;хватает. Конечно, можно заняться развитием этих компетенций, но&nbsp;зачем, если можно найти человека с&nbsp;не&nbsp;хватающими лично вам компетенциями и&nbsp;решить задачу.
+                    .interview-block__interview--little.hidden-block
+                        p А&nbsp;в&nbsp;общем на&nbsp;что следует обратить бизнесмену внимание на&nbsp;собеседовании с&nbsp;соискателем?
+                    p.hidden-block Если человек пришел к&nbsp;вам на&nbsp;собеседование и&nbsp;находится в&nbsp;напряжении, у&nbsp;него бегают глаза, по&nbsp;опыту это говорит не&nbsp;только о&nbsp;волнении или неуверенности, это как раз нормально, мы&nbsp;все волнуемся на&nbsp;собеседованиях, люди любого уровня. Но&nbsp;это, скорее всего, говорит о&nbsp;том, что у&nbsp;человека что-то внутри не&nbsp;так. Может быть, это даже человек-разведчик, которого подослали конкуренты на&nbsp;вас посмотреть. Может быть, он&nbsp;просто использует шанс вступить с&nbsp;вами в&nbsp;контакт, украсть у&nbsp;вас какое-то время, не&nbsp;имея конкретной цели попасть к&nbsp;вам на&nbsp;работу. Вот поэтому смотрите в&nbsp;глаза вашим собеседникам.
+                    .interview-block__interview--little.hidden-block
+                        p А&nbsp;еще? Как можно вычислить человека, который будет гореть вашей идеей с&nbsp;вами вместе и&nbsp;не&nbsp;&laquo;перегорит&raquo; через некоторое время? Для стартапов это очень важно&hellip;
+                    p.hidden-block Для сотрудников стартапов помимо каких-то навыков, которыми они должны на&nbsp;конкретной работе обладать, и&nbsp;в&nbsp;целом позитивного отношения к&nbsp;жизни очень важна стойкость. Самый большой риск в&nbsp;стартапе&nbsp;&mdash; это испугаться и&nbsp;остановиться в&nbsp;какой-то момент, хотя за&nbsp;углом вас может ждать удача. Поговорите с&nbsp;человеком о&nbsp;его опыте, спросите, что у&nbsp;него не&nbsp;удавалось. Важно не&nbsp;успехи анализировать, на&nbsp;мой взгляд, а&nbsp;неудачи. То, как человек их&nbsp;оценивает, насколько открыто он&nbsp;готов о&nbsp;своих неудачах рассуждать, как он&nbsp;сам излагает историю своего провала.
+                    .interview-block__interview--little.hidden-block
+                        p Если он&nbsp;уверенно и&nbsp;внятно излагает историю своего провала, это плюс ему?
+                    p.hidden-block Огромный плюс. Если человек в&nbsp;состоянии сам четко и&nbsp;понятно проанализировать источники и&nbsp;причины своих неудач, то, какие он&nbsp;уроки извлек из&nbsp;этого, на&nbsp;какие грабли он&nbsp;наступил, это крайне важно и&nbsp;ценно.
+                    .interview_image.hidden-block
+                        img(src="../images/interview-speakers/jukov_3.jpg")
+                    .interview-block__interview--little.hidden-block
+                        p Интересно, а&nbsp;как вы&nbsp;ищите людей для себя?
+                    p.hidden-block Прежде всего мы&nbsp;ищем людей через наш замечательный ресурс и&nbsp;те&nbsp;инструменты, которые мы&nbsp;сами проектируем для наших клиентов. Как вы&nbsp;понимаете, мы&nbsp;их&nbsp;используем и&nbsp;тестируем на&nbsp;себе. Это первый канал. Второй канал&nbsp;&mdash; это рекомендации наших сотрудников.
+                    .interview-block__interview--little.hidden-block
+                        p И&nbsp;репосты в&nbsp;соцсетях?
+                    p.hidden-block Надо отличать рекомендации от&nbsp;репоста в&nbsp;социальных сетях. Я&nbsp;бы здесь немножко поднялся над инструментом и&nbsp;рассуждал о&nbsp;социальной сети, не&nbsp;привязанной к&nbsp;интернету. То&nbsp;есть еще раз: ваши контакты&nbsp;&mdash; это и&nbsp;есть ваша социальная сеть. Вы&nbsp;можете сделать репост человека в&nbsp;соцсети, а&nbsp;можете позвонить знакомому рекрутеру и&nbsp;сказать: слушай, у&nbsp;меня есть отличный кандидат, я&nbsp;знаю, что вы&nbsp;ищете кого-то.
+                    .interview-block__interview--little.hidden-block
+                        p Вопрос, скорее, о&nbsp;том, что мы&nbsp;не&nbsp;доверяем незнакомым людям, а&nbsp;хотим искать проверенных сотрудников через знакомых&hellip;
+                    p.hidden-block Это в&nbsp;некотором смысле психологическая защита тех&nbsp;же рекрутеров. С&nbsp;одной стороны, если он&nbsp;нашел кого-то по&nbsp;рекомендации знакомого, то&nbsp;вроде как это должен быть надежный человек. Эдакое виртуальное перекладывание ответственности. С&nbsp;другой стороны, если ваш сотрудник себя отлично зарекомендовал у&nbsp;вас, то&nbsp;он&nbsp;не&nbsp;посоветует вам плохих кандидатов, это просто не&nbsp;в&nbsp;его интересах. И&nbsp;это не&nbsp;будут &laquo;шапочные&raquo; знакомые из&nbsp;социальной сети, скорее всего, это будут люди, с&nbsp;кем он&nbsp;имел непосредственное общение и&nbsp;личный опыт позитивной работы.
+                    .interview-block__interview--little.hidden-block
+                        p А&nbsp;что вы&nbsp;думаете о&nbsp;карьерном коучинге, который сейчас так моден. Он&nbsp;работает?
+                    p.hidden-block Коучинг, как и&nbsp;любое действие, направленное на&nbsp;развитие навыков человека, конечно, вещь позитивная, нет сомнения. Карьерный коучинг развивает те&nbsp;навыки, которые наше образование по&nbsp;разным причинам не&nbsp;охватывает. Образование воспринимает студентов как субъектов технологического процесса, но&nbsp;не&nbsp;дает знаний о&nbsp;поведении на&nbsp;рынке труда. Поверьте, очень мало людей знают, как правильно написать резюме, как правильно свои навыки представить. Этому тоже надо учиться. Это отдельная предметная сфера знаний, и&nbsp;на&nbsp;это тоже надо тратить время. И&nbsp;главное, чем может помочь карьерный коучинг,&nbsp;&mdash; это как сопоставить личность со&nbsp;всеми вашими внутренностями, мозгами, ваш опыт со&nbsp;спросом на&nbsp;рынке. То&nbsp;есть грамотный карьерный коуч может все эти плоскости совместить и&nbsp;сделать так, что человек будет от&nbsp;своей работы счастлив и&nbsp;будет получать то, что называют самореализацией.
+                    .interview-block__interview--little.hidden-block
+                        p А&nbsp;как не&nbsp;попасть на&nbsp;человека, который не&nbsp;будет теоретиком, а&nbsp;будет коучить и&nbsp;поможет достигнуть цели?
+                    p.hidden-block Чтобы отличить хорошего карьерного коуча от&nbsp;непрофессионального, пользуйтесь рекомендациями прежде всего. Потратьте время на&nbsp;то, чтобы изучить прошлое этого коуча, посмотрите, где он&nbsp;работал, поговорите с&nbsp;людьми, которых он&nbsp;трудоустраивал, поговорите с&nbsp;заказчиками, может быть, он&nbsp;еще ищет персонал для каких-то работодателей. Сбор информации&nbsp;&mdash; ваша домашняя работа. И&nbsp;через какое-то время вы&nbsp;будет иметь картинку, довольно-таки объемную, о&nbsp;том, хочет&nbsp;ли этот человек просто заработать на&nbsp;вас, или он&nbsp;искренне заинтересован и&nbsp;считает своей миссией помогать людям самореализовываться.
+                    .interview-block__interview--little.hidden-block
+                        p А&nbsp;&laquo;Хэдхантер&raquo;&nbsp;&mdash; это&nbsp;же стартап?
+                    p.hidden-block Да, в&nbsp;2000 году &laquo;Хэдхантер&raquo; был веселым стартапом.
+                    p.hidden-block Надо понимать, что я&nbsp;в&nbsp;&laquo;Хэдхантере&raquo; с&nbsp;2007 года, и&nbsp;я&nbsp;на&nbsp;управленческой позиции здесь. Основали компанию Михаил Фролкин и&nbsp;Юрий Вировец, которые ужа давно с&nbsp;нами не&nbsp;работают. В&nbsp;стартапе самое важное&nbsp;&mdash; оказаться в&nbsp;нужное время в&nbsp;нужном месте с&nbsp;нужным продуктом на&nbsp;нужном сегменте рынка. Я&nbsp;понимаю, что это звучит общно, но&nbsp;это и&nbsp;есть, так сказать, стартаперская удача, тот хвост той самой птицы удачи, за&nbsp;который стартапер должен уцепиться и&nbsp;поймать его. И&nbsp;главное&nbsp;&mdash; никогда не&nbsp;сдаваться, не&nbsp;унывать, не&nbsp;останавливаться на&nbsp;половине пути. Лучше передохнуть, набрать воздуха и&nbsp;дальше делать то, во&nbsp;что ты&nbsp;веришь.
+                    .interview-block__video__sharing.clearfix.hidden-block
+                        ul.js-share
+                            li
+                                a(href="https://www.facebook.com/sharer/sharer.php?u=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--fb" data-interview="jukov").fbook.js-double-share
+                            li
+                                a(href="https://vk.com/share.php?url=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--vk" data-interview="jukov").vkt.js-double-share
+                            li
+                                a(href="https://twitter.com/intent/tweet?text=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--tw" data-interview="jukov").twt.js-double-share
+
+            .interview-block__main-tab(data-tab="2")
+                .interview-block__video
+                    .interview-block__video__block
+                        .interview-block__video__block__muted.video_muted.block-control
+                            .block-control__pause
+                            .block-control__play
+                        .full-block-control
+                            .full-block-control__play
+                            .full-block-control__time
+                            .full-block-control__main-line
+                                .full-block-control__main-line__progress
+                            .full-block-control__sound
+                        .interview-block__video__block__interview
+                            iframe(id="client-video" width="780" height="439" src="https://www.youtube.com/embed/KbLuskLYiks?list=PLv42Kp4x57LC_mrA0OAEqpo5r1LEMAL66&amp;controls=0&amp;showinfo=0&enablejsapi=1&rel=0" frameborder="0" allowfullscreen)
+                        .interview-block__video__block__filter(style="background-image: url(images/interview-speakers/business/Client_7.jpg)")
+                        .interview-block__video__block__info
+                            h3 Андрей Сильчев
+                            p.regalia директор по&nbsp;развитию IT&nbsp;Partner
+                            p.hide-in-mobile Люди&nbsp;&mdash; основной элемент бизнеса, сегодня особенно востребованы люди-&laquo;многостаночники&raquo;, способные закрыть сразу несколько областей работы.
+                            .interview-block__video__block__info__playbutton(id="start-client-video")
+                    .interview-block__video__sharing.clearfix
+                        ul.js-share
+                            li
+                                a(href="https://www.facebook.com/sharer/sharer.php?u=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--fb" data-interview="silchev").fbook.js-double-share
+                            li
+                                a(href="https://vk.com/share.php?url=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--vk" data-interview="silchev").vkt.js-double-share
+                            li
+                                a(href="https://twitter.com/intent/tweet?text=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--tw" data-interview="silchev").twt.js-double-share
+                        .interview-block__video__decypher
+                            span.interview-block__video__decypher--text Расшифровка интервью
+                            span.interview-block__video__decypher--img(id="show-interview-business")
+                .interview-block__interview
+                    span.interview-block__interview--decypher Расшифровка интервью
+                    .interview-block__interview--little
+                        p Как вы&nbsp;стали предпринимателем? С&nbsp;чего все началось?
+                    p Это одна из&nbsp;самых оптимальных направленностей, где можно работать с&nbsp;разным опытом. Ты&nbsp;можешь уметь хорошо общаться, иметь опыт работы в&nbsp;какой-то сфере. Главное, чтобы опыт был максимально качественным. Достаточно знать что-то и&nbsp;желание это реализовать.
+                    .interview-block__interview--little.hidden-block
+                        p Как появилась идея бизнеса?
+                    p.hidden-block В&nbsp;бизнесе есть много сегментов, там нужно находить те&nbsp;направления, в&nbsp;которых конкуренция минимальная, либо предлагать на&nbsp;рынке какие-то преимущества. Таким образом, все началось с&nbsp;того, что собралась команда людей, которая выявила сегмент рынка, в&nbsp;котором пока мало конкуренции. И&nbsp;мы&nbsp;в&nbsp;него окунулись.
+                    p.hidden-block Мы&nbsp;увидели, что есть клиенты, которые не&nbsp;работают по&nbsp;стандартной схеме, и&nbsp;их&nbsp;оказалось очень много. Это малые фирмы, на&nbsp;которые не&nbsp;обращают внимание крупные игроки.
+                    .interview-block__interview--little.hidden-block
+                        p Что для вас бизнес-партнер?
+                    p.hidden-block Партнер для меня&nbsp;&mdash; это первый человек, с&nbsp;которым я&nbsp;строю отношения в&nbsp;плане бизнеса. Отношения не&nbsp;всегда рабочие, чаще даже личные. Но&nbsp;это тот человек, с&nbsp;кем я&nbsp;контактирую и&nbsp;имею одинаковые точки зрения на&nbsp;какой-то процесс.
+                    .interview-block__interview--little.hidden-block
+                        p Что для вас самое важное в&nbsp;работе?
+                    p.hidden-block Для меня в&nbsp;работе важно абсолютно все: чтобы я&nbsp;получал от&nbsp;нее удовольствие, чтобы я&nbsp;видел какие-то достижения, чтобы компания росла, чтобы коллеги у&nbsp;нас все были довольные, чтобы я&nbsp;уходил с&nbsp;работы спокойно и&nbsp;не&nbsp;ворочался ночью.
+                    .interview-block__interview--little.hidden-block
+                        p Насколько важны в&nbsp;бизнесе люди?
+                    p.hidden-block На&nbsp;100%, будь это партнеры, будь это коллектив, кадры. Партнеры разноплановые, не&nbsp;только те, кто у&nbsp;вас покупает что-то, но&nbsp;и&nbsp;те, кто поставляет. Люди&nbsp;&mdash; основной элемент бизнес-процессов. Мы&nbsp;работаем не&nbsp;с&nbsp;машинами, мы&nbsp;работаем с&nbsp;людьми, несмотря на&nbsp;то&nbsp;что продаем ИТ-продукты и&nbsp;услуги.
+                    .interview-block__interview--little.hidden-block
+                        p Как вы&nbsp;считаете, что лучше&nbsp;&mdash; многостаночник или более узкоспециализированный человек?
+                    p.hidden-block Я&nbsp;как лютый многостаночник, который охватывает массу направлений, могу сказать, что это самое важное. Из&nbsp;многостаночника можно сделать любого узкопрофильного специалиста&nbsp;&mdash; достаточно его направить, в&nbsp;то&nbsp;время как из&nbsp;узкопрофильного сделать многостаночника, охватывающего разные ипостаси, не&nbsp;получится никогда. Хотелось&nbsp;бы еще сказать пару слов о&nbsp;характере. Узкие специалисты, как правило, сложные люди. Они зациклены только на&nbsp;своих процессах, знают только свою специфику, не&nbsp;готовы охватывать что-то большее. Это не&nbsp;всегда коммуникабельные люди.
+                    .interview-block__interview--little.hidden-block
+                        p Какие актуальные задачи вы&nbsp;ставите перед собой сейчас?
+                    p.hidden-block Как и&nbsp;многие другие люди, развиваться и&nbsp;расти дальше. Но&nbsp;мы&nbsp;сейчас уже растем. И&nbsp;немаловажно не&nbsp;потерять качество. Это тоже один из&nbsp;основных элементов для построения бизнеса.
+                    .interview-block__interview--little.hidden-block
+                        p В&nbsp;чем секрет бизнес-успеха, на&nbsp;ваш взгляд?
+                    p.hidden-block Понятие &laquo;фишки&raquo;. То, что &laquo;фишки&raquo; еще не&nbsp;изжиты, есть новые рынки сбыта, новые подходы, новые форматы. И&nbsp;конечно, это команда и&nbsp;ваши партнеры, которые просто идут с&nbsp;вами вместе, рука об&nbsp;руку.
+                    .interview-block__interview--little.hidden-block
+                        p Кто сегодня в&nbsp;бизнесе выигрывает
+                    p.hidden-block Тот, кто умеет быстро адаптироваться. Тот, кто может быстро найти свои сильные стороны, конкурентные преимущества либо новые ниши. Рано или поздно многие перестают активно действовать&hellip;
+                    .interview-block__interview--little.hidden-block
+                        p На&nbsp;чем в&nbsp;бизнесе можно экономить и&nbsp;на&nbsp;чем нельзя?
+                    p.hidden-block Бизнес сам по&nbsp;себе подразумевает экономию, оптимизацию расходов. Если ты&nbsp;меньше тратишь, ты&nbsp;больше зарабатываешь.
+                    p.hidden-block На&nbsp;чем точно нельзя экономить&nbsp;&mdash; это на&nbsp;репутации, это основное. Репутация, которая тебе и&nbsp;дает твой бизнес.
+                    .interview-block__interview--little.hidden-block
+                        p Как вы&nbsp;развиваете свой бизнес?
+                    p.hidden-block Не&nbsp;спим ночами&hellip; :) А&nbsp;если серьезно, помимо того что мы&nbsp;растем довольно быстро в&nbsp;плане новых продуктов, программ, прирастаем в&nbsp;клиентах, мы&nbsp;также совершенствуем нашу инфраструктуру. В&nbsp;чем нам очень помогают наши партнеры&nbsp;&mdash; например, в&nbsp;сфере мобильной связи, коммуникации. Для нас это очень важный элемент нашего бизнеса.
+                    .interview-block__interview--little.hidden-block
+                        p Какие технологии, решения вы&nbsp;используете для этого?
+                    p.hidden-block Специфика нашего бизнеса такова, что мы&nbsp;можем коммуницировать с&nbsp;большим количеством людей. Мы&nbsp;занимаемся логистикой, поэтому нам всегда нужна хорошая связь с&nbsp;большой зоной покрытия, безлимитные возможности общения, внутренняя офисная организация и&nbsp;ИТ-инфраструктура. Конечно, технологии мобильных операторов нам очень помогают развиваться, идти в&nbsp;ногу со&nbsp;временем. Нам очень помогает облачная АТС, которая позволяет нам оптимизировать бизнес-процессы в&nbsp;нашей компании, дает возможность отслеживать, что с&nbsp;ней происходит, где, кто и&nbsp;как работает. Также для нас важна интеграция с&nbsp;нашей CRM-системой.
+                    .interview-block__video__sharing.clearfix.hidden-block
+                        ul.js-share
+                            li
+                                a(href="https://www.facebook.com/sharer/sharer.php?u=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--fb" data-interview="silchev").fbook.js-double-share
+                            li
+                                a(href="https://vk.com/share.php?url=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--vk" data-interview="silchev").vkt.js-double-share
+                            li
+                                a(href="https://twitter.com/intent/tweet?text=", class="interview-block__video__sharing__icon interview-block__video__sharing__icon--tw" data-interview="silchev").twt.js-double-share
+
+        .external-speaker-block
+            .interview-block--wrapper
+                .interview-block__tab
+                    .interview-block__tab__interview.interview-block__tab--bman(tab-index="1")
+                        | Бизнес
+                        .shift-tab
+                        | от первого лица
+                    .interview-block__tab__interview.interview-block__tab--client(tab-index="2")
+                        | Правила
+                        .shift-tab
+                        | предпринимателя
+            .inter-block__speakers--wrapper(speakers-tab="1")
+                .interview-block__speakers
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-1.html")
+                                img(src="images/interview-speakers/business/1.Popov.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-1.html") Александр Попов
+                            p Директор EasyFinance.ru
+                            a(href="/interview-1.html").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-2.html")
+                                img(src="images/interview-speakers/business/2.Cerazov.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-2.html") Константин Церазов
+                            p Член правления,руководитель инвестиционного блока банка «ФК Открытие»,член совета директоров «Открытия Капитал»
+                            a(href="/interview-2.html").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                          a(href="/interview-3.html")
+                            img(src="images/interview-speakers/business/3.Feldman.png")
+                        .interview-block__speakers__item__text
+                            h3
+                              a(href="/interview-3.html") Максим Фельдман
+                            p Руководитель направления по работе с клиентами Московской школы управления СКОЛКОВО
+                            a(href="/interview-3.html").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-4.html")
+                                img(src="images/interview-speakers/business/4.Volshuck.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-4.html") Александр Волощук
+                            p Генеральный директор сервиса Dr.Tariffи студии разработки QStudio.org
+                            a(href="/interview-4.html").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-5.html")
+                                img(src="images/interview-speakers/business/5.Avedei.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-5.html") Алексей Авдей
+                            p Директор по продукту ЦИАН
+                            a(href="/interview-5.html").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-6.html")
+                                img(src="images/interview-speakers/business/6.Panov.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-6.html") Сергей Панов
+                            p Сооснователь и&nbsp;генеральный директор <nobr>интернет-бухгалтерии</nobr> &laquo;Моё дело&raquo;
+                            a(href="/interview-6.html").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-8.html")
+                                img(src="images/interview-speakers/business/8.Tabolin.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-8.html") Сергей Таболин
+                            p Руководитель по&nbsp;сегментному маркетингу &laquo;Билайн&raquo; Бизнес
+                            a(href="/interview-8.html").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-9.html")
+                                img(src="images/interview-speakers/business/9.Li.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-9.html") Дмитрий Ли
+                            p Директор по&nbsp;маркетингу бизнес-сегмента &laquo;Билайн&raquo;
+                            a(href="/interview-9.html").watch-interview Смотреть
+            .inter-block__speakers--wrapper(speakers-tab="2")
+                .interview-block__speakers
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-1.html#client")
+                                img(src="images/interview-speakers/clients/1.-Chaplinski.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-1.html#client") Павел Чаплинский
+                            p Основатель BOX&ROSES
+                            a(href="/interview-1.html#client").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-2.html#client")
+                                img(src="images/interview-speakers/clients/2.-Shlopack.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-2.html#client") Дмитрий Шлопак
+                            p Управляющий партнер «Везендорф групп»
+                            a(href="/interview-2.html#client").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-3.html#client")
+                                img(src="images/interview-speakers/clients/3.-Zamai.png")
+                        .interview-block__speakers__item__text
+                            h3 
+                                a(href="/interview-3.html#client") Андрей Замай
+                            p Генеральный директор компании «Первая Интеллектуальная Реклама»
+                            a(href="/interview-3.html#client").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-4.html#client")
+                                img(src="images/interview-speakers/clients/4.-Lasckov.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-4.html#client") Игорь Ласьков
+                            p Генеральный директор ООО «Стройкомфорт»
+                            a(href="/interview-4.html#client").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-5.html#client")
+                                img(src="images/interview-speakers/clients/5.-Smirnov.png")
+                        .interview-block__speakers__item__text
+                            h3 
+                                a(href="/interview-5.html#client") Илья Смирнов
+                            p IT-директор компании «Ай Ти Ви групп»
+                            a(href="/interview-5.html#client").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-6.html#client")
+                                img(src="images/interview-speakers/clients/6.-Shelmanova.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-6.html#client") Ольга Шеламова
+                            p Совладелец компании «Олимп»
+                            a(href="/interview-6.html#client").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-8.html#client")
+                                img(src="images/interview-speakers/clients/8.Shkolerov.png")
+                        .interview-block__speakers__item__text
+                            h3
+                                a(href="/interview-8.html#client") Дмитрий Шкловер
+                            p Основатель интернет-магазина 613bricks.ru
+                            a(href="/interview-8.html#client").watch-interview Смотреть
+                    .interview-block__speakers__item
+                        .interview-block__speakers__item__img
+                            a(href="/interview-9.html#client")
+                                img(src="images/interview-speakers/clients/9. Poryadneev.png")
+                        .interview-block__speakers__item__text
+                            h3 Кирилл Поряднев
+                            p Генеральный директор «Результат Плюс»
+                            a(href="/interview-9.html#client").watch-interview Смотреть

@@ -1,0 +1,216 @@
+//Desktop version
+@media screen and (min-width: 1100px) {
+
+}
+
+//Tablet landscape version
+@media screen and (min-width: 840px) and (max-width: 1180px) {
+
+}
+
+//Tablet portrait version
+@media screen and (min-width: 700px) and (max-width: 839px) {
+  padding-left: 1px;
+  background-color: rgba(237, 237, 230, 0.37);
+  margin-top: 36px;
+}
+
+//Mobile orientation
+@media screen and (max-width: 699px) and (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
+  .content-text p,
+  .content-text h2 {
+//    padding-left: 15px;
+//    padding-right: 15px;
+  }
+  .content-text {   
+    ul {
+      li {
+        margin-left: 15px;
+        
+        &:before {
+          left: -15px;
+        }
+      }
+    }
+  }
+  .content-text h2 {
+    font-size: 17px;
+    margin-top: -12px;
+    margin-bottom: 19px;
+  }
+  .content-text .image-block__rectangle {
+    position: absolute;
+    width: 105%;
+    height: 184px;
+    bottom: 51px;
+    left: -6px;
+  }
+  .visible-mobile {
+    display: block;
+    margin-top: -13px  !important;
+  }
+
+
+  .content-text--lifehack {
+    margin-top: 0;
+  }
+  .content-text--lifehack p,
+  .content-text--lifehack h2 {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.47;
+    letter-spacing: 0.3px;
+  }
+  .content-text--lifehack h2 {
+    font-weight: 800;
+  }
+  .content-text .line-dots {
+    background-image: url(../images/lifehack-1/path-9.svg);
+    width: 117%;
+    margin: 0 auto;
+    margin-top: 35px;
+    margin-bottom: 41px;
+    background-size: 113%;
+    margin-left: -43px;
+  }
+  
+  .content-text .image-block {
+    width: 100%;
+  }
+  .content-text .image-block__img {
+    width: 100%;
+    height: 72%;
+  }
+  .content-text .image-block__img img {
+    width: 90%;
+    height: 112%;
+    margin-top: -2px;
+  }
+  .content-text .image-block--left,
+  .content-text .image-block--right {
+    float: none;
+    margin-left: 0px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .lifehack-case-jumbotron {
+    height: 242px;
+    margin-bottom: 40px;
+    
+    &--without {
+      margin-bottom: 16px;
+    }
+
+    span {
+      font-size: 22px;
+    }
+    h1 {
+      letter-spacing: 0.2px;
+      font-size: 30px;
+      font-weight: 800;
+      letter-spacing: 0.6px;
+    }
+    .link-back {
+      font-size: 15px;
+      font-weight: 500;
+      margin-bottom: 32px;
+      &:before {
+        width: 6px;
+        height: 6px;
+      }
+    }
+    .link {
+      font-size: 12px;
+      font-weight: 500;
+      left: 0;
+      transform: translateX(0%);
+      position: inherit;
+      margin-top: 56px;
+      span {
+        font-size: 12px;
+        margin-left: 6px;
+        margin-right: 6px;
+      }
+    }
+    a {
+      font-size: 12px;
+    }
+    .link .prev-link:before {
+      width: 7px;
+      height: 7px;
+      margin-left: 6px;
+      margin-right: 4px;
+    }
+    .link .next-link:after {
+      width: 7px;
+      height: 7px;
+      margin-left: 4px;
+      margin-right: 6px;
+    }
+  }
+  .content-text p {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.47;
+    letter-spacing: 0.3px;
+  }
+  .quote-block {
+    padding-left: 1px;
+    background-color: rgba(237, 237, 230, 0.37);
+    margin-top: 36px;
+    margin-bottom: 9px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    .quote-block__author {
+      text-align: left;
+    }
+    .quote-block__author--about {
+      margin-bottom: 25px;
+      margin-left: -1px;
+      margin-top: 4px;
+      padding-right: 15px;
+    }
+    .quote-block__citate {
+      margin-left: 51px;
+      margin-top: -2px;
+      &:before {
+        left: -51px;
+        top: 5px;
+      }
+    }
+    h3 {
+      font-size: 20px;
+      font-weight: 800;
+      line-height: 1.9;
+    }
+    p {
+      font-size: 13px;
+      letter-spacing: 0.2px;
+    }
+  }
+  .quote-block__citate {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.59;
+    letter-spacing: 0.3px;
+    p {
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 1.59;
+      letter-spacing: 0.3px;
+      padding-right: 15px;
+    }
+  }
+  .lifehack-hidden {
+    display: none;
+  }
+  .mobile-dots {
+    margin-top: 34px !important;
+  }
+  .container-lifehack-2 {
+    padding-top: 35px;
+  }
+}

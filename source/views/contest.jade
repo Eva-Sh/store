@@ -1,0 +1,214 @@
+extends templates/layout
+block vars
+	- var title = '«БИЛАЙН» БИЗНЕС'
+	- var og_title = 'Быстрее, выше, успешнее'
+	- var og_description = 'Расскажите, как вам удалось изменить свой бизнес к лучшему, и выиграйте ценные призы.'
+	- var og_image = '../images/sharing/contest-sharing.jpg'
+	- var twitter_description = 'Расскажите, как вам удалось изменить свой бизнес к лучшему, и выиграйте ценные призы.'
+
+block content
+	section.contest-case-jumbotron
+		.img-left
+		.img-right
+		a(href="/index.html").link-back Вернуться на главную
+		span Конкурс
+		h1 Быстрее, выше, успешнее
+		p Успешный бизнес должен постоянно развиваться. Даже если дело идёт хорошо, всегда можно найти способ, чтобы оно шло ещё лучше. Например, одни предприниматели внедряют передовые технологии, другие используют нестандартные подходы при решении типичных задач, а третьи делают всё сразу. Расскажите, как вам удалось изменить свой бизнес к лучшему, и выиграйте ценные призы.
+		a(href="#yo").link-contest.link-contest--call-form Участвовать
+	section.content-text.contest-content-text
+		.container
+			.contest-content_block
+				h1 Как стать участником?
+				p Расскажите историю о передовых технологиях или других нестандартных подходах, которые вы использовали для развития своего бизнеса. 
+				.contest-info_block
+					.contest-item 
+						img(src="../images/contest/1.svg", alt="image-contest")
+						h2.contest-item_title-1 Заполните форму	
+						p Укажите информацию о себе и контактные данные
+					.contest-item 
+						.dot-item
+							img(src="../images/contest/oval-1.svg", alt="image-contest")
+						.dot-item
+							img(src="../images/contest/oval-2 (1).svg", alt="image-contest")
+						.dot-item		
+							img(src="../images/contest/oval-1.svg", alt="image-contest")
+					.contest-item 
+						img(src="../images/contest/2.svg", alt="image-contest")
+						h2.contest-item_title-2 Расскажите о своём бизнесе
+						p В свободной форме напишите, как вам удалось изменить свой бизнес к лучшему
+					.contest-item
+						.dot-item
+							img(src="../images/contest/oval-1.svg", alt="image-contest")
+						.dot-item
+							img(src="../images/contest/oval-2 (1).svg", alt="image-contest")
+						.dot-item		
+							img(src="../images/contest/oval-1.svg", alt="image-contest")
+					.contest-item 
+						img(src="../images/contest/3.svg", alt="image-contest")
+						h2.contest-item_title-3 Опубликуйте свою историю
+						p Опубликуйте свою историю в соцсетях с хештегом #beeline
+				a(href="#yo").link-contest.link-contest--call-form Участвовать
+	section.contest-content-text-2
+		.container
+			.contest-content_block 
+				.img-left
+				.img-right
+				h2 Призы
+				p Победителей конкурса определит жюри. Ему предстоит оценивать работы как по содержанию, так и по другим критериям — в частности, по количеству лайков, собранных в соцсетях. Всего будет шесть призовых мест.
+				.rewards-list
+					.reward-item.reward-item-1 
+						img(src="../images/contest/gift-3.svg", alt="image-contest")
+						p Два смартфона Samsung Galaxy S7 Edge 32Gb Black Onyx 	
+					.reward-item.reward-item-2 
+						img(src="../images/contest/gift-2.svg", alt="image-contest")
+						p Главному победителю — 200 000 рублей
+					.reward-item.reward-item-3
+						img(src="../images/contest/gift-1.svg", alt="image-contest")
+						p Три смартфона Samsung Galaxy A7 (2017) Blue	
+				a(href="#yo").link-contest.link-contest--call-form Участвовать
+	section.contest-content-text-3
+		.container
+			.contest-content_block 
+				h2 Работы участников
+				p В этом разделе мы публикуем все работы участников конкурса. Если вам есть, что рассказать про свой бизнес, поделитесь — и ваша работа может тоже появиться здесь
+				.contest-block--wrapper
+					.contest-block__tab
+						.contest-block__tab__interview.contest-block__tab__interview--popular.active(tab-index="1")
+							| Популярные
+						.contest-block__tab__interview.contest-block__tab__interview--new(tab-index="2")
+							| Новые
+				.contest-wrap--list-participant.contest-wrap--list-participant--active(participant-tab="1")			
+					.contest-block-popular--wrapper
+
+				.contest-wrap--list-participant(participant-tab="2")			
+					.contest-block-popular--wrapper
+
+				.contest-block-link
+					a(href="/participants.html", style="display: none;").link-contest.link-constest-more Смотреть все
+					a(href="#yo").link-contest.link-contest--call-form.link-contest--call-form-4 Участвовать
+	section.sharing-block.sharing-block-contest.sharing-block-contest--footer
+		.share-icon.js-share
+			a(href="https://www.facebook.com/sharer/sharer.php?u=", data-shar='facebook').share-icon__item.share-icon__item--fk.fbook
+			a(href="https://vk.com/share.php?url=",  data-shar='vkontakte').share-icon__item.share-icon__item--vk.vkt
+			a(href="https://twitter.com/intent/tweet?text=", data-shar='twitter').share-icon__item.share-icon__item--tw.twt		
+
+	section.contest-modal-popup
+		.modal-popup
+			.modal-popup__bg
+			.modal-popup__popup
+				a.modal-popup__close(href='#')
+				h2 Конкурс
+				h1 Форма регистрации
+				p Укажите информацию о себе и вставьте хотя бы одну ссылку на ваш профиль в Facebook, Twitter, ВКонтакте или Одноклассниках.
+				.form-block__container
+					form(action="/form.php" id="form-contest" method="POST").contest-form
+						.input-holder.input-holder--one
+							input(id="firstname" type="text" name="first_name" placeholder="Имя" required)
+							input(id="lastname" type="text" name="last_name" placeholder="Фамилия" required)
+						.input-holder.input-holder--two
+							input(id="telephone" name="phone" placeholder="Номер телефона" required)
+						.input-holder.input-holder--three
+							.fileform
+								.placeholder Загрузите свое фото
+								.selectbutton
+								input#upload(type='file' name='images' required)
+						.input-holder.input-holder--four
+							.selectBox
+								span.selected.selectArrow--bottom 	Сс
+								input(type='text' name='social'  disabled="disabled" placeholder="Ссылка на ваш профиль социальной сети" required).selectArow
+								.selectOptions
+									span.selectOption(value='Option 0') 
+									span.selectOption(value='facebook') 
+										img(src="../images/contest/facebook.svg", alt="image-contest")
+									span.selectOption(value='vk')
+										img(src="../images/contest/v-kontakte.svg", alt="image-contest")
+									span.selectOption(value='tw') 
+										img(src="../images/contest/twitter.svg", alt="image-contest")
+									span.selectOption(value='ok') 
+										img(src="../images/contest/OK.svg", alt="image-contest")
+						.input-holder.input-holder--five
+							input(id="company" name="company_name" type="text" placeholder="Название компании" required)
+						.input-holder.input-holder--six
+							.selectBox
+								span.selected
+								span.selectArrow.selectArrow--bottom 
+								.selectOptions
+									span.selectOption(value='Option 0') Должность
+									span.selectOption(value='Руководитель компании') Руководитель компании
+									span.selectOption(value='Наемный сотрудник') Наемный сотрудник
+									span.selectOption(value='Другое') Другое
+						p.contest-form-annotation--1
+							| Расскажите про свой бизнес и после модерации поделитесь работой в соцсетях. К посту обязательно добавьте хэштег 
+							span #мобильноепредприятие #beelinebiz
+						.input-holder.input-holder--seven
+							.placeholder Ваш рассказ (не более 500 знаков)
+							textarea(id="business" name="performance" type="text" maxlength="500" required) &nbsp;
+						p.contest-form-annotation--2
+							| Какие нестандартные технологии и подходы вы используете для развития бизнеса?
+						.input-holder.input-holder--eight
+							.placeholder Ваш рассказ (не более 500 знаков)
+							textarea(id="technologies" name="more_performance" type="text" maxlength="500" required) &nbsp;
+						.input-holder.input-holder--nine
+							label
+								input(type="radio" name="regulations" id="regulations" class="radio-check--1" required)
+								|  С 
+								a(href="/upload/Правила конкурса №1.pdf" target="_blank").link-regulations правилами
+								|  конкурса согласен.
+						.input-holder.input-holder--ten(style="display: none;")
+							label
+								input(type="radio" name="invitation" id="invitation" class="radio-check--2" required)
+								|  Хочу получить приглашение на бизнес конференцию от «Билайн».	
+						input(type="submit" id="submit-form-link" value="Отправить" class="submit-form")						
+	
+	section.contest-participant-popup.contest-participant-popup--contest-page
+							.modal-participant-popup
+								.modal-participant-popup__bg
+								.modal-participant-popup__popup
+									a.modal-participant-popup__close.close--contest(href='#')
+									.modal-participant-popup__header
+										.modal-participant-popup__header-item--shadow
+									.modal-participant-popup__header-item--img
+										img(src="../images/contest/page-1.svg", alt="image-contest")
+									.slick-slide.slick-slide--contest
+		section.contest-popup--thanks		
+			.modal-popup
+				.modal-popup__bg
+				.modal-popup__popup
+					a.modal-popup__close(href='#')
+					h1 Спасибо, </br> ваша заявка отправлена на модерацию!
+					img(src="../images/contest/Thanks.svg", alt="image-contest", class="image-participant")
+		section.contest-popup--error		
+			.modal-popup
+				.modal-popup__bg
+				.modal-popup__popup
+					a.modal-popup__close(href='#')
+					h1 Ошибка, </br> попробуйте отправить вашу заявку еще раз!
+					img(src="../images/contest/Thanks.svg", alt="image-contest", class="image-participant")			
+
+					
+											
+
+
+					
+				
+
+
+
+
+
+						
+									
+						
+
+
+							
+				
+				
+			
+				
+					
+				
+						
+		
+		
+					
